@@ -1,0 +1,1 @@
+{"mode": "direct", "diagnostic": false, "mean_step_ms": 13.031953949999998, "output": "results/cpu-training-e2-timing/small-r0-direct"}

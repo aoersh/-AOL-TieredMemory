@@ -1,8 +1,15 @@
 # SoarAlto reproduction
 
-Updated 2026-09-18. Upstream revision:
+Documentation updated 2026-09-21; original reproduction record began 2026-09-18.
+Upstream revision:
 `362dfec94141d2fd535ec99b17379e1df2bcc709`.
 Detailed fixes, evidence and remaining limitations: [docs/FIXES.md](docs/FIXES.md).
+
+Current research follows the [v3 CPU training plan](docs/CPU_TRAIN_CXL_PLAN.md):
+validate Direct CXL versus asynchronous Prefetch, evaluate AOL/SOAR criticality
+against hotness, then build a simple benefit-aware policy. Online ALTO integration
+is optional later work. The original SOAR/ALTO results below remain historical
+baseline evidence, not evidence of training-policy performance.
 
 ## Status
 
@@ -22,7 +29,10 @@ Two Xeon 6515P CPUs (Granite Rapids, family 6 model 173), 32 physical cores,
 64 logical CPUs, ~253 GiB RAM. Nodes 0/1 are ~64 GiB DRAM each; nodes 2/3 are
 64 GiB CXL each. CPU/node 0's near CXL tier is node 2; node 1 is remote DRAM.
 Current perf is 6.8.12. GCC/G++ 12 and Python 3.10 are available.
-NUMA balancing=1, demotion=false, THP=madvise, perf_event_paranoid=-1.
+The original profiling environment used NUMA balancing=1, demotion=false,
+THP=madvise and perf_event_paranoid=-1. The 2026-09-21 training pilot instead
+recorded perf_event_paranoid=4, NUMA balancing=1, pte_scale=16 and demotion=false.
+These are dated observations; capture live settings before every new run.
 
 The default raw PMU configuration is specific to GNR. The runner rejects other
 CPU models unless an explicit event configuration is supplied.
@@ -394,9 +404,33 @@ with zero maximum absolute error for hooks, clone, bound DRAM, bound CXL direct
 access, and synchronous CXL-to-DRAM migration. All managed pages had the expected
 nodes at initial/unpack checks and all tracked mappings were released.
 Results and source snapshots: `results/cpu-training-numa-v3/`.
-This is a correctness/placement pilot, not yet training SOAR scoring or online
-ALTO coordination, and provides no training speedup or capacity-saving claim.
+This is a managed-saved-tensor correctness/placement pilot, not a whole-process
+DRAM/CXL comparison or asynchronous Always-Prefetch baseline. It provides no
+training speedup or capacity-saving claim. Training SOAR scoring and benefit-aware
+selection are still planned work; see the later E1/E2 async update below.
 Global kernel settings were unchanged; bindings isolate the managed buffers.
+
+Next: improve async scheduling using observed demand order, investigate the
+managed-DRAM/Direct difference, then run single-object access-path interventions
+against a stronger prefetch baseline on the same managed objects.
+PMU availability is checked early,
+but full AOL modeling does not block the initial access-path comparison.
+See the [v3 plan](docs/CPU_TRAIN_CXL_PLAN.md) for budget fairness and decision gates.
+
+E0 update (2026-09-21): parameterization, two Transformer sizes and the original
+MLP regression now pass all six three-step correctness modes, with zero maximum
+absolute error. Six boundary tests also pass. Results, source snapshots and
+audits: `results/cpu-training-e0-validated/`. NumPy 1.26.4 is installed locally.
+These E0 diagnostic timings do not establish performance.
+
+E1/E2 update: low-overhead timing and eager FIFO async migration now run.
+Eight diagnostic runs passed correctness/residency/release checks; 40 timing
+processes compare four policies across two sizes with five paired repetitions.
+Direct beat this async implementation, but FIFO demand-order inversion makes it
+an insufficiently optimized prefetch baseline. No selective-policy benefit is
+established. Results: `results/cpu-training-e1-diagnostic/` and
+`results/cpu-training-e2-timing/`; see the
+[E1/E2 report](research/cpu_training/E1_E2_REPORT.md) for numbers and limitations.
 
 - Object scores / predictors: `src/soar/run/proc_obj_e.py::rank_objs_r`.
 - Sample alignment: `src/soar/run/profile_intervals.py`.

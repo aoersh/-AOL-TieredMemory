@@ -1,0 +1,1 @@
+{"mode": "async", "diagnostic": false, "mean_step_ms": 18.104607, "output": "results/cpu-training-e2-timing/small-r4-async"}

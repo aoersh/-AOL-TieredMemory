@@ -1,5 +1,13 @@
 # Host ALTO kernel preparation
 
+Scope: this is the original kernel preparation/install record. References below
+to the running kernel, GRUB configuration and candidate status describe that
+preparation stage, not a fresh observation of the server. The 2026-09-21 training
+pilot ran on `6.8.12-138-soaralto`; verify live settings before further experiments.
+The [v3 CPU-training plan](CPU_TRAIN_CXL_PLAN.md) reuses this environment for
+Direct CXL / Prefetch experiments. Online ALTO integration is optional later work;
+the revised plan itself does not require rebuilding the kernel or rebooting.
+
 This is a separate candidate kernel. Preparation does not install a kernel,
 change GRUB, unload drivers, or reboot the server.
 

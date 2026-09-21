@@ -1,0 +1,54 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "threads": 8,
+  "interop_threads": 1,
+  "seed": 20260921,
+  "steps": 3,
+  "dtype": "float32",
+  "configuration": {
+    "output": "results/cpu-training-e0-validated/transformer-large",
+    "numa": true,
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2,
+    "steps": 3,
+    "threads": 8,
+    "cpus": "0,1,2,3,4,5,6,7",
+    "fast_node": 0,
+    "slow_node": 2,
+    "modes": null
+  },
+  "source_sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+  "source_hashes": {
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "numa_buffer.py": "4e6518fa541d33326bbdb2ed890a802fc6850b9a013b02d3ed7cdbdc085fb4c7",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9"
+  },
+  "modes": [
+    "native",
+    "observe",
+    "clone",
+    "dram",
+    "cxl",
+    "prefetch_sync"
+  ],
+  "note": "Correctness only; timings include diagnostics and state copies. Bind-protected buffers; non-managed placement uncontrolled.",
+  "/proc/sys/kernel/numa_balancing": "1",
+  "/proc/sys/kernel/perf_event_paranoid": "4",
+  "/proc/sys/kernel/numa_balancing_pte_scale": "16"
+}

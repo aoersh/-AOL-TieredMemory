@@ -1,0 +1,53 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "commands": [
+    [
+      "boundaries",
+      [
+        "python3",
+        "research/cpu_training/test_boundaries.py"
+      ]
+    ],
+    [
+      "mlp",
+      [
+        "python3",
+        "research/cpu_training/observe_saved_tensors.py",
+        "results/cpu-training-e0-validated/mlp",
+        "--numa"
+      ]
+    ],
+    [
+      "transformer-small",
+      [
+        "python3",
+        "research/cpu_training/observe_saved_tensors.py",
+        "results/cpu-training-e0-validated/transformer-small",
+        "--workload",
+        "transformer",
+        "--batch",
+        "4",
+        "--sequence",
+        "128",
+        "--numa"
+      ]
+    ],
+    [
+      "transformer-large",
+      [
+        "python3",
+        "research/cpu_training/observe_saved_tensors.py",
+        "results/cpu-training-e0-validated/transformer-large",
+        "--workload",
+        "transformer",
+        "--batch",
+        "8",
+        "--sequence",
+        "512",
+        "--numa"
+      ]
+    ]
+  ],
+  "started_unix": 1789984533.5244877,
+  "scope": "E0 correctness; not performance comparison"
+}

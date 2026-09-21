@@ -1,0 +1,1 @@
+{"mode": "sync", "diagnostic": true, "mean_step_ms": 223.06015533333334, "output": "results/cpu-training-e1-diagnostic/large-r0-sync"}

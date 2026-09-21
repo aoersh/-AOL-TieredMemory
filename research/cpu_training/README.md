@@ -1,8 +1,13 @@
-# CPU 训练与 SOAR/ALTO：第一阶段实验
+# CPU 训练：收益感知 CXL 访问与选择性预取实验
 
-2026-09-21：已完成小型 MLP 的 saved-tensor 正确性、DRAM/CXL 放置和同步迁移验证。
-这是 `docs/CPU_TRAIN_CXL_PLAN.md` 的基础步骤，尚未实现 SOAR 评分适配、
-ALTO 在线协调或异步预取，不代表融合系统已经完成。
+2026-09-21：已完成 MLP 和两档小型 Transformer 的 saved-tensor 正确性、
+DRAM/CXL 放置和同步迁移验证。
+这是 [v3 实验方案](../../docs/CPU_TRAIN_CXL_PLAN.md) 的基础步骤，尚未实现 SOAR 评分适配、
+ALTO 在线协调或收益策略。已新增简单异步预取与首轮计时，但发现 FIFO 需求顺序
+倒置，仍需优化强预取基线，详见 [E1/E2 报告](E1_E2_REPORT.md)。
+v3 方案已改为先验证 Direct CXL / Prefetch 的收益
+差异，再验证 AOL/Performance Criticality，最后设计选择性预取；ALTO 在线
+联动作为可选扩展。以下已完成实验及原始结果保持不变。
 
 ## 运行
 
@@ -11,6 +16,7 @@ ALTO 在线协调或异步预取，不代表融合系统已经完成。
 ```bash
 python3 -m pip install --target .deps/training-python --no-cache-dir \
   torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+python3 -m pip install --target .deps/training-python --no-cache-dir numpy==1.26.4
 python3 research/cpu_training/observe_saved_tensors.py results/cpu-training-new --numa
 ```
 
@@ -19,11 +25,62 @@ python3 research/cpu_training/observe_saved_tensors.py results/cpu-training-new 
 move_pages，不需要 sudo。其他主机可能受 syscall/NUMA 权限限制，失败会报错退出，
 不能将未完成目录当成成功结果。成功标志是退出码 0 且生成 `correctness.json`。
 
-当前固定 CPU 0–7、8 intra-op/1 inter-op 线程、DRAM 节点 0、CXL 节点 2。
+默认 CPU 0–7、8 intra-op/1 inter-op 线程、DRAM 节点 0、CXL 节点 2；
+新增参数可调整 CPU 列表、线程、节点、训练步数、模式及 workload/shape。
 模型为 Linear(512,1024) → GELU → LayerNorm(1024) → Linear(1024,256)，
 batch=256、FP32、SGD、3 步、固定输入和随机种子。修改硬件或工作负载前需调整这些参数。
 本机 venv 因缺少 ensurepip 不可用，因此使用项目内 target 安装。
-PyTorch 提示未安装 NumPy；当前实验不调用 NumPy，已正常完成。
+旧 pilot 曾提示未安装 NumPy，现已在项目内补齐 1.26.4；严格导入和
+Tensor/NumPy 双向转换检查通过，不需要修改系统 Python。
+
+## v3 方案 E0 进展（2026-09-21）
+
+结果：`results/cpu-training-e0-validated/`，汇总为该目录 `summary.json`。
+本次实现参数化和显式 matmul/softmax 的双层 Transformer Encoder，
+无 dropout、无原地激活、无融合 attention，FP32 + SGD + 合成输入。
+每组 native/observe/clone/dram/cxl/prefetch_sync 六种模式，各三步：
+
+| 工作负载 | 配置 | 最大绝对误差 | 每种受管模式累计候选保存数 | 受管对象峰值代理 |
+| --- | --- | ---: | ---: | ---: |
+| MLP | 原始配置，batch 256 | 0 | 21 | 3.758 MiB |
+| Transformer small | batch 4，seq 128，width 128，heads 4，layers 2 | 0 | 105 | 10.789 MiB |
+| Transformer large | batch 8，seq 512，其余相同 | 0 | 105 | 134.156 MiB |
+
+峰值代理按页对齐 buffer 从初始驻留检查至 Packed 释放统计，不是精确 mmap
+存活时间或进程 RSS。大配置超过单插槽 72 MiB LLC，但不据此断言 LLC miss
+或内存瓶颈。候选逻辑保存字节占所有保存字节的比例分别约 78.8%、75.1%、
+67.2%；不是全进程管理覆盖率或唯一 storage 比例。
+
+所有模式的候选 ID/shape/dtype/排除原因序列一致。三组逐页初始和 unpack
+检查分别累计 2,886、8,286、103,032 页次/受管模式，节点符合 0→0、2→2、
+2→0。loss/梯度/更新后参数一致且有限，图释放后受管对象/映射全部释放。
+各结果目录含源码快照、依赖、manifest、事件日志和 `audit-summary.json`；
+根目录保留执行命令、stdout/stderr 和六项边界测试日志。
+
+```bash
+# 保留旧 MLP 入口；用新目录，避免覆盖结果。
+python3 research/cpu_training/observe_saved_tensors.py results/e0-mlp-new --numa
+python3 research/cpu_training/observe_saved_tensors.py results/e0-transformer-new \
+  --workload transformer --batch 8 --sequence 512 --width 128 --heads 4 \
+  --layers 2 --steps 3 --threads 8 --numa
+python3 research/cpu_training/test_boundaries.py
+python3 research/cpu_training/summarize_correctness.py results/e0-transformer-new
+```
+
+边界检查包括非连续/部分 view、重复 storage、地址代际判别、仍存活源对象的
+原地修改拒绝、重复 unpack 的梯度/单次迁移/释放、注入迁移失败的传播。
+原地修改检测仅检查仍存活原 tensor wrapper 的版本，不是通用别名分析；
+仍限定于当前非原地 workload。完整 storage 别名组还未统一管理。
+
+已自行解决的事项：补齐 NumPy；重复 unpack 不再重复提交已完成的同步迁移；
+失败时保存 traceback；保存三个实现文件的哈希/快照；运行前写 manifest。
+此前普通用户 `cxl list -M` 的枚举错误由用户 sudo 成功确认，sysfs 验证
+两个 64 GiB RAM region 的 DAX target node 为 2/3。本次全局参数保持
+numa_balancing=1、pte_scale=16、perf_event_paranoid=4、demotion=false。
+
+上述 E0 没有运行性能重复实验，旧入口计时仍含诊断、梯度/参数复制和验证开销，
+不能比较策略速度。后续新增入口已分离低开销计时，完成异步工作者及异常安全
+检查和 40 个进程的初步计时；结论与调度限制见 E1/E2 报告。完整别名支持仍有限。
 
 ## 已完成结果
 
@@ -76,16 +133,19 @@ storage 和可检测的重复保存。此筛选不是完整别名/原地修改�
 尚未计量容量收益，副本可能增加峰值内存；原始参数、输入等未统一绑定节点。
 工作集小、日志和查询开销大，步耗时仅用于诊断，不能用来声称训练加速或比较策略。
 
-## 下一步仍围绕 SOAR/ALTO
+## 下一步：先验证访问路径选择空间
 
-1. 扩展 tensor registry 的生命周期、算子标签和地址代际，验证别名、重复 unpack
-   与原地修改边界；PEBS 地址关联应使用实际 buffer 生命周期，不能只用裸地址。
-2. 单独采集 PEBS/区间 PMU，复用 `src/soar/run/proc_obj_e.py` 和
-   `profile_intervals.py` 计算评分；perf 权限不足时使用临时 sudo 包装并恢复设置。
-3. 受控算子/单张量放置干预，验证 SOAR 排序与实测快层收益是否相关；扩大到超过 LLC。
-4. 验证 MPOL_BIND→MPOL_DEFAULT 的权限交接，再接入
-   `run/bc-urand/set_scan_scale.py::decision`，对照固定 16 与动态 ALTO。
-   当前不应启用全局 ALTO 控制来给绑定 buffer 的实验贴上协同标签。
+1. 参数化、正确性、计时拆分和简单后台执行已完成。先解决 FIFO 的需求顺序
+   倒置，按早期迭代的需求顺序/窗口建立更强预取基线，继续完善别名边界。
+2. 分解 Direct 与受管 DRAM 的性能差异；强基线验证后再做单对象干预，
+   独立确认两种访问路径的收益边界，不用当前全量 FIFO 结果代替 Q1 验证。
+3. 在问题验证基础上关联 PEBS/区间 PMU，复用 `src/soar/run/proc_obj_e.py` 和
+   `profile_intervals.py`，比较 hotness、AOL、SOAR score 与实测净收益。
+   权限不足时再准备临时 sudo 包装；PMU 不可用不阻塞直接计时实验。
+4. 只有选择空间得到验证后才实现简单收益策略。ALTO 保护/解除、固定扫描与
+   动态扫描作为后续可选对照，不再作为首轮研究成立的强制条件。
 
-实现入口：`observe_saved_tensors.py` 为 workload/hooks/一致性校验，
-`numa_buffer.py` 为独立 mmap、放置与逐页迁移。原 SOAR/ALTO 核心代码未因本轮改动。
+实现入口：`observe_saved_tensors.py` 为参数/hooks/一致性校验，
+`workloads.py` 为 MLP 和显式 attention Transformer，`numa_buffer.py` 为
+独立 mmap、放置与逐页迁移，`test_boundaries.py` 与 `summarize_correctness.py`
+为边界和日志检查。原 SOAR/ALTO 核心代码未因本轮改动。

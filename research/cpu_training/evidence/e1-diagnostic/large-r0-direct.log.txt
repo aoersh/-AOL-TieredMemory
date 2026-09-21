@@ -1,0 +1,1 @@
+{"mode": "direct", "diagnostic": true, "mean_step_ms": 121.22143899999999, "output": "results/cpu-training-e1-diagnostic/large-r0-direct"}

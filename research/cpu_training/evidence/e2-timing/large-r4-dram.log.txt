@@ -1,0 +1,1 @@
+{"mode": "dram", "diagnostic": false, "mean_step_ms": 112.74111045, "output": "results/cpu-training-e2-timing/large-r4-dram"}

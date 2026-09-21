@@ -1,0 +1,1 @@
+{"mode": "sync", "diagnostic": false, "mean_step_ms": 19.1515776, "output": "results/cpu-training-e2-timing/small-r2-sync"}

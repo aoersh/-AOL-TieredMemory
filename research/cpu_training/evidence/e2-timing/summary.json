@@ -1,0 +1,102 @@
+{
+  "small": {
+    "dram": {
+      "mean_step_ms": 13.19461955,
+      "sd_process_mean_ms": 0.3583508097718124,
+      "mean_wait_ms": 0.0,
+      "mean_moved_MiB": 0.0,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "direct": {
+      "mean_step_ms": 10.41735306,
+      "sd_process_mean_ms": 1.8247302206486598,
+      "mean_wait_ms": 0.0,
+      "mean_moved_MiB": 0.0,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "sync": {
+      "mean_step_ms": 19.20867512,
+      "sd_process_mean_ms": 1.0566052774652457,
+      "mean_wait_ms": 6.83194658,
+      "mean_moved_MiB": 10.7890625,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "async": {
+      "mean_step_ms": 17.64946119,
+      "sd_process_mean_ms": 0.6896156293814268,
+      "mean_wait_ms": 1.54588253,
+      "mean_moved_MiB": 10.7890625,
+      "mean_late_unpacks": 1,
+      "mean_forward_overlap_ms": 8.52977026
+    },
+    "paired_direct_minus_async": {
+      "mean_ms": -7.23210813,
+      "ci95_ms": [
+        -9.234834118507196,
+        -5.229382141492804
+      ],
+      "differences_ms": [
+        -5.016307450000001,
+        -6.25421495,
+        -7.425629499999999,
+        -8.7657298,
+        -8.698658950000002
+      ],
+      "independent_pairs": 5,
+      "method": "paired process means; Student t, df=4; exploratory"
+    }
+  },
+  "large": {
+    "dram": {
+      "mean_step_ms": 113.33129638,
+      "sd_process_mean_ms": 3.7226550768504114,
+      "mean_wait_ms": 0.0,
+      "mean_moved_MiB": 0.0,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "direct": {
+      "mean_step_ms": 90.45319258,
+      "sd_process_mean_ms": 1.6810043894766842,
+      "mean_wait_ms": 0.0,
+      "mean_moved_MiB": 0.0,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "sync": {
+      "mean_step_ms": 181.64760118,
+      "sd_process_mean_ms": 2.56799067635788,
+      "mean_wait_ms": 85.76253574,
+      "mean_moved_MiB": 134.15625,
+      "mean_late_unpacks": 0,
+      "mean_forward_overlap_ms": 0.0
+    },
+    "async": {
+      "mean_step_ms": 174.09784973,
+      "sd_process_mean_ms": 2.5589080938548032,
+      "mean_wait_ms": 46.19717106,
+      "mean_moved_MiB": 134.15625,
+      "mean_late_unpacks": 1,
+      "mean_forward_overlap_ms": 55.97998532
+    },
+    "paired_direct_minus_async": {
+      "mean_ms": -83.64465715,
+      "ci95_ms": [
+        -86.24031336855502,
+        -81.04900093144498
+      ],
+      "differences_ms": [
+        -83.90984725,
+        -85.9248055,
+        -83.3558446,
+        -84.70516335,
+        -80.32762505
+      ],
+      "independent_pairs": 5,
+      "method": "paired process means; Student t, df=4; exploratory"
+    }
+  }
+}

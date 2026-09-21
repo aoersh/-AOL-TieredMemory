@@ -1,0 +1,18 @@
+{"event": "forward_begin", "monotonic_ns": 260968527422783, "step": 0}
+{"event": "backward_begin", "monotonic_ns": 260968537145604, "step": 0}
+{"event": "backward_end", "monotonic_ns": 260968544265729, "step": 0}
+{"event": "optimizer_begin", "monotonic_ns": 260968544722635, "step": 0}
+{"event": "optimizer_end", "monotonic_ns": 260968545368326, "step": 0}
+{"event": "step_end", "monotonic_ns": 260968545776223, "step": 0, "elapsed_ns": 18354090}
+{"event": "forward_begin", "monotonic_ns": 260968616434927, "step": 1}
+{"event": "backward_begin", "monotonic_ns": 260968621166578, "step": 1}
+{"event": "backward_end", "monotonic_ns": 260968626835770, "step": 1}
+{"event": "optimizer_begin", "monotonic_ns": 260968627296170, "step": 1}
+{"event": "optimizer_end", "monotonic_ns": 260968627880875, "step": 1}
+{"event": "step_end", "monotonic_ns": 260968628262333, "step": 1, "elapsed_ns": 11827013}
+{"event": "forward_begin", "monotonic_ns": 260968685227250, "step": 2}
+{"event": "backward_begin", "monotonic_ns": 260968690864313, "step": 2}
+{"event": "backward_end", "monotonic_ns": 260968695809853, "step": 2}
+{"event": "optimizer_begin", "monotonic_ns": 260968696236384, "step": 2}
+{"event": "optimizer_end", "monotonic_ns": 260968696809774, "step": 2}
+{"event": "step_end", "monotonic_ns": 260968697156405, "step": 2, "elapsed_ns": 11929379}

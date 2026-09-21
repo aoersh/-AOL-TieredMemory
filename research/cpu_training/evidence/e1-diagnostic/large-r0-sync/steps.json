@@ -1,0 +1,53 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "step_ns": 231802108,
+    "forward_ns": 70969739,
+    "backward_ns": 159061104,
+    "loss": 1.3336524963378906,
+    "saved_count": 56,
+    "moved_bytes": 140673024,
+    "wait_ns": 98758709,
+    "late_unpacks": 0,
+    "migration_ns": 98741976,
+    "completed_before_demand": 0,
+    "migrations": 35,
+    "migration_overlap_forward_ns": 0,
+    "selection_sha256": "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5"
+  },
+  {
+    "step": 1,
+    "measured": true,
+    "step_ns": 217925777,
+    "forward_ns": 61350044,
+    "backward_ns": 154949122,
+    "loss": 1.3334217071533203,
+    "saved_count": 56,
+    "moved_bytes": 140673024,
+    "wait_ns": 92736954,
+    "late_unpacks": 0,
+    "migration_ns": 92720892,
+    "completed_before_demand": 0,
+    "migrations": 35,
+    "migration_overlap_forward_ns": 0,
+    "selection_sha256": "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5"
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "step_ns": 219452581,
+    "forward_ns": 62069305,
+    "backward_ns": 155669604,
+    "loss": 1.3331913948059082,
+    "saved_count": 56,
+    "moved_bytes": 140673024,
+    "wait_ns": 94986139,
+    "late_unpacks": 0,
+    "migration_ns": 94969522,
+    "completed_before_demand": 0,
+    "migrations": 35,
+    "migration_overlap_forward_ns": 0,
+    "selection_sha256": "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "case": "mlp",
+    "modes": 6,
+    "max_abs_error": 0.0,
+    "candidate_sets_match": true,
+    "dram": {
+      "candidates": 21,
+      "page_observations": {
+        "residency_initial": 2886,
+        "residency_unpack": 2886
+      },
+      "peak_packed_managed_MiB": 3.7578125,
+      "candidate_fraction_by_saved_bytes": 0.7882642593352482
+    },
+    "cxl": {
+      "candidates": 21,
+      "page_observations": {
+        "residency_initial": 2886,
+        "residency_unpack": 2886
+      },
+      "peak_packed_managed_MiB": 3.7578125,
+      "candidate_fraction_by_saved_bytes": 0.7882642593352482
+    },
+    "prefetch_sync": {
+      "candidates": 21,
+      "page_observations": {
+        "residency_initial": 2886,
+        "residency_unpack": 2886
+      },
+      "peak_packed_managed_MiB": 3.7578125,
+      "candidate_fraction_by_saved_bytes": 0.7882642593352482
+    }
+  },
+  {
+    "case": "transformer-small",
+    "modes": 6,
+    "max_abs_error": 0.0,
+    "candidate_sets_match": true,
+    "dram": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_MiB": 10.7890625,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311
+    },
+    "cxl": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_MiB": 10.7890625,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311
+    },
+    "prefetch_sync": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_MiB": 10.7890625,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311
+    }
+  },
+  {
+    "case": "transformer-large",
+    "modes": 6,
+    "max_abs_error": 0.0,
+    "candidate_sets_match": true,
+    "dram": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 103032,
+        "residency_unpack": 103032
+      },
+      "peak_packed_managed_MiB": 134.15625,
+      "candidate_fraction_by_saved_bytes": 0.6717094422468548
+    },
+    "cxl": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 103032,
+        "residency_unpack": 103032
+      },
+      "peak_packed_managed_MiB": 134.15625,
+      "candidate_fraction_by_saved_bytes": 0.6717094422468548
+    },
+    "prefetch_sync": {
+      "candidates": 105,
+      "page_observations": {
+        "residency_initial": 103032,
+        "residency_unpack": 103032
+      },
+      "peak_packed_managed_MiB": 134.15625,
+      "candidate_fraction_by_saved_bytes": 0.6717094422468548
+    }
+  }
+]

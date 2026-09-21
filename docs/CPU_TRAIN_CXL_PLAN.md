@@ -1,362 +1,357 @@
-# TierTrain 训练语义与 SOAR/ALTO 协同的 CPU 训练 CXL 实验方案
+# 面向 CPU 深度学习训练的收益感知 CXL 访问与选择性预取
 
-日期：2026-09-20，修订版 v2。进度更新：2026-09-21 已完成第一阶段小型 MLP
-的 hooks、DRAM/CXL 放置、同步迁移与数值一致性实验；SOAR/ALTO 协同尚未实现。
-运行方法、结果和本轮兼容调整见 `../research/cpu_training/README.md`。
+版本：v3，2026-09-21。英文暂名：Benefit-Aware CXL Memory Access and
+Selective Prefetching for CPU-based DNN Training。
 
-## 1. 目标与研究边界
+本版依据新的问题定位替代 v2 的三组件强制协同路线。主线改为：先验证
+Direct CXL / Prefetch 的决策空间，再验证 SOAR/ALTO 的 AOL 与 Performance
+Criticality 能否帮助选择，最后实现简单收益策略。ALTO 在线扫描作为后续
+可选集成和对照，不再作为第一阶段完成或研究成立的必要条件。
+本文件是待执行方案，以下拟议实验不代表已经获得结果。
 
-在已经运行 SOAR/ALTO 的真实 DRAM/CXL 服务器上，结合 TierTrain 的
-训练生命周期信息、SOAR 的对象性能评分和 ALTO 的在线扫描控制，研究
-三者如何协同提升容量受限的 CPU 训练效率，而不是另建一个仅以 ALTO
-为外部对照的 tensor 管理系统。
+## 1. 三个问题与研究边界
 
-核心问题：训练语义判断“何时可以迁移”，SOAR 评分帮助判断“哪些数据
-值得占用 DRAM”，ALTO 判断“当前采用多大的自动扫描强度”；协调层在
-预算和期限约束下执行决策，防止主动卸载与自动提升相互抵消。
-“直接访问 CXL 或预取”保留为其中一个动作选择，不再是完整研究主线。
+- Q1：真实 CPU DNN 训练中，不同受管 tensor 是否存在可重复的最优访问路径差异？
+- Q2：AOL / Performance Criticality 是否比访问频率更能解释并预测这种差异？
+- Q3：同样的迁移执行器、预取窗口和 DRAM 预算下，简单收益策略能否减少无效
+  预取并降低端到端训练时间？
 
-第一阶段是问题验证，不以实现一个完整新系统为前提。预计用 7–10 个
-工作日做出继续/调整/停止的决定。只有得到跨工作负载、可重复的证据，
-才进入约 6–8 周的系统与论文阶段；不承诺收益或录用。
+不预设低 AOL、高 AOL、顺序或随机访问应选择哪条路径。不预设混合选择
+一定优于 Always-Prefetch，也不将“迁移有成本”本身作为创新。
 
-研究对象限定为 CPU eager-mode 训练中 autograd 保存供 backward 使用的
-tensors。第一版不管理参数、梯度、优化器状态、数据加载缓存，也不支持
-GPU、分布式训练、torch.compile 或 activation checkpointing。
+首版只管理 CPU eager-mode、FP32 训练中 autograd 保存供 backward 使用的
+连续稠密 tensor 副本，决策单位为 tensor/storage group，执行粒度为 4 KiB 页。
+不同时开展独立逐页预测算法。参数、梯度、优化器状态和输入不属于受管池，
+但需要统计其内存占用。暂不引入 GPU、LLM、分布式、torch.compile、
+checkpointing、复杂 ML 或新内核算法。
 
-## 2. 与 TierTrain、SoarAlto 的关系
+## 2. 已有基础与尚未完成的工作
 
-TierTrain（ISMM 2025，DOI 10.1145/3735950.3735956）通过 hooks、动态队列、
-move_pages、部分迁移及跨轮次反馈，实现及时卸载与预取。不能将这些机制
-重新声明为创新。其真实 CXL 实验报告 DRAM 容量节省并伴随少量时间开销；
-较大的受限容量性能改善来自 Optane 实验，不可混为 CXL 加速证据。
+已完成 SOAR/ALTO 的本机兼容和基础实验；CPU 训练试验见
+[运行说明](../research/cpu_training/README.md) 和
+[已归档证据](../research/cpu_training/evidence/numa-v3/)。
 
-本方案的候选差异是：把训练期限、对象快层收益和运行时扫描开销共同纳入
-迁移决策，并明确主动管理与内核自动迁移的分工。不能把“并行运行三个
-组件”或“在 ALTO 内核上运行训练”当成协同方法的贡献。
-TierTrain 是否存在可用实现，以及其他工作是否覆盖语义/性能联合分层、
-选择性预取和主动/自动迁移协调，
-必须在第 1 周完成检索；若覆盖，重新界定问题，不把应用迁移当作创新。
+小型 MLP 的三步实验已完成 native、observe、clone、受管 DRAM、受管 CXL
+直接访问、需求时同步迁回 DRAM。loss、梯度、更新后参数最大绝对误差均为 0；
+21 次受管 buffer 保存的初始/使用时逐页位置检查通过，图释放后映射释放。
 
-SOAR 和 ALTO 是拟议方法的组成部分。保留原评分、阈值和内核扫描机制
-作为可独立运行的参考版本，新增 tensor 映射与协调适配层。第一轮不直接
-对 PyTorch 启用已有 malloc 拦截器，以免调用点评分与 tensor storage 错配。
-ALTO 分阶段接入：早期隔离它用于测量因果；最终必须实际消费 PMU 并
-控制扫描，且通过消融验证其增量价值，不能只加载补丁而从不使用。
+这些结果仅支持基础正确性：工作集小，带详细查询与日志，原始参数和输入未
+统一绑定，没有测量容量收益，`prefetch_sync` 没有提前量或计算重叠。
+截至最初 MLP pilot，尚未完成异步预取、真实网络性能对比、tensor 级 PMU 关联或收益策略。
+2026-09-21 E0 进展：参数化原型、显式 attention 双层 Transformer 两档规模
+和旧 MLP 回归已完成，六种模式各三步数值误差为 0，页面驻留、释放和
+六项边界测试通过。结果在 `results/cpu-training-e0-validated/`；大配置受管
+对象峰值代理约 134 MiB，超过单插槽 72 MiB LLC。此为新增正确性证据，
+不是性能结果；低开销计时拆分与异步执行器仍未完成。
+随后 E1/E2 已新增独立低开销计时和 eager FIFO 异步执行器，完成 8 次诊断和
+40 次独立进程计时。两档 Direct 都优于当前 async，但发现 FIFO 与反向需求
+顺序倒置；因此尚未形成强预取基线、单对象收益差异或 Q1–Q3 的肯定结论。
+下一步先改进需求顺序调度并解释受管 DRAM/Direct 差异，详见
+[E1/E2 结果与限制](../research/cpu_training/E1_E2_REPORT.md)。
+本轮从扩展该原型开始，不重做已经完成的 SOAR/ALTO 安装，也不将旧步耗时
+用作新方案的性能结论。
 
-### 2.1 最小协同架构
+## 3. 与已有工作的关系
 
-| 模块 | 输入 | 输出/职责 | 复用或新增 |
-| --- | --- | --- | --- |
-| 训练语义层 | saved-tensor hooks、阶段和时间 | storage 生命周期、空闲窗口、预计需求期限 | 借鉴 TierTrain；官方实现或明确标注重实现 |
-| SOAR 适配层 | PEBS 地址、分配生命周期、区间 PMU | tensor/storage 组的评分和预算排序 | 复用评分与时间对齐，新增对象映射 |
-| ALTO 控制器 | 完整 PMU 区间 | 原始建议 pte_scale | 复用 set_scan_scale.py 的 decision |
-| 协调层 | 语义、评分、ALTO 建议、容量、队列状态 | 放置/迁移计划、扫描控制实际动作 | 主要新增机制 |
-| 执行与观测 | 计划和明确的管理权限 | move_pages、策略切换、sysctl 回读、逐页位置 | 复用已有工具并补齐生命周期管理 |
+### SOAR/ALTO
 
-数据流：训练事件与 PMU/PEBS → SOAR 评分＋TierTrain 期限＋ALTO 扫描建议
-→ 预算/迁移协调 → 实际执行 → 页面驻留与训练进度反馈。
+复用 SoarAlto 的性能关键性思想、SOAR 原评分实现和区间 PMU 时间对齐。
+分别报告访问频率、AOL 单指标和原 SOAR 综合评分，不能将三者混称。
+AOL 不是 DRAM 放置收益或迁移收益的时间单位，单独高 AOL 不保证应预取。
+从静态放置收益到“给定窗口和预算下的预取净收益”需要重新验证。
 
-### 2.2 具体代码入口
+先新增 tensor 适配层，不修改原评分或阈值，不直接给 PyTorch 套 malloc
+拦截器并假定分配调用点就是 tensor。若硬件适配需要校准，保留原模型对照，
+仅用训练集校准并披露改动。
 
-- SOAR 原评分：`src/soar/run/proc_obj_e.py`；时间关联：`profile_intervals.py`。
-- 预算参考：`run/placement_policy.py`；原 malloc 拦截实验保持可复跑。
-- ALTO 原决策：`run/bc-urand/set_scan_scale.py::decision`。
-- 内核参考：`src/alto/nbt/nbt-alto-ubuntu-6.8.0-138.patch`。
-- 拟新增独立目录 `research/cpu_training/`，含训练 workload、tensor registry、
-  SOAR adapter、semantic scheduler、coordinator 与结果分析；目前已新增 workload
-  和独立 NUMA buffer 原型，其余模块按后续阶段实现。
+ALTO 的在线 `pte_scale` 控制仍作为参考能力保留。首轮显式访问路径实验
+隔离自动迁移；后续若比较完整 SoarAlto，必须实际运行其评分/放置和 ALTO
+控制，并验证页位置。只使用 ALTO 内核不等于运行 SoarAlto 策略。
+不再为体现关联而强制实现三组件协调系统。
 
-## 3. 待证伪的假设
+### TierTrain 与创新核查
 
-- H1：SOAR 的对象评分适配 tensor 后，能够预测快层放置的相对收益；
-  与实测不相关时，不能把它作为有效决策依据。
-- H2：相同预算下，SOAR 评分结合训练期限，优于只按期限主动迁移或
-  只按评分静态放置；部分候选可能更适合直接访问 CXL。
-- H3：朴素并用主动迁移与 ALTO 会出现反向迁移、扫描浪费或期限冲突；
-  明确管理权限能减少这些开销。
-- H4：协调后的 ALTO 相对“语义＋SOAR”仍有增量价值，例如处理未能
-  预测的活跃数据或降低可自动管理阶段的扫描开销。H4 不成立则不能声称
-  三组件融合优于两组件，需调整协调设计或研究问题。
+TierTrain（ISMM 2025，DOI 10.1145/3735950.3735956）已经覆盖 CPU DNN
+训练的生命周期、主动卸载/预取、部分迁移与反馈，不能把这些重复作为创新。
+其真实 CXL 容量收益与 Optane 容量受限加速要分开引用。
 
-“顺序访问一定适合 CXL”“小 tensor 一定不该迁移”均不作为前提。
-必须区分 compute-bound、延迟敏感、带宽敏感、缓存命中等原因。
+第一周复核论文对迁移收益、stay time、选择性卸载/预取的具体条件，并检索
+后续及其他收益感知方案。“TierTrain 总是无条件预取”不能作为未经核实的前提。
+候选贡献是训练场景下可测量的访问路径差异、关键性特征的预测价值，以及
+同等资源约束下的简单有效策略；是否新颖须以文献和实验为准。
 
-## 4. 固定平台与实验控制
+## 4. 环境与实验控制
 
-主实验固定在一个插槽：CPU 节点 0、DRAM 节点 0、近端 CXL 节点 2。
-先用节点 0 的物理核，明确列出 CPU 列表；避免跨插槽和超线程混用。
-随后用节点 1/3 验证结论是否一致，远端节点留作扩展。
+每批实验保存拓扑与系统状态：
 
-- 内核统一为 6.8.12-138-soaralto，记录 commit/config 和运行参数。
-- 早期显式迁移隔离实验关闭 NUMA balancing；NBT/ALTO 和协同实验按
-  对照矩阵启用模式 2，分别采用固定或在线 pte_scale。demotion 保持关闭。
-  所有系统参数保存原值，用受限 sudo wrapper 恢复；不在线下线主机 DRAM。
-- 只对所管 buffer 使用 MADV_NOHUGEPAGE；首版按 4 KiB 页管理。
-  不需要全局关闭 THP。后续单独验证 THP 的影响。
-- 固定 PyTorch、oneDNN、Python 版本及 OMP/MKL/intra-op/inter-op 线程数；
-  inter-op 初始为 1，intra-op 先 8、16；记录亲和性与频率策略。
-- FP32 为首版；确认 AMX/BF16 路径后单独扩展，禁止混合不同精度比较。
-- 固定输入、权重、随机种子、batch、shape、优化器、loss 和训练步数。
-  输入先驻留内存，排除下载、磁盘 I/O 与 DataLoader 预处理瓶颈。
-- 同一批性能实验串行运行，不与编译、VM 或其他实验共跑。
-- perf 权限仅在需要时临时开放；不能把 perf_event_paranoid=-1 永久保留
-  作为默认要求。常规时间测量与详细 PMU profiling 分开进行。
-  策略必需的在线采样不能在报告开销时移除；额外诊断 profiling 可单独跑。
+```bash
+uname -a
+lscpu
+numactl --hardware
+cxl list -M
+free -h
+cat /proc/sys/kernel/numa_balancing
+cat /proc/sys/kernel/numa_balancing_pte_scale
+cat /proc/sys/kernel/perf_event_paranoid
+cat /sys/kernel/mm/numa/demotion_enabled
+```
 
-### 4.1 主动迁移与 ALTO 的权限协调
+若缺少 cxl-cli 或无权枚举，记录错误，通过 sysfs 的 CXL 设备、region/memdev、
+NUMA 映射交叉确认，不能仅凭 memory-only node 就断言是真实 CXL。
+确认容量、在线状态和逐页驻留后再执行实验。
 
-不能把 ALTO 的全局 pte_scale 当成每个 tensor 的迁移预算，更不能把它
-未经验证地解释为 move_pages 线程数。第一版采用显式状态机：
+当前基准环境为 6.8.12-138-soaralto、PyTorch 2.6.0+cpu、CPU 节点 0、
+DRAM 0 / CXL 2；首先 CPU 0–7，随后同插槽 16 物理核。记录实际 LLC 容量，
+不要把双插槽总缓存当单插槽可用缓存。线程、oneDNN、Python、频率策略、
+精度、种子和优化器固定；BF16/AMX 留作后续独立扩展。
 
-1. `DRAM_PROTECTED`：决定留 DRAM 或预取完成、等待使用；明确放置约束。
-2. `CXL_IDLE_PROTECTED`：语义层确认空闲，暂驻 CXL；防止内核过早提升。
-3. `MIGRATING`：只有一个迁移执行者，记录逐页结果与预算预留。
-4. `ACTIVE_AUTO`：允许 NBT/ALTO 自动扫描的活跃数据；解除保护策略。
-5. `CXL_DIRECT_PROTECTED`：明确决定直接访问 CXL；不得被自动提升抵消。
-6. `RELEASED`：取消待执行请求，等待在途操作安全结束，再释放 buffer。
+正式显式迁移对照优先在维护允许时关闭 NUMA balancing，保存/恢复原值；
+不能修改时，使用相同 MPOL_BIND 保护、相同背景设置并验证驻留，披露限制。
+已有 pilot 使用后者，未改全局设置。仅受管映射 MADV_NOHUGEPAGE；
+不在线下线主机内存，不更改默认启动内核。性能实验串行运行并记录背景负载。
+perf/系统参数确需 sudo 时再使用受限包装，异常也恢复设置。
 
-独立 mmap 的 MPOL_BIND/MPOL_DEFAULT 可作为首版实现候选，但必须先实测：
-保护是否阻止自动提升、是否允许所需显式 move_pages、解除保护后是否重新
-可扫描，以及切换是否生成过多 VMA。不可仅根据绑定策略推断实际页位置。
-若用户态策略不能安全表达分工，再评估地址范围级内核机制；这会增加
-内核重编译和验证工作，不作为第一周必需项。
+## 5. 工作负载：先算子，再真实网络
 
-ACTIVE_AUTO 页面的提升可能绕过用户态预算。受限容量主实验必须在其
-暴露给内核前，为全部潜在 DRAM 页预留配额；未获配额者不能无约束自动
-提升。迁出和释放需查询确认后才归还配额。该保守预留对所有协调消融
-一致；单独报告预留量与实际驻留量，不把保留额度当作已占用内存。
-原版 ALTO 若无相同配额约束，只能作独立参考或给出容量—性能曲线，
-不能声称同预算胜出。
+1. 保留 MLP 作为正确性回归。增加 Linear/GEMM、Conv2d、LayerNorm、GELU、
+   Softmax 的少量 backward 案例，选择其实际保存的 tensor。
+2. 首个网络用小型 Transformer Encoder：固定序列长度、显式 unfused attention，
+   避免不同 shape 悄悄改变融合路径。用真实 forward/backward/optimizer 计算，
+   输入先用固定种子的合成数据，明确不是收敛精度实验。
+3. 第二个网络用小型 CNN，随后扩展 ResNet-18/34；逐项确认非原地激活和 hooks
+   支持范围。BERT 及更大模型仅在上述闭环成立后引入。
 
-## 5. 第一步：内存管理与正确性原型
+首批算子覆盖约 0.5×、2×、8× 单插槽 LLC 的可行工作集；网络先用两档
+batch/sequence shape，使受管工作集从缓存内扩大到明显超过 LLC。
+以实际保存量和峰值测量验收，不预设某个模型天然产生内存压力。
+超过 LLC、受管池 DRAM 预算受限、整个服务器内存不足是不同条件。
+第一阶段不靠耗尽服务器内存制造收益。
 
-使用 torch.autograd.graph.saved_tensors_hooks 观察真实 saved tensors，
-记录 shape、stride、dtype、storage 地址、字节数、保存/使用/释放时间。
-module hooks 仅用于层/阶段标签，不假设 module 输出就是全部 saved tensors。
+## 6. 基线定义：受管池与整进程分开
 
-### 5.1 第一版采用受管缓冲区，不移动任意 PyTorch 堆页
-
-为目标 tensor 创建独立 mmap、页对齐、生命周期明确的 CPU buffer，
-通过小型 C++/Python 扩展暴露给 PyTorch。在 pack 时保存数值副本，
-unpack 返回对应 tensor。buffer 释放与 autograd 所需生命周期绑定。
-
-先只支持 contiguous、dense tensor；排除参数 storage、别名/共享 storage、
-非连续 view、稀疏 tensor 与存在原地更新风险的对象，并报告覆盖率。
-不要通过 rounding-down 地址迁移普通 allocator 页，避免连带移动其他对象。
-对支持范围外的对象保留原行为，不能静默当作已管理对象。
-
-所有策略使用同一受管 buffer 和复制步骤，以隔离管理策略。额外增加：
-原生 PyTorch、仅 hooks、受管 buffer 全 DRAM 三个开销对照。
-复制和元数据开销既要单独报告，也必须计入端到端性能。
-hook 的 pack 时机不必然意味着原对象从此无人访问；副本让首版迁移不影响
-仍被前向计算使用的原 storage，但可能增加峰值，应真实计量。
-
-### 5.2 正确性验收
-
-相同初始状态与输入下对比 loss、每个参数梯度及 optimizer step 后参数，
-检查 NaN/Inf。FP32 初始参考阈值 rtol=1e-4、atol=1e-6，结合原生重复运行
-误差校准；不能为通过测试盲目放宽。验证多步运行及图释放后 buffer 释放。
-
-逐页查询初始/迁移后所在节点。move_pages 必须逐页检查 status，统计实际
-成功页数与 errno；部分失败不能视为成功。失败 tensor 回退并计入报告，
-不能把失败样本无声剔除。验证 pinned/locked 等不可迁移条件时显式标注。
-
-### 5.3 SOAR 样本与 tensor 的关联验证
-
-注册独立 buffer 的地址范围和 alloc/free 单调时钟，按半开生命周期匹配
-PEBS 样本，防止同一地址重用串样。跨迭代标识采用算子/模块路径、保存序号、
-shape、dtype 等组合，不能直接用虚拟地址当持久 ID。记录未匹配、共享或
-不支持对象的样本占比，不强行把它们归给某个 tensor。
-
-使用现有 SOAR 评分公式建立首版适配；进程级 PMU 按原方法关联区间，
-不能称为精确 tensor 级硬件计数。将每个对象的预测排序与单对象 DRAM/CXL
-干预的实测收益比较，报告 Spearman 相关、top-k 选择收益、误判及样本覆盖。
-采样稀疏对象单列，使用透明回退策略。若需 GNR 校准，训练/测试模型或
-shape 分离，保留未校准原模型对照，并披露公式或系数改动。
-
-离线 profiling 与 ALTO 在线计数先分轮次采集，复用上一轮 SOAR 评分；
-只有 PMU 事件不复用/多路复用质量验证通过后才考虑同时采集。把 profiling
-轮次及其开销计入首次运行和多步摊销指标，不能用测试结果预先选对象。
-
-## 6. 第二步：受控算子实验，验证 SOAR 收益评分
-
-先用少量独立 backward 算子，再在网络中选定一个 tensor 干预。候选包括
-Linear/GEMM、Conv2d、LayerNorm、GELU、Softmax，选择其实际保存的输入。
-不是每个算子都必须保留；根据 hooks 记录筛选不同访问行为。
-
-工作集需要包含明显超过共享 LLC 的情况：以实际 lscpu 缓存信息设置
-约 0.5×、2×、8× LLC 的可行大小；先每算子两种 shape，线程数 8/16。
-避免把缓存中的差异解释为 CXL 介质差异；记录首次访问与稳态的区别。
-所有策略前序访问历史一致，不在单个策略额外做 cache flush。
-
-| 策略 | 放置与动作 | 用途 |
+| ID | 策略 | 用途 |
 | --- | --- | --- |
-| D：DRAM resident | 受管 tensor 留 DRAM | 快层性能参考 |
-| C：CXL direct | 卸载后留 CXL，backward 直接访问 | 不预取参考 |
-| P-sync | 同样卸载，使用前同步搬回 DRAM | 量化迁移成本，非最终强基线 |
-| P-async | 同样卸载，在可用计算窗口中异步预取 | 与直接访问公平比较的主要基线 |
+| N0 | 原生训练，整进程匿名分配绑定 DRAM | DRAM-only 性能参考 |
+| N1 | 原生训练，整进程匿名分配绑定 CXL | 整进程 Direct-CXL 参考 |
+| O0/O1 | 仅 hooks / 相同受管副本全部在 DRAM | 分离观察和复制开销 |
+| D | 所有合格受管 tensor 直接在 CXL 使用 | 核心 Direct 对照 |
+| P-sync | 与 D 相同初态，在需求时同步迁回 | 迁移成本诊断，非强预取基线 |
+| P-async | 所有合格受管 tensor 在可用窗口中提前迁回 | 核心 Always-Prefetch 对照 |
+| S | 同一异步执行器中选择性预取 | 后续候选策略 |
 
-P-async 必须显式建模真实 overlap window；第一步可用受控计算负载模拟，
-第二步必须来自真实网络。比较迁移前置时间、并发线程数及迟到情况。
-完整后台迁移耗时不能直接作为端到端开销相加，因其可能与计算重叠。
+N0/N1 用 CPU 同节点绑定及对应 memory policy，查询实际驻留；共享库/文件页
+等例外单列。它们改变的对象比受管策略多，只作整进程参考，不拿 N1 与
+只迁 saved tensors 的 P-async 做唯一因果比较。现有 `dram/cxl` pilot 是
+受管池放置，不能改名为整进程 DRAM-only/CXL-only。
 
-对每个 tensor 定义经验收益：
+D/P-sync/P-async/S 使用同一 workload、相同受管集合、buffer 实现、复制过程、
+非受管内存位置和初始 CXL 驻留。第一版沿用 pack 时直接复制到 CXL；如果
+扩展为 DRAM→CXL 卸载，所有相关策略都采用同样路径，迁出开销计入总时间。
 
-    Delta = T_step(CXL direct) - T_step(async prefetch)
+Always-Prefetch 指所有合格对象都尝试调度，在相同容量/带宽/队列约束下执行，
+不是无限提前把所有数据塞入 DRAM。预算不足时采用固定、公开的需求期限顺序，
+记录排队、迟到、回退；不能故意选择弱触发时机以放大候选策略优势。
 
-Delta > 0 表示预取有收益。算子时间、迁移耗时用于解释 Delta，而非代替
-端到端时间。完整策略开销包括已暴露迁移、计算干扰、hook 和调度开销。
-这一矩阵也提供 SOAR 排名的验证标签；不是用实测最优策略替代 SOAR，
-再将替代后的结果称为 SOAR 的效果。
+## 7. 最小实验实施顺序
 
-## 7. 第三步：真实训练闭环与容量公平性
+### E0：补齐正确性和测量入口
 
-初始使用 ResNet-34 与小型 Transformer encoder（固定长度），各选择
-两档可行 batch/shape。先只干预一个选定 saved tensor/storage group，
-保持其他放置一致，隔离因果；再扩大到符合条件的所有 saved tensors。
-Transformer 后续才引入动态序列长度，不一开始混入动态形状问题。
+扩展已有 `observe_saved_tensors.py` / `numa_buffer.py`，参数化 workload、shape、
+线程和模式；保留旧 pilot 可复跑。验证别名、非连续 view、原地修改、重复 unpack、
+图释放和异步工作者异常。不能支持的对象显式排除并报告覆盖率。
 
-### 7.1 两种目标分开测量
+独立 mmap 必须页对齐，只迁移其自身页面。逐页检查 move_pages 返回状态，
+部分失败计数并使该次结果标记异常；不可默默删除失败样本。数值检查 loss、
+各参数梯度和更新后参数、NaN/Inf，初始阈值 rtol=1e-4、atol=1e-6。
 
-1. 容量充足：判断直接访问和预取的时间成本，报告所有策略的实际快层占用。
-2. 受限容量：限制受管 saved-tensor pool 的 DRAM 驻留量，首轮预算取
-   全 DRAM 参考峰值的 25%、50%、75%；不宣称这等于整个训练进程的 DRAM 上限。
+将“详细驻留/生命周期诊断”与“低开销性能运行”分开。性能运行保留策略必需
+的同步、预算和决策成本，不能把这些成本移出计时；详细诊断作为独立同配置
+验证，另测其开销。记录前向、反向、优化器和完整 step 边界。
 
-参数、梯度、优化器及其他未管理内存分别统计，所有策略采用相同设置。
-内存占用通过受管页查询与进程 NUMA/RSS 共同核实，报告共享页和采样误差。
-若需宣称严格整进程 DRAM 限额，需要额外实现对应容量管理，不能使用
-memory.max 冒充 DRAM 层限制。
+### E1：建立真实异步预取
 
-相同预算下预取必须先为目标页预留容量；不能在迁入期间短暂超额而不计。
-允许计入明确、所有策略相同的 staging 预算，并报告并发复制时源/目标页占用。
+在 tensor 的实际空闲窗口提交后台迁移，在 unpack 前检查完成状态；迁移期间
+持有 buffer 生命周期引用，同一 buffer 只有一个迁移者。需求提前到达则等待
+已有任务结束，记录暴露的等待时间；不得边释放边迁移或重复提交。
 
-### 7.2 比较策略
+第一版一个工作者和明确 CPU 亲和性；所有策略保留同样计算核资源。验证
+后台 move_pages 确实与计算重叠，而不是只创建线程却仍串行执行。
+根据前几轮观察得到下一轮触发点，探索/预热开销记账，不使用未来真实需求
+构建可部署策略。算子诊断可以扫描受控 overlap window；主结论必须来自网络
+自身计算窗口。不得插入额外 sleep 或只给预取模式增加计算来制造隐藏机会。
 
-| ID | 方案 | 要验证的问题 |
+### E2：单对象干预，寻找决策空间
+
+先在每个算子两档 shape、8 核下比较 D/P-sync/P-async 和 DRAM 参考；
+再在 Transformer/CNN 中按层、大小和算子族预先选定对象组，逐一只改变
+一个对象的访问路径，其他放置保持不变。同种 tensor 可以在不同预算或
+窗口下最优动作不同，因此记录完整上下文，不能把动作当对象永久属性。
+
+只有真实网络中出现可重复差异后才扩展 16 核、更多 shape 和全受管集合。
+单对象收益不可直接相加，全策略执行时要重新测共享带宽、缓存和队列交互。
+
+### E3：Hotness、AOL 与实测收益
+
+PEBS 按地址范围和实际 buffer 存活的半开时间区间匹配，防止 allocator 地址
+重用串样。跨迭代 ID 使用算子/模块路径、保存序号、shape、dtype 和代际，
+不以裸地址作持久标识。Packed 释放不一定等于底层 storage 最后使用，
+注册表必须跟踪真实 buffer 生命周期。
+
+先取得 D 路径下可用特征，分别比较 hotness、AOL、原 SOAR score、大小/窗口
+简单参考模型。不能把“高频+高 AOL”等标签手工赋给 tensor。顺序/随机模式
+只在可证明的算子或受控微基准中标注；pointer chasing 是环境诊断，不冒充
+典型 DNN tensor。报告每个特征的估计口径、样本量和未覆盖对象。
+
+### E4：最小收益策略
+
+只有 E2 支持决策空间、E3 证明可用特征后实现简单阈值/标定模型。
+容量可行性先作为硬约束，窗口/队列决定预取能否及时完成；在可行对象中
+按预测净收益或收益/占用量选择。不足以判断的对象采用固定公开回退。
+分别消融 hotness-only、size/window-only、AOL-only、SOAR score，以及加/去
+迁移成本；证明 AOL 的增量价值，不能只与总是预取比较。
+ML 留待简单策略有收益后再考虑，若使用优先直接预测预取净收益。
+
+## 8. 收益定义与量纲
+
+主要标签是在相同控制条件下的配对端到端时间差：
+
+    Delta_i = T_step(Direct for i) - T_step(Async-prefetch for i)
+
+正值表示预取有利，负值表示直接访问有利。单 tensor 干预时其余策略一致；
+全策略比较直接使用整个运行/step 的时间差，不相加各对象的 Delta。
+
+同步诊断可近似写为：
+
+    T_sync = T_migration_exposed + T_DRAM_compute + T_management
+
+异步情况必须考虑重叠与干扰，一个仅供标定的近似模型为：
+
+    NetBenefit_hat = SavedComputeTime_hat
+                     - ExposedMigrationTime_hat
+                     - InterferenceTime_hat - ManagementTime_hat
+    ExposedMigrationTime_hat ≈ max(0, QueueDelay_hat + MigrationTime_hat - Window_hat)
+
+该近似不替代实测；迁移与计算争带宽时各项并不独立。若实测 T_prefetch 已是
+端到端时间，就不能再减一次完整迁移成本。迁移时长、等待时长和阶段时长
+分别记录，后台全部迁移时长不能直接与计算时长相加。
+
+原始 AOL/SOAR score 不以秒计，不能直接减迁移秒数或 DRAM 字节数。若建立
+时间收益模型，用独立校准数据拟合并报告误差；DRAM 压力先用预算硬约束，
+只有明确转换/归一化后才作为额外代价项。
+
+## 9. 容量与资源公平性
+
+先做容量充足实验确认机制，再限制受管池 DRAM 峰值：全 DRAM 受管参考峰值
+的 25%、50%、75%。以固定对象集合计算参考，不在不同策略下重新定义预算。
+不将该预算称为整进程 DRAM 限额；memory.max 也不是 DRAM 层容量限制。
+
+预取提交前为全部目标页预留快层额度，记录预留和实际驻留，释放/迁出确认后
+归还。临时目标复制、迁移 staging 和原副本的同时占用必须计入测量或采用
+所有策略一致的明确额外额度。报告受管峰值/平均驻留、byte-seconds、
+进程 RSS/NUMA 占用和非受管内存。不能仅靠减少 prefetch 次数宣称节省容量。
+
+## 10. 指标与测量可得性
+
+| 指标 | 首版来源与限制 |
+| --- | --- |
+| Step time、throughput、总耗时 | 单调时钟；固定样本或 token 数，含策略在线成本 |
+| Epoch time | 仅在定义了真实 epoch/数据集时报告，不把合成 steps 改称 epoch |
+| Tensor 保存/需求间隔、大小、生命周期 | hooks + registry；unpack 不等于最终使用结束 |
+| Hotness | PEBS 事件限定的访问采样率/密度；不是精确全部读写次数，也不是 unpack 次数 |
+| AOL / SOAR score | 复用原事件定义与评分；记录公式、事件配置、区间和覆盖 |
+| LLC miss、MPKI、memory stall、MLP 代理 | perf/GNR 支持事件；进程/区间计数不能冒充 tensor 精确计数 |
+| Read/write、顺序性、reuse distance | 仅可观测范围；load-only PEBS 不提供写流量，稀疏采样不提供精确 reuse distance |
+| 迁移请求、成功/失败页数、方向字节数 | 执行器日志 + move_pages 逐页状态；请求字节不等于成功迁移字节 |
+| CXL/DRAM 流量、带宽 | 可用的 CXL/uncore PMU；共享设备计数需记录背景，不能直接归因某 tensor |
+| 预取提前量、迟到率、暴露等待 | submit/done/unpack 时间与完成状态 |
+| DRAM 占用、eviction、pressure | 受管账本和页查询、进程 NUMA/RSS；实际使用过才报告 eviction |
+| 决策质量 | 测试集 Direct/Prefetch precision/recall、无差异比例、误判时间损失/regret |
+
+硬件事件不可用时标 N/A 并继续计时/迁移实验，不用迁移字节冒充总 CXL 流量。
+PMU 事件先检查 GNR 支持、time-enabled/running、复用、丢样、权限和时钟对齐。
+对稀疏样本不强行评分；同时报告按对象数和字节数的覆盖率。
+详细 profiling 与常规计时分轮进行，部署时必需的采样成本必须计入策略结果。
+
+## 11. 重复、判断标准与图表
+
+每配置先小规模 pilot，再至少 5 个独立进程重复，各 5 个预热、20 个计时 step
+作为起点；未稳定就延长并记录。策略成对轮换/随机顺序，共用种子与初始化。
+同一进程里的 steps 不是独立样本，按独立运行计算配对差值和 95% 置信区间。
+
+先测同配置重复噪声，固定实用差异门槛（初始 3% 与噪声门槛取较大者，
+只在探索阶段校准，测试前冻结）。区间跨 0 或差异不足门槛的对象列为“不确定/
+近似持平”，不能强行分成赢家。多对象探索发现需在独立重复中确认。
+
+特征相关性用 Spearman 及区间；同时控制 size、算子、窗口等混杂因素，
+检查增量预测价值。训练/校准和测试按模型或 shape 分组，不能随机拆分同一
+对象相邻迭代泄漏信息。事后最佳选择只作探索参考，不称为可部署 oracle，
+更不能在存在交互时称严格性能上界。
+
+计划图表：对象/场景的 Delta 热图及区间；窗口—大小—收益图；hotness/AOL/
+SOAR score 与收益散点；各策略 step time 与 DRAM 占用折中；迁移与总流量；
+决策混淆矩阵和误判时间损失。正负结果、失败和退化全部保留。
+
+## 12. 最终对照与可选 ALTO 扩展
+
+核心对照为 N0/N1、受管 D、强 P-async、收益策略 S；P-sync 只作诊断。
+随后增加 TierTrain、SOAR tensor 适配、完整 SoarAlto 兼容版本及特征消融。
+不同管理范围或容量控制的系统单列，不做虚假的同预算排名。
+
+TierTrain 优先官方可运行实现；不可得时明确标为重实现，并对齐 ST、队列、
+部分迁移和反馈。仅提前一层的实现只能称简化语义预取，不能冠以 TierTrain。
+
+若后续加入 ALTO，先验证保护/解除后可扫描性，防止内核提升抵消 Direct 决策。
+扫描开放前为潜在提升预留容量；原始建议和实际 pte_scale 都记录。固定扫描与
+动态 ALTO 使用同样预算和主动执行器，单独验证 ALTO 增量；无增量也不否定
+已经独立验证的选择性预取问题，但不能宣称三组件融合有效。
+
+## 13. 交付文件与代码入口
+
+新增研究代码保持在 `research/cpu_training/`，保留原有核心和旧实验入口。
+现有：`observe_saved_tensors.py`、`numa_buffer.py`；拟逐步拆分 registry、
+workloads、prefetch executor、policy、runner 和 analysis，不预先搭建大框架。
+
+复用：`src/soar/run/proc_obj_e.py`、`profile_intervals.py`、
+`run/placement_policy.py`、`configs/gnr-events.json`；可选 ALTO 入口：
+`run/bc-urand/set_scan_scale.py::decision`。
+
+每次使用新结果目录，保存源码 hash/快照、manifest、依赖、拓扑、线程、预算、
+种子、workload、完整 stdout/stderr、correctness、step-times、tensor-events、
+migration、residency、budget、sample-coverage、features、scores、decisions
+及原始 perf 日志。记录首次 profiling/校准成本和长期摊销成本。
+
+## 14. 分阶段排期与继续/停止条件
+
+| 阶段 | 建议时间 | 验收和决策 |
 | --- | --- | --- |
-| R0 | 原生 PyTorch、仅 hooks、受管全 DRAM | 分离适配开销与性能参考 |
-| R1 | 受管 CXL direct | 全慢层参考 |
-| B1 | NBT 模式 2，scale=16 | 自动迁移基线 |
-| B2 | ALTO 原阈值在线扫描 | 动态扫描相对固定扫描的价值 |
-| B3 | SOAR tensor 适配评分＋静态放置 | 单独对象评分价值 |
-| B4 | SOAR 适配＋ALTO，无训练语义调度 | SoarAlto 两组件训练适配参考 |
-| B5 | TierTrain 语义/期限调度 | 直接训练相关基线 |
-| A1 | 语义＋SOAR，自动扫描关闭 | 性能评分相对只看期限的价值 |
-| A2 | 语义＋SOAR＋ALTO，朴素并用 | 观测主动/自动迁移冲突 |
-| A3 | 语义＋SOAR＋权限协调，scale 固定16 | 隔离协调机制贡献 |
-| A4 | 语义＋SOAR＋权限协调＋ALTO 在线控制 | 完整候选方法 |
+| Phase 1 基础 | 已有基础，首日复核 | SOAR/ALTO 与真实 CXL 环境、旧 MLP 正确性 |
+| Phase 2 访问路径 | 第 1–3 天 | E0/E1：参数化、首个网络、真实异步预取、驻留与正确性 |
+| Phase 3 机制测量 | 第 4–5 天 | E2：D/P-sync/P-async 成对结果；trace/PMU 可用性 |
+| Phase 4 问题判断 | 第 6–10 天 | 网络单对象差异、独立确认、初步 E3 与文献核查 |
+| Phase 5 最小策略 | 第 3–4 周，仅前关通过 | E4：相同资源下的启发式、开销和消融 |
+| Phase 6 系统比较 | 第 5–6 周 | 扩展网络/shape、TierTrain/SoarAlto、失败案例 |
+| Phase 7 后续取舍 | 第 7–8 周 | 整理证据，判断是否值得 ML/扩展/论文；不承诺发表 |
 
-A3 与 A4 使用完全相同的状态机、预算和主动迁移器，只改变扫描决策，
-用于证明 ALTO 的真实增量贡献。A2 如不能保证预算，仅在容量充足时
-诊断冲突，不放入同预算性能排名。B1/B2 同样遵循第 4.1 节限制。
-所有主要配对复用受管 buffer、复制路径、执行器和初始状态，避免 allocator
-差异污染归因。另运行原版 SOAR/ALTO 能兼容的路径，清楚区分原版与适配版。
+第一批直接任务：参数化既有原型 → 小 Transformer 正确性 → 相同受管集合的
+D/P-sync/P-async → 两档 shape、独立重复 → Q1 判断。
+PMU 采样可用性尽早探测，但 Q1 不依赖先做完整 AOL 模型。
 
-B5 优先官方 TierTrain；拿不到代码时按论文公式实现，包括 ST、队列忙时、
-部分迁移及反馈，并明确标注重实现。只实现提前一层或固定 deadline 的
-简化版不能当作 TierTrain 的完整替代。独立探索样本构造的 oracle 只能
-作理想化参考，不能称为严格上界，也不替代上述可部署方案。
+继续条件是：真实网络存在超出噪声的两类最优动作，或资源/窗口变化产生稳定
+动作边界；区别能影响整步时间或时间—容量折中，且不是只有同步迁移劣化。
+AOL 是否有效作为独立问题判断，不能以结果好看为由省略对照。
 
-## 8. 指标、重复与数据记录
+失败分支：
 
-主要指标：稳态 step time、samples/s 或 tokens/s、平均/峰值 DRAM 驻留。
-辅助指标：forward/backward/optimizer 时间、迁移量、迁移时延、预取迟到率、
-CPU 时间、PMU 停顿与 LLC miss、可用时的 CXL PMU 流量、控制器开销。
-协同指标：SOAR 评分覆盖/排序质量、主动迁出后过早自动迁回的页数与字节、
-重复迁移次数、主动/自动各自迁移量（无法归因时标注未知）、NUMA hint
-faults、PTE 更新、ALTO 原始建议与实际回读 scale、期限冲突、预算超额。
-全局 vmstat 不能独立证明某个 tensor 的自动迁移；必要时增补进程范围
-trace/perf 证据，采样缺失必须披露。
+- 所有可行场景 Always-Prefetch 最好：记录范围，停止宣称选择空间；只在有
+  现实依据时扩展预算/窗口，不能无限调参寻找负例。
+- 所有对象 Direct 最好：先排除预取实现差、窗口错误；若仍成立，当前选择策略
+  无明显必要，可研究迁移成本边界，但不能虚构混合策略贡献。
+- 只有算子差异、没有网络收益：检查执行开销/缓存效应，先不扩展完整系统。
+- AOL 不优于 hotness 或 size/window：保留负结论，不能再声称 AOL 是有效核心；
+  Q1 仍可能成立，可评估更简单模型并明确研究定位变化。
+- 选择策略减少迁移却不降低训练时间：仅报告流量/容量折中，不能声称加速。
+- 同预算不公平、NUMA 位置不符、正确性不通过：暂停性能结论，先修执行与测量。
+- 文献已覆盖主要选择机制：重新界定差异与证据，不能将应用迁移包装为创新。
 
-关键时间点使用 monotonic clock，记录 pack、evict submit/done、prefetch
-submit/done、unpack、backward 完成及释放。unpack 只是需求出现的代理事件，
-不能直接等同于最后一次访问或计算结束。处理同 tensor 多次 unpack。
-
-至少 5 个独立进程运行，每次先 5 个预热 step，再 20 个测量 step；若预热
-未稳定则延长并记录。开销较大时先 pilot 再决定最终步数，不把同进程所有
-steps 视为独立样本。策略执行顺序随机化或成对轮换，共享种子和初始化。
-报告独立运行均值、离散程度、95% 区间、全部失败/退化情形。
-
-保存：manifest.json（源码、版本、拓扑、配置、种子、线程、预算）、
-step-times.csv、tensor-events.jsonl、migration.csv、residency.csv、
-correctness.json、原始 perf 与 stdout/stderr、结果图。每次使用新目录。
-另保存 soar-scores.csv、sample-coverage.json、controller.jsonl、
-ownership-events.jsonl、budget.csv 和原始/协调后动作，以支持贡献归因。
-禁止只保留最好的一次结果。
-
-## 9. 第一版协同决策，不先引入复杂 ML
-
-1. 语义层预测候选对象的空闲窗口和下一次使用期限，以实测速率检验
-   迁出/预取是否可行，沿用 TierTrain 的基本约束。
-2. 在可行候选中用经过验证的 SOAR 相对评分与字节预算排序。原始 score
-   不直接解释为秒，不能与迁移秒数相减；若需要净收益数值，单独标定
-   score 到实际时间收益的模型并报告误差。最低版本只用相对排序。
-3. 协调层选择留 DRAM、暂驻 CXL 后预取、直接 CXL 或有配额的 ACTIVE_AUTO，
-   记录理由；同一 buffer 同时只有一个主动执行者，保护期不允许自动提升。
-4. ALTO 在在线阶段继续按真实 PMU 输出扫描比例，只影响允许扫描的页。
-   首版不改原阈值；若全局建议与 deadline 冲突，优先由显式主动迁移满足
-   期限，不把提高 scale 等同于保证预取完成。
-5. 更新下一轮语义时间、SOAR 分组统计及迁移速率；初版固定更新频率，
-   数据不足时回退到明确的基线。记录任何偏离原算法的适配。
-
-容量竞争阶段可用收益/DRAM 字节及截止时间作简单排序，必须评估共享带宽
-与 tensor 交互，不能假定单 tensor 收益可线性相加。训练/调参和测试
-shape/模型分离，探索成本计入 amortized 时间。部分迁移留作后续消融，
-不以 TierTrain 已有机制为新贡献。
-
-## 10. 排期和决策门槛
-
-| 阶段 | 时间 | 交付/验收 |
-| --- | --- | --- |
-| 文献与环境 | 第 1 天 | 三组件相关工作、框架环境、可复用代码清单 |
-| 正确性与映射 | 第 2–3 天 | tensor 注册/生命周期、PEBS 匹配、迁移正确性 |
-| SOAR 有效性 | 第 4–5 天 | 算子访问路径矩阵、评分与实测收益关联 |
-| 语义＋评分 | 第 6–8 天 | B3/B5/A1 小规模配对实验与容量记录 |
-| ALTO 协调 pilot | 第 9–10 天 | 保护/解除验证、A2/A3/A4 最小运行和继续决策 |
-
-前两周只做小规模兼容性和问题验证，不承诺完成全部矩阵；阶段交付达不到
-正确性与观测标准时停止扩展，避免带着错误推进性能实验。
-
-继续投入需要同时看到：
-
-- 正确性、真实放置和迁移证据可靠；
-- SOAR 评分对训练对象有可验证的区分能力，语义＋评分相对单独组件有
-  稳定收益；不能只依赖手工标签替代评分；
-- 主动/自动迁移的交互得到直接观测，协调减少冲突，且 ALTO 在完整系统
-  中真实执行并有可分离价值。若所有页一直被保护、ALTO 无页可扫描，则
-  不能声称三者协同成功；
-- 优势可以在真实网络中影响 step time 或改善时间—DRAM 占用折中，
-  不是只有孤立算子收益；
-- 候选方法扣除 hooks、复制、观测和调度成本后仍有价值。
-
-可将多个场景约 5% 以上的稳定初步差异视为进入下一阶段的内部信号，
-10% 以上端到端收益视为值得追求的目标；它们不是发表门槛或保证。
-若只胜过同步预取、只来自预算不公平、或测量开销掩盖收益，应停止宣称
-方法有效。若 SOAR 排名失效，先评估可解释的 GNR/训练适配，保留原模型
-对照；若 ALTO 无增益，检查可扫描集合与阶段尺度。仍无互补性则向用户
-报告该融合假设不成立，重新讨论方向，不悄悄退回独立预取系统。
-
-## 11. 后续 6–8 周及研究风险
-
-通过第一阶段后，第 3–4 周完成语义/评分适配、预算、权限状态机与 ALTO
-在线闭环，跑完核心消融；第 5–6 周扩展模型、
-shape、CPU 线程、BF16、第二插槽及与官方/明确标注重实现的相关工作比较；
-第 7–8 周完成消融、鲁棒性、失败案例及稿件。明确报告 CXL 硬件单一性。
-
-主要风险：
-
-- 更快 CPU/AMX 缩短 idle window，CPU 训练可能主要 compute-bound。
-- move_pages、缓存扰动与 TLB shootdown 比预期更贵，预取收益难以泛化。
-- PyTorch hooks 的复制与别名处理成为主开销；需要缩小支持范围或优化
-  allocator/storage 集成，但不能用不安全迁移换取好看的数字。
-- 先验 profiling、deadline 调度和预算实现复杂，可能超过两个月。
-- SOAR 采样无法稳定映射 tensor 或跨硬件评分失效；全局 ALTO 控制粒度
-  与短训练阶段不匹配。两个问题都需要实验，不保证三组件能带来互补收益。
-- 保护策略虽减少冲突，却让 ALTO 没有作用对象；或其解除后预算失控。
-  这是必须证明解决的设计问题，不能用“已加载 ALTO 内核”回避。
-- TierTrain/其他工作已经覆盖收益选择：文献检索失败即重新立题。
-
-本文仅确定实验方案。实施从独立训练环境与正确性原型开始，保留已验证
-的 SoarAlto 原版路径，通过独立适配层逐步结合；不更新默认启动内核，
-不在线下线主机内存。内核新增机制仅在用户态方案验证不足后另行评估。
+当前目标是完成 Q1–Q3 的可信验证。只有通过这些检查，才投入更复杂预测、
+页面级细化、在线 ALTO 联动或论文系统化工作。

@@ -2,20 +2,30 @@
 
 Based on **Tiered Memory Management Beyond Hotness (SOAR/ALTO)**.
 
-## Research fork: CPU training on CXL
+## Research fork: benefit-aware CXL access for CPU DNN training
 
 This fork preserves the upstream SOAR/ALTO implementation and adds server
 compatibility fixes, reproduction scripts, and an initial CPU-training pilot.
 Upstream: https://github.com/MoatLab/SoarAlto (MIT; original attribution below).
 
+The current v3 research plan first tests whether Direct CXL Access and asynchronous
+Prefetch to DRAM have different winners across training tensors and contexts.
+It then evaluates hotness, AOL and SOAR performance criticality as predictors,
+before building a simple selective-prefetch policy. Online ALTO integration is
+an optional later comparison, not a prerequisite for the initial experiments.
+
 - [Build and reproduction guide](REPRODUCTION.md)
 - [CPU training research plan](docs/CPU_TRAIN_CXL_PLAN.md)
 - [Training pilot commands and results](research/cpu_training/README.md)
-- [Archived pilot evidence](research/cpu_training/evidence/numa-v3/)
+- [Archived experiment evidence](research/cpu_training/evidence/README.md)
 
 The training pilot validates numerical correctness and explicit DRAM/CXL
-placement/migration. Training SOAR scoring and online ALTO coordination are
-not yet implemented; no training speedup is claimed. Downloaded dependencies,
+placement/migration of managed saved-tensor copies. A simple eager FIFO async
+executor and initial timing matrix now run, but expose a demand-order scheduling
+problem; see the [E1/E2 report](research/cpu_training/E1_E2_REPORT.md).
+Training SOAR scoring and the benefit-aware policy remain unimplemented;
+the current async pilot is not an optimized Always-Prefetch baseline and does not
+establish a selective-prefetch benefit. Downloaded dependencies,
 kernel/driver build trees, and bulk experiment results are excluded from Git.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

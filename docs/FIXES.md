@@ -1,5 +1,11 @@
 # Repair log: 2026-09-18
 
+This document records the original SOAR/ALTO reproduction fixes and their dated
+evidence. For the current CPU-training research priorities, use the
+[v3 experiment plan](CPU_TRAIN_CXL_PLAN.md): Direct CXL versus asynchronous
+prefetch, followed by criticality validation and benefit-aware selection.
+The remaining baseline issues below are not all prerequisites for that pilot.
+
 ## Priority 0: trustworthy measurements and allocator correctness
 
 ### Clock alignment and interval accounting: fixed

@@ -1,0 +1,1 @@
+{"mode": "async", "diagnostic": false, "mean_step_ms": 172.10206635000003, "output": "results/cpu-training-e2-timing/large-r0-async"}

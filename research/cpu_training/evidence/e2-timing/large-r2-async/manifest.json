@@ -1,0 +1,42 @@
+{
+  "configuration": {
+    "output": "results/cpu-training-e2-timing/large-r2-async",
+    "mode": "async",
+    "diagnostic": false,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 20,
+    "warmup": 5,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "2e29587d610a45a39c01dfad3f7a70ef5551517a8a98034a229202f42800be09",
+    "access_paths.py": "5933de41e0fbaaebe0443c1348d226db09db62f98c1e01ae95dbb7fe36aa27cf",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "f6c7590ee5eabf1e75b1934f9cd7c33ed9eacb32f0072034d924ccd33538c5e3",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "eager prefetch immediately after pack; ample capacity; MPOL_BIND",
+  "timing": "step includes hooks, copies, migration/wait, optimizer and drain; logging outside",
+  "limitation": "No DRAM cap; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "4"
+}

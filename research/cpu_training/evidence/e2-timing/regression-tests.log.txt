@@ -1,0 +1,34 @@
+test_inflight_task_owns_buffer_until_done (__main__.AsyncTests) ... ok
+test_repeated_unpack_and_release (__main__.AsyncTests) ... ok
+test_worker_failure_reaches_demand (__main__.AsyncTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.073s
+
+OK
+test_address_reuse_is_not_storage_identity (__main__.Boundaries) ... ok
+test_live_source_inplace_rejected (__main__.Boundaries) ... ok
+test_migration_failure_propagates (__main__.Boundaries) ... ok
+test_multiple_unpack_migrates_once_and_releases (__main__.Boundaries) ... ok
+test_repeated_autograd_unpack_gradient (__main__.Boundaries) ... ok
+test_views_and_repeated_storage (__main__.Boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.140s
+
+OK
+test_profile_and_concurrent_budgeted_realloc (test_allocator.AllocatorTests) ... ok
+test_online_restores_original_on_process_exit (test_alto.AltoTests) ... {"time": 0.5, "aol": 30.0, "load_latency": 200.0, "pte_scale": 0, "mode": "online"}
+ok
+test_original_thresholds_and_invalid_data (test_alto.AltoTests) ... ok
+test_partial_interval_is_not_applied_or_repeated (test_alto.AltoTests) ... ok
+test_concurrent_allocations_budgeted_by_bytes (test_analysis.ProfileTests) ... ok
+test_half_open_boundaries_and_short_lifetimes (test_analysis.ProfileTests) ... ok
+test_missing_origin_is_rejected (test_analysis.ProfileTests) ... ok
+test_real_intervals_and_quality (test_analysis.ProfileTests) ... ok
+test_install_order_and_hash_guard (test_host_install.HostInstallTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.165s
+
+OK

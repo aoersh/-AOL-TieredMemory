@@ -6,6 +6,16 @@
 (_/            (_/               
 ```
 
+## Current research entry points
+
+The commands below describe the upstream SOAR/ALTO experiments. For the local
+server baseline use [REPRODUCTION.md](../REPRODUCTION.md). For CPU training use
+the [v3 experiment plan](../docs/CPU_TRAIN_CXL_PLAN.md) and
+[training pilot instructions](../research/cpu_training/README.md).
+The current research first compares Direct CXL with asynchronous prefetch;
+online ALTO integration is a later optional comparison. Upstream GRUB capacity
+settings below are not required by the initial managed-tensor-budget experiments.
+
 ## Usage
 * Run `setup.sh` at the beginning.
 ```

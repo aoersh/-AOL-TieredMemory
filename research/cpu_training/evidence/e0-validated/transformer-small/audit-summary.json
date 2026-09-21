@@ -1,0 +1,158 @@
+{
+  "workload": "transformer",
+  "configuration": {
+    "output": "results/cpu-training-e0-validated/transformer-small",
+    "numa": true,
+    "workload": "transformer",
+    "batch": 4,
+    "sequence": 128,
+    "width": 128,
+    "heads": 4,
+    "layers": 2,
+    "steps": 3,
+    "threads": 8,
+    "cpus": "0,1,2,3,4,5,6,7",
+    "fast_node": 0,
+    "slow_node": 2,
+    "modes": null
+  },
+  "candidate_sets_match": true,
+  "modes": {
+    "observe": {
+      "max_abs_error": 0.0,
+      "saved_counts": {
+        "parameter": 57,
+        "candidate": 105,
+        "repeated_storage": 6
+      },
+      "candidate_logical_bytes_total": 33878016,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311,
+      "residency_page_observations": {},
+      "peak_packed_managed_bytes": 0,
+      "peak_definition": "4KiB-rounded buffers from initial check to Packed release; not total RSS",
+      "event_counts": {
+        "forward_begin": 3,
+        "pack": 168,
+        "backward_begin": 3,
+        "unpack": 168,
+        "release": 168,
+        "backward_end": 3,
+        "optimizer_begin": 3,
+        "optimizer_end": 3,
+        "step_end": 3
+      }
+    },
+    "clone": {
+      "max_abs_error": 0.0,
+      "saved_counts": {
+        "parameter": 57,
+        "candidate": 105,
+        "repeated_storage": 6
+      },
+      "candidate_logical_bytes_total": 33878016,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311,
+      "residency_page_observations": {},
+      "peak_packed_managed_bytes": 0,
+      "peak_definition": "4KiB-rounded buffers from initial check to Packed release; not total RSS",
+      "event_counts": {
+        "forward_begin": 3,
+        "pack": 168,
+        "backward_begin": 3,
+        "unpack": 168,
+        "release": 168,
+        "backward_end": 3,
+        "optimizer_begin": 3,
+        "optimizer_end": 3,
+        "step_end": 3
+      }
+    },
+    "dram": {
+      "max_abs_error": 0.0,
+      "saved_counts": {
+        "parameter": 57,
+        "candidate": 105,
+        "repeated_storage": 6
+      },
+      "candidate_logical_bytes_total": 33878016,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311,
+      "residency_page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_bytes": 11313152,
+      "peak_definition": "4KiB-rounded buffers from initial check to Packed release; not total RSS",
+      "event_counts": {
+        "forward_begin": 3,
+        "pack": 168,
+        "residency_initial": 105,
+        "backward_begin": 3,
+        "residency_unpack": 105,
+        "unpack": 168,
+        "release": 168,
+        "backward_end": 3,
+        "optimizer_begin": 3,
+        "optimizer_end": 3,
+        "step_end": 3
+      }
+    },
+    "cxl": {
+      "max_abs_error": 0.0,
+      "saved_counts": {
+        "parameter": 57,
+        "candidate": 105,
+        "repeated_storage": 6
+      },
+      "candidate_logical_bytes_total": 33878016,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311,
+      "residency_page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_bytes": 11313152,
+      "peak_definition": "4KiB-rounded buffers from initial check to Packed release; not total RSS",
+      "event_counts": {
+        "forward_begin": 3,
+        "pack": 168,
+        "residency_initial": 105,
+        "backward_begin": 3,
+        "residency_unpack": 105,
+        "unpack": 168,
+        "release": 168,
+        "backward_end": 3,
+        "optimizer_begin": 3,
+        "optimizer_end": 3,
+        "step_end": 3
+      }
+    },
+    "prefetch_sync": {
+      "max_abs_error": 0.0,
+      "saved_counts": {
+        "parameter": 57,
+        "candidate": 105,
+        "repeated_storage": 6
+      },
+      "candidate_logical_bytes_total": 33878016,
+      "candidate_fraction_by_saved_bytes": 0.7511749880798311,
+      "residency_page_observations": {
+        "residency_initial": 8286,
+        "residency_unpack": 8286
+      },
+      "peak_packed_managed_bytes": 11313152,
+      "peak_definition": "4KiB-rounded buffers from initial check to Packed release; not total RSS",
+      "event_counts": {
+        "forward_begin": 3,
+        "pack": 168,
+        "residency_initial": 105,
+        "backward_begin": 3,
+        "residency_unpack": 105,
+        "unpack": 168,
+        "release": 168,
+        "backward_end": 3,
+        "optimizer_begin": 3,
+        "optimizer_end": 3,
+        "step_end": 3
+      }
+    }
+  },
+  "note": "Correctness audit only; cumulative bytes/pages are not unique or peak physical memory."
+}

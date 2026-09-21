@@ -1,0 +1,112 @@
+{
+  "native": {
+    "pack_counts": {},
+    "logical_saved_bytes": {},
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    }
+  },
+  "observe": {
+    "pack_counts": {
+      "parameter": 57,
+      "candidate": 105,
+      "repeated_storage": 6
+    },
+    "logical_saved_bytes": {
+      "parameter": 4930560,
+      "candidate": 422019072,
+      "repeated_storage": 201326592
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "clone": {
+    "pack_counts": {
+      "parameter": 57,
+      "candidate": 105,
+      "repeated_storage": 6
+    },
+    "logical_saved_bytes": {
+      "parameter": 4930560,
+      "candidate": 422019072,
+      "repeated_storage": 201326592
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "dram": {
+    "pack_counts": {
+      "parameter": 57,
+      "candidate": 105,
+      "repeated_storage": 6
+    },
+    "logical_saved_bytes": {
+      "parameter": 4930560,
+      "candidate": 422019072,
+      "repeated_storage": 201326592
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "cxl": {
+    "pack_counts": {
+      "parameter": 57,
+      "candidate": 105,
+      "repeated_storage": 6
+    },
+    "logical_saved_bytes": {
+      "parameter": 4930560,
+      "candidate": 422019072,
+      "repeated_storage": 201326592
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "prefetch_sync": {
+    "pack_counts": {
+      "parameter": 57,
+      "candidate": 105,
+      "repeated_storage": 6
+    },
+    "logical_saved_bytes": {
+      "parameter": 4930560,
+      "candidate": 422019072,
+      "repeated_storage": 201326592
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  }
+}

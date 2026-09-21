@@ -1,0 +1,1 @@
+{"mode": "dram", "diagnostic": true, "mean_step_ms": 18.51565066666667, "output": "results/cpu-training-e1-diagnostic/small-r0-dram"}

@@ -1,0 +1,11 @@
+test_address_reuse_is_not_storage_identity (__main__.Boundaries) ... ok
+test_live_source_inplace_rejected (__main__.Boundaries) ... ok
+test_migration_failure_propagates (__main__.Boundaries) ... ok
+test_multiple_unpack_migrates_once_and_releases (__main__.Boundaries) ... ok
+test_repeated_autograd_unpack_gradient (__main__.Boundaries) ... ok
+test_views_and_repeated_storage (__main__.Boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.138s
+
+OK
