@@ -1,126 +1,29 @@
-# SOAR: Ranking-based Static Object Allocation for Tiered Memory Architectures
+# SOAR：基于排序的静态对象分配
 
-```
-  __|   _ \    \    _ \
-\__ \  (   |  _ \     /
-____/ \___/ _/  _\ _|_\
-```
+SOAR 使用对象访问特征和性能临界性，在分层内存中为对象选择快层或慢层。当前实现包含 profiling、评分分析和分配拦截器。
 
-SOAR is a tiered memory management policy that performs static object
-allocation based on ranking. It profiles per-object performance contribution to
-determine optimal object placement across memory tiers for near-optimal
-performance.
+## 目录
 
-## Overview
+- `prof/`：采集分配生命周期和访问信息。
+- `run/`：处理 profiling 输出、计算评分和生成策略。
+- `interc/`：运行时拦截分配并按策略放置对象。
 
-SOAR consists of three main phases:
-1. **Profiling**: Track allocation/deallocation patterns, memory access behavior, and AOL-based performance prediction
-2. **Analysis**: Process profiling data to rank objects by performance contributions
-3. **Allocation**: Apply ranking results to guide object placement in tiered memory systems
+## 使用流程
 
-## Directory Structure
+### 1. 性能采样（Profiling）
 
-```
-soar/
-├── README.md           # This file
-├── prof/              # Profiling infrastructure
-│   ├── ldlib.c        # Memory allocation/deallocation tracker
-│   └── Makefile       # Build configuration
-├── interc/            # Object placement controller
-│   ├── ldlib.c        # Memory allocation interceptor with placement logic
-│   └── Makefile       # Build configuration
-├── run/               # Execution scripts and utilities
-│   ├── prof.sh        # Profiling script template
-│   ├── proc_obj_e.py  # Analysis script for processing profiling data
-│   └── config.sh      # CXL configuration settings
-└── patches/           # Kernel and application patches
-    ├── gapbs.patch    # GAPBS benchmark patch
-    └── nbt.patch      # Kernel patch to collect PEBS records with timestamps and fix tiering bugs
+运行 workload，记录分配地址、大小、生命周期、PMU/PEBS 区间和时钟来源。Granite Rapids 使用 `configs/gnr-events.json`；perf 权限不足时只报告可用指标。
+
+### 2. 分析
+
+```bash
+python3 src/soar/run/proc_obj_e.py <profile-output>
 ```
 
-## Setup
+分析结果必须记录样本覆盖、时间边界和预算。SOAR score 是排序量，不是秒数或迁移字节数。
 
-1. **Apply kernel patch (nbt.patch)** (for Linux v5.18):
+### 3. 分配
 
-Refer to `./setup.sh`
+使用 `LD_PRELOAD` 加载拦截器，并通过 `SOAR_POLICY`、`SOAR_FAST_NODE`、`SOAR_SLOW_NODE` 和字节预算控制放置。先运行测试和小规模 workload，再扩大实验。
 
-
-## Usage
-
-### Phase 1: Profiling
-
-Profile your application to collect allocation patterns and memory access data.
-
-**Example with GAPBS benchmark:**
-
-1. **Prepare the benchmark**:
-   ```bash
-   cd /path/to/gapbs
-   patch -p1 < /path/to/soar/patches/gapbs.patch
-   make
-   ```
-
-2. **Run profiling**:
-   ```bash
-   cd soar/run
-   # Edit prof.sh to configure your application
-   ./prof.sh # modify this template script to profile your application
-   ```
-
-   The `prof/` directory contains the allocation/deallocation tracking infrastructure that will be dynamically linked with your application.
-
-3. **Profiling outputs**:
-   - Raw allocation data: `data.raw.*` files
-   - Performance counters: perf output files
-   - Memory access patterns: recorded in profiling logs
-
-### Phase 2: Analysis
-
-Process the collected profiling data to generate object rankings.
-
-1. **Prepare analysis environment**:
-   ```bash
-   # Copy the analysis script to your profiling output directory
-   cp run/proc_obj_e.py /path/to/profiling/output/
-   cd /path/to/profiling/output/
-   ```
-
-2. **Run analysis**:
-   ```bash
-   python3 proc_obj_e.py [directory]
-   ```
-
-   Where `[directory]` contains the raw profiling data. Ensure perf output files are in the parent directory.
-
-3. **Analysis outputs**:
-
-- `obj_stat.csv`: Object ranking results
-  - **Object ID**: Unique identifier for tracked objects
-  - **Access Frequency**: Number of memory accesses
-  - **Allocation Size**: Total memory allocated
-  - **Object Score**: ranking score based on performance contribution
-
-### Phase 3: Allocation
-
-Apply the ranking results to guide object placement in your application.
-
-1. **Configure object placement**:
-
-   Edit `interc/ldlib.c` and modify the `check_trace` function to implement your placement policy:
-   - Return `0`: Allocate on fast/local memory tier
-   - Return `1`: Allocate on slow/remote memory tier
-   - Return `-1`: Use default allocation (partly local, partly remote)
-
-2. **Build the allocation controller**:
-   ```bash
-   cd interc
-   make
-   ```
-3. **Run with controlled allocation**:
-
-- Assign object placement with the ranking result. The `check_trace` in
-  `interc/ldlib.c`: 0 is local | 1 is remote | -1 is `partly local and partly
-  remote`.
-- Compile files in `interc`.
-- Use scripts in [run](../../run) to run the workload.
-
+CPU 训练研究不会把普通 PyTorch allocator 页直接交给拦截器，而是通过 `research/cpu_training/` 的独立 buffer 验证张量生命周期，避免迁移无关对象。

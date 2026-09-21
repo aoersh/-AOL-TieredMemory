@@ -1,116 +1,18 @@
-# ALTO: AOL-based Layered Tiering Orchestration
+# ALTO：基于 AOL 的分层内存迁移编排
 
-## Overview
+## 概述
 
-ALTO is an AOL-based page migration regulation policy. It extends existing
-tiering mechanisms to filter out unnecessary page promotions for improved
-performance.
+ALTO 根据 AOL/性能临界性调节页面提升或扫描强度，并为多种分层内存系统提供统一的内核补丁入口。支持目录包括 `colloid/`、`nbt/`、`nomad/` 和 `tpp/`。
 
-## System Components
+## 编译前提
 
-ALTO integrates with four major tiering systems, each providing both baseline
-functionality and ALTO-enhanced features:
+需要内核源码、匹配的内核配置、编译器、NUMA/CXL 相关头文件和项目依赖。当前服务器的 6.8 内核构建与补丁步骤见 [主机内核说明](../../docs/HOST_ALTO_KERNEL.md) 和 [复现说明](../../REPRODUCTION.md)。构建脚本只准备或编译候选内核，不应默认安装、修改 GRUB 或重启。
 
-### 1. Colloid (`colloid/`)
-- **Patches**:
-  - `colloid-skx.patch`: Base Colloid implementation (over TPP) for Skylake architecture
-  - `colloid-skx-alto.patch`: ALTO extensions for userspace promotion control
+## 运行流程
 
-### 2. Linux NUMA Balancing Tiering (`nbt/`)
-- **Patches**:
-  - `nbt.patch`: NBT implementation (NBT is included in default Linux)
-- **Note**: NBT functionality is available in mainline Linux, requiring only ALTO extensions
+1. 构建并在隔离环境检查候选内核。
+2. 确认启动内核、模块、CXL NUMA 节点和系统参数。
+3. 按 workload 启动对应 tiering 系统。
+4. 保存 `pte_scale`、AOL、PMU、驻留和迁移日志。
 
-### 3. Nomad (`nomad/`)
-- **Patches**:
-  - `nomad.patch`: Base Nomad tiering system
-  - `nomad-alto.patch`: ALTO integration for promotion regulation
-
-### 4. TPP (`tpp/`)
-- **Patches**:
-  - `tpp.patch`: Base TPP implementation
-  - `tpp-alto.patch`: ALTO extensions for fine-grained control
-
-## Directory Structure
-
-```
-src/alto/
-├── README.md              # This documentation
-├── colloid/              # Colloid tiering system
-│   ├── colloid-skx.patch
-│   ├── colloid-skx-alto.patch
-│   └── compile.sh
-├── nbt/                  # NUMA Balancing Tiering
-│   ├── nbt.patch
-│   └── compile.sh
-├── nomad/                # Nomad async promotion
-│   ├── nomad.patch
-│   ├── nomad-alto.patch
-│   └── compile.sh
-└── tpp/                  # TPP
-    ├── tpp.patch
-    ├── tpp-alto.patch
-    └── compile.sh
-```
-
-## Compilation and Installation
-
-Each subdirectory contains a `compile.sh` script for building and installing the corresponding kernel with patches applied.
-
-### Prerequisites
-```bash
-# Ensure you have kernel build dependencies
-sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
-
-# Clone Linux kernel source (if not already available)
-git clone https://github.com/torvalds/linux.git
-```
-
-### Build Process
-1. **Navigate to desired system directory**:
-   ```bash
-   cd src/alto/colloid/  # or nbt/, nomad/, tpp/
-   ```
-
-2. **Review compilation script**:
-   ```bash
-   cat compile.sh  # Check kernel version and patch requirements
-   ```
-
-3. **Execute compilation**:
-   ```bash
-   chmod +x compile.sh
-   ./compile.sh
-   ```
-
-### Compilation Steps (Automated)
-Each `compile.sh` script performs the following operations:
-1. Switches to appropriate kernel version (e.g., v6.3)
-2. Applies base system patches
-3. Applies ALTO extension patches
-4. Configures kernel with `make oldconfig`
-5. Builds kernel and modules
-6. Installs modules and kernel
-7. Updates bootloader configuration
-
-## Usage Instructions
-
-### 1. Kernel Installation
-After successful compilation, reboot into the ALTO-enabled kernel:
-```bash
-sudo reboot
-# Select the newly installed kernel from GRUB menu
-```
-
-### 2. Runtime Configuration
-ALTO-enabled systems expose additional interfaces in `/proc` and `/sys`:
-- Page promotion controls
-- Tiering policy configuration
-- Performance monitoring interfaces
-
-### 3. Workload Integration
-Refer to the [run directory](../../run) for:
-- Workload execution scripts
-- Performance monitoring tools
-- Configuration examples
-- Benchmark suites
+当前 CPU 训练方案只把 ALTO 作为后续对照；仅启动 ALTO 内核不等于已经运行 ALTO 策略。

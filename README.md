@@ -1,194 +1,39 @@
 # -AOL-TieredMemory
 
-Based on **Tiered Memory Management Beyond Hotness (SOAR/ALTO)**.
+本仓库基于论文 **Tiered Memory Management Beyond Hotness**，包含 SOAR 对象分配和 ALTO 页面迁移实现，并加入 CPU DNN 训练与 CXL 内存的研究实验。
 
-## Research fork: benefit-aware CXL access for CPU DNN training
+## 当前研究方向
 
-This fork preserves the upstream SOAR/ALTO implementation and adds server
-compatibility fixes, reproduction scripts, and an initial CPU-training pilot.
-Upstream: https://github.com/MoatLab/SoarAlto (MIT; original attribution below).
+当前 v3 方案先验证不同训练张量在 **Direct CXL Access** 与 **Prefetch → DRAM** 之间是否存在稳定的最优选择，再比较访问频率、AOL 和 SOAR Performance Criticality 的解释能力，最后实现简单的收益感知选择性预取。ALTO 在线控制属于后续可选扩展。
 
-The current v3 research plan first tests whether Direct CXL Access and asynchronous
-Prefetch to DRAM have different winners across training tensors and contexts.
-It then evaluates hotness, AOL and SOAR performance criticality as predictors,
-before building a simple selective-prefetch policy. Online ALTO integration is
-an optional later comparison, not a prerequisite for the initial experiments.
+当前已完成保存张量的数值正确性、DRAM/CXL 放置、同步迁移，以及 FIFO 异步迁移的初步实验。FIFO 预取存在需求顺序倒置，尚不能作为优化后的 Always-Prefetch 基线。详见 [E1/E2 实验报告](research/cpu_training/E1_E2_REPORT.md)。
 
-- [Build and reproduction guide](REPRODUCTION.md)
-- [CPU training research plan](docs/CPU_TRAIN_CXL_PLAN.md)
-- [Training pilot commands and results](research/cpu_training/README.md)
-- [Archived experiment evidence](research/cpu_training/evidence/README.md)
+- [编译与复现说明](REPRODUCTION.md)
+- [CPU 训练 CXL 实验方案](docs/CPU_TRAIN_CXL_PLAN.md)
+- [训练实验入口与结果说明](research/cpu_training/README.md)
+- [归档实验数据](research/cpu_training/evidence/README.md)
 
-The training pilot validates numerical correctness and explicit DRAM/CXL
-placement/migration of managed saved-tensor copies. A simple eager FIFO async
-executor and initial timing matrix now run, but expose a demand-order scheduling
-problem; see the [E1/E2 report](research/cpu_training/E1_E2_REPORT.md).
-Training SOAR scoring and the benefit-aware policy remain unimplemented;
-the current async pilot is not an optimized Always-Prefetch baseline and does not
-establish a selective-prefetch benefit. Downloaded dependencies,
-kernel/driver build trees, and bulk experiment results are excluded from Git.
+## 目录
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+- `src/alto/`：ALTO 内核补丁和运行组件，支持 TPP、NBT、Nomad、Colloid。
+- `src/soar/`：SOAR profiling、评分、对象分配和放置拦截器。
+- `src/microbenchmark/`：指针追踪和顺序访问微基准。
+- `run/`：构建、运行、采集和分析脚本。
+- `research/cpu_training/`：CPU 训练、受管张量、CXL 访问路径和预取实验。
+- `tests/`：回归测试和迁移探针。
 
+## 原始系统实验
 
-This repository contains the implementation and evaluation artifacts for our
-OSDI 2025 paper **"Tiered Memory Management Beyond Hotness"**. It presents two
-tiered memory management policies: SOAR for memory allocation, and ALTO for
-page migration..
+`run/run.sh` 的系统类型沿用上游编号：
 
-## Repository Structure
-
-### Core Components
-
-- **[`src/alto/`](src/alto/)** - **ALTO** (AOL-based Layered Tiering Orchestration) implementation
-  - Kernel patches for various tiering systems with ALTO integration
-  - Supports TPP, NBT, Nomad, and Colloid tiering systems
-
-- **[`src/soar/`](src/soar/)** - **SOAR** (Static Object Allocation based on Ranking) implementation
-  - Profiling and analysis tools for object-level memory placement
-  - Allocation interception and control mechanisms
-
-- **[`src/microbenchmark/`](src/microbenchmark/)** - Synthetic workloads for motivation
-  - Pointer-chasing and sequential memory access patterns
-
-### Runtime and Evaluation
-
-- **[`run/`](run/)** - Experiment orchestration scripts
-  - Automated setup and configuration
-  - Benchmark execution for supported systems
-  - Performance monitoring and data collection
-
-## Supported Systems
-
-Our implementation supports the following tiered memory management systems:
-
-| System | Description | ALTO Support |
-|--------|-------------|--------------|
-| **TPP** | Transparent Page Placement, ASPLOS'23 | ✅ |
-| **NBT** | Linux NUMA-Balancing-Tiering | ✅ |
-| **Nomad** | Non-exclusive Memory Tiering, OSDI'24 | ✅ |
-| **Colloid** | Access Latency is Key!, SOSP'24 | ✅ |
-
-
-## Testing Platforms
-
-Our evaluation was conducted on the following platforms:
-
-- **SKX**: Two Intel Xeon Silver 4114 10-core CPUs at 2.20 GHz, 192GB DDR4 Memory
-- **SPR**: Two Intel Xeon Gold 6430 32-core CPUs at 2.10 GHz, 256GB DDR5 Memory
-
-## Installation and Setup
-
-
-### Quick Setup
-
-```bash
-cd run
-./setup.sh
+```text
+0 NoTier   1 TPP       2 NBT        3 Nomad
+4 Colloid  5 TPP-ALTO 6 NBT-ALTO   7 Nomad-ALTO
+8 Colloid-ALTO  9 Local  10 Remote  11 SOAR
 ```
 
-This script will:
-- Configure system settings (disable THP, NUMA balancing, etc.)
-- Build necessary kernel modules
-- Set up monitoring tools
+完整命令和本机兼容修改见 [REPRODUCTION.md](REPRODUCTION.md)。原始 SOAR/ALTO 论文实验与本研究的 CPU 训练实验分开记录，不能混用性能结论。
 
-### Detailed Configuration
+## 论文与许可证
 
-For detailed setup instructions for each component, see:
-- [ALTO Setup Guide](src/alto/README.md)
-- [SOAR Setup Guide](src/soar/README.md)
-- [Runtime Configuration](run/README.md)
-
-## Running Experiments
-
-### Basic Usage
-
-```bash
-cd run
-./run.sh [type] [threads] [MLC-threads-list]
-```
-
-**Parameters:**
-- `type`: System type (0-11, see table below)
-- `threads`: Number of application threads
-- `MLC-threads-list`: Comma-separated list of MLC thread counts
-
-**System Types:**
-```
-0: NoTier        5: TPP-ALTO      10: Remote
-1: TPP           6: NBT-ALTO      11: SOAR
-2: NBT           7: Nomad-ALTO
-3: Nomad         8: Colloid-ALTO
-4: Colloid       9: Local
-```
-
-### Example Experiments
-
-```bash
-# Run TPP-ALTO with 4 application threads
-./run.sh 5 4 0,1,2
-
-# Compare baseline vs ALTO-enhanced systems
-./run.sh 1 4 0,1,2  # TPP baseline
-./run.sh 5 4 0,1,2  # TPP with ALTO
-
-# SOAR object-level allocation
-./run.sh 11 4 0,1,2
-```
-
-## Performance Analysis
-
-### Data Collection
-
-The scripts automatically collect:
-- Page promotion statistics
-- System performance metrics (via `perf`)
-- Application-specific metrics
-
-### Analysis Tools
-
-- `calpg.sh`: Calculate page promotion counts
-- `proc_obj_e.py`: Analyze object allocation patterns (for SOAR)
-- Performance visualization scripts (in respective component directories)
-
-## Research Components
-
-### ALTO (AOL-based Layered Tiering Orchestration)
-
-ALTO provides a unified framework for regulating page promotion across different tiering systems. Key features:
-
-### SOAR (Static Object Allocation based on Ranking)
-
-SOAR enables object-level memory placement decisions based on access pattern analysis:
-
-- **Profiling phase**: Tracks object access patterns
-- **Ranking algorithm**: Prioritizes objects for local/remote placement
-- **Runtime placement**: Intercepts allocation calls for optimal placement
-
-
-## Citation
-
-If you use this work in your research, please cite our OSDI 2025 paper:
-
-```bibtex
-@inproceedings{SoarAlto.osdi25,
-  author       = {Jinshu Liu and Hamid Hadian and Hanchen Xu and Huaicheng Li},
-  title        = {Tiered Memory Management Beyond Hotness},
-  booktitle    = {In the 19th USENIX Symposium on Operating Systems Design and Implementation, {OSDI} 2025, Boston, MA, USA, July 7-9, 2025},
-  pages        = {731--747},
-  publisher    = {{USENIX} Association},
-  year         = {2025},
-  url          = {https://www.usenix.org/conference/osdi25/presentation/liu},
-}
-```
-
-## Contact
-
-**Maintainer**: Jinshu Liu - [jinshu@vt.edu](mailto:jinshu@vt.edu)
-
-For questions about the research or implementation details, please open an
-issue or contact the maintainer directly.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+原始论文：*Tiered Memory Management Beyond Hotness*，OSDI 2025。代码使用 MIT License，原始引用信息保留在仓库历史和上游项目中。
