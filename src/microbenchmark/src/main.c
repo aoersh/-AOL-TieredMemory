@@ -75,8 +75,10 @@ void shuffle(header_t *header)
 
     while (i < header->num_chase_block) {
         uint64_t start = i;
-        for (k = 0; k < interval; k += 1) {
-            uint64_t j = (uint64_t)(rand() % interval);
+        uint64_t count = header->num_chase_block - start;
+        if (count > (uint64_t)interval) count = interval;
+        for (k = 0; k < count; k += 1) {
+            uint64_t j = (uint64_t)(rand() % count);
             swap((chase_t *) &(curr_ptr[start + k]),
                  (chase_t *) &(curr_ptr[(start + j)]));
         }
@@ -92,11 +94,8 @@ void verify(header_t *header)
 
     curr_ptr = (chase_t *)header->start_addr_a;
     while (i < header->num_chase_block) {
-        if ((int)(curr_ptr->ptr_arr[3]) != 0) {
-            printf("ERROR %lu, %lu\n", i, (unsigned long)curr_ptr->ptr_arr[3]);
-            break;
-        }
-        curr_ptr->ptr_arr[3] = (int)curr_ptr->ptr_arr[3] + 1;
+        assert(curr_ptr->ptr_arr[3] == NULL);
+        curr_ptr->ptr_arr[3] = (chase_t *)(uintptr_t)1;
         next_ptr = curr_ptr->ptr_arr[0];
         i += 1;
         curr_ptr = next_ptr;
@@ -109,6 +108,8 @@ uint64_t init_ptr_buf(header_t *header)
     chase_t *next_ptr;
 
     curr_ptr = (chase_t *)header->start_addr_a;
+    for (uint64_t i = 0; i < header->num_chase_block; i++)
+        curr_ptr[i].ptr_arr[3] = NULL;
     for (uint64_t i = 0; i < header->num_chase_block - 1; i++) {
         next_ptr = &(curr_ptr[1]);
         curr_ptr->ptr_arr[0] = next_ptr;
@@ -137,7 +138,7 @@ static void ptr_chase(char *addr, uint64_t num_chase_block)
     curr_ptr = (chase_t *)addr;
     while (i < num_chase_block) {
         next_ptr = curr_ptr->ptr_arr[0];
-        val += (int)curr_ptr->ptr_arr[3];
+        val += (int)(uintptr_t)curr_ptr->ptr_arr[3];
         i += 1;
         curr_ptr = next_ptr;
     }
@@ -167,7 +168,6 @@ void bandwidth(header_t *header)
 
     pthread_barrier_wait(&barrier);
     memset(src, 0xFF, header->buf_size_b);
-    *((uint64_t *) &src[header->buf_size_b]) = 0;
     read_loop(src, header->buf_size_b);
     /* TODO: op_iter*26; */
     for (int k = 0; k < header->op_iter * 26; k += 1) {
@@ -213,6 +213,7 @@ void *pc_thread(void *arg)
     pthread_barrier_wait(&alloc_barrier);
     pointer_chasing(header);
     aligned_free(header->buf_a);
+    return NULL;
 }
 
 void *bw_thread(void *arg)
@@ -236,6 +237,7 @@ void *bw_thread(void *arg)
     header->start_addr_b = &(header->buf_b[0]);
     bandwidth(header);
     aligned_free(header->buf_b);
+    return NULL;
 }
 
 int run_split(header_t *header)

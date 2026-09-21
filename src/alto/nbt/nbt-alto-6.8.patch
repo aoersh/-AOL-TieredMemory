@@ -1,0 +1,105 @@
+--- a/include/linux/sched/sysctl.h
++++ b/include/linux/sched/sysctl.h
+@@ -25,6 +25,8 @@
+ 
+ #ifdef CONFIG_NUMA_BALANCING
+ extern int sysctl_numa_balancing_mode;
++extern unsigned int sysctl_numa_balancing_pte_scale;
++extern unsigned int sysctl_numa_balancing_reset_kswapd_failures;
+ #else
+ #define sysctl_numa_balancing_mode	0
+ #endif
+--- a/kernel/sched/core.c
++++ b/kernel/sched/core.c
+@@ -4564,6 +4564,7 @@
+ #ifdef CONFIG_NUMA_BALANCING
+ 
+ int sysctl_numa_balancing_mode;
++static const unsigned int alto_pte_scale_max = 16;
+ 
+ static void __set_numabalancing_state(bool enabled)
+ {
+@@ -4731,6 +4732,24 @@
+ 		.extra1		= SYSCTL_ZERO,
+ 		.extra2		= SYSCTL_FOUR,
+ 	},
++	{
++		.procname	= "numa_balancing_pte_scale",
++		.data		= &sysctl_numa_balancing_pte_scale,
++		.maxlen		= sizeof(unsigned int),
++		.mode		= 0644,
++		.proc_handler	= proc_douintvec_minmax,
++		.extra1		= SYSCTL_ZERO,
++		.extra2		= (void *)&alto_pte_scale_max,
++	},
++	{
++		.procname	= "numa_balancing_reset_kswapd_failures",
++		.data		= &sysctl_numa_balancing_reset_kswapd_failures,
++		.maxlen		= sizeof(unsigned int),
++		.mode		= 0644,
++		.proc_handler	= proc_douintvec_minmax,
++		.extra1		= SYSCTL_ZERO,
++		.extra2		= SYSCTL_ONE,
++	},
+ #endif /* CONFIG_NUMA_BALANCING */
+ 	{}
+ };
+--- a/kernel/sched/fair.c
++++ b/kernel/sched/fair.c
+@@ -3187,6 +3187,25 @@
+ 
+ #define VMA_PID_RESET_PERIOD (4 * sysctl_numa_balancing_scan_delay)
+ 
++unsigned int sysctl_numa_balancing_pte_scale = 16;
++unsigned int sysctl_numa_balancing_reset_kswapd_failures;
++
++/* ALTO keeps a prefix of each scan range, in sixteenths (16 = stock NBT). */
++static unsigned long change_prot_numa_alto(struct vm_area_struct *vma,
++		unsigned long start, unsigned long end, unsigned long *scanned_end)
++{
++	unsigned int scale = READ_ONCE(sysctl_numa_balancing_pte_scale);
++	unsigned long limit;
++
++	*scanned_end = start;
++	if (!scale || end <= start)
++		return 0;
++	limit = scale >= 16 ? end :
++		min(end, ALIGN(start + ((end - start) / 16) * scale, HPAGE_SIZE));
++	*scanned_end = limit;
++	return change_prot_numa(vma, start, limit);
++}
++
+ /*
+  * The expensive part of numa migration is done from task_work context.
+  * Triggered from task_tick_numa().
+@@ -3366,7 +3385,9 @@
+ 			start = max(start, vma->vm_start);
+ 			end = ALIGN(start + (pages << PAGE_SHIFT), HPAGE_SIZE);
+ 			end = min(end, vma->vm_end);
+-			nr_pte_updates = change_prot_numa(vma, start, end);
++			unsigned long scanned_end;
++
++			nr_pte_updates = change_prot_numa_alto(vma, start, end, &scanned_end);
+ 
+ 			/*
+ 			 * Try to scan sysctl_numa_balancing_size worth of
+@@ -3377,7 +3398,7 @@
+ 			 * areas faster.
+ 			 */
+ 			if (nr_pte_updates)
+-				pages -= (end - start) >> PAGE_SHIFT;
++				pages -= (scanned_end - start) >> PAGE_SHIFT;
+ 			virtpages -= (end - start) >> PAGE_SHIFT;
+ 
+ 			start = end;
+--- a/mm/migrate.c
++++ b/mm/migrate.c
+@@ -2526,6 +2526,8 @@
+ 		 */
+ 		if (z < 0)
+ 			return 0;
++		if (READ_ONCE(sysctl_numa_balancing_reset_kswapd_failures))
++			WRITE_ONCE(pgdat->kswapd_failures, 0);
+ 
+ 		wakeup_kswapd(pgdat->node_zones + z, 0,
+ 			      folio_order(folio), ZONE_MOVABLE);

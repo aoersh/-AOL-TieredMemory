@@ -1,0 +1,102 @@
+{
+  "native": {
+    "pack_counts": {},
+    "logical_saved_bytes": {},
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    }
+  },
+  "observe": {
+    "pack_counts": {
+      "candidate": 21,
+      "parameter": 9
+    },
+    "logical_saved_bytes": {
+      "candidate": 11802624,
+      "parameter": 3170304
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "clone": {
+    "pack_counts": {
+      "candidate": 21,
+      "parameter": 9
+    },
+    "logical_saved_bytes": {
+      "candidate": 11802624,
+      "parameter": 3170304
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "dram": {
+    "pack_counts": {
+      "candidate": 21,
+      "parameter": 9
+    },
+    "logical_saved_bytes": {
+      "candidate": 11802624,
+      "parameter": 3170304
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "cxl": {
+    "pack_counts": {
+      "candidate": 21,
+      "parameter": 9
+    },
+    "logical_saved_bytes": {
+      "candidate": 11802624,
+      "parameter": 3170304
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  },
+  "prefetch_sync": {
+    "pack_counts": {
+      "candidate": 21,
+      "parameter": 9
+    },
+    "logical_saved_bytes": {
+      "candidate": 11802624,
+      "parameter": 3170304
+    },
+    "packed_objects_remaining": 0,
+    "isolated_objects_remaining": {
+      "buffers": 0,
+      "mappings": 0,
+      "saved_tensors": 0
+    },
+    "max_abs_error": 0.0,
+    "correctness_pass": true
+  }
+}

@@ -1,0 +1,12 @@
+{"event": "forward_begin", "monotonic_ns": 259029662982933, "step": 0}
+{"event": "backward_begin", "monotonic_ns": 259029667875290, "step": 0}
+{"event": "backward_end", "monotonic_ns": 259029672531199, "step": 0}
+{"event": "step_end", "monotonic_ns": 259029674112471, "step": 0, "elapsed_ns": 11131313}
+{"event": "forward_begin", "monotonic_ns": 259029726556995, "step": 1}
+{"event": "backward_begin", "monotonic_ns": 259029728960039, "step": 1}
+{"event": "backward_end", "monotonic_ns": 259029732258673, "step": 1}
+{"event": "step_end", "monotonic_ns": 259029733753278, "step": 1, "elapsed_ns": 7195756}
+{"event": "forward_begin", "monotonic_ns": 259029777719786, "step": 2}
+{"event": "backward_begin", "monotonic_ns": 259029779563201, "step": 2}
+{"event": "backward_end", "monotonic_ns": 259029782802823, "step": 2}
+{"event": "step_end", "monotonic_ns": 259029784183158, "step": 2, "elapsed_ns": 6464083}

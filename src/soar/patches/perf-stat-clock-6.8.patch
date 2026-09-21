@@ -1,0 +1,15 @@
+--- a/tools/perf/builtin-stat.c
++++ b/tools/perf/builtin-stat.c
+@@ -882,6 +882,12 @@
+ 
+ 	t0 = rdclock();
+ 	clock_gettime(CLOCK_MONOTONIC, &ref_time);
++	/* Preserve the actual origin of -I timestamps for PEBS correlation. */
++	if (getenv("SOAR_STAT_CLOCK")) {
++		fprintf(stat_config.output, "# SOAR_MONOTONIC_REF_NS %llu\n",
++			(unsigned long long)ref_time.tv_sec * NSEC_PER_SEC + ref_time.tv_nsec);
++		fflush(stat_config.output);
++	}
+ 
+ 	if (forks) {
+ 		if (interval || timeout || evlist__ctlfd_initialized(evsel_list))

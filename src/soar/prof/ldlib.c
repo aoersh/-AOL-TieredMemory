@@ -16,8 +16,11 @@
 #include <new>
 #include <sys/types.h>
 #include <numa.h>
+#include <time.h>
 
-#define ARR_SIZE 950000000            /* Max number of malloc per core */
+#ifndef ARR_SIZE
+#define ARR_SIZE 1000000             /* Max number of logged allocations per thread */
+#endif
 #define MAX_TID 512                /* Max number of tids to profile */
 
 #define USE_FRAME_POINTER   0      /* Use Frame Pointers to compute the stack trace (faster) */
@@ -57,8 +60,13 @@ void __attribute__((constructor)) m_init(void);
 #ifdef __x86_64__
 #define rdtscll(val) { \
     unsigned int __a,__d;                                        \
-    asm volatile("rdtsc" : "=a" (__a), "=d" (__d));              \
-    (val) = ((unsigned long)__a) | (((unsigned long)__d)<<32);   \
+    if (getenv("SOAR_CLOCK_MONOTONIC")) {                        \
+        struct timespec ts; clock_gettime(CLOCK_MONOTONIC, &ts); \
+        (val) = (uint64_t)ts.tv_sec * 1000000000ULL + ts.tv_nsec; \
+    } else {                                                    \
+        asm volatile("rdtsc" : "=a" (__a), "=d" (__d));          \
+        (val) = ((unsigned long)__a) | (((unsigned long)__d)<<32); \
+    }                                                           \
 }
 
 #else
@@ -70,6 +78,7 @@ static int __thread _in_trace = 0;
 
 static __attribute__((unused)) int in_first_dlsym = 0;
 static char empty_data[32];
+extern "C" void *__libc_calloc(size_t, size_t);
 
 static void *(*libc_malloc)(size_t);
 static void *(*libc_calloc)(size_t, size_t);
@@ -84,8 +93,11 @@ static int (*libc_posix_memalign)(void **, size_t, size_t);
 
 FILE *open_file(int tid)
 {
-    char buff[125];
-    sprintf(buff, "/mnt/sda4/data.raw.%d", tid);
+    char buff[4096];
+    const char *dir = getenv("SOAR_LOG_DIR");
+    if (!dir) dir = ".";
+    if (snprintf(buff, sizeof(buff), "%s/data.raw.%d", dir, tid) >= (int)sizeof(buff))
+        abort();
 
     FILE *dump = fopen(buff, "a+");
     if (!dump) {
@@ -128,8 +140,11 @@ struct log *get_log()
     }
     if (!log_arr[tid_index])
         log_arr[tid_index] = (struct log*) libc_malloc(sizeof(*log_arr[tid_index]) * ARR_SIZE);
-    if (log_index[tid_index] >= ARR_SIZE)
-        return NULL;
+    if (!log_arr[tid_index] || log_index[tid_index] >= ARR_SIZE) {
+        const char msg[] = "SOAR allocation log exhausted; increase ARR_SIZE\n";
+        write(2, msg, sizeof(msg) - 1);
+        _exit(2);
+    }
 
     struct log *l = &log_arr[tid_index][log_index[tid_index]];
     /* printf("%d %d \n", tid_index, (int)log_index[tid_index]); */
@@ -155,7 +170,7 @@ int get_trace(size_t *size, void **strings)
             break;
     }
 #else
-    *size = backtrace(strings, 10);
+    *size = backtrace(strings, CALLCHAIN_SIZE);
 #endif
     _in_trace = 0;
     return 0;
@@ -192,8 +207,7 @@ extern "C" void *calloc(size_t nmemb, size_t size)
 {
     void *addr;
     if (!libc_calloc) {
-        memset(empty_data, 0, sizeof(*empty_data));
-        addr = empty_data;
+        addr = __libc_calloc(nmemb, size);
     } else {
         addr = libc_calloc(nmemb, size);
     }
@@ -213,7 +227,15 @@ extern "C" void *calloc(size_t nmemb, size_t size)
 extern "C" void *realloc(void *ptr, size_t size)
 {
     void *addr = libc_realloc(ptr, size);
-    if (!_in_trace) {
+    if (!_in_trace && (addr || size == 0)) {
+        if (ptr) {
+            struct log *released = get_log();
+            rdtscll(released->rdt);
+            released->addr = ptr;
+            released->size = 0;
+            released->entry_type = 2;
+            get_trace(&released->callchain_size, released->callchain_strings);
+        }
         struct log *log_arr = get_log();
         if (log_arr) {
             rdtscll(log_arr->rdt);
@@ -245,7 +267,7 @@ extern "C" void *memalign(size_t align, size_t sz)
 extern "C" int posix_memalign(void **ptr, size_t align, size_t sz)
 {
     int ret = libc_posix_memalign(ptr, align, sz);
-    if (!_in_trace) {
+    if (!_in_trace && ret == 0) {
         struct log *log_arr = get_log();
         if (log_arr) {
             rdtscll(log_arr->rdt);
@@ -330,7 +352,7 @@ extern "C" void *mmap64(void *start, size_t length, int prot, int flags, int fd,
         if (log_arr) {
             rdtscll(log_arr->rdt);
             log_arr->addr = addr;
-            log_arr->size = length * 4 * 1024;
+            log_arr->size = length;
             log_arr->entry_type = flags + 200;
             get_trace(&log_arr->callchain_size, log_arr->callchain_strings);
         }
@@ -356,6 +378,7 @@ void __attribute__((destructor)) bye(void)
     if (bye_done)
         return;
     bye_done = 1;
+    _in_trace = 1;
 
     unsigned int i, j, k;
     for (i = 1; i < MAX_TID; i++) {

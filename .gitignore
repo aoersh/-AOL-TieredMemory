@@ -276,3 +276,20 @@ cython_debug/
 
 mio/*.txt
 spa/rst
+
+# Local reproduction dependencies and generated measurements
+.deps/
+third_party/
+results/
+src/microbenchmark/src/bench
+makefile.dep
+kernel/linux-*/
+kernel/build-*/
+kernel/baseline/
+kernel/ubuntu-jammy-*/
+kernel/nvidia-host-alto/
+kernel/stage-host-alto/
+kernel/vm-root/
+kernel/alto-initramfs.gz
+run/perf-clock.so
+tests/allocator-probe

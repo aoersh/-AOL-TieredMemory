@@ -17,6 +17,7 @@ import datetime
 from intervaltree import IntervalTree
 import gc
 import polars as pl
+from profile_intervals import read_intervals, sample_counts
 
 nproc = 1
 df_obj_deletes = None
@@ -77,13 +78,15 @@ def process_file(filename):
       if type !=2 and size < 4096:
         continue
       addr = int(processed_line[4], 16)
+      if addr == 0 or type not in (1, 2, 3, 4, 5, 6):
+        continue
       obj_name = processed_line[1]
       if "[" in obj_name and ']' in obj_name:
         obj_name = obj_name[1:-1]
       else:
         print("WARNING", obj_name)
       ret = check_saddr(obj_name)
-      if ret == 0:
+      if ret == 0 and type != 2:
         continue
       # check callchain
       if (len(obj_name) < 1):
@@ -102,7 +105,8 @@ def process_file(filename):
 
 def get_alloc_data(df, df_addr):
   # [time, size, addr, type, obj_name]
-  max_time = df_addr.select(pl.col("time").max()).item()
+  max_time = max(df_addr.select(pl.col("time").max()).item(),
+                 df.select(pl.col("time").max()).item())
   print("max_time", max_time)
   allocs = df.filter(pl.col("type") != 2)
   time_log("AFTER allocs")
@@ -169,17 +173,16 @@ def check_obj_accesses_perf_with_addr_range_t(data):
     accesses_perf.append({})
   for row in df_obj_deletes.iter_rows():
     start_time, end_time, addr, size, obj_name = row
-    low_index, high_index = find_idx_in_range(new_ts, start_time, end_time)
+    # Include allocations whose entire lifetime lies inside one perf interval.
+    low_index = max(0, bisect.bisect_right(new_ts, start_time) - 1)
+    high_index = bisect.bisect_left(new_ts, end_time)
     for idx in range(low_index, high_index):
-      start_t = new_ts[idx]
-      if idx+1 == high_index:
-        end_t = new_ts[idx]
-      else:
-        end_t = new_ts[idx+1]
+      start_t = max(start_time, new_ts[idx])
+      end_t = min(end_time, new_ts[idx+1]) if idx+1 < len(new_ts) else end_time
       start_index, end_index = find_idx_in_range(all_time, start_t, end_t)
       cnt = 0
       for j in range(start_index, end_index):
-        if all_addr[j] >= addr and all_addr[j] <= addr + size:
+        if all_addr[j] >= addr and all_addr[j] < addr + size:
           cnt += 1
       content = accesses_perf[idx]
       if obj_name in content.keys():
@@ -557,11 +560,13 @@ def main():
   end_time = df_obj_deletes.select(pl.col("dealloc_time").max()).item()
 
   # [time, size, addr, type, obj_name]
-  perf_data = process_perf("perf.data")
-
-  perf_interval = int((end_time - start_time) / len(perf_data[events[0]]))
-  new_ts = [t for t in range(int(start_time), int(end_time), perf_interval)]
-  new_ts = new_ts[:-1]
+  new_ts, interval_ends, perf_data, running = read_intervals("perf.data", events)
+  pd.DataFrame({'start_ns': new_ts, 'end_ns': interval_ends,
+                'min_running_percent': running}).to_csv('intervals.csv', index=False)
+  minimum_running = float(os.environ.get('SOAR_MIN_RUNNING_PERCENT', '70'))
+  if min(running) < minimum_running:
+    raise ValueError('PMU running percentage below quality threshold: '
+                     + str(min(running)) + '; inspect intervals.csv')
   demand_data_rd_idx = events.index("OFFCORE_REQUESTS.DEMAND_DATA_RD")
   cyc_demand_data_rd_idx = events.index("OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD")
   l3_stall_idx = events.index("CYCLE_ACTIVITY.STALLS_L3_MISS")
@@ -571,9 +576,12 @@ def main():
   l3_stall = np.asarray(perf_data[events[l3_stall_idx]])
   cyc = np.asarray(perf_data[events[cyc_idx]])
 
-  l3_stall_per_cyc = l3_stall/cyc
-  a_lat = cyc_demand_data_rd/demand_data_rd
-  est_dram_sd_2 = [l3_stall_per_cyc[i]/(24.67/a_lat[i]+0.87) for i in range(len(a_lat))]
+  l3_stall_per_cyc = np.divide(l3_stall, cyc, out=np.zeros_like(l3_stall), where=cyc > 0)
+  a_lat = np.divide(cyc_demand_data_rd, demand_data_rd,
+                    out=np.zeros_like(demand_data_rd), where=demand_data_rd > 0)
+  durations = [(end - begin) / 1e9 for begin, end in zip(new_ts, interval_ends)]
+  est_dram_sd_2 = [durations[i] * l3_stall_per_cyc[i]/(24.67/a_lat[i]+0.87)
+                   if a_lat[i] > 0 else 0.0 for i in range(len(a_lat))]
 
   # PLOT
   plot_perf_data(new_ts, a_lat, plots_path, \
@@ -584,7 +592,11 @@ def main():
   all_time, all_addr = df_addr["time"], df_addr["addr"]
 
   print("BEFORE check_obj_accesses_perf")
-  accesses_perf_with_addr_range = check_obj_accesses_perf_with_addr_range_p(all_time, all_addr, new_ts)
+  accesses_perf_with_addr_range = sample_counts(all_time, all_addr,
+      df_obj_deletes.iter_rows(), new_ts, interval_ends)
+  for content in accesses_perf_with_addr_range:
+    for value in content.values():
+      value[1] = merge_intervals(value[1])
   time_log("Returned accesses_perf_with_addr_range")
   print("AFTER check_obj_accesses_perf")
 

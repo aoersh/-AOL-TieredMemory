@@ -1,0 +1,50 @@
+{
+  "dram": {
+    "residency_initial": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "0": 2886
+      }
+    },
+    "residency_unpack": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "0": 2886
+      }
+    },
+    "pack_count": 30,
+    "release_count": 30
+  },
+  "cxl": {
+    "residency_initial": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "2": 2886
+      }
+    },
+    "residency_unpack": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "2": 2886
+      }
+    },
+    "pack_count": 30,
+    "release_count": 30
+  },
+  "prefetch_sync": {
+    "residency_initial": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "2": 2886
+      }
+    },
+    "residency_unpack": {
+      "checks": 21,
+      "page_observations_by_node": {
+        "0": 2886
+      }
+    },
+    "pack_count": 30,
+    "release_count": 30
+  }
+}

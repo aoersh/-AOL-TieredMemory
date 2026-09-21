@@ -1,92 +1,112 @@
-from subprocess import Popen, PIPE
-import subprocess
-import time
+#!/usr/bin/env python3
+"""ALTO's published scan thresholds, with complete-interval input and cleanup."""
+import argparse
+import json
+import math
 import os
-import ctypes
+from pathlib import Path
+import signal
 import time
-import re
-import sys
 
-if len(sys.argv) < 2:
-  print("Usage: set_scan_scale.py [filename]")
-  exit(0)
-perf_parameters_path = sys.argv[1]
+DEMAND = 'OFFCORE_REQUESTS.DEMAND_DATA_RD'
+BUSY = 'OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD'
+OUTSTANDING = 'OFFCORE_REQUESTS_OUTSTANDING.DEMAND_DATA_RD'
+REQUIRED = {DEMAND, BUSY, OUTSTANDING}
 
-def process_line(s):
-  s = re.split(" |\t", s)
-  return [x for x in s if len(x) > 0]
 
-def read_perf_paramters():
-  perf_file=perf_parameters_path
-  p = Popen(['tail','-5',perf_file],shell=False, stderr=PIPE, stdout=PIPE)
-  res,err = p.communicate()
-  if err:
-    print (err.decode())
-  else:
-    line=res.decode("utf-8")
-    values = line.split('\n')
+def decision(values):
+    if not REQUIRED.issubset(values):
+        return {'reason': 'incomplete'}
+    if any(not math.isfinite(values[e]) or values[e] <= 0 for e in REQUIRED):
+        return {'reason': 'invalid_counter'}
+    aol = values[BUSY] / values[DEMAND]
+    latency = values[OUTSTANDING] / values[DEMAND]
+    result = {'aol': aol, 'load_latency': latency}
+    if latency <= 100:
+        return dict(result, reason='load_latency_le_100')
+    for threshold, scale in [(40, 0), (50, 1), (60, 2), (80, 4), (100, 8)]:
+        if aol <= threshold:
+            return dict(result, pte_scale=scale)
+    return dict(result, pte_scale=16)
 
-    cycles = process_line(values[0])[1].replace(",", "")
-    cycles_stalls_l3 = process_line(values[1])[1].replace(",", "")
-    outstanding_read = process_line(values[2])[1].replace(",", "")
-    outstanding_cycles_read = process_line(values[3])[1].replace(",", "")
-    demand_read = process_line(values[4])[1].replace(",", "")
 
-    lst_cycles.append(cycles)
-    lst_cycles_stalls_l3.append(cycles_stalls_l3)
-    lst_outstanding_read.append(outstanding_read)
-    lst_outstanding_cycles_read.append(outstanding_cycles_read)
-    lst_demand_read.append(demand_read)
+class IntervalReader:
+    def __init__(self):
+        self.offset = 0
+        self.pending = {}
+        self.done = set()
 
-lst_cycles=[]
-lst_cycles_stalls_l3=[]
-lst_outstanding_read=[]
-lst_outstanding_cycles_read=[]
-lst_demand_read=[]
-lst_time=[]
+    def read(self, path):
+        result = []
+        with path.open() as stream:
+            if os.fstat(stream.fileno()).st_size < self.offset:
+                raise ValueError('Counter log was truncated')
+            stream.seek(self.offset)
+            while True:
+                begin = stream.tell()
+                line = stream.readline()
+                if not line.endswith('\n'):
+                    self.offset = begin
+                    break
+                self.offset = stream.tell()
+                fields = line.split()
+                if len(fields) < 3 or fields[2] not in REQUIRED:
+                    continue
+                timestamp = fields[0]
+                if timestamp in self.done:
+                    continue
+                values = self.pending.setdefault(timestamp, {})
+                values[fields[2]] = float(fields[1].replace(',', ''))
+                if REQUIRED.issubset(values):
+                    result.append(dict(time=float(timestamp), **decision(values)))
+                    self.done.add(timestamp)
+                    del self.pending[timestamp]
+        return result
 
-cnt=1
 
-def check(val, history, load_lat):
-  if len(history) < 2:
-    return
-  if load_lat <= 100:
-    return
-  if val <= 30:
-    print("30")
-    os.system('echo 0 > /proc/sys/kernel/numa_balancing_pte_scale')
-  if val <= 40:
-    print("40")
-    os.system('echo 0 > /proc/sys/kernel/numa_balancing_pte_scale')
-  elif val <= 50:
-    print("50")
-    os.system('echo 1 > /proc/sys/kernel/numa_balancing_pte_scale')
-  elif val <= 60:
-    print("60")
-    os.system('echo 2 > /proc/sys/kernel/numa_balancing_pte_scale')
-  elif val <= 80:
-    print("80")
-    os.system('echo 4 > /proc/sys/kernel/numa_balancing_pte_scale')
-  elif val <= 100:
-    print("100")
-    os.system('echo 8 > /proc/sys/kernel/numa_balancing_pte_scale')
-  else:
-    print(">100")
-    os.system('echo 16 > /proc/sys/kernel/numa_balancing_pte_scale')
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('filename', type=Path)
+    parser.add_argument('--replay', action='store_true')
+    parser.add_argument('--pid', type=int, help='Stop when workload PID exits')
+    args = parser.parse_args()
+    knob = Path('/proc/sys/kernel/numa_balancing_pte_scale')
+    if not args.replay and not knob.exists():
+        parser.error('ALTO kernel interface missing; --replay validates decisions only')
+    if not args.replay and (args.pid is None or args.pid <= 0):
+        parser.error('Online mode requires a positive --pid for bounded lifetime')
+    original = knob.read_text() if not args.replay else None
+    reader = IntervalReader()
+    count = 0
 
-history = [101]
-avg_lat = 101
-while True:
-  print('online monitoring ....')
-  read_perf_paramters()
+    def stop(signum, frame):
+        raise KeyboardInterrupt
 
-  lst_time.append(cnt)
-  load_lat = float(lst_outstanding_read[-1])/float(lst_demand_read[-1])
-  mlp = float(lst_outstanding_read[-1])/float(lst_outstanding_cycles_read[-1])
-  avg_lat = load_lat/mlp
-  history.append(avg_lat)
-  print(int(avg_lat))
-  check(avg_lat, history, load_lat)
+    signal.signal(signal.SIGTERM, stop)
+    signal.signal(signal.SIGINT, stop)
+    try:
+        while True:
+            for output in reader.read(args.filename):
+                count += 1
+                output['mode'] = 'replay' if args.replay else 'online'
+                print(json.dumps(output), flush=True)
+                if not args.replay and 'pte_scale' in output:
+                    knob.write_text(str(output['pte_scale']))
+            if args.replay:
+                if not count:
+                    raise ValueError('No complete measured counter intervals')
+                break
+            try:
+                os.kill(args.pid, 0)
+            except ProcessLookupError:
+                break
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        if original is not None:
+            knob.write_text(original)
 
-  cnt+=1
-  time.sleep(1)
+
+if __name__ == '__main__':
+    main()

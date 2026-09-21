@@ -1,5 +1,21 @@
 # Tiered Memory Management Beyond Hotness
 
+## Research fork: CPU training on CXL
+
+This fork preserves the upstream SOAR/ALTO implementation and adds server
+compatibility fixes, reproduction scripts, and an initial CPU-training pilot.
+Upstream: https://github.com/MoatLab/SoarAlto (MIT; original attribution below).
+
+- [Build and reproduction guide](REPRODUCTION.md)
+- [CPU training research plan](docs/CPU_TRAIN_CXL_PLAN.md)
+- [Training pilot commands and results](research/cpu_training/README.md)
+- [Archived pilot evidence](research/cpu_training/evidence/numa-v3/)
+
+The training pilot validates numerical correctness and explicit DRAM/CXL
+placement/migration. Training SOAR scoring and online ALTO coordination are
+not yet implemented; no training speedup is claimed. Downloaded dependencies,
+kernel/driver build trees, and bulk experiment results are excluded from Git.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -164,4 +180,3 @@ issue or contact the maintainer directly.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-

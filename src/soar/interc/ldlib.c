@@ -16,6 +16,7 @@
 #include <new>
 #include <sys/types.h>
 #include <numa.h>
+#include <errno.h>
 
 #define ARR_SIZE 550000            /* Max number of malloc per core */
 #define MAX_TID 512                /* Max number of tids to profile */
@@ -45,9 +46,20 @@ static int tids[MAX_TID];
 struct addr_seg {
     long unsigned start;
     long unsigned end;
+    int node;
 };
 
 static struct addr_seg addr_segs[MAX_OBJECTS];
+static size_t fast_limit = SIZE_MAX, fast_used, fast_peak;
+static int fast_node = 0, slow_node = 1;
+static bool budget_enabled;
+
+static size_t mapped_size(size_t size)
+{
+    size_t page = (size_t)getpagesize();
+    if (size > SIZE_MAX - page + 1) return 0;
+    return (size + page - 1) & ~(page - 1);
+}
 
 struct log {
     uint64_t rdt;
@@ -78,11 +90,13 @@ static int __thread _in_trace = 0;
 
 static __attribute__((unused)) int in_first_dlsym = 0;
 static char empty_data[32];
+extern "C" void *__libc_calloc(size_t, size_t);
 
 static void *(*libc_malloc)(size_t);
 static void *(*libc_calloc)(size_t, size_t);
 static void *(*libc_realloc)(void *, size_t);
 static void (*libc_free)(void *);
+static size_t (*libc_malloc_usable_size)(void *);
 
 static void *(*libc_mmap)(void *, size_t, int, int, int, off_t);
 static void *(*libc_mmap64)(void *, size_t, int, int, int, off_t);
@@ -92,45 +106,10 @@ static int (*libc_posix_memalign)(void **, size_t, size_t);
 
 struct log *get_log()
 {
-#if IGNORE_FIRST_PROCESS
-    if (!first_pid)
-        first_pid = _pid;
-    if (_pid == first_pid)
-        return NULL;
-#endif
-
-#if NB_ALLOC_TO_IGNORE > 0
-    nb_allocs++;
-    if (nb_allocs < NB_ALLOC_TO_IGNORE)
-        return NULL;
-#endif
-
-    int i;
-    if (!tid) {
-        tid = (int) syscall(186); /* 64b only */
-        pthread_mutex_lock(&lock);
-        for (i = 1; i < MAX_TID; i++) {
-            if (tids[i] == 0) {
-                tids[i] = tid;
-                tid_index = i;
-                break;
-            }
-        }
-        if (tid_index == 0) {
-            fprintf(stderr, "Too many threads!\n");
-            exit(-1);
-        }
-        pthread_mutex_unlock(&lock);
-    }
-    if (!log_arr[tid_index])
-        log_arr[tid_index] = (struct log*) libc_malloc(sizeof(*log_arr[tid_index]) * ARR_SIZE);
-    if (log_index[tid_index] >= ARR_SIZE)
-        return NULL;
-
-    struct log *l = &log_arr[tid_index][log_index[tid_index]];
-    /* printf("%d %d \n", tid_index, (int)log_index[tid_index]); */
-    log_index[tid_index]++;
-    return l;
+    // The interceptor consumes each trace immediately; it has no log consumer.
+    static __thread struct log current;
+    memset(&current, 0, sizeof(current));
+    return &current;
 }
 
 int get_trace(size_t *size, void **strings)
@@ -151,7 +130,7 @@ int get_trace(size_t *size, void **strings)
             break;
     }
 #else
-    *size = backtrace(strings, 10);
+    *size = backtrace(strings, CALLCHAIN_SIZE);
 #endif
     _in_trace = 0;
     return 0;
@@ -167,6 +146,23 @@ int _getpid()
 int check_trace(void *string, size_t sz)
 {
     char *ptr = (char *) string;
+    // Optional exact call-site placement table: hexadecimal-address NUMA-node.
+    // Keep the published policy below when no table is supplied.
+    const char *policy = getenv("SOAR_POLICY");
+    if (policy) {
+        FILE *f = fopen(policy, "r");
+        if (!f) { perror("SOAR_POLICY"); abort(); }
+        unsigned long site, actual;
+        int node, result = budget_enabled ? slow_node : -1;
+        const char *address = strrchr(ptr, '[');
+        if (address && sscanf(address, "[%lx]", &actual) == 1) {
+            while (fscanf(f, "%lx %d", &site, &node) == 2) {
+                if (site == actual) { result = node; break; }
+            }
+        }
+        fclose(f);
+        return result;
+    }
     char *objs[] = {"405fb2", "406d68", "406fe7", "406d27", \
         "40b69c", "406cc3", "406db6", "40b62e"};
     int start = 0;
@@ -191,46 +187,81 @@ int check_trace(void *string, size_t sz)
     return -1;
 }
 
-void record_seg(unsigned long addr, size_t size)
+void record_seg(unsigned long addr, size_t size, int node)
 {
+    pthread_mutex_lock(&lock);
     int i;
     for (i = 0; i < MAX_OBJECTS; i += 1) {
         struct addr_seg *seg = &addr_segs[i];
         if (seg->start == 0 && seg->end == 0) {
             seg->start = addr;
             seg->end = addr + size;
+            seg->node = node;
+            pthread_mutex_unlock(&lock);
             return;
         }
     }
+    pthread_mutex_unlock(&lock);
+    abort();
 }
 
-size_t check_seg(unsigned long addr)
+size_t check_seg(unsigned long addr, bool remove = true, int *node = NULL)
 {
+    pthread_mutex_lock(&lock);
     int i;
     size_t size_to_free;
     size_to_free = 0;
     for (i = 0; i < MAX_OBJECTS; i += 1) {
         struct addr_seg *seg = &addr_segs[i];
-        if (seg->start <= addr && seg->end > addr) {
+        if (seg->start == addr && seg->end > addr) {
             size_to_free = (size_t) (seg->end - addr);
-            if (seg->start == addr) {
+            if (node) *node = seg->node;
+            if (remove) {
+                if (budget_enabled && seg->node == fast_node)
+                    fast_used -= mapped_size(size_to_free);
                 seg->start = 0;
                 seg->end = 0;
-            } else {
-                seg->end = addr;
             }
             break;
         }
     }
+    pthread_mutex_unlock(&lock);
     return size_to_free;
+}
+
+static void *allocate_numa(size_t size, int *node)
+{
+    if (!numa_all_nodes_ptr || !numa_bitmask_isbitset(numa_all_nodes_ptr, *node)) {
+        errno = EINVAL;
+        return NULL;
+    }
+    size_t bytes = mapped_size(size);
+    if (!bytes) { errno = ENOMEM; return NULL; }
+    pthread_mutex_lock(&lock);
+    if (budget_enabled && *node == fast_node) {
+        if (bytes > fast_limit - fast_used) *node = slow_node;
+        else fast_used += bytes;
+    }
+    pthread_mutex_unlock(&lock);
+    void *address = numa_alloc_onnode(size, *node);
+    pthread_mutex_lock(&lock);
+    if (budget_enabled && *node == fast_node) {
+        if (!address) fast_used -= bytes;
+        else if (fast_used > fast_peak) fast_peak = fast_used;
+    }
+    pthread_mutex_unlock(&lock);
+    if (address) record_seg((unsigned long)address, size, *node);
+    return address;
 }
 
 extern "C" void *malloc(size_t sz)
 {
     if (!libc_malloc)
         m_init();
+    // libnuma allocates while constructing its own topology masks.
+    if (!numa_all_nodes_ptr) return libc_malloc(sz);
     void *addr;
-    struct log *log_arr;
+    struct log *log_arr = NULL;
     if (!_in_trace) {
         log_arr = get_log();
         if (log_arr) {
@@ -242,15 +273,19 @@ extern "C" void *malloc(size_t sz)
     }
     if (sz > 4096 && !_in_trace && log_arr) {
         if (log_arr->callchain_size >= 4) {
+            _in_trace = 1;
             char **strings = backtrace_symbols (log_arr->callchain_strings, log_arr->callchain_size);
             int ret = check_trace(strings[3], sz);
             libc_free(strings);
             if (ret > -1) {
-                addr = numa_alloc_onnode(sz, ret);
-                record_seg((unsigned long)addr, sz);
+                addr = allocate_numa(sz, &ret);
+                if (getenv("SOAR_PLACEMENT_LOG"))
+                    fprintf(stderr, "SOAR_PLACE site=%p addr=%p bytes=%zu node=%d\n",
+                            log_arr->callchain_strings[3], addr, sz, ret);
             } else {
                 addr = libc_malloc(sz);
             }
+            _in_trace = 0;
         } else {
             addr = libc_malloc(sz);
         }
@@ -264,8 +299,7 @@ extern "C" void *calloc(size_t nmemb, size_t size)
 {
     void *addr;
     if (!libc_calloc) {
-        memset(empty_data, 0, sizeof(*empty_data));
-        addr = empty_data;
+        addr = __libc_calloc(nmemb, size);
     } else {
         addr = libc_calloc(nmemb, size);
     }
@@ -284,6 +318,23 @@ extern "C" void *calloc(size_t nmemb, size_t size)
 
 extern "C" void *realloc(void *ptr, size_t size)
 {
+    if (!libc_realloc) m_init();
+    if (!ptr) return malloc(size);
+    int node = -1;
+    size_t old_size = check_seg((unsigned long)ptr, false, &node);
+    if (old_size) {
+        if (!size) { free(ptr); return NULL; }
+        int tracing = _in_trace;
+        _in_trace = 1;
+        void *replacement = allocate_numa(size, &node);
+        if (replacement) {
+            memcpy(replacement, ptr, old_size < size ? old_size : size);
+            check_seg((unsigned long)ptr);
+            numa_free(ptr, old_size);
+        }
+        _in_trace = tracing;
+        return replacement;
+    }
     void *addr = libc_realloc(ptr, size);
     if (!_in_trace) {
         struct log *log_arr = get_log();
@@ -296,6 +347,21 @@ extern "C" void *realloc(void *ptr, size_t size)
         }
     }
     return addr;
+}
+
+extern "C" void *reallocarray(void *ptr, size_t nmemb, size_t size)
+{
+    if (size && nmemb > SIZE_MAX / size) { errno = ENOMEM; return NULL; }
+    return realloc(ptr, nmemb * size);
+}
+
+extern "C" size_t malloc_usable_size(void *ptr)
+{
+    if (!ptr) return 0;
+    size_t size = check_seg((unsigned long)ptr, false);
+    if (size) return size;
+    if (!libc_malloc_usable_size) m_init();
+    return libc_malloc_usable_size(ptr);
 }
 
 extern "C" void *memalign(size_t align, size_t sz)
@@ -317,7 +383,7 @@ extern "C" void *memalign(size_t align, size_t sz)
 extern "C" int posix_memalign(void **ptr, size_t align, size_t sz)
 {
     int ret = libc_posix_memalign(ptr, align, sz);
-    if (!_in_trace) {
+    if (!_in_trace && ret == 0) {
         struct log *log_arr = get_log();
         if (log_arr) {
             rdtscll(log_arr->rdt);
@@ -404,7 +470,7 @@ extern "C" void *mmap64(void *start, size_t length, int prot, int flags, int fd,
         if (log_arr) {
             rdtscll(log_arr->rdt);
             log_arr->addr = addr;
-            log_arr->size = length * 4 * 1024;
+            log_arr->size = length;
             log_arr->entry_type = flags + 100;
             get_trace(&log_arr->callchain_size, log_arr->callchain_strings);
         }
@@ -430,6 +496,11 @@ void __attribute__((destructor)) bye(void)
     if (bye_done)
         return;
     bye_done = 1;
+    if (budget_enabled) {
+        _in_trace = 1;
+        fprintf(stderr, "SOAR_BUDGET limit=%zu peak=%zu live=%zu fast_node=%d slow_node=%d\n",
+                fast_limit, fast_peak, fast_used, fast_node, slow_node);
+    }
 }
 
 void __attribute__((constructor)) m_init(void)
@@ -438,9 +509,23 @@ void __attribute__((constructor)) m_init(void)
     libc_realloc = (void * ( *)(void *, size_t))dlsym(RTLD_NEXT, "realloc");
     libc_calloc = (void * ( *)(size_t, size_t))dlsym(RTLD_NEXT, "calloc");
     libc_free = (void ( *)(void *))dlsym(RTLD_NEXT, "free");
+    libc_malloc_usable_size = (size_t (*)(void *))dlsym(RTLD_NEXT, "malloc_usable_size");
     libc_mmap = (void * ( *)(void *, size_t, int, int, int, off_t))dlsym(RTLD_NEXT, "mmap");
     libc_munmap = (int ( *)(void *, size_t))dlsym(RTLD_NEXT, "munmap");
     libc_mmap64 = (void * ( *)(void *, size_t, int, int, int, off_t))dlsym(RTLD_NEXT, "mmap64");
     libc_memalign = (void * ( *)(size_t, size_t))dlsym(RTLD_NEXT, "memalign");
     libc_posix_memalign = (int ( *)(void **, size_t, size_t))dlsym(RTLD_NEXT, "posix_memalign");
+    const char *budget = getenv("SOAR_FAST_BYTES");
+    if (budget) {
+        char *end;
+        errno = 0;
+        unsigned long long value = strtoull(budget, &end, 10);
+        if (errno || end == budget || *end || budget[0] == '-' || value > SIZE_MAX) abort();
+        fast_limit = (size_t)value;
+        if (getenv("SOAR_FAST_NODE")) fast_node = atoi(getenv("SOAR_FAST_NODE"));
+        if (getenv("SOAR_SLOW_NODE")) slow_node = atoi(getenv("SOAR_SLOW_NODE"));
+        if (fast_node < 0 || slow_node < 0 || fast_node == slow_node) abort();
+        budget_enabled = true;
+        numa_exit_on_error = 1;
+    }
 }

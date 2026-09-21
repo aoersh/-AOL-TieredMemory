@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I. -W -Wall -Wextra -Wuninitialized -Wstrict-aliasing -march=native -O3
+CFLAGS=-I. -W -Wall -Wextra -Wuninitialized -Wstrict-aliasing -march=native -O3 -g -fno-pie -no-pie
 LDLIBS=-lpthread -lnuma -lm
 
 DEPS=utils.h

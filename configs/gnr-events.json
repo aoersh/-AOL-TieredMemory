@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/intel/perfmon/blob/main/GNR/events/graniterapids_core.json",
+  "cpu": "GenuineIntel family 6 model 173 (Granite Rapids)",
+  "stall_compatibility": "Use GNR MEMORY_ACTIVITY.STALLS_L3_MISS (0x47/0x09/cmask=9); retain old output alias for the upstream analyzer. The old 0xa3 event measured zero on this machine.",
+  "stat_events": [
+    "cycles",
+    "cpu/event=0x47,umask=0x09,cmask=9,name=CYCLE_ACTIVITY.STALLS_L3_MISS/",
+    "cpu/event=0x20,umask=0x01,name=OFFCORE_REQUESTS_OUTSTANDING.DEMAND_DATA_RD/",
+    "cpu/event=0x20,umask=0x01,cmask=1,name=OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD/",
+    "cpu/event=0x21,umask=0x01,name=OFFCORE_REQUESTS.DEMAND_DATA_RD/"
+  ],
+  "sample_event": "cpu/event=0xd1,umask=0x20/ppu"
+}

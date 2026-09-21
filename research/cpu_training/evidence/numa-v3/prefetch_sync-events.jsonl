@@ -1,0 +1,144 @@
+{"event": "forward_begin", "monotonic_ns": 259030582739525, "step": 0}
+{"event": "residency_initial", "monotonic_ns": 259030583459218, "id": "0:1", "nodes": {"2": 128}}
+{"event": "pack", "monotonic_ns": 259030583482015, "id": "0:1", "step": 0, "shape": [256, 512], "stride": [512, 1], "dtype": "torch.float32", "source_storage": 99028671519424, "source_address": 99028671519424, "storage_bytes": 524288, "logical_bytes": 524288, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076178210816, "saved_storage": 139076178210816}
+{"event": "residency_initial", "monotonic_ns": 259030584562115, "id": "0:2", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030584587265, "id": "0:2", "step": 0, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028692464192, "source_address": 99028692464192, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076177162240, "saved_storage": 139076177162240}
+{"event": "pack", "monotonic_ns": 259030584877499, "id": "0:3", "step": 0, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028671472576, "source_address": 99028671472576, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028671472576, "saved_storage": 99028671472576}
+{"event": "residency_initial", "monotonic_ns": 259030585240243, "id": "0:4", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030585248578, "id": "0:4", "step": 0, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028712388992, "source_address": 99028712388992, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076176113664, "saved_storage": 139076176113664}
+{"event": "pack", "monotonic_ns": 259030585267819, "id": "0:5", "step": 0, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028684220288, "source_address": 99028684220288, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028684220288, "saved_storage": 99028684220288}
+{"event": "residency_initial", "monotonic_ns": 259030585417615, "id": "0:6", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030585427160, "id": "0:6", "step": 0, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684069824, "source_address": 99028684069824, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076741976064, "saved_storage": 139076741976064}
+{"event": "residency_initial", "monotonic_ns": 259030585470079, "id": "0:7", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030585476880, "id": "0:7", "step": 0, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684211008, "source_address": 99028684211008, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076739485696, "saved_storage": 139076739485696}
+{"event": "residency_initial", "monotonic_ns": 259030585856869, "id": "0:8", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030585865043, "id": "0:8", "step": 0, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028705048320, "source_address": 99028705048320, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076032299008, "saved_storage": 139076032299008}
+{"event": "pack", "monotonic_ns": 259030585882762, "id": "0:9", "step": 0, "shape": [1024, 256], "stride": [1, 1024], "dtype": "torch.float32", "source_storage": 99028727070208, "source_address": 99028727070208, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028727070208, "saved_storage": 99028727070208}
+{"event": "residency_initial", "monotonic_ns": 259030586518054, "id": "0:10", "nodes": {"2": 64}}
+{"event": "pack", "monotonic_ns": 259030586537942, "id": "0:10", "step": 0, "shape": [256, 256], "stride": [256, 1], "dtype": "torch.float32", "source_storage": 99028684860800, "source_address": 99028684860800, "storage_bytes": 262144, "logical_bytes": 262144, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076175851520, "saved_storage": 139076175851520}
+{"event": "backward_begin", "monotonic_ns": 259030586694308, "step": 0}
+{"event": "residency_unpack", "monotonic_ns": 259030588226040, "id": "0:10", "nodes": {"0": 64}, "operation_ns": 1287342}
+{"event": "unpack", "monotonic_ns": 259030588237635, "id": "0:10", "address": 139076175851520}
+{"event": "release", "monotonic_ns": 259030588338459, "id": "0:10"}
+{"event": "residency_unpack", "monotonic_ns": 259030589175895, "id": "0:8", "nodes": {"0": 256}, "operation_ns": 768994}
+{"event": "unpack", "monotonic_ns": 259030589196397, "id": "0:8", "address": 139076032299008}
+{"event": "unpack", "monotonic_ns": 259030589205451, "id": "0:9", "address": 99028727070208}
+{"event": "release", "monotonic_ns": 259030589666912, "id": "0:8"}
+{"event": "release", "monotonic_ns": 259030589732080, "id": "0:9"}
+{"event": "unpack", "monotonic_ns": 259030589786502, "id": "0:3", "address": 99028671472576}
+{"event": "residency_unpack", "monotonic_ns": 259030590616071, "id": "0:4", "nodes": {"0": 256}, "operation_ns": 820033}
+{"event": "unpack", "monotonic_ns": 259030590632085, "id": "0:4", "address": 139076176113664}
+{"event": "unpack", "monotonic_ns": 259030590639755, "id": "0:5", "address": 99028684220288}
+{"event": "residency_unpack", "monotonic_ns": 259030590709110, "id": "0:6", "nodes": {"0": 1}, "operation_ns": 64421}
+{"event": "unpack", "monotonic_ns": 259030590713578, "id": "0:6", "address": 139076741976064}
+{"event": "residency_unpack", "monotonic_ns": 259030590757063, "id": "0:7", "nodes": {"0": 1}, "operation_ns": 38538}
+{"event": "unpack", "monotonic_ns": 259030590761334, "id": "0:7", "address": 139076739485696}
+{"event": "release", "monotonic_ns": 259030590951813, "id": "0:3"}
+{"event": "release", "monotonic_ns": 259030590959600, "id": "0:4"}
+{"event": "release", "monotonic_ns": 259030591011877, "id": "0:5"}
+{"event": "release", "monotonic_ns": 259030591016607, "id": "0:6"}
+{"event": "release", "monotonic_ns": 259030591028125, "id": "0:7"}
+{"event": "residency_unpack", "monotonic_ns": 259030591767446, "id": "0:2", "nodes": {"0": 256}, "operation_ns": 700833}
+{"event": "unpack", "monotonic_ns": 259030591783981, "id": "0:2", "address": 139076177162240}
+{"event": "release", "monotonic_ns": 259030591997812, "id": "0:2"}
+{"event": "residency_unpack", "monotonic_ns": 259030592449907, "id": "0:1", "nodes": {"0": 128}, "operation_ns": 375868}
+{"event": "unpack", "monotonic_ns": 259030592459361, "id": "0:1", "address": 139076178210816}
+{"event": "release", "monotonic_ns": 259030592827516, "id": "0:1"}
+{"event": "backward_end", "monotonic_ns": 259030592943751, "step": 0}
+{"event": "step_end", "monotonic_ns": 259030593813711, "step": 0, "elapsed_ns": 11086712}
+{"event": "forward_begin", "monotonic_ns": 259030651345665, "step": 1}
+{"event": "residency_initial", "monotonic_ns": 259030651967125, "id": "1:1", "nodes": {"2": 128}}
+{"event": "pack", "monotonic_ns": 259030651986020, "id": "1:1", "step": 1, "shape": [256, 512], "stride": [512, 1], "dtype": "torch.float32", "source_storage": 99028671519424, "source_address": 99028671519424, "storage_bytes": 524288, "logical_bytes": 524288, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076178210816, "saved_storage": 139076178210816}
+{"event": "residency_initial", "monotonic_ns": 259030653224773, "id": "1:2", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030653244034, "id": "1:2", "step": 1, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028692464192, "source_address": 99028692464192, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076177162240, "saved_storage": 139076177162240}
+{"event": "pack", "monotonic_ns": 259030653766774, "id": "1:3", "step": 1, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028671472576, "source_address": 99028671472576, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028671472576, "saved_storage": 99028671472576}
+{"event": "residency_initial", "monotonic_ns": 259030654185119, "id": "1:4", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030654195341, "id": "1:4", "step": 1, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028718680960, "source_address": 99028718680960, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076176113664, "saved_storage": 139076176113664}
+{"event": "pack", "monotonic_ns": 259030654216693, "id": "1:5", "step": 1, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028684220288, "source_address": 99028684220288, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028684220288, "saved_storage": 99028684220288}
+{"event": "residency_initial", "monotonic_ns": 259030654397881, "id": "1:6", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030654406236, "id": "1:6", "step": 1, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684545280, "source_address": 99028684545280, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076741976064, "saved_storage": 139076741976064}
+{"event": "residency_initial", "monotonic_ns": 259030654450488, "id": "1:7", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030654457233, "id": "1:7", "step": 1, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684546752, "source_address": 99028684546752, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076739485696, "saved_storage": 139076739485696}
+{"event": "residency_initial", "monotonic_ns": 259030654892152, "id": "1:8", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030654900264, "id": "1:8", "step": 1, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028717632256, "source_address": 99028717632256, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076032299008, "saved_storage": 139076032299008}
+{"event": "pack", "monotonic_ns": 259030654918120, "id": "1:9", "step": 1, "shape": [1024, 256], "stride": [1, 1024], "dtype": "torch.float32", "source_storage": 99028727070208, "source_address": 99028727070208, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028727070208, "saved_storage": 99028727070208}
+{"event": "residency_initial", "monotonic_ns": 259030655789790, "id": "1:10", "nodes": {"2": 64}}
+{"event": "pack", "monotonic_ns": 259030655803770, "id": "1:10", "step": 1, "shape": [256, 256], "stride": [256, 1], "dtype": "torch.float32", "source_storage": 99028706097024, "source_address": 99028706097024, "storage_bytes": 262144, "logical_bytes": 262144, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076175851520, "saved_storage": 139076175851520}
+{"event": "backward_begin", "monotonic_ns": 259030655977467, "step": 1}
+{"event": "residency_unpack", "monotonic_ns": 259030656522805, "id": "1:10", "nodes": {"0": 64}, "operation_ns": 280224}
+{"event": "unpack", "monotonic_ns": 259030656531826, "id": "1:10", "address": 139076175851520}
+{"event": "release", "monotonic_ns": 259030656645334, "id": "1:10"}
+{"event": "residency_unpack", "monotonic_ns": 259030657363923, "id": "1:8", "nodes": {"0": 256}, "operation_ns": 663720}
+{"event": "unpack", "monotonic_ns": 259030657378939, "id": "1:8", "address": 139076032299008}
+{"event": "unpack", "monotonic_ns": 259030657386287, "id": "1:9", "address": 99028727070208}
+{"event": "release", "monotonic_ns": 259030657788984, "id": "1:8"}
+{"event": "release", "monotonic_ns": 259030657839131, "id": "1:9"}
+{"event": "unpack", "monotonic_ns": 259030657882134, "id": "1:3", "address": 99028671472576}
+{"event": "residency_unpack", "monotonic_ns": 259030658609590, "id": "1:4", "nodes": {"0": 256}, "operation_ns": 719650}
+{"event": "unpack", "monotonic_ns": 259030658622752, "id": "1:4", "address": 139076176113664}
+{"event": "unpack", "monotonic_ns": 259030658629283, "id": "1:5", "address": 99028684220288}
+{"event": "residency_unpack", "monotonic_ns": 259030658692489, "id": "1:6", "nodes": {"0": 1}, "operation_ns": 59042}
+{"event": "unpack", "monotonic_ns": 259030658697959, "id": "1:6", "address": 139076741976064}
+{"event": "residency_unpack", "monotonic_ns": 259030658741398, "id": "1:7", "nodes": {"0": 1}, "operation_ns": 39658}
+{"event": "unpack", "monotonic_ns": 259030658745983, "id": "1:7", "address": 139076739485696}
+{"event": "release", "monotonic_ns": 259030658922939, "id": "1:3"}
+{"event": "release", "monotonic_ns": 259030658929379, "id": "1:4"}
+{"event": "release", "monotonic_ns": 259030658972805, "id": "1:5"}
+{"event": "release", "monotonic_ns": 259030658977632, "id": "1:6"}
+{"event": "release", "monotonic_ns": 259030658988885, "id": "1:7"}
+{"event": "residency_unpack", "monotonic_ns": 259030659666207, "id": "1:2", "nodes": {"0": 256}, "operation_ns": 639285}
+{"event": "unpack", "monotonic_ns": 259030659680396, "id": "1:2", "address": 139076177162240}
+{"event": "release", "monotonic_ns": 259030659860775, "id": "1:2"}
+{"event": "residency_unpack", "monotonic_ns": 259030660259723, "id": "1:1", "nodes": {"0": 128}, "operation_ns": 342922}
+{"event": "unpack", "monotonic_ns": 259030660268552, "id": "1:1", "address": 139076178210816}
+{"event": "release", "monotonic_ns": 259030660632254, "id": "1:1"}
+{"event": "backward_end", "monotonic_ns": 259030660718129, "step": 1}
+{"event": "step_end", "monotonic_ns": 259030661848860, "step": 1, "elapsed_ns": 10509924}
+{"event": "forward_begin", "monotonic_ns": 259030705607613, "step": 2}
+{"event": "residency_initial", "monotonic_ns": 259030706132295, "id": "2:1", "nodes": {"2": 128}}
+{"event": "pack", "monotonic_ns": 259030706150530, "id": "2:1", "step": 2, "shape": [256, 512], "stride": [512, 1], "dtype": "torch.float32", "source_storage": 99028671519424, "source_address": 99028671519424, "storage_bytes": 524288, "logical_bytes": 524288, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076178210816, "saved_storage": 139076178210816}
+{"event": "residency_initial", "monotonic_ns": 259030707243541, "id": "2:2", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030707261190, "id": "2:2", "step": 2, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028692464192, "source_address": 99028692464192, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076177162240, "saved_storage": 139076177162240}
+{"event": "pack", "monotonic_ns": 259030707455287, "id": "2:3", "step": 2, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028671472576, "source_address": 99028671472576, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028671472576, "saved_storage": 99028671472576}
+{"event": "residency_initial", "monotonic_ns": 259030707817937, "id": "2:4", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030707827281, "id": "2:4", "step": 2, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028713437696, "source_address": 99028713437696, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076176113664, "saved_storage": 139076176113664}
+{"event": "pack", "monotonic_ns": 259030707911841, "id": "2:5", "step": 2, "shape": [1024], "stride": [1], "dtype": "torch.float32", "source_storage": 99028684220288, "source_address": 99028684220288, "storage_bytes": 4096, "logical_bytes": 4096, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028684220288, "saved_storage": 99028684220288}
+{"event": "residency_initial", "monotonic_ns": 259030708073289, "id": "2:6", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030708083952, "id": "2:6", "step": 2, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684545280, "source_address": 99028684545280, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076741976064, "saved_storage": 139076741976064}
+{"event": "residency_initial", "monotonic_ns": 259030708131570, "id": "2:7", "nodes": {"2": 1}}
+{"event": "pack", "monotonic_ns": 259030708139297, "id": "2:7", "step": 2, "shape": [256, 1], "stride": [1, 1], "dtype": "torch.float32", "source_storage": 99028684566592, "source_address": 99028684566592, "storage_bytes": 1024, "logical_bytes": 1024, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076739485696, "saved_storage": 139076739485696}
+{"event": "residency_initial", "monotonic_ns": 259030708511633, "id": "2:8", "nodes": {"2": 256}}
+{"event": "pack", "monotonic_ns": 259030708520563, "id": "2:8", "step": 2, "shape": [256, 1024], "stride": [1024, 1], "dtype": "torch.float32", "source_storage": 99028743324928, "source_address": 99028743324928, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076032299008, "saved_storage": 139076032299008}
+{"event": "pack", "monotonic_ns": 259030708539225, "id": "2:9", "step": 2, "shape": [1024, 256], "stride": [1, 1024], "dtype": "torch.float32", "source_storage": 99028727070208, "source_address": 99028727070208, "storage_bytes": 1048576, "logical_bytes": 1048576, "candidate_reason": "parameter", "cloned": false, "saved_address": 99028727070208, "saved_storage": 99028727070208}
+{"event": "residency_initial", "monotonic_ns": 259030709275246, "id": "2:10", "nodes": {"2": 64}}
+{"event": "pack", "monotonic_ns": 259030709289095, "id": "2:10", "step": 2, "shape": [256, 256], "stride": [256, 1], "dtype": "torch.float32", "source_storage": 99028706097024, "source_address": 99028706097024, "storage_bytes": 262144, "logical_bytes": 262144, "candidate_reason": "candidate", "cloned": false, "saved_address": 139076175851520, "saved_storage": 139076175851520}
+{"event": "backward_begin", "monotonic_ns": 259030709450573, "step": 2}
+{"event": "residency_unpack", "monotonic_ns": 259030712174540, "id": "2:10", "nodes": {"0": 64}, "operation_ns": 2439532}
+{"event": "unpack", "monotonic_ns": 259030712184534, "id": "2:10", "address": 139076175851520}
+{"event": "release", "monotonic_ns": 259030712351713, "id": "2:10"}
+{"event": "residency_unpack", "monotonic_ns": 259030713048343, "id": "2:8", "nodes": {"0": 256}, "operation_ns": 644688}
+{"event": "unpack", "monotonic_ns": 259030713061386, "id": "2:8", "address": 139076032299008}
+{"event": "unpack", "monotonic_ns": 259030713067901, "id": "2:9", "address": 99028727070208}
+{"event": "release", "monotonic_ns": 259030713445998, "id": "2:8"}
+{"event": "release", "monotonic_ns": 259030713496167, "id": "2:9"}
+{"event": "unpack", "monotonic_ns": 259030713535140, "id": "2:3", "address": 99028671472576}
+{"event": "residency_unpack", "monotonic_ns": 259030714251282, "id": "2:4", "nodes": {"0": 256}, "operation_ns": 708171}
+{"event": "unpack", "monotonic_ns": 259030714264081, "id": "2:4", "address": 139076176113664}
+{"event": "unpack", "monotonic_ns": 259030714270317, "id": "2:5", "address": 99028684220288}
+{"event": "residency_unpack", "monotonic_ns": 259030714326388, "id": "2:6", "nodes": {"0": 1}, "operation_ns": 52391}
+{"event": "unpack", "monotonic_ns": 259030714331166, "id": "2:6", "address": 139076741976064}
+{"event": "residency_unpack", "monotonic_ns": 259030714370464, "id": "2:7", "nodes": {"0": 1}, "operation_ns": 35573}
+{"event": "unpack", "monotonic_ns": 259030714374814, "id": "2:7", "address": 139076739485696}
+{"event": "release", "monotonic_ns": 259030714538281, "id": "2:3"}
+{"event": "release", "monotonic_ns": 259030714544408, "id": "2:4"}
+{"event": "release", "monotonic_ns": 259030714587176, "id": "2:5"}
+{"event": "release", "monotonic_ns": 259030714592153, "id": "2:6"}
+{"event": "release", "monotonic_ns": 259030714601194, "id": "2:7"}
+{"event": "residency_unpack", "monotonic_ns": 259030715275802, "id": "2:2", "nodes": {"0": 256}, "operation_ns": 643596}
+{"event": "unpack", "monotonic_ns": 259030715291396, "id": "2:2", "address": 139076177162240}
+{"event": "release", "monotonic_ns": 259030715456872, "id": "2:2"}
+{"event": "residency_unpack", "monotonic_ns": 259030715836063, "id": "2:1", "nodes": {"0": 128}, "operation_ns": 326399}
+{"event": "unpack", "monotonic_ns": 259030715844138, "id": "2:1", "address": 139076178210816}
+{"event": "release", "monotonic_ns": 259030716197825, "id": "2:1"}
+{"event": "backward_end", "monotonic_ns": 259030716280163, "step": 2}
+{"event": "step_end", "monotonic_ns": 259030717236169, "step": 2, "elapsed_ns": 11636285}

@@ -1,0 +1,36 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "threads": 8,
+  "interop_threads": 1,
+  "seed": 20260921,
+  "steps": 3,
+  "dtype": "float32",
+  "source_sha256": "47fe9f2cbfb6b10e914a76e740ccceda652477c4a3231f2f854ddff0dbf66aee",
+  "source_hashes": {
+    "observe_saved_tensors.py": "47fe9f2cbfb6b10e914a76e740ccceda652477c4a3231f2f854ddff0dbf66aee",
+    "numa_buffer.py": "4e6518fa541d33326bbdb2ed890a802fc6850b9a013b02d3ed7cdbdc085fb4c7"
+  },
+  "modes": [
+    "observe",
+    "clone",
+    "dram",
+    "cxl",
+    "prefetch_sync"
+  ],
+  "note": "Small MLP correctness experiment; no speedup claims. Bind-protected buffers.",
+  "/proc/sys/kernel/numa_balancing": "1",
+  "/proc/sys/kernel/perf_event_paranoid": "4",
+  "/proc/sys/kernel/numa_balancing_pte_scale": "16"
+}

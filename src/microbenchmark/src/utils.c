@@ -96,7 +96,7 @@ int init_buf_reg_alloc(uint64_t size, char **alloc_ptr)
         fprintf(stderr,"ERROR: malloc\n");
         return -1;
     }
-    ptr = (void**)((uintptr_t) (mem + (ALIGN - 1) + sizeof(void*)) & ~(ALIGN - 1));
+    ptr = (char *)(((uintptr_t)mem + (ALIGN - 1) + sizeof(void*)) & ~(uintptr_t)(ALIGN - 1));
     ((void **) ptr)[-1] = mem;
     page_size = (unsigned long)getpagesize();
     page_cnt = (size / page_size);

@@ -218,7 +218,7 @@ run() {
   echo "pid_get_pgstat[${pid_get_pgstat}]"
   if [[ " 6 7 8 " =~ " $ttype " ]]; then
     sleep 2
-    PYTHONUNBUFFERED=1 python3 set_scan_scale.py $perff > $scalef 2>&1 &
+    PYTHONUNBUFFERED=1 python3 set_scan_scale.py "$perff" --pid "$pid1" > "$scalef" 2>&1 &
     pid_scale=$!
     echo "pid_scale[${pid_scale}]"
   fi
@@ -245,11 +245,9 @@ run() {
   sudo kill -9 ${pid_get_pgstat}
 
   if [[ " 5 6 7 8 " =~ " $ttype " ]]; then
-    sudo kill -INT ${pid_scale}
-    sudo kill -9 ${pid_scale}
-    if [[ " 6 7 8 " =~ " $ttype " ]]; then
-      echo 16 | sudo tee /proc/sys/kernel/numa_balancing_pte_scale
-    elif [[ " 5 " =~ " $ttype " ]]; then
+    sudo kill -TERM ${pid_scale}
+    wait ${pid_scale} || true
+    if [[ " 5 " =~ " $ttype " ]]; then
       echo 10 | sudo tee /proc/sys/kernel/numa_balancing_page_promote_scale
     fi
   fi
