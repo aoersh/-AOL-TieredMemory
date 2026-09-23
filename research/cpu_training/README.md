@@ -5,6 +5,21 @@ DRAM/CXL 放置和同步迁移验证。
 这是 [v3 实验方案](../../docs/CPU_TRAIN_CXL_PLAN.md) 的基础步骤，尚未实现 SOAR 评分适配、
 ALTO 在线协调或收益策略。已新增简单异步预取与首轮计时，但发现 FIFO 需求顺序
 倒置，仍需优化强预取基线，详见 [E1/E2 报告](E1_E2_REPORT.md)。
+2026-09-22 新增上一轮需求顺序调度，完成 10 次诊断和 50 次计时：顺序正确，
+但整步未稳定加速，详见 [需求顺序实验报告](DEMAND_ORDER_REPORT.md)。
+2026-09-22 新增 pack-time 历史优先级队列：大规模相对 FIFO 平均减少约
+8.9 ms/step，小规模差异区间跨 0；两档仍明显慢于 Direct CXL，详见
+[优先级预取报告](READY_PRIORITY_REPORT.md)。
+随后完成单 saved tensor 隔离实验：只将 ID 2、6、10 放在 CXL，其余候选在
+DRAM；有效结果和一次已作废的隔离器错误说明见 [单 tensor 报告](SINGLE_TENSOR_REPORT.md)。
+随后完成 1/3/6 个目标 tensor 的多对象实验；迁移量增加时 ranked 开销增加，
+但尚未施加 DRAM 上限，不能解释为容量收益，见 [多对象报告](GROUP_PRESSURE_REPORT.md)。
+随后完成受管 tensor 池预算矩阵：Direct、budget 0/1/2 MiB 共 20 个独立进程，
+预算 1/2 MiB 每步分别迁移约 1/2 MiB 并增加 step 开销；预算 0 与 Direct 基本
+重合。该预算是受管池代理，不是整进程 DRAM 上限，详见 [预算报告](BUDGET_REPORT.md)。
+随后在用户临时开放 `perf_event_paranoid=-1` 后完成 Direct、budget 1 MiB、
+ranked 各 5 次 PMU 窗口采集；事件 running=100%，但目前仍是整进程窗口，尚未
+完成 tensor 级 AOL 归因，详见 [PMU 报告](PMU_REPORT.md)。
 v3 方案已改为先验证 Direct CXL / Prefetch 的收益
 差异，再验证 AOL/Performance Criticality，最后设计选择性预取；ALTO 在线
 联动作为可选扩展。以下已完成实验及原始结果保持不变。
@@ -135,8 +150,9 @@ storage 和可检测的重复保存。此筛选不是完整别名/原地修改�
 
 ## 下一步：先验证访问路径选择空间
 
-1. 参数化、正确性、计时拆分和简单后台执行已完成。先解决 FIFO 的需求顺序
-   倒置，按早期迭代的需求顺序/窗口建立更强预取基线，继续完善别名边界。
+1. 参数化、正确性、计时拆分和后台执行已完成。按上一轮需求顺序提交已验证，
+   但反向边界提交失去前向窗口；下一步结合就绪优先级与提前量验证，而非认定
+   排序正确就足够。补充分配/复制分解和少量单对象干预，继续完善别名边界。
 2. 分解 Direct 与受管 DRAM 的性能差异；强基线验证后再做单对象干预，
    独立确认两种访问路径的收益边界，不用当前全量 FIFO 结果代替 Q1 验证。
 3. 在问题验证基础上关联 PEBS/区间 PMU，复用 `src/soar/run/proc_obj_e.py` 和
@@ -149,3 +165,32 @@ storage 和可检测的重复保存。此筛选不是完整别名/原地修改�
 `workloads.py` 为 MLP 和显式 attention Transformer，`numa_buffer.py` 为
 独立 mmap、放置与逐页迁移，`test_boundaries.py` 与 `summarize_correctness.py`
 为边界和日志检查。原 SOAR/ALTO 核心代码未因本轮改动。
+
+## 2026-09-23 测量审计更新
+
+修复生命周期仅保留最后一步及首次 unpack 被误当释放边界的问题；此前
+共享窗口 AOL 结果不能用于否定 AOL。完成六对象 18 次正确性及 90 次计时，
+尚未发现稳定预取赢家；PEBS 首次获得 266 个正式步骤受管地址匹配样本，
+仍不足以做对象相关性结论。权限当前为用户开放的 -1。详见
+[测量审计与新结果](MEASUREMENT_AUDIT_0923.md)。
+
+## 单对象采样覆盖更新（2026-09-23）
+
+已完成六目标各三次、每次 500 步的 Direct 单对象 PEBS 采集；18 次全部
+成功，ID2/16 的零样本问题已转为可观察的低覆盖。对象背景 AOL 区间重叠，
+暂不据此否定原指标。训练步数与旧计时对照不同，不直接跨实验拟合收益。
+详见 [单对象 PEBS 覆盖报告](SINGLE_PEBS_REPORT.md)。
+
+## 500 步阶段对齐结果（2026-09-23）
+
+完成六对象 Direct/ranked 各三次计时（36 进程），与独立 PEBS 特征的
+完整 505 步 loss 和源码一致。平均预取净收益均为负，尚无稳定预取赢家；
+六对象描述性相关性不足以否定 AOL。详见 [对齐实验报告](MATCHED_500_REPORT.md)。
+
+## 预取原因验证的初步结论（2026-09-23）
+
+完成两档三方对照共 63 次计时：未发现稳定初始 DRAM 放置优势；大配置
+32 MiB 目标的 ranked 比 Direct 慢约 32.4 ms/step，约 29.0 ms 出现在
+forward，需求处等待仅约 0.046 ms。预取流程额外成本是当前主要问题，
+具体的软件/迁移/缓存机制尚未分离，不据此否定 AOL。见
+[三方对照与初步结论](PLACEMENT_CAUSE_REPORT.md)。

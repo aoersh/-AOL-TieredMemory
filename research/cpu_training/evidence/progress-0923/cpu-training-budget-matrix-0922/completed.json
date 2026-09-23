@@ -1,0 +1,1 @@
+{"runs": 20, "target_ids": [2, 6, 10, 16, 20, 22], "conditions": ["direct", "budget0", "budget1", "budget2"], "steps": 20, "warmup": 5, "limitation": "budget is a managed-tensor-pool proxy, not a whole-process DRAM cap"}

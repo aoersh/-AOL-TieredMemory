@@ -1,0 +1,329 @@
+{
+  "scope": "PEBS 配置 ldlat=30 的采样访存，不是总访问频率；AOL 为进程区间背景，不是 tensor 延迟",
+  "records": 17675,
+  "steps": 505,
+  "stats": {
+    "total_samples": 122264,
+    "outside_registered_ranges_or_lifetimes": 112199,
+    "matched_samples": 10065,
+    "warmup_matched": 89,
+    "measured_matched": 9976
+  },
+  "objects": [
+    {
+      "id": 2,
+      "samples": 32,
+      "sampled_steps": 32,
+      "before_first_unpack": 0,
+      "after_first_unpack": 32,
+      "mean_sample_weight": 271.0625,
+      "mean_sample_context_aol": 170.9946379114877
+    },
+    {
+      "id": 4,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 5,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 6,
+      "samples": 735,
+      "sampled_steps": 402,
+      "before_first_unpack": 0,
+      "after_first_unpack": 735,
+      "mean_sample_weight": 1023.9755102040816,
+      "mean_sample_context_aol": 167.06493441317176
+    },
+    {
+      "id": 8,
+      "samples": 474,
+      "sampled_steps": 318,
+      "before_first_unpack": 0,
+      "after_first_unpack": 474,
+      "mean_sample_weight": 272.4282700421941,
+      "mean_sample_context_aol": 165.7484137174873
+    },
+    {
+      "id": 9,
+      "samples": 315,
+      "sampled_steps": 239,
+      "before_first_unpack": 0,
+      "after_first_unpack": 315,
+      "mean_sample_weight": 180.38730158730158,
+      "mean_sample_context_aol": 166.2335358707619
+    },
+    {
+      "id": 10,
+      "samples": 560,
+      "sampled_steps": 345,
+      "before_first_unpack": 0,
+      "after_first_unpack": 560,
+      "mean_sample_weight": 492.2553571428571,
+      "mean_sample_context_aol": 165.77183357524865
+    },
+    {
+      "id": 11,
+      "samples": 531,
+      "sampled_steps": 332,
+      "before_first_unpack": 3,
+      "after_first_unpack": 528,
+      "mean_sample_weight": 324.1996233521657,
+      "mean_sample_context_aol": 165.48424363721216
+    },
+    {
+      "id": 13,
+      "samples": 519,
+      "sampled_steps": 346,
+      "before_first_unpack": 0,
+      "after_first_unpack": 519,
+      "mean_sample_weight": 294.23121387283237,
+      "mean_sample_context_aol": 165.4003908459988
+    },
+    {
+      "id": 16,
+      "samples": 40,
+      "sampled_steps": 37,
+      "before_first_unpack": 0,
+      "after_first_unpack": 40,
+      "mean_sample_weight": 547.675,
+      "mean_sample_context_aol": 167.4481853058676
+    },
+    {
+      "id": 18,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 19,
+      "samples": 1,
+      "sampled_steps": 1,
+      "before_first_unpack": 0,
+      "after_first_unpack": 1,
+      "mean_sample_weight": 328,
+      "mean_sample_context_aol": 184.6463726555624
+    },
+    {
+      "id": 20,
+      "samples": 731,
+      "sampled_steps": 393,
+      "before_first_unpack": 0,
+      "after_first_unpack": 731,
+      "mean_sample_weight": 931.6621067031464,
+      "mean_sample_context_aol": 164.53482521775885
+    },
+    {
+      "id": 22,
+      "samples": 168,
+      "sampled_steps": 146,
+      "before_first_unpack": 0,
+      "after_first_unpack": 168,
+      "mean_sample_weight": 422.80357142857144,
+      "mean_sample_context_aol": 165.34374293396758
+    },
+    {
+      "id": 23,
+      "samples": 447,
+      "sampled_steps": 309,
+      "before_first_unpack": 0,
+      "after_first_unpack": 447,
+      "mean_sample_weight": 1725.7382550335572,
+      "mean_sample_context_aol": 163.67982564355574
+    },
+    {
+      "id": 26,
+      "samples": 34,
+      "sampled_steps": 34,
+      "before_first_unpack": 0,
+      "after_first_unpack": 34,
+      "mean_sample_weight": 327.11764705882354,
+      "mean_sample_context_aol": 164.9348577117209
+    },
+    {
+      "id": 28,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 29,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 30,
+      "samples": 701,
+      "sampled_steps": 409,
+      "before_first_unpack": 0,
+      "after_first_unpack": 701,
+      "mean_sample_weight": 1072.3152639087018,
+      "mean_sample_context_aol": 165.57110947187024
+    },
+    {
+      "id": 32,
+      "samples": 471,
+      "sampled_steps": 315,
+      "before_first_unpack": 0,
+      "after_first_unpack": 471,
+      "mean_sample_weight": 254.24416135881103,
+      "mean_sample_context_aol": 165.7070699571904
+    },
+    {
+      "id": 33,
+      "samples": 288,
+      "sampled_steps": 224,
+      "before_first_unpack": 0,
+      "after_first_unpack": 288,
+      "mean_sample_weight": 225.69791666666666,
+      "mean_sample_context_aol": 165.78387037208398
+    },
+    {
+      "id": 34,
+      "samples": 565,
+      "sampled_steps": 351,
+      "before_first_unpack": 0,
+      "after_first_unpack": 565,
+      "mean_sample_weight": 480.1716814159292,
+      "mean_sample_context_aol": 165.54235609892265
+    },
+    {
+      "id": 35,
+      "samples": 549,
+      "sampled_steps": 358,
+      "before_first_unpack": 0,
+      "after_first_unpack": 549,
+      "mean_sample_weight": 317.43897996357015,
+      "mean_sample_context_aol": 167.55851829423804
+    },
+    {
+      "id": 37,
+      "samples": 557,
+      "sampled_steps": 349,
+      "before_first_unpack": 0,
+      "after_first_unpack": 557,
+      "mean_sample_weight": 258.6552962298025,
+      "mean_sample_context_aol": 167.48309696629235
+    },
+    {
+      "id": 40,
+      "samples": 49,
+      "sampled_steps": 48,
+      "before_first_unpack": 0,
+      "after_first_unpack": 49,
+      "mean_sample_weight": 377.7959183673469,
+      "mean_sample_context_aol": 170.11039246221316
+    },
+    {
+      "id": 42,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 43,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 44,
+      "samples": 775,
+      "sampled_steps": 412,
+      "before_first_unpack": 0,
+      "after_first_unpack": 775,
+      "mean_sample_weight": 878.323870967742,
+      "mean_sample_context_aol": 168.50727384650295
+    },
+    {
+      "id": 46,
+      "samples": 128,
+      "sampled_steps": 115,
+      "before_first_unpack": 0,
+      "after_first_unpack": 128,
+      "mean_sample_weight": 361.1015625,
+      "mean_sample_context_aol": 168.94966956322529
+    },
+    {
+      "id": 47,
+      "samples": 464,
+      "sampled_steps": 336,
+      "before_first_unpack": 0,
+      "after_first_unpack": 464,
+      "mean_sample_weight": 1681.2629310344828,
+      "mean_sample_context_aol": 169.55372589799939
+    },
+    {
+      "id": 50,
+      "samples": 34,
+      "sampled_steps": 34,
+      "before_first_unpack": 0,
+      "after_first_unpack": 34,
+      "mean_sample_weight": 325.8529411764706,
+      "mean_sample_context_aol": 165.8992354431736
+    },
+    {
+      "id": 52,
+      "samples": 2,
+      "sampled_steps": 2,
+      "before_first_unpack": 0,
+      "after_first_unpack": 2,
+      "mean_sample_weight": 603.5,
+      "mean_sample_context_aol": 187.29725028478475
+    },
+    {
+      "id": 53,
+      "samples": 0,
+      "sampled_steps": 0,
+      "before_first_unpack": 0,
+      "after_first_unpack": 0,
+      "mean_sample_weight": null,
+      "mean_sample_context_aol": null
+    },
+    {
+      "id": 54,
+      "samples": 602,
+      "sampled_steps": 358,
+      "before_first_unpack": 0,
+      "after_first_unpack": 602,
+      "mean_sample_weight": 253.72591362126246,
+      "mean_sample_context_aol": 172.1517996199013
+    },
+    {
+      "id": 56,
+      "samples": 204,
+      "sampled_steps": 189,
+      "before_first_unpack": 0,
+      "after_first_unpack": 204,
+      "mean_sample_weight": 222.8186274509804,
+      "mean_sample_context_aol": 170.05053482788188
+    }
+  ]
+}

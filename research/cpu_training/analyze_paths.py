@@ -16,10 +16,16 @@ for path in sorted(a.results.glob('*-r*-*')):
  shape,repeat,mode=path.name.split('-')
  manifest=json.loads((path/'manifest.json').read_text())
  assert not manifest['configuration']['diagnostic']
- steps=[s for s in json.loads((path/'steps.json').read_text()) if s['measured']]
+ all_steps=json.loads((path/'steps.json').read_text())
+ steps=[s for s in all_steps if s['measured']]
  rows.append(dict(shape=shape,repeat=int(repeat[1:]),mode=mode,
                   mean_step_ms=statistics.mean(s['step_ns']/1e6 for s in steps),
                   mean_wait_ms=statistics.mean(s['wait_ns']/1e6 for s in steps),
+                  mean_forward_ms=statistics.mean(s['forward_ns']/1e6 for s in steps),
+                  mean_backward_ms=statistics.mean(s['backward_ns']/1e6 for s in steps),
+                  total_training_step_ms=sum(s['step_ns']/1e6 for s in all_steps),
+                  first_step_ms=all_steps[0]['step_ns']/1e6,
+                  measured_schedule_fraction=statistics.mean(s.get('calibrated_schedule',False) for s in steps),
                   mean_moved_MiB=statistics.mean(s['moved_bytes']/1048576 for s in steps),
                   mean_late_unpacks=statistics.mean(s['late_unpacks'] for s in steps),
                   mean_forward_overlap_ms=statistics.mean(s['migration_overlap_forward_ns']/1e6 for s in steps),
@@ -29,24 +35,31 @@ with (a.results/'process-means.csv').open('w') as f:
 summary={}
 for shape in ('small','large'):
  stats={}
- for mode in ('dram','direct','sync','async'):
+ for mode in dict.fromkeys(r['mode'] for r in rows):
   selected=[r for r in rows if r['shape']==shape and r['mode']==mode]
   assert len(selected)==5, 'this pilot uses n=5 t critical value'
   values=[r['mean_step_ms'] for r in selected]
   stats[mode]=dict(mean_step_ms=statistics.mean(values),sd_process_mean_ms=statistics.stdev(values),
                    mean_wait_ms=statistics.mean(r['mean_wait_ms'] for r in selected),
+                   mean_forward_ms=statistics.mean(r['mean_forward_ms'] for r in selected),
+                   mean_backward_ms=statistics.mean(r['mean_backward_ms'] for r in selected),
+                   total_training_step_ms=statistics.mean(r['total_training_step_ms'] for r in selected),
+                   first_step_ms=statistics.mean(r['first_step_ms'] for r in selected),
+                   measured_schedule_fraction=statistics.mean(r['measured_schedule_fraction'] for r in selected),
                    mean_moved_MiB=statistics.mean(r['mean_moved_MiB'] for r in selected),
                    mean_late_unpacks=statistics.mean(r['mean_late_unpacks'] for r in selected),
                    mean_forward_overlap_ms=statistics.mean(r['mean_forward_overlap_ms'] for r in selected))
- differences=[]
- for repeat in range(5):
-  pair={r['mode']:r['mean_step_ms'] for r in rows if r['shape']==shape and r['repeat']==repeat}
-  differences.append(pair['direct']-pair['async'])
- mean=statistics.mean(differences)
- half=2.776445105*statistics.stdev(differences)/(5**0.5)
- stats['paired_direct_minus_async']=dict(mean_ms=mean,ci95_ms=[mean-half,mean+half],
-                                        differences_ms=differences,independent_pairs=5,
-                                        method='paired process means; Student t, df=4; exploratory')
+ for left,right in [('direct','async'),('direct','demand'),('async','demand'),('direct','ranked'),('async','ranked'),('demand','ranked')]:
+  if left not in stats or right not in stats: continue
+  differences=[]
+  for repeat in range(5):
+   pair={r['mode']:r['mean_step_ms'] for r in rows if r['shape']==shape and r['repeat']==repeat}
+   differences.append(pair[left]-pair[right])
+  mean=statistics.mean(differences)
+  half=2.776445105*statistics.stdev(differences)/(5**0.5)
+  stats[f'paired_{left}_minus_{right}']=dict(mean_ms=mean,ci95_ms=[mean-half,mean+half],
+                                         differences_ms=differences,independent_pairs=5,
+                                         method='paired process means; Student t, df=4; exploratory')
  summary[shape]=stats
 (a.results/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary,indent=2))

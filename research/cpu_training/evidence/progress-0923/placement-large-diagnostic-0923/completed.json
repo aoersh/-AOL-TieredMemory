@@ -1,0 +1,1 @@
+{"runs": 3, "targets": [10], "non_targets": "DRAM", "modes": ["dram", "direct", "ranked"], "steps": 3, "repeats": 1}

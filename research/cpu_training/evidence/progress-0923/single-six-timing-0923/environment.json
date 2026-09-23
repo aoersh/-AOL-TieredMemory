@@ -1,0 +1,11 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "loadavg": [
+    3.2724609375,
+    1.25048828125,
+    0.466796875
+  ],
+  "numa_balancing": "1",
+  "perf_event_paranoid": "-1",
+  "note": "state sampled during matrix, not continuous background monitoring"
+}

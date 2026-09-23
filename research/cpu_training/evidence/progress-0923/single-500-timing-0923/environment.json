@@ -1,0 +1,10 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "loadavg_during_run": [
+    6.03466796875,
+    3.6943359375,
+    2.166015625
+  ],
+  "perf_event_paranoid": "-1",
+  "note": "background sampled once, not continuous load monitoring"
+}

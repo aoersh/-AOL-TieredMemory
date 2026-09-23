@@ -12,13 +12,15 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('output',type=Path)
 p.add_argument('--phase',choices=['diagnostic','timing'],required=True)
 p.add_argument('--repeats',type=int,default=5)
+p.add_argument('--modes',nargs='+',choices=['dram','direct','sync','async','demand','ranked'],
+               default=['dram','direct','sync','async'])
 a=p.parse_args()
 a.output.mkdir(parents=True,exist_ok=False)
 rng=random.Random(20260921)
 commands=[]
 for rep in range(1 if a.phase=='diagnostic' else a.repeats):
  for shape,batch,seq in [('small',4,128),('large',8,512)]:
-  modes=['dram','direct','sync','async']
+  modes=list(a.modes)
   rng.shuffle(modes)
   for mode in modes:
    name=f'{shape}-r{rep}-{mode}'
@@ -43,7 +45,7 @@ for name,cmd in commands:
 for shape in ('small','large'):
  for rep in range(1 if a.phase=='diagnostic' else a.repeats):
   signatures=[]
-  for mode in ('dram','direct','sync','async'):
+  for mode in a.modes:
    path=a.output/f'{shape}-r{rep}-{mode}'
    m=json.loads((path/'manifest.json').read_text())
    for name,digest in m['source_hashes'].items():

@@ -48,6 +48,25 @@ checkpointing、复杂 ML 或新内核算法。
 顺序倒置；因此尚未形成强预取基线、单对象收益差异或 Q1–Q3 的肯定结论。
 下一步先改进需求顺序调度并解释受管 DRAM/Direct 差异，详见
 [E1/E2 结果与限制](../research/cpu_training/E1_E2_REPORT.md)。
+2026-09-22 进展：新增上一轮需求顺序的反向边界预取，10 次诊断和 50 次计时
+完成，最大数值误差 0。新策略顺序正确但没有稳定整步收益；两档仍为 Direct
+最快，Q1–Q3 未获肯定结果。详见
+[需求顺序实验报告](../research/cpu_training/DEMAND_ORDER_REPORT.md)。
+随后新增 pack-time 历史优先级队列，60 次计时全部完成；大规模相对 FIFO 有
+探索性改善，小规模不显著，但两档仍慢于 Direct，尚不足以证明预取收益或
+选择性策略空间。详见
+[优先级预取报告](../research/cpu_training/READY_PRIORITY_REPORT.md)。
+单 tensor 隔离实验随后完成：三个目标各五次重复，ranked 仅接近 Direct 或小幅
+落后，尚未观察到稳定的混合赢家；同步迁移状态错误已修复并重新运行。
+PMU 权限仍阻塞 AOL 采集，详见
+[单 tensor 报告](../research/cpu_training/SINGLE_TENSOR_REPORT.md)。
+多对象扩展（1/3/6 个目标）随后完成，但无 DRAM 上限时 ranked 随迁移量增加而
+变慢；下一步进入明确的 25%/50%/75% 受管池预算实验。详见
+[多对象报告](../research/cpu_training/GROUP_PRESSURE_REPORT.md)。
+2026-09-22 已完成受管 tensor 池 budget 0/1/2 MiB 矩阵（20 个独立进程）。
+预算 1/2 MiB 的迁移量符合限制且 step 开销高于 Direct；这验证了预算代理和
+迁移成本，但不等同于整进程 DRAM 容量压力。结果见
+[预算报告](../research/cpu_training/BUDGET_REPORT.md)。
 本轮从扩展该原型开始，不重做已经完成的 SOAR/ALTO 安装，也不将旧步耗时
 用作新方案的性能结论。
 
@@ -355,3 +374,32 @@ AOL 是否有效作为独立问题判断，不能以结果好看为由省略对�
 
 当前目标是完成 Q1–Q3 的可信验证。只有通过这些检查，才投入更复杂预测、
 页面级细化、在线 ALTO 联动或论文系统化工作。
+
+## 2026-09-23 测量审计更新
+
+修复生命周期仅保留最后一步及首次 unpack 被误当释放边界的问题；此前
+共享窗口 AOL 结果不能用于否定 AOL。完成六对象 18 次正确性及 90 次计时，
+尚未发现稳定预取赢家；PEBS 首次获得 266 个正式步骤受管地址匹配样本，
+仍不足以做对象相关性结论。权限当前为用户开放的 -1。详见
+[测量审计与新结果](../research/cpu_training/MEASUREMENT_AUDIT_0923.md)。
+
+## 单对象采样覆盖更新（2026-09-23）
+
+已完成六目标各三次、每次 500 步的 Direct 单对象 PEBS 采集；18 次全部
+成功，ID2/16 的零样本问题已转为可观察的低覆盖。对象背景 AOL 区间重叠，
+暂不据此否定原指标。训练步数与旧计时对照不同，不直接跨实验拟合收益。
+详见 [单对象 PEBS 覆盖报告](../research/cpu_training/SINGLE_PEBS_REPORT.md)。
+
+## 500 步阶段对齐结果（2026-09-23）
+
+完成六对象 Direct/ranked 各三次计时（36 进程），与独立 PEBS 特征的
+完整 505 步 loss 和源码一致。平均预取净收益均为负，尚无稳定预取赢家；
+六对象描述性相关性不足以否定 AOL。详见 [对齐实验报告](../research/cpu_training/MATCHED_500_REPORT.md)。
+
+## 预取原因验证的初步结论（2026-09-23）
+
+完成两档三方对照共 63 次计时：未发现稳定初始 DRAM 放置优势；大配置
+32 MiB 目标的 ranked 比 Direct 慢约 32.4 ms/step，约 29.0 ms 出现在
+forward，需求处等待仅约 0.046 ms。预取流程额外成本是当前主要问题，
+具体的软件/迁移/缓存机制尚未分离，不据此否定 AOL。见
+[三方对照与初步结论](../research/cpu_training/PLACEMENT_CAUSE_REPORT.md)。
