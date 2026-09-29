@@ -1,0 +1,197 @@
+{
+  "means": {
+    "direct": {
+      "step_ms": 102.37415421666667,
+      "forward_ms": 43.55187234,
+      "backward_ms": 57.853614730000004,
+      "optimizer_and_drain_ms": 0.9686671466666666,
+      "wait_ms": 0.0,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.0,
+      "delay_ms": 0.0,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "real": {
+      "step_ms": 140.76045931,
+      "forward_ms": 76.64933558666667,
+      "backward_ms": 62.91782119333333,
+      "optimizer_and_drain_ms": 1.19330253,
+      "wait_ms": 0.04689195333333333,
+      "migration_ms": 51.548143583333335,
+      "bind_ms": 0.5864454233333334,
+      "prepare_ms": 5.74858154,
+      "delay_ms": 0.00056129,
+      "syscall_ms": 44.66091191,
+      "status_ms": 0.52826736,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 51.548143583333335
+    },
+    "real_native": {
+      "step_ms": 141.40039103,
+      "forward_ms": 77.4146712,
+      "backward_ms": 62.79838741666667,
+      "optimizer_and_drain_ms": 1.1873324133333334,
+      "wait_ms": 0.046293346666666665,
+      "migration_ms": 51.73543831,
+      "bind_ms": 0.49776141,
+      "prepare_ms": 5.75329716,
+      "delay_ms": 0.0005337366666666667,
+      "syscall_ms": 44.90810042333333,
+      "status_ms": 0.5252804466666666,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 51.73543831,
+      "native_wall_ms": 44.87638412,
+      "native_cpu_ms": 44.29077974,
+      "native_pre_ms": 0.016806193333333334,
+      "native_post_ms": 0.014910109999999999,
+      "native_gap_ms": 0.031716303333333334,
+      "native_noncpu_ms": 0.58560438,
+      "native_voluntary": 9.186666666666667,
+      "native_involuntary": 0.73
+    },
+    "real_vectorized": {
+      "step_ms": 137.95356950666667,
+      "forward_ms": 73.78610666666667,
+      "backward_ms": 62.97481693,
+      "optimizer_and_drain_ms": 1.19264591,
+      "wait_ms": 0.04523886666666667,
+      "migration_ms": 51.15894973666667,
+      "bind_ms": 0.5737130533333333,
+      "prepare_ms": 0.19931723,
+      "delay_ms": 0.0006799766666666666,
+      "syscall_ms": 49.82558761666667,
+      "status_ms": 0.52932974,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 51.15894973666667
+    },
+    "real_vectorized_native": {
+      "step_ms": 137.14979381333333,
+      "forward_ms": 73.66810027333334,
+      "backward_ms": 62.26116611,
+      "optimizer_and_drain_ms": 1.22052743,
+      "wait_ms": 0.04464747,
+      "migration_ms": 51.52417505333333,
+      "bind_ms": 0.6623779066666666,
+      "prepare_ms": 0.21489863,
+      "delay_ms": 0.0007181466666666667,
+      "syscall_ms": 50.05358423,
+      "status_ms": 0.5339506366666666,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 51.52417505333333,
+      "native_wall_ms": 50.01580780333334,
+      "native_cpu_ms": 49.824506686666666,
+      "native_pre_ms": 0.020747993333333332,
+      "native_post_ms": 0.017028433333333332,
+      "native_gap_ms": 0.03777642666666667,
+      "native_noncpu_ms": 0.19130111666666666,
+      "native_voluntary": 20.933333333333334,
+      "native_involuntary": 0.7366666666666667
+    },
+    "same_vectorized_native": {
+      "step_ms": 109.65948039333334,
+      "forward_ms": 49.14162142,
+      "backward_ms": 59.54964365,
+      "optimizer_and_drain_ms": 0.9682153233333333,
+      "wait_ms": 0.046067616666666665,
+      "migration_ms": 0.0,
+      "bind_ms": 0.5551418866666666,
+      "prepare_ms": 0.12608848666666667,
+      "delay_ms": 0.0006000533333333333,
+      "syscall_ms": 4.935185943333333,
+      "status_ms": 1.90828034,
+      "moved_MiB": 0.0,
+      "late_per_step": 0,
+      "task_ms": 7.56435749,
+      "native_wall_ms": 4.912611293333334,
+      "native_cpu_ms": 4.762445686666667,
+      "native_pre_ms": 0.01511443,
+      "native_post_ms": 0.00746022,
+      "native_gap_ms": 0.02257465,
+      "native_noncpu_ms": 0.15016560666666667,
+      "native_voluntary": 18.173333333333336,
+      "native_involuntary": 0.7266666666666667
+    }
+  },
+  "step_contrasts": {
+    "real_native-real": {
+      "mean": 0.6399317200000022,
+      "ci95": [
+        -8.17605680796862,
+        9.455920247968624
+      ],
+      "values": [
+        -3.416534030000008,
+        3.171749180000006,
+        2.1645800100000088
+      ]
+    },
+    "real_vectorized_native-real_vectorized": {
+      "mean": -0.8037756933333261,
+      "ci95": [
+        -8.244953986164493,
+        6.6374025994978405
+      ],
+      "values": [
+        -3.5908949199999824,
+        -1.1841550499999869,
+        2.363722889999991
+      ]
+    },
+    "real_vectorized_native-real_native": {
+      "mean": -4.250597216666658,
+      "ci95": [
+        -4.592378973057398,
+        -3.9088154602759175
+      ],
+      "values": [
+        -4.308351889999983,
+        -4.349892089999997,
+        -4.093547669999992
+      ]
+    },
+    "same_vectorized_native-direct": {
+      "mean": 7.285326176666672,
+      "ci95": [
+        2.0995008734469183,
+        12.471151479886426
+      ],
+      "values": [
+        5.499450100000004,
+        6.7761383600000045,
+        9.580390070000007
+      ]
+    },
+    "real_vectorized_native-same_vectorized_native": {
+      "mean": 27.490313420000007,
+      "ci95": [
+        25.138610859733475,
+        29.842015980266538
+      ],
+      "values": [
+        26.642250570000016,
+        27.317009420000005,
+        28.51168027
+      ]
+    },
+    "real_vectorized_native-direct": {
+      "mean": 34.77563959666668,
+      "ci95": [
+        27.24043824905575,
+        42.31084094427761
+      ],
+      "values": [
+        32.14170067000002,
+        34.09314778000001,
+        38.09207034000001
+      ]
+    }
+  }
+}

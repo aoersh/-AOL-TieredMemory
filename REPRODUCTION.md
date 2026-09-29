@@ -8,7 +8,7 @@
 - CPU：双路 Xeon 6515P Granite Rapids，64 个逻辑 CPU。
 - NUMA：DRAM 节点 0/1，各约 64 GiB；CXL RAM 节点 2/3，各约 64 GiB。
 - CXL：`sudo cxl list -M` 可看到 `mem0`、`mem1`，各 `ram_size=68719476736`；DAX region 分别指向节点 2/3。
-- 当前记录参数：`numa_balancing=1`、`pte_scale=16`、`perf_event_paranoid=4`、`demotion=false`。每次实验仍需重新读取。
+- 初始复现阶段记录参数（历史值）：`numa_balancing=1`、`pte_scale=16`、`perf_event_paranoid=4`、`demotion=false`。每次实验仍需重新读取。
 - CPU 训练 E0/E1/E2 已完成正确性和初步访问路径实验，但尚未完成收益感知策略或 AOL 预测验证。
 
 ## 编译与测试
@@ -66,7 +66,7 @@ python3 run/reproduce.py --output results/new-run --workload micro --repeats 3
 
 ## 后续入口
 
-下一步先修复异步预取的需求顺序调度，解释 Direct CXL 与受管 DRAM 的差异，再做单 tensor 因果干预；之后才采集 PMU/PEBS 并评估 AOL。详见 v3 方案中的继续/停止条件。
+截至 2026-09-29，需求顺序、单对象干预和初步 PMU/PEBS 采集已完成。迁移参数向量化已验证能降低构造成本，但尚无稳定端到端加速。固定延迟时机对照已完成，单纯启动偏移不足以解释差异。C 内计时和独立/并发调用对照已完成；sudo 内核 CPU 热点采样及线程归属核验已完成，LRU 自旋锁是两组跨节点 worker 最大单项热点；下一步用缓冲区复用/分配压力干预量化其影响，再评估张量收益及 AOL 解释能力。详见最新报告及 v3 方案中的继续/停止条件。
 
 2026-09-22 更新：上一轮需求顺序的反向边界提交已通过正确性验证，但 50 次
 独立计时未显示稳定加速。下一步检查提前量、就绪任务优先级及分配/复制成本，
@@ -107,3 +107,40 @@ PMU 仍被 `perf_event_paranoid=4` 拒绝，尚无本轮 AOL 结果。
 forward，需求处等待仅约 0.046 ms。预取流程额外成本是当前主要问题，
 具体的软件/迁移/缓存机制尚未分离，不据此否定 AOL。见
 [三方对照与初步结论](research/cpu_training/PLACEMENT_CAUSE_REPORT.md)。
+
+## 迁移成本拆分更新（2026-09-29）
+
+完成五条件、15 个计时进程及五个正确性诊断。页面参数准备相对空任务增加约
+6.77 ms/step，真实迁移路径相对准备再增加约 29.98 ms/step，两项配对区间均
+高于零。空任务与 Direct 的差异区间跨零。下一步先降低参数准备成本，再分离
+迁移与计算干扰；本轮不否定 AOL。详见 [迁移成本拆分报告](research/cpu_training/MIGRATION_ABLATION_REPORT.md)。
+
+## 页面参数向量化结果（2026-09-29）
+
+完成七条件、21 个计时进程。真实迁移参数准备从 5.776 降至 0.215 ms，
+但 move_pages 墙钟增加约 5.523 ms；整步从 143.365 降至 141.307 ms，
+差异区间跨零，尚未证明稳定训练加速。优化版仍慢于 Direct。下一步验证
+迁移开始时机与计算重叠，暂不改造 AOL。详见 [向量化对照报告](research/cpu_training/VECTORIZED_MIGRATION_REPORT.md)。
+
+## 固定延迟时机对照（2026-09-29）
+
+六条件、18 个计时进程完成。向量化后固定等待 5.5 ms，使系统调用启动偏移
+接近旧版（6.445 vs 6.358 ms），但调用仍慢约 4.197 ms，区间高于零；整步
+未稳定改善。单纯启动时间偏移不足以解释差异。下一步比较独立/并发搬页并
+记录线程 CPU 时间与计算阶段，暂不改造 AOL。详见 [时机对照报告](research/cpu_training/MIGRATION_TIMING_REPORT.md)。
+
+## C 内计时与同节点对照（2026-09-29）
+
+完成 18 个训练计时进程和三个独立调用进程。Python 外层额外墙钟均值小于
+0.04 ms，向量化跨节点 C 内 CPU/墙钟约 99.6%，不支持 GIL 返回等待或长时间
+睡眠为主要原因。同节点调用约 4.913 ms，跨节点约 50.016 ms。35 项回归通过。
+随后已完成 sudo 内核热点采样，线程聚合问题已修复，结果见下一节。详见 [本轮确定结论与命令](research/cpu_training/NATIVE_MIGRATION_REPORT.md)。
+
+## 2026-09-29：内核采样完成，定位 LRU 自旋热点
+
+三组采样完成、丢样为零。修复 perf 默认同名线程聚合造成的 TID 归属遗漏后，
+两组跨节点迁移线程的 LRU 路径自旋占内核样本权重 40.70% / 41.63%，
+copy_page 为 18.78% / 16.76%；其他线程的匿名缺页/LRU 自旋也明显。
+这支持优先检查迁移与前台分配干扰，但不是墙钟分解或因果收益证明。
+下一步公平比较缓冲区复用/分配压力，保持初始驻留、迁移量与端到端计时。
+详见 [采样修复、确定结论与下一步](research/cpu_training/KERNEL_MIGRATION_PROFILE_REPORT.md)。

@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "output": "results/migration-ablation-timing-0929/ranked-r2",
+    "mode": "ranked",
+    "target_ids": [
+      10
+    ],
+    "budget_mib": null,
+    "perf_control_fd": null,
+    "perf_ack_fd": null,
+    "trace_lifetimes": false,
+    "migration_action": null,
+    "diagnostic": false,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 100,
+    "warmup": 5,
+    "budget_bytes": null,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "access_paths.py": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "pack-time ready queue prioritized by previous-iteration demand; prefix mismatch sync fallback",
+  "timing": "step includes hooks, copies, migration/wait, optimizer and drain; logging outside",
+  "limitation": "Ample capacity; MPOL_BIND; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "-1"
+}

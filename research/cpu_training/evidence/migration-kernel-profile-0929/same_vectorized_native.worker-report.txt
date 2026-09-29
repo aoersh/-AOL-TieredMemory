@@ -1,0 +1,40 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 167  of event 'cycles:k'
+# Event count (approx.): 432286890
+#
+# Overhead  Command      Pid:Command  Shared Object      Symbol                           IPC   [IPC Coverage]
+# ........  .......  ...............  .................  ...............................  ....................
+#
+    12.30%  python3  1720748:python3  [kernel.kallsyms]  [k] down_read                    -      -            
+    12.08%  python3  1720748:python3  [kernel.kallsyms]  [k] up_read                      -      -            
+    11.08%  python3  1720748:python3  [kernel.kallsyms]  [k] kernel_move_pages            -      -            
+    10.51%  python3  1720748:python3  [kernel.kallsyms]  [k] __get_user_8                 -      -            
+     7.42%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page_mask             -      -            
+     6.07%  python3  1720748:python3  [kernel.kallsyms]  [k] __put_user_4                 -      -            
+     5.82%  python3  1720748:python3  [kernel.kallsyms]  [k] mtree_load                   -      -            
+     5.70%  python3  1720748:python3  [kernel.kallsyms]  [k] _raw_spin_lock               -      -            
+     4.62%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page_pte              -      -            
+     4.02%  python3  1720748:python3  [kernel.kallsyms]  [k] __get_user_4                 -      -            
+     3.91%  python3  1720748:python3  [kernel.kallsyms]  [k] try_grab_folio               -      -            
+     2.55%  python3  1720748:python3  [kernel.kallsyms]  [k] __pte_offset_map_lock        -      -            
+     2.50%  python3  1720748:python3  [kernel.kallsyms]  [k] move_pages_and_store_status  -      -            
+     2.34%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page                  -      -            
+     1.90%  python3  1720748:python3  [kernel.kallsyms]  [k] __pte_offset_map             -      -            
+     1.16%  python3  1720748:python3  [kernel.kallsyms]  [k] p4d_offset                   -      -            
+     1.10%  python3  1720748:python3  [kernel.kallsyms]  [k] __rcu_read_lock              -      -            
+     1.10%  python3  1720748:python3  [kernel.kallsyms]  [k] psi_group_change             -      -            
+     0.82%  python3  1720748:python3  [kernel.kallsyms]  [k] vm_normal_page               -      -            
+     0.70%  python3  1720748:python3  [kernel.kallsyms]  [k] vma_migratable               -      -            
+     0.69%  python3  1720748:python3  [kernel.kallsyms]  [k] __cond_resched               -      -            
+     0.59%  python3  1720748:python3  [kernel.kallsyms]  [k] rwsem_down_read_slowpath     -      -            
+     0.52%  python3  1720748:python3  [kernel.kallsyms]  [k] __mpol_equal                 -      -            
+     0.50%  python3  1720748:python3  [kernel.kallsyms]  [k] down_write                   -      -            
+
+
+#
+# (Tip: To see callchains in a more compact form: perf report -g folded)
+#

@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "research/cpu_training/test_kernel_profile.py"
+      ],
+      "returncode": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/cpu_training/analyze_kernel_profile.py",
+        "research/cpu_training/test_kernel_profile.py"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "run/profile_native_migration_kernel.sh"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "output": ""
+    }
+  ],
+  "profile_integrity": true,
+  "archive_address_redaction": true,
+  "document_status_updated": true
+}

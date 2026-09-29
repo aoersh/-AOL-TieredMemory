@@ -1,0 +1,2443 @@
+[
+  {
+    "source": "results/migration-native-timing-0929/analysis.log",
+    "bytes": 5696,
+    "sha256": "9ba974b03528058a4a6bf272c66aba616d37aebf8408ccf28d2b821aa9dc3d95",
+    "archived": true,
+    "archive": "training/analysis.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/analyzer_snapshot.py",
+    "bytes": 6712,
+    "sha256": "374c85bc32659284bdfe35b40eaa9b8b4461302405b2cf0023fed90f85d842a5",
+    "archived": true,
+    "archive": "training/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-native-timing-0929/commands.json",
+    "bytes": 8637,
+    "sha256": "0a132f75fe879441c50abbc0c75c10ec18866574c0d5aed06ea5ea7b201e14e1",
+    "archived": true,
+    "archive": "training/commands.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/completed.json",
+    "bytes": 182,
+    "sha256": "50a682855246bab25c206d9a320ac2f520b9752ffc6cb18f2b6dadbe4031381e",
+    "archived": true,
+    "archive": "training/completed.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/manifest.json",
+    "bytes": 1859,
+    "sha256": "be87812258f94436805fc006e5208d2fbc6e8f2e6e902874c99178d810516195",
+    "archived": true,
+    "archive": "training/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/steps.json",
+    "bytes": 107688,
+    "sha256": "8bdc9acb0bd46c576bba98d1af504f3fd4fe2059f375a7e50026e2eaf7bf620d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r0.log",
+    "bytes": 136,
+    "sha256": "5c2a77c428286c6ceadbd6869bfa32bb02eedfa53e56b112533f75ded3e21743",
+    "archived": true,
+    "archive": "training/direct-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/manifest.json",
+    "bytes": 1859,
+    "sha256": "6c664c5b7fdfb1506d22f1226396de2b2efd5e5bea9d2a7b39a7c44e5853b906",
+    "archived": true,
+    "archive": "training/direct-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/direct-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/steps.json",
+    "bytes": 107688,
+    "sha256": "afebd015e48630ca1f42d94ce56874ae0a51be40cb9eb1f881c8cbb434fb2667",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r1.log",
+    "bytes": 136,
+    "sha256": "a17fe1b12707d9314113fd178131f290201c9083b66b9cfc3252c933e8da8fa8",
+    "archived": true,
+    "archive": "training/direct-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/manifest.json",
+    "bytes": 1859,
+    "sha256": "dced85f0b5fe6d01f39f761a3b481ee9cd47c8bc858ed0dc2fe93b61183f9497",
+    "archived": true,
+    "archive": "training/direct-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/direct-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/steps.json",
+    "bytes": 107665,
+    "sha256": "8be40de200986770b43e9d6fb8e501dd101f49a9750cbf25a8d10ffff81e6881",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/direct-r2.log",
+    "bytes": 136,
+    "sha256": "75659e161d24df01152973b6ddd0ece5223e7b369b15ce44d3d35fb70d88b64c",
+    "archived": true,
+    "archive": "training/direct-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/environment.json",
+    "bytes": 226,
+    "sha256": "b2b1ca17fe71daffa35b2f4a14bc9f06f1b3b52f1f44cb778846fc2e2620e5cb",
+    "archived": true,
+    "archive": "training/environment.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/libnuma-disassembly.txt",
+    "bytes": 1052,
+    "sha256": "5e0d19fbef80052e8f7c06fe64b67d43d50a8b7a520abf143c03792bd676d9c8",
+    "archived": true,
+    "archive": "training/libnuma-disassembly.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/process_means.csv",
+    "bytes": 3795,
+    "sha256": "c29e7980f6925c5bf4141865d70b2cdf99b3ff33511cc8d5cf7c9592a03e82c0",
+    "archived": true,
+    "archive": "training/process_means.csv"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/manifest.json",
+    "bytes": 1906,
+    "sha256": "a5dc6a335ab1ad93bd251809a95148a6032074f3b2eb105990e6a352216f5d99",
+    "archived": true,
+    "archive": "training/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/steps.json",
+    "bytes": 196258,
+    "sha256": "e3780afb457e128c7fe64060524ba30c9597633efafb03b34209938793d4f664",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r0.log",
+    "bytes": 134,
+    "sha256": "21ecb08700ae0fe5546d9cfd0aa60c1914621ddc1b2400b04bda4dffb41fad52",
+    "archived": true,
+    "archive": "training/real-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/manifest.json",
+    "bytes": 1906,
+    "sha256": "0a28bb112576ab6137019611b189a4538b56b1c4ba0e63a607c34cb584ca5ebf",
+    "archived": true,
+    "archive": "training/real-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/steps.json",
+    "bytes": 196258,
+    "sha256": "7a809599f029b943f10f30acaf91da086ce2b77e72ba255f25d7bd56d3ab6c6b",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r1.log",
+    "bytes": 134,
+    "sha256": "29299446c7292e237422f747f19a42998d2c1c010bccaca670d339707ba11f59",
+    "archived": true,
+    "archive": "training/real-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/manifest.json",
+    "bytes": 1906,
+    "sha256": "5d64276789c01643ff4c65bd8571993802558dd1e5fd1e2fbbcac602808ea472",
+    "archived": true,
+    "archive": "training/real-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/steps.json",
+    "bytes": 196194,
+    "sha256": "9cd419d612d9a94668c0071c0c60bc02e4d80a21a332f559d8d5df76d94466bf",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real-r2.log",
+    "bytes": 128,
+    "sha256": "73d4e798d6e96716cf5b6382cecfa3bbf6ec30525119bc71c572e39de57fc663",
+    "archived": true,
+    "archive": "training/real-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/manifest.json",
+    "bytes": 1920,
+    "sha256": "fb5a09a71f4fa797ffdc1116bd31ef98a3fda85f883ceea565982ca262018955",
+    "archived": true,
+    "archive": "training/real_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/steps.json",
+    "bytes": 229840,
+    "sha256": "c93a987a3f4ca80318c043f4dc9447f126bf4e8ef3e6fddb724732a13415b865",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r0.log",
+    "bytes": 141,
+    "sha256": "d993609ee6a20f001aa0fb325d12eefae4424e749ca78242ae37c5179def34f7",
+    "archived": true,
+    "archive": "training/real_native-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/manifest.json",
+    "bytes": 1920,
+    "sha256": "6dc9cab79d505d6ac6be3c21195714558802a1cf582718dfa5c84e1986744a90",
+    "archived": true,
+    "archive": "training/real_native-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_native-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/steps.json",
+    "bytes": 229859,
+    "sha256": "a1cd9f6d176a92464c7aedf36867b823dbc976c326c09b72f118a16fc807946d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r1.log",
+    "bytes": 141,
+    "sha256": "b48dcb952c9f7cd1e4bc95c31aadc56cddc12764f3398528cdc9fd99e0b20b56",
+    "archived": true,
+    "archive": "training/real_native-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/manifest.json",
+    "bytes": 1920,
+    "sha256": "cb6dd5762fe24f6889011f32842fbaee0a213f216a6617e1ce6c8c1e7ec7b9f4",
+    "archived": true,
+    "archive": "training/real_native-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_native-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/steps.json",
+    "bytes": 229826,
+    "sha256": "785787f36d1ddd4e48fd5978457fc772871125e88d83ecb67a40c4bd6443115f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_native-r2.log",
+    "bytes": 141,
+    "sha256": "bd094fc3496513f368fa2c705ac2163e1d024c002259f8d142881ac4d72e2e17",
+    "archived": true,
+    "archive": "training/real_native-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1928,
+    "sha256": "05284f5c513107bd641b620f8a2abe0d1036a00188d689aadf7eecd6c8c7532e",
+    "archived": true,
+    "archive": "training/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/steps.json",
+    "bytes": 197166,
+    "sha256": "58f60b420cd72d1bfeddb056c737437c61b33721c40f90193ae02ec580552b04",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r0.log",
+    "bytes": 145,
+    "sha256": "946455e99666677658b831722c819d22088f296f70273bdd9dfc6d93f8409d6e",
+    "archived": true,
+    "archive": "training/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/manifest.json",
+    "bytes": 1928,
+    "sha256": "ba25048cac7576f20785b602732ac01ef0d99b292689f01704b0369a944c5a06",
+    "archived": true,
+    "archive": "training/real_vectorized-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/steps.json",
+    "bytes": 197237,
+    "sha256": "412264e6942fbe959739b31ca4bdc01761f2de614032fb7967cae35e64f67e67",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r1.log",
+    "bytes": 139,
+    "sha256": "27b4988bab982e4631db6ef034dd7163fecf618b8593849fea642739bea9c884",
+    "archived": true,
+    "archive": "training/real_vectorized-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/manifest.json",
+    "bytes": 1928,
+    "sha256": "8e34d23b166d72cd45f466f9a619667915bdd0f04b97bdbcdeb1a7a1f96ebba7",
+    "archived": true,
+    "archive": "training/real_vectorized-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/steps.json",
+    "bytes": 197129,
+    "sha256": "29deca2f65db4aa3f48eacd1dbdf70ea351394d2aedb944adcfe473b9be2ad56",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized-r2.log",
+    "bytes": 139,
+    "sha256": "9c97376a9fddc762800a82edc4b717d215ec9791d158d50fcb42152eccc482b6",
+    "archived": true,
+    "archive": "training/real_vectorized-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/manifest.json",
+    "bytes": 1942,
+    "sha256": "b7a40defe5676ffc02263902d0b5cbc65b878fe8aab9ed47b1b519e37b9c8d73",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/steps.json",
+    "bytes": 230994,
+    "sha256": "c41bb3d857a87aa691d8c902c5faa12265c6880ee3a38123ab9306e0f1d8b62a",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r0.log",
+    "bytes": 146,
+    "sha256": "79b7afbf011ae339bb7d793868a601314250d7f240f07c0ac275e8f5053c145f",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/manifest.json",
+    "bytes": 1942,
+    "sha256": "bfa5e0342ff483e4725299fe26be7307ed58151e099fbad83acb26f5c90251e4",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/steps.json",
+    "bytes": 230899,
+    "sha256": "c2ca700e217f925de0fb166b30eedc127517f975abccb8c8d608a9346b204f4e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r1.log",
+    "bytes": 152,
+    "sha256": "027fa64a5d2736fb14ec2988aa6e788a82af1de85bed39b4409cd14c3e7b0aec",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/manifest.json",
+    "bytes": 1942,
+    "sha256": "cdd17f9c6de6af9b102279b6641fb1c4da084103eb87d81e75b4250e9398c49e",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/steps.json",
+    "bytes": 230872,
+    "sha256": "7a4326a1a024f50f50553d7f6276bda0e563b48ff871ff75dd9ce37297291f85",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/real_vectorized_native-r2.log",
+    "bytes": 152,
+    "sha256": "943f50462b77122b6d6a4aaf7bd34c4f6d54f0de17c2ea7bda46b983381b8d6c",
+    "archived": true,
+    "archive": "training/real_vectorized_native-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/runner.py",
+    "bytes": 3468,
+    "sha256": "6e695f09e2e4997e016bb017e50d0d98fd891138bd997fdc6a1eca01db6b1324",
+    "archived": true,
+    "archive": "training/runner.py"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/manifest.json",
+    "bytes": 1942,
+    "sha256": "b48178679a3ec9bb0ce720ca9493d71a9e13b3c22ea9e7b861fbb45205a06e9c",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/steps.json",
+    "bytes": 227367,
+    "sha256": "bc3e2c2ac5f11f899717352e4f398a4c96f2e7ee3414d4461c5ab76142bff6d9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r0.log",
+    "bytes": 146,
+    "sha256": "c8f745a8deaf15e5c539f88392b74b9a50c5bbfe7ce54fb8e9de7c8620345bdd",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r0.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/manifest.json",
+    "bytes": 1942,
+    "sha256": "a6cec3f6a965182a699351faec413448b21fdcfed00c2596a8cd9f59929d0c47",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/steps.json",
+    "bytes": 227281,
+    "sha256": "7662ace6f621f4d978686aa3df6d281eef62a5e5d87ea5fe172d6aeebfafd266",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r1.log",
+    "bytes": 152,
+    "sha256": "8669488d00c03db30c01b07da41ebae5767afcba599c2cfbf37162ecdeed6b24",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r1.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/manifest.json",
+    "bytes": 1942,
+    "sha256": "50dada85c74ca3855779253646ba4bc43d3e7fee39a320665b4289b2fd142634",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/steps.json",
+    "bytes": 227299,
+    "sha256": "1652b7d9cdd481338035dc9fe023b290005cefca6ba2bd17a118e7663c22cebb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-timing-0929/same_vectorized_native-r2.log",
+    "bytes": 146,
+    "sha256": "e170ed2c8f1698d390e7d6e364003b6bf16041fda8a97c1b205cf6522d3938af",
+    "archived": true,
+    "archive": "training/same_vectorized_native-r2.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/summary.json",
+    "bytes": 40189,
+    "sha256": "060f7701c85c6998c1d163bbe77cd6f306a6b9c08c2cf331e512c3e86da0a83f",
+    "archived": true,
+    "archive": "training/summary.json"
+  },
+  {
+    "source": "results/migration-native-timing-0929/validation.log",
+    "bytes": 6061,
+    "sha256": "ad44000428bbdb2760f167a833344ff3c329f1033b55d187b2aa30ca8b8dbabe",
+    "archived": true,
+    "archive": "training/validation.log"
+  },
+  {
+    "source": "results/migration-native-timing-0929/verification.json",
+    "bytes": 540,
+    "sha256": "7eae466902a1731808010078b1e465ea41a87c5c2ff21f9da95f475ff8bab7cc",
+    "archived": true,
+    "archive": "training/verification.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/analysis.log",
+    "bytes": 2657,
+    "sha256": "f71bb69d3bc0725e6bf572566c4c60b4a39a1490fd547959368f6a8c384ccbea",
+    "archived": true,
+    "archive": "isolation/analysis.log"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/analyzer_snapshot.py",
+    "bytes": 6712,
+    "sha256": "374c85bc32659284bdfe35b40eaa9b8b4461302405b2cf0023fed90f85d842a5",
+    "archived": true,
+    "archive": "isolation/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/completed.json",
+    "bytes": 90,
+    "sha256": "408dd53d985eabd1b61cdbd5a699a24da51a34ba525a9e9ad046a10c65fa4e77",
+    "archived": true,
+    "archive": "isolation/completed.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/process_means.csv",
+    "bytes": 3225,
+    "sha256": "676bc312bd86d721184aeccd3ddd8bce6177973bf1b87b6bbf13b8ef3fe0fb98",
+    "archived": true,
+    "archive": "isolation/process_means.csv"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/completed.json",
+    "bytes": 52,
+    "sha256": "a341ce382eff0dc1f1d1e81ce0eb975516e7c5f7a9be89d25b589b061ced9419",
+    "archived": true,
+    "archive": "isolation/r0/completed.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/manifest.json",
+    "bytes": 1171,
+    "sha256": "9250e5f468c7302df9898cd9f2b971f042a971415687b3d0a78fb0bf8a442605",
+    "archived": true,
+    "archive": "isolation/r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/run_native_isolation.py",
+    "bytes": 2612,
+    "sha256": "2118d758e5ba3e7d4c090c754959f1e3e5c28360038b4ccb49a3a21be42d19ec",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0/samples.json",
+    "bytes": 66199,
+    "sha256": "ac28d67ef240783de6e6990f4e4c7dc0fb9bad1ee3d55b7b5f8119cf799d2cb7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r0.log",
+    "bytes": 182,
+    "sha256": "5ab732036bbf2f7ac03ddb8aaffa1d264a1ba46ef88055e0d027fb58835ba3df",
+    "archived": true,
+    "archive": "isolation/r0.log"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/completed.json",
+    "bytes": 52,
+    "sha256": "a341ce382eff0dc1f1d1e81ce0eb975516e7c5f7a9be89d25b589b061ced9419",
+    "archived": true,
+    "archive": "isolation/r1/completed.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/manifest.json",
+    "bytes": 1171,
+    "sha256": "168d1233a610b443732ab991238d482f1d4135b53554ea94e635a08a414d9119",
+    "archived": true,
+    "archive": "isolation/r1/manifest.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/run_native_isolation.py",
+    "bytes": 2612,
+    "sha256": "2118d758e5ba3e7d4c090c754959f1e3e5c28360038b4ccb49a3a21be42d19ec",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1/samples.json",
+    "bytes": 66139,
+    "sha256": "65dbccf10ec5bdcdc3c3302628fc10e9eb46966a04db73cdebc6f48185d99e83",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r1.log",
+    "bytes": 182,
+    "sha256": "1157dd17d8e86e6d54924d463679ef2e6b865cdb2eeb9051748a452ebbb0191e",
+    "archived": true,
+    "archive": "isolation/r1.log"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/completed.json",
+    "bytes": 52,
+    "sha256": "a341ce382eff0dc1f1d1e81ce0eb975516e7c5f7a9be89d25b589b061ced9419",
+    "archived": true,
+    "archive": "isolation/r2/completed.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/manifest.json",
+    "bytes": 1171,
+    "sha256": "11f8b903cad971610629a65303a4bd64e959257bbb8b8c379d4f5f0a2a880d80",
+    "archived": true,
+    "archive": "isolation/r2/manifest.json"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/run_native_isolation.py",
+    "bytes": 2612,
+    "sha256": "2118d758e5ba3e7d4c090c754959f1e3e5c28360038b4ccb49a3a21be42d19ec",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2/samples.json",
+    "bytes": 66139,
+    "sha256": "d2893865a18ae66e3e851fa9410d0ccdd41994097c88e5ba48cf10e98c8ee8d4",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-isolation-0929/r2.log",
+    "bytes": 182,
+    "sha256": "02d460f4583d385b878cb359a5b1a917d8ffb8dbb70361b7347388aff2e90b4f",
+    "archived": true,
+    "archive": "isolation/r2.log"
+  },
+  {
+    "source": "results/migration-native-isolation-0929/summary.json",
+    "bytes": 8921,
+    "sha256": "027900b52446fa54a66c39804b5b4e86e94b33b002f448cbc41cbca7e546e1e4",
+    "archived": true,
+    "archive": "isolation/summary.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/commands.json",
+    "bytes": 3025,
+    "sha256": "a1b097e121c893c1bed3d69ce37c43c98c068d32ccf4a87e6b6f997cb07ca647",
+    "archived": true,
+    "archive": "diagnostic/commands.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/completed.json",
+    "bytes": 178,
+    "sha256": "48fa4889e37551eed2c33ea6cceb03a14a1aade056e72cfa6852981062791f30",
+    "archived": true,
+    "archive": "diagnostic/completed.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/events.json",
+    "bytes": 16342,
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/manifest.json",
+    "bytes": 1860,
+    "sha256": "51ff39c6639dc421f2ce5c7fae3cfb22dc29f41cceccc5bad1c335834ad25e29",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/steps.json",
+    "bytes": 3081,
+    "sha256": "6438b409f7fcfcfa2f328c87a092a5bed6d690b23c98c0264324cc2d9bf8fa89",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/direct-r0.log",
+    "bytes": 139,
+    "sha256": "1225daba44322fdb9d2e36b894654bf9ffb7cec3cd489f5def4b6688de2392f3",
+    "archived": true,
+    "archive": "diagnostic/direct-r0.log"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/environment.json",
+    "bytes": 228,
+    "sha256": "27abb3ecbec4b0618179d39db84235827ddb9a2474da569f8e5c531cc863c115",
+    "archived": true,
+    "archive": "diagnostic/environment.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/events.json",
+    "bytes": 18067,
+    "sha256": "5a9212232a73306f267a452ba867ab3026f89a472b2ce09c103650bbd93d92c8",
+    "archived": true,
+    "archive": "diagnostic/real-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/manifest.json",
+    "bytes": 1907,
+    "sha256": "b3dd0aed0318b98b8d3547bf260650cb4437e4a97d153d7766039ca4b26ffa5e",
+    "archived": true,
+    "archive": "diagnostic/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/steps.json",
+    "bytes": 5545,
+    "sha256": "b7ee0426d1fe1f30ca8c802a6a84f24304c6f119a0baa02261b4f2e66c7970d4",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real-r0.log",
+    "bytes": 137,
+    "sha256": "6a0ddc93452ded1526cf9714c907a850833f5ff5448f4a5c326367c6f7123a07",
+    "archived": true,
+    "archive": "diagnostic/real-r0.log"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_native-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/events.json",
+    "bytes": 18812,
+    "sha256": "87e1c22360a86c060595fb680c1dd309627658b638d85e9e450cf87f52270f11",
+    "archived": true,
+    "archive": "diagnostic/real_native-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/manifest.json",
+    "bytes": 1921,
+    "sha256": "f3517053fe372771a3b4d32bd25a3115a5db9554f074808cf716ee8cf56ed598",
+    "archived": true,
+    "archive": "diagnostic/real_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/steps.json",
+    "bytes": 6507,
+    "sha256": "d5ebba37b417e92700ec09bb1900fe4cbea8e80c2cbe267452d9b6bf074baf44",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_native-r0.log",
+    "bytes": 144,
+    "sha256": "9c78cfec9379a724cc90bced213d1c134498e8dc0f37c27d49de9caa2bbe39a0",
+    "archived": true,
+    "archive": "diagnostic/real_native-r0.log"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/events.json",
+    "bytes": 18100,
+    "sha256": "afc4699ae42fa96017929645972dcad08f685e421b0053cc7e62324be8cc2552",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1929,
+    "sha256": "8845652e7d1d2da529189fb00c378b04928a15211ed30fa00955d4cfa5016a5e",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/steps.json",
+    "bytes": 5578,
+    "sha256": "d4d1399ad75870d7a674eb7e5777743fccc3379147a8bc552f003ec018aa481a",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized-r0.log",
+    "bytes": 148,
+    "sha256": "1bada400a5cc0216f65e7d1bb63665ea5df251049e93942394281187587e566e",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_native-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/events.json",
+    "bytes": 18844,
+    "sha256": "70cf51de26eaf7d2592dfb7bdcdee0f81384eec66d99c0d0d7ac6cfff84b18a1",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_native-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/manifest.json",
+    "bytes": 1943,
+    "sha256": "09c22ca3c108df92876aabdc2211b7f989fe5c0c5e2b48c944a90ef425100f0a",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/steps.json",
+    "bytes": 6536,
+    "sha256": "2f94b8be4c43618eaef1b9cc60f33c31f21bac8207b7308feacca64b4d27b136",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/real_vectorized_native-r0.log",
+    "bytes": 155,
+    "sha256": "8edea007f42026ab8f6bc4f4bebb775c8276e4f657c94c9df08c58273feb6b2d",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_native-r0.log"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/runner.py",
+    "bytes": 3468,
+    "sha256": "6e695f09e2e4997e016bb017e50d0d98fd891138bd997fdc6a1eca01db6b1324",
+    "archived": true,
+    "archive": "diagnostic/runner.py"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/same_vectorized_native-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/events.json",
+    "bytes": 18807,
+    "sha256": "2f6009d2be032e160feebb7657cec724c186437116e498076a28030006240b87",
+    "archived": true,
+    "archive": "diagnostic/same_vectorized_native-r0/events.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/manifest.json",
+    "bytes": 1943,
+    "sha256": "6dad40a5ea277d015a01c94254e1ec8e722fa7d0be5ac1be83d4e4dd15be99ab",
+    "archived": true,
+    "archive": "diagnostic/same_vectorized_native-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/same_vectorized_native-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/steps.json",
+    "bytes": 6434,
+    "sha256": "6677329d43bda089804d54df193368c667548b9b87f711df8531bd47e48c5f3f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-native-diagnostic-0929/same_vectorized_native-r0.log",
+    "bytes": 155,
+    "sha256": "8e06c1ccca241f04d3e0c1974e43ced7069a3a00c9485ea6ae70883be3921e9c",
+    "archived": true,
+    "archive": "diagnostic/same_vectorized_native-r0.log"
+  },
+  {
+    "source": "research/cpu_training/numa_buffer.py",
+    "bytes": 6932,
+    "sha256": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "archived": true,
+    "archive": "source/numa_buffer.py"
+  },
+  {
+    "source": "research/cpu_training/access_paths.py",
+    "bytes": 12610,
+    "sha256": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "archived": true,
+    "archive": "source/access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/run_access_paths.py",
+    "bytes": 12788,
+    "sha256": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "archived": true,
+    "archive": "source/run_access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": true,
+    "archive": "source/observe_saved_tensors.py"
+  },
+  {
+    "source": "research/cpu_training/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": true,
+    "archive": "source/workloads.py"
+  },
+  {
+    "source": "research/cpu_training/migration_meter.c",
+    "bytes": 1352,
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "archived": true,
+    "archive": "source/migration_meter.c"
+  },
+  {
+    "source": "research/cpu_training/run_migration_ablation.py",
+    "bytes": 3468,
+    "sha256": "6e695f09e2e4997e016bb017e50d0d98fd891138bd997fdc6a1eca01db6b1324",
+    "archived": true,
+    "archive": "source/run_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/run_native_isolation.py",
+    "bytes": 2612,
+    "sha256": "2118d758e5ba3e7d4c090c754959f1e3e5c28360038b4ccb49a3a21be42d19ec",
+    "archived": true,
+    "archive": "source/run_native_isolation.py"
+  },
+  {
+    "source": "research/cpu_training/analyze_native_migration.py",
+    "bytes": 6712,
+    "sha256": "374c85bc32659284bdfe35b40eaa9b8b4461302405b2cf0023fed90f85d842a5",
+    "archived": true,
+    "archive": "source/analyze_native_migration.py"
+  },
+  {
+    "source": "research/cpu_training/test_native_meter.py",
+    "bytes": 1951,
+    "sha256": "7c19d26e26313003c143f12012ce235a4fb137c28722dd44ad2956afc925548c",
+    "archived": true,
+    "archive": "source/test_native_meter.py"
+  },
+  {
+    "source": "research/cpu_training/test_migration_timing.py",
+    "bytes": 2855,
+    "sha256": "3268cd98df6b85b1434d3af5ae76a6511d9525fa77e1196ba43129f08dd38c65",
+    "archived": true,
+    "archive": "source/test_migration_timing.py"
+  },
+  {
+    "source": "research/cpu_training/test_migration_ablation.py",
+    "bytes": 3536,
+    "sha256": "97c3e2383f444360e7dfa1a2b07ccb5f698e5b0ed5f414c0a84b9b9fdf849734",
+    "archived": true,
+    "archive": "source/test_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/build_native_meter.py",
+    "bytes": 1023,
+    "sha256": "a0a293c6aab88beae6754fa0335dddd8739882aeaf24d18bdba50db8f39cd78a",
+    "archived": true,
+    "archive": "source/build_native_meter.py"
+  },
+  {
+    "source": "research/cpu_training/run_native_isolation_matrix.py",
+    "bytes": 1097,
+    "sha256": "8ff480f0f395cec7ce4a588017417b7fabbfeee014e309f01d238baf0e31b084",
+    "archived": true,
+    "archive": "source/run_native_isolation_matrix.py"
+  },
+  {
+    "source": ".deps/training-native/libmigration_meter.so",
+    "bytes": 15752,
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "archived": false,
+    "local_copy": "source/libmigration_meter.so",
+    "note": "二进制仅本机保留，不推送；SHA256、C 源码及构建信息随仓库保存。"
+  },
+  {
+    "source": ".deps/training-native/meter-build.json",
+    "bytes": 291,
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "archived": true,
+    "archive": "source/meter-build.json"
+  },
+  {
+    "source": "run/profile_native_migration_kernel.sh",
+    "bytes": 2553,
+    "sha256": "221ab9edc8e06005f3e5e978eb426a9008d577e2f500b9e8700c0b33e537f188",
+    "archived": true,
+    "archive": "source/profile_native_migration_kernel.sh"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "configuration": {
+    "output": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0",
+    "mode": "ranked",
+    "target_ids": [
+      10
+    ],
+    "budget_mib": null,
+    "perf_control_fd": null,
+    "perf_ack_fd": null,
+    "trace_lifetimes": false,
+    "migration_action": "prepare_vectorized",
+    "diagnostic": true,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 3,
+    "warmup": 0,
+    "budget_bytes": null,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "access_paths.py": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "pack-time ready queue prioritized by previous-iteration demand; prefix mismatch sync fallback",
+  "timing": "step includes hooks, copies, migration/wait, optimizer and drain; logging outside",
+  "limitation": "Ample capacity; MPOL_BIND; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "-1"
+}

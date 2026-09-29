@@ -1,0 +1,6 @@
+PASS 1 same_vectorized_native
+PASS 32 same_vectorized_native
+PASS 8 same_vectorized_native
+PASS 1 real_vectorized_native
+PASS 32 real_vectorized_native
+PASS 8 real_vectorized_native

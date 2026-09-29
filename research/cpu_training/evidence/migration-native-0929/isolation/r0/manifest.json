@@ -1,0 +1,56 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "repeat": 0,
+  "compute_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "worker_cpu": 8,
+  "threads": 8,
+  "steps": 12,
+  "warmup": 2,
+  "order": [
+    [
+      1,
+      "same_vectorized_native"
+    ],
+    [
+      1,
+      "real_vectorized_native"
+    ],
+    [
+      32,
+      "real_vectorized_native"
+    ],
+    [
+      8,
+      "same_vectorized_native"
+    ],
+    [
+      32,
+      "same_vectorized_native"
+    ],
+    [
+      8,
+      "real_vectorized_native"
+    ]
+  ],
+  "sysctl": {
+    "numa_balancing": "1",
+    "perf_event_paranoid": "-1",
+    "numa_balancing_pte_scale": "16"
+  },
+  "limitation": "No concurrent DNN; PyTorch preparation uses 8 threads; not a paired training-time counterfactual",
+  "source_hashes": {
+    "run_native_isolation.py": "2118d758e5ba3e7d4c090c754959f1e3e5c28360038b4ccb49a3a21be42d19ec",
+    "numa_buffer.py": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7"
+  }
+}

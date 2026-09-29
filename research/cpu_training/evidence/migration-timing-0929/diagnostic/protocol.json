@@ -1,0 +1,14 @@
+{
+  "delay_ms": 5.5,
+  "rationale": "预先取前轮真实迁移参数准备差 5.561 ms 的近似值；不依据本轮性能调参",
+  "source": "results/migration-vectorized-timing-0929/summary.json",
+  "conditions": [
+    "direct",
+    "real",
+    "real_vectorized",
+    "real_vectorized_delay",
+    "prepare_vectorized",
+    "prepare_vectorized_delay"
+  ],
+  "purpose": "迁移开始时机归因，sleep 不模拟原 Python 工作或 GIL 行为"
+}

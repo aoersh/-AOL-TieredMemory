@@ -1,0 +1,208 @@
+{
+  "means": {
+    "direct": {
+      "step_ms": 102.69616979,
+      "forward_ms": 43.267924083333334,
+      "backward_ms": 58.4792068,
+      "optimizer_and_drain_ms": 0.9490389066666667,
+      "wait_ms": 0.0,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.0,
+      "delay_ms": 0.0,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "real": {
+      "step_ms": 140.55411797,
+      "forward_ms": 77.48579248666667,
+      "backward_ms": 61.87340864666667,
+      "optimizer_and_drain_ms": 1.1949168366666667,
+      "wait_ms": 0.04434191666666667,
+      "migration_ms": 51.60236769,
+      "bind_ms": 0.52192236,
+      "prepare_ms": 5.728467686666667,
+      "delay_ms": 0.0005108166666666666,
+      "syscall_ms": 44.80047125,
+      "status_ms": 0.5303215466666666,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 51.60236769,
+      "ready_from_step_ms": 16.975533916666667,
+      "task_start_after_ready_ms": 0.09705075666666667,
+      "demand_from_step_ms": 123.00394880666667,
+      "forward_end_from_step_ms": 77.48579248666667,
+      "syscall_start_after_ready_ms": 6.3582912,
+      "syscall_start_from_step_ms": 23.333825116666667,
+      "syscall_end_from_step_ms": 68.13429636666666,
+      "syscall_overlap_forward_ms": 44.80047125,
+      "syscall_overlap_backward_ms": 0.0
+    },
+    "real_vectorized": {
+      "step_ms": 138.10871054333333,
+      "forward_ms": 74.31608233666667,
+      "backward_ms": 62.62367560333333,
+      "optimizer_and_drain_ms": 1.1689526033333333,
+      "wait_ms": 0.045288873333333333,
+      "migration_ms": 50.687743876666666,
+      "bind_ms": 0.40284914666666666,
+      "prepare_ms": 0.18609162333333334,
+      "delay_ms": 0.00061157,
+      "syscall_ms": 49.543344626666666,
+      "status_ms": 0.5288924733333333,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 50.687743876666666,
+      "ready_from_step_ms": 17.52465867,
+      "task_start_after_ready_ms": 0.09697863,
+      "demand_from_step_ms": 120.21827464333333,
+      "forward_end_from_step_ms": 74.31608233666667,
+      "syscall_start_after_ready_ms": 0.6972080266666667,
+      "syscall_start_from_step_ms": 18.221866696666666,
+      "syscall_end_from_step_ms": 67.76521132333333,
+      "syscall_overlap_forward_ms": 49.543344626666666,
+      "syscall_overlap_backward_ms": 0.0
+    },
+    "real_vectorized_delay": {
+      "step_ms": 138.16831385333333,
+      "forward_ms": 73.40538512,
+      "backward_ms": 63.54128098333334,
+      "optimizer_and_drain_ms": 1.22164775,
+      "wait_ms": 0.04392712,
+      "migration_ms": 55.901158683333335,
+      "bind_ms": 0.55216993,
+      "prepare_ms": 0.20923648,
+      "delay_ms": 5.572175629999999,
+      "syscall_ms": 48.99758327666667,
+      "status_ms": 0.54043484,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "task_ms": 55.901158683333335,
+      "ready_from_step_ms": 16.764713490000002,
+      "task_start_after_ready_ms": 0.09835167333333333,
+      "demand_from_step_ms": 119.94194997,
+      "forward_end_from_step_ms": 73.40538512,
+      "syscall_start_after_ready_ms": 6.444594573333333,
+      "syscall_start_from_step_ms": 23.209308063333335,
+      "syscall_end_from_step_ms": 72.20689134,
+      "syscall_overlap_forward_ms": 48.7866497,
+      "syscall_overlap_backward_ms": 0.20866189666666668
+    },
+    "prepare_vectorized": {
+      "step_ms": 105.87164129,
+      "forward_ms": 45.53718648,
+      "backward_ms": 59.358184896666664,
+      "optimizer_and_drain_ms": 0.9762699133333334,
+      "wait_ms": 0.04702775666666667,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.12085828000000001,
+      "delay_ms": 0.00050982,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0,
+      "task_ms": 0.13242178666666665,
+      "ready_from_step_ms": 16.512457876666666,
+      "task_start_after_ready_ms": 0.09508754333333333,
+      "demand_from_step_ms": 91.75157869333333,
+      "forward_end_from_step_ms": 45.53718648
+    },
+    "prepare_vectorized_delay": {
+      "step_ms": 104.97060964666666,
+      "forward_ms": 44.73973491666667,
+      "backward_ms": 59.278089736666665,
+      "optimizer_and_drain_ms": 0.9527849933333333,
+      "wait_ms": 0.04653472333333333,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.12323897,
+      "delay_ms": 5.568951373333333,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0,
+      "task_ms": 5.706769756666667,
+      "ready_from_step_ms": 15.804230926666666,
+      "task_start_after_ready_ms": 0.09637916333333332,
+      "demand_from_step_ms": 90.89962287333333,
+      "forward_end_from_step_ms": 44.73973491666667
+    }
+  },
+  "step_contrasts": {
+    "real_vectorized_delay-real_vectorized": {
+      "mean": 0.059603309999999965,
+      "ci95": [
+        -8.406958185477766,
+        8.526164805477766
+      ],
+      "values": [
+        2.4471122999999864,
+        -3.8435821799999985,
+        1.575279810000012
+      ]
+    },
+    "real_vectorized_delay-real": {
+      "mean": -2.3858041166666624,
+      "ci95": [
+        -15.405293154550805,
+        10.63368492121748
+      ],
+      "values": [
+        -2.2174758000000168,
+        -7.708990169999993,
+        2.7690536200000224
+      ]
+    },
+    "real_vectorized-real": {
+      "mean": -2.4454074266666623,
+      "ci95": [
+        -10.337150616747465,
+        5.44633576341414
+      ],
+      "values": [
+        -4.664588100000003,
+        -3.8654079899999942,
+        1.1937738100000104
+      ]
+    },
+    "real_vectorized_delay-direct": {
+      "mean": 35.47214406333334,
+      "ci95": [
+        31.83213815796444,
+        39.112149968702234
+      ],
+      "values": [
+        36.19344400999999,
+        33.78601395000001,
+        36.43697423000002
+      ]
+    },
+    "prepare_vectorized_delay-prepare_vectorized": {
+      "mean": -0.9010316433333306,
+      "ci95": [
+        -6.7689940658788545,
+        4.966930779212194
+      ],
+      "values": [
+        1.8082105900000016,
+        -1.982038039999992,
+        -2.5292674800000015
+      ]
+    },
+    "real-direct": {
+      "mean": 37.85794818,
+      "ci95": [
+        28.06365683219432,
+        47.65223952780568
+      ],
+      "values": [
+        38.41091981000001,
+        41.495004120000004,
+        33.667920609999996
+      ]
+    }
+  }
+}

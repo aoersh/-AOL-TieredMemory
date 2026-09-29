@@ -1,0 +1,84 @@
+
+COMMAND ["python3", "research/cpu_training/test_migration_ablation.py"]
+test_controls_do_not_call_bind_or_move (__main__.AblationTests) ... ok
+test_learned_queue_keeps_control_on_cxl (__main__.AblationTests) ... ok
+test_partial_vectorized_migration_rejected (__main__.AblationTests) ... ok
+test_real_failure_propagates (__main__.AblationTests) ... ok
+test_vectorized_addresses_and_ownership (__main__.AblationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.037s
+
+OK
+
+COMMAND ["python3", "research/cpu_training/test_ranked.py"]
+test_learn_at_pack_and_prefix_mismatch (__main__.RankedTests) ... ok
+test_ranked_error_propagates_and_worker_survives (__main__.RankedTests) ... ok
+test_ready_queue_reorders_and_cpu_affinity (__main__.RankedTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.033s
+
+OK
+
+COMMAND ["python3", "research/cpu_training/test_async.py"]
+test_inflight_task_owns_buffer_until_done (__main__.AsyncTests) ... ok
+test_repeated_unpack_and_release (__main__.AsyncTests) ... ok
+test_worker_failure_reaches_demand (__main__.AsyncTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.074s
+
+OK
+
+COMMAND ["python3", "research/cpu_training/test_demand.py"]
+test_failure_propagates_with_learned_schedule (__main__.DemandTests) ... ok
+test_learns_previous_order_and_changes_fallback (__main__.DemandTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.013s
+
+OK
+
+COMMAND ["python3", "research/cpu_training/test_boundaries.py"]
+test_address_reuse_is_not_storage_identity (__main__.Boundaries) ... ok
+test_live_source_inplace_rejected (__main__.Boundaries) ... ok
+test_migration_failure_propagates (__main__.Boundaries) ... ok
+test_multiple_unpack_migrates_once_and_releases (__main__.Boundaries) ... ok
+test_repeated_autograd_unpack_gradient (__main__.Boundaries) ... ok
+test_views_and_repeated_storage (__main__.Boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.144s
+
+OK
+
+COMMAND ["python3", "research/cpu_training/test_lifetime_trace.py"]
+test_all_iterations_and_optional_trace (__main__.LifetimeTests) ... ok
+test_storage_alias_keeps_mapping_alive (__main__.LifetimeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.567s
+
+OK
+
+COMMAND ["python3", "-m", "unittest", "discover", "-s", "tests", "-v"]
+test_profile_and_concurrent_budgeted_realloc (test_allocator.AllocatorTests) ... ok
+test_online_restores_original_on_process_exit (test_alto.AltoTests) ... {"time": 0.5, "aol": 30.0, "load_latency": 200.0, "pte_scale": 0, "mode": "online"}
+ok
+test_original_thresholds_and_invalid_data (test_alto.AltoTests) ... ok
+test_partial_interval_is_not_applied_or_repeated (test_alto.AltoTests) ... ok
+test_concurrent_allocations_budgeted_by_bytes (test_analysis.ProfileTests) ... ok
+test_half_open_boundaries_and_short_lifetimes (test_analysis.ProfileTests) ... ok
+test_missing_origin_is_rejected (test_analysis.ProfileTests) ... ok
+test_real_intervals_and_quality (test_analysis.ProfileTests) ... ok
+test_install_order_and_hash_guard (test_host_install.HostInstallTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.149s
+
+OK
+
+COMMAND ["python3", "-m", "py_compile", "research/cpu_training/analyze_groups.py", "research/cpu_training/analyze_vectorized_migration.py", "research/cpu_training/analyze_budget.py", "research/cpu_training/test_demand.py", "research/cpu_training/run_group_matrix.py", "research/cpu_training/test_matched_analysis.py", "research/cpu_training/summarize_correctness.py", "research/cpu_training/plot_paths.py", "research/cpu_training/analyze_migration_ablation.py", "research/cpu_training/aggregate_tensor_pmu.py", "research/cpu_training/numa_buffer.py", "research/cpu_training/run_migration_ablation.py", "research/cpu_training/test_ranked.py", "research/cpu_training/analyze_paths.py", "research/cpu_training/analyze_matched_500.py", "research/cpu_training/test_migration_ablation.py", "research/cpu_training/run_budget_matrix.py", "research/cpu_training/run_access_paths.py", "research/cpu_training/run_path_matrix.py", "research/cpu_training/test_lifetime_trace.py", "research/cpu_training/test_async.py", "research/cpu_training/access_paths.py", "research/cpu_training/test_pebs_matching.py", "research/cpu_training/run_pmu_matrix.py", "research/cpu_training/summarize_single_pebs.py", "research/cpu_training/run_single_pebs_matrix.py", "research/cpu_training/analyze_single.py", "research/cpu_training/analyze_placement_triad.py", "research/cpu_training/analyze_pebs_probe.py", "research/cpu_training/observe_saved_tensors.py", "research/cpu_training/run_single_matrix.py", "research/cpu_training/run_pebs_probe.py", "research/cpu_training/workloads.py", "research/cpu_training/match_pmu_intervals.py", "research/cpu_training/test_boundaries.py"]
+
+COMMAND ["git", "diff", "--check"]

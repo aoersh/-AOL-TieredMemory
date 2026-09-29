@@ -1,0 +1,55 @@
+{
+  "configuration": {
+    "output": "results/migration-native-timing-0929/direct-r1",
+    "mode": "direct",
+    "target_ids": [
+      10
+    ],
+    "budget_mib": null,
+    "perf_control_fd": null,
+    "perf_ack_fd": null,
+    "trace_lifetimes": false,
+    "migration_action": null,
+    "migration_delay_ms": 0.0,
+    "diagnostic": false,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 100,
+    "warmup": 5,
+    "budget_bytes": null,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "cf73d6f98e86cfdb3be944b76fd3028521ae82030dac64bd7224e84340bce5ef",
+    "access_paths.py": "4aab9e6c5cbf79d37d114ac84568534a74b91820c0379f4e031e69eabed9ed30",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "66e92ce5c270f183341bc0a7250113d67d44d67ebb9f8e92c8c1b898e1beb0eb",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "meter-build.json": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "original access path; async=eager FIFO at pack",
+  "timing": "step includes hooks, copies, migration/wait, optimizer and drain; logging outside",
+  "limitation": "Ample capacity; MPOL_BIND; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "-1"
+}

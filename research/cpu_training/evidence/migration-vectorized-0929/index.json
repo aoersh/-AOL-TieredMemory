@@ -1,0 +1,2018 @@
+[
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/analyzer_snapshot.py",
+    "bytes": 4299,
+    "sha256": "d3bd37d8405e54b84a7f25acef1d3ea119fe1dba2b0614e690cd08bc288f90cb",
+    "archived": true,
+    "archive": "diagnostic/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/commands.json",
+    "bytes": 3420,
+    "sha256": "a029dc6506892a596a3c4b6f13bb0475f918c1da0f7af4b8d20d3e24b75eead5",
+    "archived": true,
+    "archive": "diagnostic/commands.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/completed.json",
+    "bytes": 162,
+    "sha256": "e03905cc2fbfb17c21a0ab1cd8298fd0428176af072b629186e9a4c7a260f3db",
+    "archived": true,
+    "archive": "diagnostic/completed.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/events.json",
+    "bytes": 16342,
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/manifest.json",
+    "bytes": 1551,
+    "sha256": "ee4e5c6cc15aa0e7cf2b9b5d48b31bc8e630fb799e004584315e01536ff97511",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/steps.json",
+    "bytes": 2580,
+    "sha256": "020a17d714f387251324565fdf69a233f17afbad3750809557ed59094dba8fcb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/direct-r0.log",
+    "bytes": 143,
+    "sha256": "8d18311ab76eaaa305e2f6c599a711ba76c6774c61f985c7c9c8fb44aff21469",
+    "archived": true,
+    "archive": "diagnostic/direct-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/environment.json",
+    "bytes": 227,
+    "sha256": "995c1ddd047a092ab71584887ee19527a1ae2f317bd4d0e2f8dda94cd586d26c",
+    "archived": true,
+    "archive": "diagnostic/environment.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/events.json",
+    "bytes": 17125,
+    "sha256": "70a8c1c54f03b1eb977cf9ccef53260f264723ff1499932ef313f9c7789b1bd3",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/manifest.json",
+    "bytes": 1598,
+    "sha256": "5970de4321fe8e1144c75bae7811d5577692b1eb6c498a55ea6146a0cae93ceb",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/steps.json",
+    "bytes": 2591,
+    "sha256": "23021a47e9367db018ff14b1c0929d54ad5940065ac1da2d9b5ef3811d5ce974",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/noop-r0.log",
+    "bytes": 141,
+    "sha256": "b17eb9048f1507b31aca43a22ba120e63101b5deffc27c403852372363360b54",
+    "archived": true,
+    "archive": "diagnostic/noop-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/events.json",
+    "bytes": 17152,
+    "sha256": "809faa1839b9d4604ef9e1ea44c0fa29c9c52d360d47b656803975d77934dd4d",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/manifest.json",
+    "bytes": 1604,
+    "sha256": "8742374ba9ead3b3f857903b7e39444bb118eeb2040f8a5256838e532141e835",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/steps.json",
+    "bytes": 2611,
+    "sha256": "7c42fc9337bdf5ba8ec94c3562593f019d6a973874b9506464bfc1e8376e1836",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare-r0.log",
+    "bytes": 144,
+    "sha256": "3512495e35ea6c41fdc0cd983145a334816dffc6cd815fc84244c7a1e65edc76",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/events.json",
+    "bytes": 17184,
+    "sha256": "53099e446b4c587c3e547f4dcf283d340422f07dae97d8cd074bc0c1600a9aed",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/manifest.json",
+    "bytes": 1626,
+    "sha256": "9b38bec568bfc8825be52dad0ef6a8bc8ccd124642b2841da4688be6416b411f",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/steps.json",
+    "bytes": 2609,
+    "sha256": "e47645d048f1fda1bfa0eeaa6ee1e20ee00a9f39b7126c8b6a9c99f18fb9fab0",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/prepare_vectorized-r0.log",
+    "bytes": 147,
+    "sha256": "7085d70e565c96a39abffd5f1b0a3446c37de110a7a4d195ae29c04e4fa1cbe6",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/events.json",
+    "bytes": 16918,
+    "sha256": "4c763c6c558db98d9fb8f902e7718821ea4f3d627550a2652dbc6bd75738d666",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/manifest.json",
+    "bytes": 1598,
+    "sha256": "f035861b989f8498d2ca13a225049f02cd9e4db0aed9080e17b54ee5a23208b3",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/steps.json",
+    "bytes": 2658,
+    "sha256": "bf1f1ceb63de02ef6f86f7b29a0cce1be10717ec1bc846b6b6f93289f24b0a56",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/ranked-r0.log",
+    "bytes": 135,
+    "sha256": "3fd2f1081860759b9c5d7e8ef172e441730bbe87564cde4a9850ebf9aed3bb0d",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/events.json",
+    "bytes": 17218,
+    "sha256": "997806d043e2ffd6f407de2260936e54488a3853ed6454be593b6d57d642a3cf",
+    "archived": true,
+    "archive": "diagnostic/real-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/manifest.json",
+    "bytes": 1598,
+    "sha256": "ee8844e8aacbcff1ad61d8052c630c5246ed905ae8eadd1bb7a3ada0a729f3cc",
+    "archived": true,
+    "archive": "diagnostic/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/steps.json",
+    "bytes": 2723,
+    "sha256": "17c79a1022827404500aa224d2273f63bcd0e28c582e3e6b74ff4f4285cdd500",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real-r0.log",
+    "bytes": 141,
+    "sha256": "481dbe23ce415601e8a5aa834fdbf1e7ba621aa83a122bc3e353b27971f484ba",
+    "archived": true,
+    "archive": "diagnostic/real-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/events.json",
+    "bytes": 17249,
+    "sha256": "a61e874fee40a4fa8c7151784ccba1c5cad4c90e35f85f768dce7d04de8f835c",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/events.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1620,
+    "sha256": "1c6fb464ae25d51df37fa65473c4882ec1c1abd856dca6d58cdc799e095f8d87",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/steps.json",
+    "bytes": 2721,
+    "sha256": "7f579d47f977a5be26b2ea2b3ada10b0bdcab474ad91e90d16580ace07da05d2",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/real_vectorized-r0.log",
+    "bytes": 152,
+    "sha256": "f7098fd41619bd458f534940a46b1bec579cb7960d5a7e0ee13ac69c1cce00f2",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-diagnostic-0929/runner.py",
+    "bytes": 2386,
+    "sha256": "2bfff10684eeca4ddfce4adc9f0b6a05b37170ae8011260a4fcc2bf76177b81d",
+    "archived": true,
+    "archive": "diagnostic/runner.py"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/analysis.log",
+    "bytes": 4799,
+    "sha256": "16a55292eeba157466619c5a78e6e1410ba39b9273a2f8861933b01324a07317",
+    "archived": true,
+    "archive": "timing/analysis.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/analyzer_snapshot.py",
+    "bytes": 4299,
+    "sha256": "d3bd37d8405e54b84a7f25acef1d3ea119fe1dba2b0614e690cd08bc288f90cb",
+    "archived": true,
+    "archive": "timing/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/commands.json",
+    "bytes": 9750,
+    "sha256": "adc022fabbd99e6cd0cf683af6012c497b82f13ae35636071d8a1f77d7cc0014",
+    "archived": true,
+    "archive": "timing/commands.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/completed.json",
+    "bytes": 166,
+    "sha256": "8f7f229f02454a9c9a8ec47cca5a5effa32eae4905caaac8d25cb7da7edc02bb",
+    "archived": true,
+    "archive": "timing/completed.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/manifest.json",
+    "bytes": 1550,
+    "sha256": "6fe139758ce3221829684e0691f617ae0aaee9f38a540e0749bc57c08ab35368",
+    "archived": true,
+    "archive": "timing/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/steps.json",
+    "bytes": 90169,
+    "sha256": "d776af5e3255eb4a5c6648466181c95b95a555952723cea7bb26cda83d33e37e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r0.log",
+    "bytes": 140,
+    "sha256": "5f631489a25428bb451e7c4ec419f89d77a04949c821ae7dcd8f5ca37974ef57",
+    "archived": true,
+    "archive": "timing/direct-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/manifest.json",
+    "bytes": 1550,
+    "sha256": "217be10d604e4a254a0d0acb1725e67e75db8270c37ab80f14b8781a99ba833c",
+    "archived": true,
+    "archive": "timing/direct-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/steps.json",
+    "bytes": 90149,
+    "sha256": "d9e703e165191bfc80d510175b2c15ba46c2148055d66acca10e30b0e16d0b70",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r1.log",
+    "bytes": 134,
+    "sha256": "b547df767faffae871e5193c313d3612cf6f00c6d273ba3ce953853464afede0",
+    "archived": true,
+    "archive": "timing/direct-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/manifest.json",
+    "bytes": 1550,
+    "sha256": "defe3986739ab7a5af0109fb257d6ef969c5c9b900e1fdcf34c43982b61cd8ae",
+    "archived": true,
+    "archive": "timing/direct-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/steps.json",
+    "bytes": 90168,
+    "sha256": "274f3f7c49212305c2c3973deb5ca660526082a732cdc8353fcf4e8f9decd542",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/direct-r2.log",
+    "bytes": 140,
+    "sha256": "4e9a35559d5c320a9ad277f4e4655c0038d1aa9c652afde35fbd3cedb5c5dc7a",
+    "archived": true,
+    "archive": "timing/direct-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/environment.json",
+    "bytes": 227,
+    "sha256": "99c2a94c43dfcfd9af57c21f57cdfbdd61470dff9b577cacb48191e9da052a04",
+    "archived": true,
+    "archive": "timing/environment.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/manifest.json",
+    "bytes": 1597,
+    "sha256": "d0b6fbe894a5e8a4ac6e8ff775b8572df5d5c0097848d40a4b4eb3aa2beedf5f",
+    "archived": true,
+    "archive": "timing/noop-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/steps.json",
+    "bytes": 90544,
+    "sha256": "463bfcfff9961c738545142495e38bb25a264924f68e5306ebd44cc2c1f2fce8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r0.log",
+    "bytes": 138,
+    "sha256": "7c15f4f3438efe18b7cc725759788c5a70dfd01ed193eb42eff501cef589a31e",
+    "archived": true,
+    "archive": "timing/noop-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/manifest.json",
+    "bytes": 1597,
+    "sha256": "a268e3ad0ae28d3cc474675f969330737fa15583d62df1edb4b26108f58003ba",
+    "archived": true,
+    "archive": "timing/noop-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/steps.json",
+    "bytes": 90607,
+    "sha256": "7fd82754f08c4263dc7533908eaf7b1f7cbf746be6d6ee15868fd336daa54275",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r1.log",
+    "bytes": 138,
+    "sha256": "fd27462228b5dd738de2cb15102db0c5ead10908467ca1c5f966670973625c51",
+    "archived": true,
+    "archive": "timing/noop-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/manifest.json",
+    "bytes": 1597,
+    "sha256": "588dc6b0bd079a0b8827d15fc3c1fcba3b1218d446b354a1d37a9b0529707ef9",
+    "archived": true,
+    "archive": "timing/noop-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/steps.json",
+    "bytes": 90544,
+    "sha256": "77ba5035c0826670c74e23f43b545b171a2533cbeb8d411bfb84f856eea6a22e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/noop-r2.log",
+    "bytes": 138,
+    "sha256": "845db7ea98b0bb7266ebb3eda6cf8778e09e1e3aadd51754ac7281d8ca606881",
+    "archived": true,
+    "archive": "timing/noop-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/manifest.json",
+    "bytes": 1603,
+    "sha256": "d18341c7fe012da11f5091b94210918c084225f1bef0b3b53538917b99ddc2f0",
+    "archived": true,
+    "archive": "timing/prepare-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/steps.json",
+    "bytes": 91220,
+    "sha256": "867bac1442194e6415bc4b3cac1ae508d859595029f24a2041e322f4b46b1235",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r0.log",
+    "bytes": 141,
+    "sha256": "601558a2cdc962230c690e00629745388b49021990049350275c9216062330a0",
+    "archived": true,
+    "archive": "timing/prepare-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/manifest.json",
+    "bytes": 1603,
+    "sha256": "55198eb56b764302a2dafecb878a13ad0f268894721e5ff087325637232d5f02",
+    "archived": true,
+    "archive": "timing/prepare-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/steps.json",
+    "bytes": 91228,
+    "sha256": "9e78d06364a9b5add43fb5e278323263f8c5858084b02b3a7ffce66af75ca863",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r1.log",
+    "bytes": 141,
+    "sha256": "bb33bc9b4e6f75ef5b4bfaacff0a6471e8509440902315474cf49e5627b3f59c",
+    "archived": true,
+    "archive": "timing/prepare-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/manifest.json",
+    "bytes": 1603,
+    "sha256": "2cff639a2faee59bbe2cd76d2e1b1cfa51eb8bb75e7aea236cc4a2ae94ca9baa",
+    "archived": true,
+    "archive": "timing/prepare-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/steps.json",
+    "bytes": 91230,
+    "sha256": "124ed5df3467a2e1155151d9bc561c342165bf188ef77817412661f31e03d6ed",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare-r2.log",
+    "bytes": 141,
+    "sha256": "d6c4abf98a65c4213e591f279a1adcc471649ff056d1d7493471e012732a12e0",
+    "archived": true,
+    "archive": "timing/prepare-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/manifest.json",
+    "bytes": 1625,
+    "sha256": "52bd1aaaf05757b4a1a368aa01faec983b21f05a7f5ad7d1deac6dda90ed79a5",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/steps.json",
+    "bytes": 91052,
+    "sha256": "ce37743a164067ed5faf4ffeeca3b6251cecb51cbbcf6e8296e49af1e163e5df",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r0.log",
+    "bytes": 151,
+    "sha256": "424f54834c04285079fd95d36d5967e6a8107131febe7c9eff41d4734fffc9d1",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/manifest.json",
+    "bytes": 1625,
+    "sha256": "8edb33770bf50760b265af0a8d2e3fc746f9dba5b110ec7055f814b8ab156306",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/steps.json",
+    "bytes": 91092,
+    "sha256": "cf953b88677041cad59cce8f8340021848a116f60e8d93f9ea0ea77d48856712",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r1.log",
+    "bytes": 146,
+    "sha256": "6cca53ece700f464cdf7574b6036b3f968a72fdb392dff95c25cf372fc217079",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/manifest.json",
+    "bytes": 1625,
+    "sha256": "c47a188d03bd22d00a2fb83945e8614c057fbee4be583958e982db0b1be23bfa",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/steps.json",
+    "bytes": 91072,
+    "sha256": "a9a9f8a7b2cbe223729435176919bd46680658a715854e28661e1571b2676cf8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/prepare_vectorized-r2.log",
+    "bytes": 152,
+    "sha256": "43c9617f92726e9d3842e68dd04d9f41f82ce66c83ba25c8ebce311052416892",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/manifest.json",
+    "bytes": 1597,
+    "sha256": "264c36bcf23fac5b88771518d3a61af4a015bd334bc33ee1279283f40cf17908",
+    "archived": true,
+    "archive": "timing/ranked-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/steps.json",
+    "bytes": 92901,
+    "sha256": "e497c54e869cc3d547543c5268c7bf2b1db79ae15f433d001b79c630ddedb68e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r0.log",
+    "bytes": 140,
+    "sha256": "77ca7523c5e09342615777a2f2718aeb9deb923df6210fd672fa444e0e8ad384",
+    "archived": true,
+    "archive": "timing/ranked-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/manifest.json",
+    "bytes": 1597,
+    "sha256": "c06575fee38a8134bc9b58d59244ef60a21e10faee1ee2674bc9d1d3c39d90aa",
+    "archived": true,
+    "archive": "timing/ranked-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/steps.json",
+    "bytes": 92900,
+    "sha256": "ed21530601f126019e42a76bf882e6a8fbeaf05533b1a371a73ef56f52bc64c9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r1.log",
+    "bytes": 134,
+    "sha256": "4e32e7a42d9bc76157b57c573bfdc0c676ae5a7dd87852b5d42e808400c73fde",
+    "archived": true,
+    "archive": "timing/ranked-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/manifest.json",
+    "bytes": 1597,
+    "sha256": "4f37a7eeb6abdfe4edb4bf220338338f115bd90754e3b349aad3b0ce8855dc7f",
+    "archived": true,
+    "archive": "timing/ranked-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/steps.json",
+    "bytes": 92901,
+    "sha256": "0c783bbcf640fd1d799889b3978d9d1d718d0a3f438988062b0adc03db91d485",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/ranked-r2.log",
+    "bytes": 139,
+    "sha256": "f9215b0215562973e565f69a1ce69f74c9b9f77fa89ffe8cdf057ba84fc5dd6c",
+    "archived": true,
+    "archive": "timing/ranked-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/manifest.json",
+    "bytes": 1597,
+    "sha256": "38ed506042249c7fe8b2c5fd1d6e5a61966cf53169301d2f1c87dc9732ebfff0",
+    "archived": true,
+    "archive": "timing/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/steps.json",
+    "bytes": 95309,
+    "sha256": "378c83f8dce5593678de11aeb197292c06c46195dbe351cf107747e8c37c2a7c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r0.log",
+    "bytes": 132,
+    "sha256": "0d2a16ccd04a6adeff8a2757d19c88a70a2ef45a15ca543313be0546f384a89c",
+    "archived": true,
+    "archive": "timing/real-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/manifest.json",
+    "bytes": 1597,
+    "sha256": "87ed897e1d3a2d853990598a48af3e5cca5c58b34c53f07d96fe15e25bc00d7d",
+    "archived": true,
+    "archive": "timing/real-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/steps.json",
+    "bytes": 95299,
+    "sha256": "5b51f575dca950180a131a91aa511728b1c8326bba0431a85fa59412d71f07fd",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r1.log",
+    "bytes": 132,
+    "sha256": "288e37f6857a85622e66a8208838dd8a1344b6b7e02f53ca93cb98a7e3d354c2",
+    "archived": true,
+    "archive": "timing/real-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/manifest.json",
+    "bytes": 1597,
+    "sha256": "89763fce026fb378c867035b5719b4f93d77bc4b64bc11bc8ea3e4b326b39750",
+    "archived": true,
+    "archive": "timing/real-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/steps.json",
+    "bytes": 95318,
+    "sha256": "46aa81fd9244b319365910278191a573eb8066a2e8a03edf3714a16e1150818c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real-r2.log",
+    "bytes": 132,
+    "sha256": "7aecdfb6f79df54086226f418f015f692b8f57933fb27689031ecad99c7ea80e",
+    "archived": true,
+    "archive": "timing/real-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1619,
+    "sha256": "f92d1e5d06cbd085c5cbd6b33a0ee2430f8cf2a3f6aef8a56ceb2c9e3ef3aae2",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/steps.json",
+    "bytes": 95188,
+    "sha256": "9ad58068cb8b5e79f836959de74f97a2f098ef3640cb6f5c597925bbc5fb4c86",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r0.log",
+    "bytes": 143,
+    "sha256": "b5bb887f532ad70d58120076575b343ced0173524583d39e5dc75bf7d5959cce",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/manifest.json",
+    "bytes": 1619,
+    "sha256": "3219c5b19018d01374366194daadb099194e1ffb4638ce3233cc64cfbba371eb",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/steps.json",
+    "bytes": 95188,
+    "sha256": "0449e62703eaa174cb6bc465cb1217ac5be2650b9ece4b83b190d0f743cca37d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r1.log",
+    "bytes": 143,
+    "sha256": "8c5b222bae68a1520bf551c8df983ff69d2dfb020865a4b3981a8acf669a7526",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/manifest.json",
+    "bytes": 1619,
+    "sha256": "84891900110a245c063b084f19360c7dd8c8e9f4821a931269d7ea9bc9a160f1",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/steps.json",
+    "bytes": 95219,
+    "sha256": "21e62c6fb85ef9d76bcd8b970a212e4b6ce159c8db2738106b613238530ba66d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/real_vectorized-r2.log",
+    "bytes": 149,
+    "sha256": "423c73d4e906d74b1551ebabf0a1233ac3a7fd77d6ee2e4dd4045e5fde9e4a31",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/runner.py",
+    "bytes": 2386,
+    "sha256": "2bfff10684eeca4ddfce4adc9f0b6a05b37170ae8011260a4fcc2bf76177b81d",
+    "archived": true,
+    "archive": "timing/runner.py"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/summary.json",
+    "bytes": 28553,
+    "sha256": "366f7703fed6268ca9172ecb479a4e7f1eaf0cf8b05c5b3ca5e75fdda20e5791",
+    "archived": true,
+    "archive": "timing/summary.json"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/validation.log",
+    "bytes": 5072,
+    "sha256": "fe46a303a8ab76da50fa88dda833c7cd818f04fcf540c9beeb105c413218c567",
+    "archived": true,
+    "archive": "timing/validation.log"
+  },
+  {
+    "source": "results/migration-vectorized-timing-0929/verification.json",
+    "bytes": 390,
+    "sha256": "57f69f4c36b99ce28639af4beb2b1a888b56d9e24fe6acaabf58c8d36fc5a953",
+    "archived": true,
+    "archive": "timing/verification.json"
+  },
+  {
+    "source": "research/cpu_training/numa_buffer.py",
+    "bytes": 4681,
+    "sha256": "2c095a4b705401db0eaf9bb05eb83805642c65422116470f166f47d763ca5bb8",
+    "archived": true,
+    "archive": "source/numa_buffer.py"
+  },
+  {
+    "source": "research/cpu_training/access_paths.py",
+    "bytes": 12096,
+    "sha256": "a825f4616f8e173b62aaacb4d586a1149680195d13b6732648ba4de02a46d8f3",
+    "archived": true,
+    "archive": "source/access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/run_access_paths.py",
+    "bytes": 11484,
+    "sha256": "3998570f66ef62cdd53b8d35f103ca8084f1c44e6f79c33ad99d402f8e8fba28",
+    "archived": true,
+    "archive": "source/run_access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": true,
+    "archive": "source/observe_saved_tensors.py"
+  },
+  {
+    "source": "research/cpu_training/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": true,
+    "archive": "source/workloads.py"
+  },
+  {
+    "source": "research/cpu_training/run_migration_ablation.py",
+    "bytes": 2386,
+    "sha256": "2bfff10684eeca4ddfce4adc9f0b6a05b37170ae8011260a4fcc2bf76177b81d",
+    "archived": true,
+    "archive": "source/run_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/test_migration_ablation.py",
+    "bytes": 3536,
+    "sha256": "97c3e2383f444360e7dfa1a2b07ccb5f698e5b0ed5f414c0a84b9b9fdf849734",
+    "archived": true,
+    "archive": "source/test_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/analyze_vectorized_migration.py",
+    "bytes": 4299,
+    "sha256": "d3bd37d8405e54b84a7f25acef1d3ea119fe1dba2b0614e690cd08bc288f90cb",
+    "archived": true,
+    "archive": "source/analyze_vectorized_migration.py"
+  }
+]

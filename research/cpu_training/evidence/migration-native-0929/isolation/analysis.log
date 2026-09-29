@@ -1,0 +1,71 @@
+{
+  "means": {
+    "1MiB-same_vectorized_native": {
+      "native_wall_ms": 0.36930044444444443,
+      "native_cpu_ms": 0.08706177777777778,
+      "native_pre_ms": 0.004872972222222222,
+      "native_post_ms": 0.0018890277777777777,
+      "native_gap_ms": 0.006762,
+      "native_noncpu_ms": 0.2822386666666667,
+      "native_voluntary": 0.75,
+      "native_involuntary": 0.8333333333333334,
+      "syscall_ms": 0.3760624444444444
+    },
+    "1MiB-real_vectorized_native": {
+      "native_wall_ms": 0.6218071388888888,
+      "native_cpu_ms": 0.5987234722222222,
+      "native_pre_ms": 0.005077666666666667,
+      "native_post_ms": 0.004331972222222222,
+      "native_gap_ms": 0.00940963888888889,
+      "native_noncpu_ms": 0.02308366666666667,
+      "native_voluntary": 0.7222222222222222,
+      "native_involuntary": 0.6944444444444444,
+      "syscall_ms": 0.6312167777777777
+    },
+    "8MiB-same_vectorized_native": {
+      "native_wall_ms": 0.2683848611111111,
+      "native_cpu_ms": 0.24944455555555556,
+      "native_pre_ms": 0.0023056666666666664,
+      "native_post_ms": 0.0010954444444444445,
+      "native_gap_ms": 0.0034011111111111113,
+      "native_noncpu_ms": 0.018940305555555554,
+      "native_voluntary": 1.25,
+      "native_involuntary": 0.8333333333333334,
+      "syscall_ms": 0.2717859722222222
+    },
+    "8MiB-real_vectorized_native": {
+      "native_wall_ms": 3.412324611111111,
+      "native_cpu_ms": 3.3258945833333335,
+      "native_pre_ms": 0.00371875,
+      "native_post_ms": 0.0035221666666666665,
+      "native_gap_ms": 0.007240916666666666,
+      "native_noncpu_ms": 0.08643002777777778,
+      "native_voluntary": 1.0,
+      "native_involuntary": 0.7222222222222222,
+      "syscall_ms": 3.419565527777778
+    },
+    "32MiB-same_vectorized_native": {
+      "native_wall_ms": 1.079800361111111,
+      "native_cpu_ms": 0.9109416388888889,
+      "native_pre_ms": 0.0037316111111111113,
+      "native_post_ms": 0.0010990555555555556,
+      "native_gap_ms": 0.004830666666666667,
+      "native_noncpu_ms": 0.1688587222222222,
+      "native_voluntary": 1.1388888888888888,
+      "native_involuntary": 0.7222222222222222,
+      "syscall_ms": 1.0846310277777778
+    },
+    "32MiB-real_vectorized_native": {
+      "native_wall_ms": 16.48519002777778,
+      "native_cpu_ms": 16.0912705,
+      "native_pre_ms": 0.006355916666666667,
+      "native_post_ms": 0.008208944444444444,
+      "native_gap_ms": 0.01456486111111111,
+      "native_noncpu_ms": 0.3939195277777778,
+      "native_voluntary": 0.5555555555555556,
+      "native_involuntary": 1.1388888888888888,
+      "syscall_ms": 16.499754888888887
+    }
+  },
+  "step_contrasts": {}
+}

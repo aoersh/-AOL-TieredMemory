@@ -1,0 +1,89 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cycles:k'
+# Event count (approx.): 16758515493
+#
+# Overhead  Command      Pid:Command  Shared Object      Symbol                                IPC   [IPC Coverage]
+# ........  .......  ...............  .................  ....................................  ....................
+#
+    41.63%  python3  1720989:python3  [kernel.kallsyms]  [k] native_queued_spin_lock_slowpath  -      -            
+    16.76%  python3  1720989:python3  [kernel.kallsyms]  [k] copy_page                         -      -            
+    14.46%  python3  1720989:python3  [kernel.kallsyms]  [k] migrate_pages_batch               -      -            
+     2.94%  python3  1720989:python3  [kernel.kallsyms]  [k] set_tlb_ubc_flush_pending.isra.0  -      -            
+     2.80%  python3  1720989:python3  [kernel.kallsyms]  [k] lru_gen_add_folio                 -      -            
+     2.25%  python3  1720989:python3  [kernel.kallsyms]  [k] page_vma_mapped_walk              -      -            
+     2.15%  python3  1720989:python3  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave            -      -            
+     2.02%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_batch_move_lru              -      -            
+     1.86%  python3  1720989:python3  [kernel.kallsyms]  [k] release_pages                     -      -            
+     1.71%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_migrate_flags               -      -            
+     1.33%  python3  1720989:python3  [kernel.kallsyms]  [k] try_to_migrate_one                -      -            
+     0.81%  python3  1720989:python3  [kernel.kallsyms]  [k] lru_add_fn                        -      -            
+     0.52%  python3  1720989:python3  [kernel.kallsyms]  [k] __rmqueue_pcplist                 -      -            
+     0.47%  python3  1720989:python3  [kernel.kallsyms]  [k] clear_page_erms                   -      -            
+     0.37%  python3  1720989:python3  [kernel.kallsyms]  [k] _raw_spin_trylock                 -      -            
+     0.33%  python3  1720989:python3  [kernel.kallsyms]  [k] smp_call_function_many_cond       -      -            
+     0.32%  python3  1720989:python3  [kernel.kallsyms]  [k] mod_node_page_state               -      -            
+     0.30%  python3  1720989:python3  [kernel.kallsyms]  [k] migrate_folio_done                -      -            
+     0.30%  python3  1720989:python3  [kernel.kallsyms]  [k] remove_migration_pte              -      -            
+     0.28%  python3  1720989:python3  [kernel.kallsyms]  [k] check_pte                         -      -            
+     0.27%  python3  1720989:python3  [kernel.kallsyms]  [k] _find_next_bit                    -      -            
+     0.26%  python3  1720989:python3  [kernel.kallsyms]  [k] migrate_pages                     -      -            
+     0.23%  python3  1720989:python3  [kernel.kallsyms]  [k] perf_adjust_freq_unthr_context    -      -            
+     0.23%  python3  1720989:python3  [kernel.kallsyms]  [k] __put_user_4                      -      -            
+     0.23%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_remove_rmap_ptes            -      -            
+     0.22%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_add_anon_rmap_ptes          -      -            
+     0.19%  python3  1720989:python3  [kernel.kallsyms]  [k] get_page_from_freelist            -      -            
+     0.19%  python3  1720989:python3  [kernel.kallsyms]  [k] __rcu_read_lock                   -      -            
+     0.17%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_add_lru                     -      -            
+     0.17%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_unlock                      -      -            
+     0.16%  python3  1720989:python3  [kernel.kallsyms]  [k] __free_one_page                   -      -            
+     0.16%  python3  1720989:python3  [kernel.kallsyms]  [k] free_unref_page_commit            -      -            
+     0.16%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_get_anon_vma                -      -            
+     0.16%  python3  1720989:python3  [kernel.kallsyms]  [k] should_flush_tlb                  -      -            
+     0.15%  python3  1720989:python3  [kernel.kallsyms]  [k] kernel_move_pages                 -      -            
+     0.15%  python3  1720989:python3  [kernel.kallsyms]  [k] up_read                           -      -            
+     0.12%  python3  1720989:python3  [kernel.kallsyms]  [k] __mod_node_page_state             -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] rmap_walk_anon                    -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] _raw_spin_lock                    -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] move_pages_and_store_status       -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] update_cfs_group                  -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] rmap_walk                         -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] down_read_trylock                 -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_xchg_last_cpupid            -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] pte_offset_map_nolock             -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt   -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] down_read                         -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_migrate_mapping             -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] __cond_resched                    -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] account_system_index_time         -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] cgroup_rstat_updated              -      -            
+     0.11%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_lruvec_lock_irqsave         -      -            
+     0.10%  python3  1720989:python3  [kernel.kallsyms]  [k] move_to_new_folio                 -      -            
+     0.10%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_isolate_lru                 -      -            
+     0.10%  python3  1720989:python3  [kernel.kallsyms]  [k] try_to_migrate                    -      -            
+     0.10%  python3  1720989:python3  [kernel.kallsyms]  [k] get_pfnblock_flags_mask           -      -            
+     0.10%  python3  1720989:python3  [kernel.kallsyms]  [k] mtree_load                        -      -            
+     0.09%  python3  1720989:python3  [kernel.kallsyms]  [k] lru_gen_del_folio                 -      -            
+     0.08%  python3  1720989:python3  [kernel.kallsyms]  [k] p4d_offset                        -      -            
+     0.08%  python3  1720989:python3  [kernel.kallsyms]  [k] folio_anon_vma                    -      -            
+     0.07%  python3  1720989:python3  [kernel.kallsyms]  [k] __pte_offset_map                  -      -            
+     0.07%  python3  1720989:python3  [kernel.kallsyms]  [k] alloc_migration_target            -      -            
+     0.07%  python3  1720989:python3  [kernel.kallsyms]  [k] arch_tlbbatch_flush               -      -            
+     0.06%  python3  1720989:python3  [kernel.kallsyms]  [k] page_to_pgoff                     -      -            
+     0.06%  python3  1720989:python3  [kernel.kallsyms]  [k] pte_mkwrite                       -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] vma_migratable                    -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] __queue_work                      -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] follow_page_mask                  -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] _raw_spin_lock_irq                -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] free_unref_page_prepare           -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] rwsem_down_read_slowpath          -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] native_sched_clock                -      -            
+     0.05%  python3  1720989:python3  [kernel.kallsyms]  [k] __get_user_8                      -      -            
+
+
+#
+# (Tip: Save output of perf stat using: perf stat record <target workload>)
+#

@@ -1,0 +1,188 @@
+{
+  "means": {
+    "direct": {
+      "step_ms": 105.66545737666667,
+      "forward_ms": 45.507399656666664,
+      "backward_ms": 59.22311277666667,
+      "optimizer_and_drain_ms": 0.9349449433333333,
+      "wait_ms": 0.0,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.0,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "ranked": {
+      "step_ms": 144.75864901,
+      "forward_ms": 79.41718403333333,
+      "backward_ms": 64.13467757333333,
+      "optimizer_and_drain_ms": 1.2067874033333335,
+      "wait_ms": 0.04463016,
+      "migration_ms": 52.781903506666666,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.0,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 32.0,
+      "late_per_step": 0
+    },
+    "noop": {
+      "step_ms": 102.5931295,
+      "forward_ms": 43.03454252333333,
+      "backward_ms": 58.5860632,
+      "optimizer_and_drain_ms": 0.9725237766666666,
+      "wait_ms": 0.04624507333333333,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.0,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "prepare": {
+      "step_ms": 111.32874701333333,
+      "forward_ms": 50.73487329666666,
+      "backward_ms": 59.63557618666667,
+      "optimizer_and_drain_ms": 0.95829753,
+      "wait_ms": 0.04466274,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 5.844064763333333,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "real": {
+      "step_ms": 143.36537458666666,
+      "forward_ms": 78.90889303666667,
+      "backward_ms": 63.264240103333336,
+      "optimizer_and_drain_ms": 1.1922414466666666,
+      "wait_ms": 0.04458973,
+      "migration_ms": 53.231762053333334,
+      "bind_ms": 0.6682367533333333,
+      "prepare_ms": 5.77632582,
+      "syscall_ms": 46.24056057333333,
+      "status_ms": 0.5309879033333333,
+      "moved_MiB": 32.0,
+      "late_per_step": 0
+    },
+    "prepare_vectorized": {
+      "step_ms": 104.57379879666667,
+      "forward_ms": 44.92309239666667,
+      "backward_ms": 58.68723252666667,
+      "optimizer_and_drain_ms": 0.9634738733333333,
+      "wait_ms": 0.042999376666666665,
+      "migration_ms": 0.0,
+      "bind_ms": 0.0,
+      "prepare_ms": 0.10602559333333333,
+      "syscall_ms": 0.0,
+      "status_ms": 0.0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0
+    },
+    "real_vectorized": {
+      "step_ms": 141.30701891333334,
+      "forward_ms": 76.30663083333333,
+      "backward_ms": 63.83110768666666,
+      "optimizer_and_drain_ms": 1.1692803933333333,
+      "wait_ms": 0.04265192333333333,
+      "migration_ms": 53.1502857,
+      "bind_ms": 0.6144970533333333,
+      "prepare_ms": 0.21530686333333335,
+      "syscall_ms": 51.76362724,
+      "status_ms": 0.5338089933333333,
+      "moved_MiB": 32.0,
+      "late_per_step": 0
+    }
+  },
+  "step_contrasts": {
+    "prepare_vectorized-prepare": {
+      "mean": -6.754948216666667,
+      "ci95": [
+        -16.0632092173353,
+        2.5533127840019665
+      ],
+      "values": [
+        -11.004734200000001,
+        -5.333683399999998,
+        -3.926427050000001
+      ]
+    },
+    "real_vectorized-real": {
+      "mean": -2.0583556733333332,
+      "ci95": [
+        -7.913593209378742,
+        3.7968818627120764
+      ],
+      "values": [
+        -3.1502296200000046,
+        -3.671479739999995,
+        0.6466423399999996
+      ]
+    },
+    "prepare_vectorized-noop": {
+      "mean": 1.9806692966666664,
+      "ci95": [
+        -10.485523629253564,
+        14.446862222586898
+      ],
+      "values": [
+        -0.7839870400000137,
+        -1.047333789999982,
+        7.773328719999995
+      ]
+    },
+    "real_vectorized-direct": {
+      "mean": 35.64156153666666,
+      "ci95": [
+        30.878964975876936,
+        40.404158097456374
+      ],
+      "values": [
+        35.228748529999976,
+        37.73154358999999,
+        33.96439249000001
+      ]
+    },
+    "real_vectorized-prepare_vectorized": {
+      "mean": 36.733220116666665,
+      "ci95": [
+        23.691166794954917,
+        49.77527343837841
+      ],
+      "values": [
+        42.78093453999999,
+        34.07372394999999,
+        33.34500186000001
+      ]
+    },
+    "real-ranked": {
+      "mean": -1.3932744233333476,
+      "ci95": [
+        -6.881674897461457,
+        4.095126050794762
+      ],
+      "values": [
+        0.27146685999997544,
+        -0.5514793800000177,
+        -3.8998107500000003
+      ]
+    },
+    "noop-direct": {
+      "mean": -3.0723278766666717,
+      "ci95": [
+        -19.811086732903437,
+        13.666430979570093
+      ],
+      "values": [
+        -6.76819897,
+        4.7051534299999815,
+        -7.153938089999997
+      ]
+    }
+  }
+}

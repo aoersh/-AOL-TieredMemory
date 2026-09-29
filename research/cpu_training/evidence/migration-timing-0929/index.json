@@ -1,0 +1,1780 @@
+[
+  {
+    "source": "results/migration-timing-diagnostic-0929/analyzer_snapshot.py",
+    "bytes": 5767,
+    "sha256": "8bbdce18a8c713a766c0161837c8fea22391c6bf22f252486b7020548e023d70",
+    "archived": true,
+    "archive": "diagnostic/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/commands.json",
+    "bytes": 3123,
+    "sha256": "5d872a27c666e84c6e847d3f0d6dd1c7d7e540c58f8bfd00b8ffd00182b7ee1a",
+    "archived": true,
+    "archive": "diagnostic/commands.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/completed.json",
+    "bytes": 186,
+    "sha256": "2c82efb792ed36a71d870c0c63250500e77cd32615eb1f9f85d08a787bc25094",
+    "archived": true,
+    "archive": "diagnostic/completed.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/events.json",
+    "bytes": 16342,
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/manifest.json",
+    "bytes": 1578,
+    "sha256": "de7c8ed91062695902042005afbc53011fd3c569127a45ae7d03b531f1f5ac4d",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/steps.json",
+    "bytes": 3081,
+    "sha256": "3d591bbc0365998f563f84cab11d3cc6e2b24c0ec29ea255238db38548bdd1da",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/direct-r0.log",
+    "bytes": 139,
+    "sha256": "189182bbff0079d1848a1df9150777f8e00296f0d6f39d4553d721c24ff45188",
+    "archived": true,
+    "archive": "diagnostic/direct-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/environment.json",
+    "bytes": 230,
+    "sha256": "9ebe271a31550b97ad15d347f908cc63d030ae5ae002b5b1908125049ea5a78d",
+    "archived": true,
+    "archive": "diagnostic/environment.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/events.json",
+    "bytes": 17817,
+    "sha256": "5129dd1b049b36b58790bfceba39aadfac276daa209833d348239848e9171f48",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/manifest.json",
+    "bytes": 1653,
+    "sha256": "f44664e8e340c8eee3caccbc8b5689591a2bd735d90b302063fe7367a5cdabba",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/steps.json",
+    "bytes": 5133,
+    "sha256": "04e171bc85ac6f3296e65e6a853eeba62dcdc3b2c3f7f2aabbaac3c3e0705b4a",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized-r0.log",
+    "bytes": 143,
+    "sha256": "7916c5a61bd95ea9bfa374d04ede0f231fd5ba758699d65c7b03a683053d4eac",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized_delay-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/events.json",
+    "bytes": 17847,
+    "sha256": "b11749189fd8f226235655e53252dbfc2cef145fb015d507a849b967447c64c1",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized_delay-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/manifest.json",
+    "bytes": 1659,
+    "sha256": "c3742f2cb88ee29213c03efaf6d9a1a59e46101de0b7a9df9faf9e690d1a5966",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized_delay-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized_delay-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/steps.json",
+    "bytes": 5176,
+    "sha256": "b430b9107897e9288c78988d7bbcc97e159773fea89505c1187534936515e4c5",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/prepare_vectorized_delay-r0.log",
+    "bytes": 157,
+    "sha256": "00418c2f4bdd841e8c97e3880b1f5190c5d5d4130f1af3bf24da28063be2ddc7",
+    "archived": true,
+    "archive": "diagnostic/prepare_vectorized_delay-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/protocol.json",
+    "bytes": 452,
+    "sha256": "86b4ba58940de86167dff8b258c6a8f23d35fb68cef766a241a533f72235bd1f",
+    "archived": true,
+    "archive": "diagnostic/protocol.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/events.json",
+    "bytes": 18069,
+    "sha256": "3574fb91142c4783ace4b7f068516b58681c428af522f1f496ccf2f998c829c9",
+    "archived": true,
+    "archive": "diagnostic/real-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/manifest.json",
+    "bytes": 1625,
+    "sha256": "0f3a42dae3edc3e042823ee7b14bf42cb0a2a8c9a553182e2227e93cdc700205",
+    "archived": true,
+    "archive": "diagnostic/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/steps.json",
+    "bytes": 5549,
+    "sha256": "f9aea61bc728236a2395d5bfdd69eda01fbca6d64756985b9b33d2c5e614fa3e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real-r0.log",
+    "bytes": 136,
+    "sha256": "6ad526943bbf1e63b0bbb1bc9629240c744422b01179fbfb7543287d43952bd0",
+    "archived": true,
+    "archive": "diagnostic/real-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/events.json",
+    "bytes": 18098,
+    "sha256": "75d46d738e2c838b825cfc32531a11ca84f175f758a14c6ecb1b7a5464e3dc9d",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1647,
+    "sha256": "d7074c4c6ff7fb04816f5f37a32553f515cce52dd6626db1d31fe24cefd2300f",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/steps.json",
+    "bytes": 5574,
+    "sha256": "c694c7912c5ba4bcd76386abd09e4ee3e45c9e1b668885b0e2bee4a746725d3d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized-r0.log",
+    "bytes": 140,
+    "sha256": "03eb52a8481f282b43400ff49ad9c7c797f5a5e3327ea18887e86965d252c6ec",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_delay-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/events.json",
+    "bytes": 18128,
+    "sha256": "dbe7ec04a5c2383be56428a7c83488e7d5d5b4757b213432a07767a24aa64264",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_delay-r0/events.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/manifest.json",
+    "bytes": 1653,
+    "sha256": "7856f29d1693d9b10f68b3d1b3c362652c8ecf43d5eb580ba5c81523e29c7637",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_delay-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_delay-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/steps.json",
+    "bytes": 5616,
+    "sha256": "3e0199221f6fb8f2a56b4444fac89dfd60416736820f2a3a70a6d083a3c4b7c0",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/real_vectorized_delay-r0.log",
+    "bytes": 154,
+    "sha256": "f7faeddac461b1aa13f7c50faf27e45277355618b5943f9e217ddabab0b22bfd",
+    "archived": true,
+    "archive": "diagnostic/real_vectorized_delay-r0.log"
+  },
+  {
+    "source": "results/migration-timing-diagnostic-0929/runner.py",
+    "bytes": 3209,
+    "sha256": "08c11d363a04f84eecd5924333da8b414820002e871089f326179fdfaddd2f67",
+    "archived": true,
+    "archive": "diagnostic/runner.py"
+  },
+  {
+    "source": "results/migration-timing-control-0929/analysis.log",
+    "bytes": 6389,
+    "sha256": "8658daecda74f2939d528f72ee1ce8dcc310fb2e43eca00cf16cde0f0c4d5dd4",
+    "archived": true,
+    "archive": "timing/analysis.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/analyzer_snapshot.py",
+    "bytes": 5767,
+    "sha256": "8bbdce18a8c713a766c0161837c8fea22391c6bf22f252486b7020548e023d70",
+    "archived": true,
+    "archive": "timing/analyzer_snapshot.py"
+  },
+  {
+    "source": "results/migration-timing-control-0929/commands.json",
+    "bytes": 8949,
+    "sha256": "f93cef27e2e1e5aea10d37eee5baaf0d98c8e60c1aa3ae3ea4a69664023d6e6d",
+    "archived": true,
+    "archive": "timing/commands.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/completed.json",
+    "bytes": 190,
+    "sha256": "17ec9d4f230c70131c22d2b00620853c159fae77d89cd922a04cb6a50ba03fc0",
+    "archived": true,
+    "archive": "timing/completed.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/manifest.json",
+    "bytes": 1578,
+    "sha256": "2bcc36fd0e2d6d7ee725e2694f5c9ad597014f14fe0143bd2624b01caa209e92",
+    "archived": true,
+    "archive": "timing/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/steps.json",
+    "bytes": 107682,
+    "sha256": "13576d3824b9955d3cf152f45a3df0eecbfe09f8cea767ffa87bf1a7694f10c8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r0.log",
+    "bytes": 131,
+    "sha256": "5008850a6a6ceae6ebed8ed27721db37ea1076a6fa6d091f9708efe28af7de89",
+    "archived": true,
+    "archive": "timing/direct-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/manifest.json",
+    "bytes": 1578,
+    "sha256": "887745cb39ab769a264aefaf36be2dac91b101828dc48dbb21cb806e40399220",
+    "archived": true,
+    "archive": "timing/direct-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/steps.json",
+    "bytes": 107678,
+    "sha256": "f3cbd8afd417abcc4c9c78e43968ff505fd1692b680a5c872f4d5f68c6abd87f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r1.log",
+    "bytes": 137,
+    "sha256": "3ba1bc5f3ed0fcd7b217b0a52ebd463060c205b1efe932a803c773eaf0509036",
+    "archived": true,
+    "archive": "timing/direct-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/manifest.json",
+    "bytes": 1578,
+    "sha256": "c13a8bcc6d034cff28cebc64c85c9f4123acd8dc33080c5e8b40b36cfa681843",
+    "archived": true,
+    "archive": "timing/direct-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/steps.json",
+    "bytes": 107694,
+    "sha256": "e06bfe69b7226ad36a39aeaea7729df3b8b374be4889caed7b588ed1a1a33a29",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/direct-r2.log",
+    "bytes": 137,
+    "sha256": "fea6f60a3c23f2a2cac132dfe99084b453d1796b48ebc71f4e1cebcf9d2e1bed",
+    "archived": true,
+    "archive": "timing/direct-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/environment.json",
+    "bytes": 228,
+    "sha256": "e8b19777f63c11f9b49808ce39b0884eb6dd5000da9a03c9a7bc0637a9d93327",
+    "archived": true,
+    "archive": "timing/environment.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/manifest.json",
+    "bytes": 1653,
+    "sha256": "bc022668436a466870cabe27842d0da7431ae2ba56f58311075020618b06483b",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/steps.json",
+    "bytes": 181380,
+    "sha256": "393bda5220cf21754078cf3572bae9eb5a17d2c4bdcb6bb7ea88f1fc5e82dd3d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r0.log",
+    "bytes": 149,
+    "sha256": "59763990f7709806b09d0268acd6c5fcc6b077597bbc254009c4e5df1af5753c",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/manifest.json",
+    "bytes": 1653,
+    "sha256": "bc8f9d1746f3ef460d1b7cc48036222383ca066ffb863a6918d0197797e9afda",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/steps.json",
+    "bytes": 181402,
+    "sha256": "7031be0c3432a17c1b32177b6cc86fde4361755c85c959a8e602ec1e87de05fa",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r1.log",
+    "bytes": 149,
+    "sha256": "b8dc58493e8ecfc890ff7a59c2dcf60fb9073806613c44f294bf8d070f38e3b1",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/manifest.json",
+    "bytes": 1653,
+    "sha256": "d98716512a6daa74988a6f87bc62fe74080be071b7659af6e9bac3d21f237243",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/steps.json",
+    "bytes": 181435,
+    "sha256": "d03cd1d130eceed28c2e3aa342c30790df509e6da86b3c5f46383f004fc4ebdf",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized-r2.log",
+    "bytes": 143,
+    "sha256": "0d66d2b0f85c2f17d8f464471b0cf0943321ea423a50f1cbac3123a8755b86bb",
+    "archived": true,
+    "archive": "timing/prepare_vectorized-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/manifest.json",
+    "bytes": 1659,
+    "sha256": "f85b715b8bdcce1d21675fe1b35d096c4896bc3bdef897797bc841a8bbbe1c63",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/steps.json",
+    "bytes": 182885,
+    "sha256": "2b4c4c27b74e14f71fbe05ebb6fff1720e85809c5183c5bc022f845af59c66d6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r0.log",
+    "bytes": 155,
+    "sha256": "c25a725d556b5503f2139d6d5425f3b73cae839962667749e4b3219c7d3d1725",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/manifest.json",
+    "bytes": 1659,
+    "sha256": "5381f511529b32fc06195e0bb0ee315ad9a6e54e930df8bfe2dcde1f4b4efc36",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/steps.json",
+    "bytes": 182882,
+    "sha256": "3dd88872eb09b8468b49fe9cacc201f3050ff34e657685611766e7c3dfc9cbf4",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r1.log",
+    "bytes": 155,
+    "sha256": "5551aff2135c049940b84c10fa6089d954bec0501a3843e184b460e03e138035",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/manifest.json",
+    "bytes": 1659,
+    "sha256": "44bb5e4591225c98e8c61de59bb46e1f344ded2edb1574e7951681b2bf7f95f0",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/steps.json",
+    "bytes": 182845,
+    "sha256": "d339e9bdbcfe134321e4f4a60c528a4c66ed3790d2fe5f43df7fede5586a2828",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/prepare_vectorized_delay-r2.log",
+    "bytes": 155,
+    "sha256": "74f4e0c05debe826a8242c3b2433279f84ff767e9c7ea4c463305f82266e413a",
+    "archived": true,
+    "archive": "timing/prepare_vectorized_delay-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/process_means.csv",
+    "bytes": 4300,
+    "sha256": "d232f421c18df6fb027b01e60bb42e6f02b169bb4e31daef3bf8603bc1b8c2e3",
+    "archived": true,
+    "archive": "timing/process_means.csv"
+  },
+  {
+    "source": "results/migration-timing-control-0929/protocol.json",
+    "bytes": 452,
+    "sha256": "86b4ba58940de86167dff8b258c6a8f23d35fb68cef766a241a533f72235bd1f",
+    "archived": true,
+    "archive": "timing/protocol.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/manifest.json",
+    "bytes": 1625,
+    "sha256": "5cfa09cba98ac72db98b031dadb78b4768baea749a9e9697881e1ec571a574b3",
+    "archived": true,
+    "archive": "timing/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/steps.json",
+    "bytes": 196233,
+    "sha256": "fe68f4280b9183474b006139facc18f5f5f2a8a4af690343cdce3a7014a76c68",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r0.log",
+    "bytes": 135,
+    "sha256": "510b16903e9e9b8a38703528476b3bbe8ce76dfa11b56379e311c2c913ad26bb",
+    "archived": true,
+    "archive": "timing/real-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/manifest.json",
+    "bytes": 1625,
+    "sha256": "372e5793650d3b7b6646324e1801bfd486fa09fb4f75df1723c541c0a7bc04ab",
+    "archived": true,
+    "archive": "timing/real-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/steps.json",
+    "bytes": 196162,
+    "sha256": "542ddefe61cacfd96d076e13ac5c374bca9966e5930e187d0c5761dd13869023",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r1.log",
+    "bytes": 135,
+    "sha256": "62a8bae75eb13f6c19869a14d1795576db04e4af07552fca538c8c35b13f6b6c",
+    "archived": true,
+    "archive": "timing/real-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/manifest.json",
+    "bytes": 1625,
+    "sha256": "08b1bd26b0e0c12a056657029cb9b525fbbc9801cc3482de42ad827e1310ea23",
+    "archived": true,
+    "archive": "timing/real-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/steps.json",
+    "bytes": 196250,
+    "sha256": "8ba12152438afcac87ed42bcacd015e4a4d45faf24fca7c2d53aab218738422c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real-r2.log",
+    "bytes": 135,
+    "sha256": "bb25001926d2c1fc279696e1ded7492f1ec9bea2adb15aa8084183e72f018d61",
+    "archived": true,
+    "archive": "timing/real-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/manifest.json",
+    "bytes": 1647,
+    "sha256": "9c3b0494d5f4e3a578f3209eb723fbec4589212b350b60fd2cbe6f6f362f5713",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/steps.json",
+    "bytes": 197119,
+    "sha256": "1b873f789c8e6abe3212131f92a489df4a0ca853f3c58079387b36817d87ce3f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r0.log",
+    "bytes": 140,
+    "sha256": "f6a53fe0c17d91f2e13b751814c30ad8e6e5fe4536ea8ce4123e7e6b9d813a64",
+    "archived": true,
+    "archive": "timing/real_vectorized-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/manifest.json",
+    "bytes": 1647,
+    "sha256": "6481ac8507ab15f0b80f92a8352a9603ea441cc35efc7d18316c4734f97ca381",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/steps.json",
+    "bytes": 197086,
+    "sha256": "42510149c94a70994cd9d278efd99ba96a2c1a62d8505cec404f89c04993c6fb",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r1.log",
+    "bytes": 146,
+    "sha256": "cbbdd72be871a5014d500fcf21b0ed410e0f8cbd87b3a3f27431a0c689be26e3",
+    "archived": true,
+    "archive": "timing/real_vectorized-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/manifest.json",
+    "bytes": 1647,
+    "sha256": "4446ca2dddf32d63f2ff6fc31abd8960290881a3ec20c8a9afffeefba9cd11fc",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/steps.json",
+    "bytes": 197167,
+    "sha256": "8fa2a0ffe2c4a108ea81ead526b65bbb379700646d0ee7b5c6b5269ae9ad7fe9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized-r2.log",
+    "bytes": 140,
+    "sha256": "28d6990ba9a3c6f92ac742e119f5b826fd1b1f0ccd33c16b335d4ffe874eb3f4",
+    "archived": true,
+    "archive": "timing/real_vectorized-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/manifest.json",
+    "bytes": 1653,
+    "sha256": "d5b4a8507e4ee77a77f84fc24e0327c6b415f35a28f8324b6d3fc4aaa8369648",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/steps.json",
+    "bytes": 198679,
+    "sha256": "6f6811cd229a894538cf67434f06bf86cc4dede4731d77a48eaeb9c044e648e2",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r0.log",
+    "bytes": 146,
+    "sha256": "c8a09f81f60b5161d2809659a2c53205a930104abea3fc1306640eac75073884",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r0.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/manifest.json",
+    "bytes": 1653,
+    "sha256": "44a69cf2342c60c0d2861b9f9844694ac25980dd229566ed92a16f57a6cfcd08",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/steps.json",
+    "bytes": 198817,
+    "sha256": "6a178ffb268d71621531d627856255ee91e9a0bb9825e657178476720496fe1c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r1.log",
+    "bytes": 152,
+    "sha256": "b61ffda77973a083146ecfd45bb55325e68d4308f061b577710a264fea7224cc",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r1.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/manifest.json",
+    "bytes": 1653,
+    "sha256": "b9db4b855225820083f61c976c3345368a9c544c4c58f0817478d9ca3b5c4b87",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/steps.json",
+    "bytes": 198630,
+    "sha256": "b14ee8d9fd68a26c6695d91e76715916c8f9ec3b12c957f2d889255ec10ccdb9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-timing-control-0929/real_vectorized_delay-r2.log",
+    "bytes": 152,
+    "sha256": "19b345a14aef927ae1de38f0ba10ecd66d7cb7540eeea7b01bc13be1abf6a45a",
+    "archived": true,
+    "archive": "timing/real_vectorized_delay-r2.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/runner.py",
+    "bytes": 3209,
+    "sha256": "08c11d363a04f84eecd5924333da8b414820002e871089f326179fdfaddd2f67",
+    "archived": true,
+    "archive": "timing/runner.py"
+  },
+  {
+    "source": "results/migration-timing-control-0929/summary.json",
+    "bytes": 45547,
+    "sha256": "1cc09ac27cda2083167f1dc3b8d5557f160b243ff9a9e741e11250efe2ed7241",
+    "archived": true,
+    "archive": "timing/summary.json"
+  },
+  {
+    "source": "results/migration-timing-control-0929/validation.log",
+    "bytes": 5559,
+    "sha256": "da5e4e95d690af3d4bf5b0297ce11bde48c5135b473ff2d1145dc754f77402c9",
+    "archived": true,
+    "archive": "timing/validation.log"
+  },
+  {
+    "source": "results/migration-timing-control-0929/verification.json",
+    "bytes": 272,
+    "sha256": "54c7a79850dc074fdb2f4c520dc5d0285e1bd47fe5a164b36bcf0ec82cd64919",
+    "archived": true,
+    "archive": "timing/verification.json"
+  },
+  {
+    "source": "research/cpu_training/numa_buffer.py",
+    "bytes": 5337,
+    "sha256": "ad53b64f2a8576f6b86df7c1ba3d44b63a1408c89d0385049345ebdd3c378452",
+    "archived": true,
+    "archive": "source/numa_buffer.py"
+  },
+  {
+    "source": "research/cpu_training/access_paths.py",
+    "bytes": 12389,
+    "sha256": "861c42e731f2eaa527b704aad11ab1ec91da5c98b66c68125ae2255c808324e1",
+    "archived": true,
+    "archive": "source/access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/run_access_paths.py",
+    "bytes": 12291,
+    "sha256": "33fa24257776302e8664c83791dc6c47cfa16c9c9fe75248aa6a3834e469b45e",
+    "archived": true,
+    "archive": "source/run_access_paths.py"
+  },
+  {
+    "source": "research/cpu_training/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": true,
+    "archive": "source/observe_saved_tensors.py"
+  },
+  {
+    "source": "research/cpu_training/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": true,
+    "archive": "source/workloads.py"
+  },
+  {
+    "source": "research/cpu_training/run_migration_ablation.py",
+    "bytes": 3209,
+    "sha256": "08c11d363a04f84eecd5924333da8b414820002e871089f326179fdfaddd2f67",
+    "archived": true,
+    "archive": "source/run_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/test_migration_ablation.py",
+    "bytes": 3536,
+    "sha256": "97c3e2383f444360e7dfa1a2b07ccb5f698e5b0ed5f414c0a84b9b9fdf849734",
+    "archived": true,
+    "archive": "source/test_migration_ablation.py"
+  },
+  {
+    "source": "research/cpu_training/test_migration_timing.py",
+    "bytes": 2855,
+    "sha256": "3268cd98df6b85b1434d3af5ae76a6511d9525fa77e1196ba43129f08dd38c65",
+    "archived": true,
+    "archive": "source/test_migration_timing.py"
+  },
+  {
+    "source": "research/cpu_training/analyze_migration_timing.py",
+    "bytes": 5767,
+    "sha256": "8bbdce18a8c713a766c0161837c8fea22391c6bf22f252486b7020548e023d70",
+    "archived": true,
+    "archive": "source/analyze_migration_timing.py"
+  }
+]

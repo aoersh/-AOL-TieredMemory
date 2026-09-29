@@ -1,0 +1,12 @@
+{
+  "timing_runs": 21,
+  "measured_steps": 2100,
+  "diagnostic_runs": 7,
+  "max_abs_error": 0,
+  "regression_tests": 30,
+  "source_hashes_verified": true,
+  "residency_verified": true,
+  "summary_reproduced": true,
+  "git_diff_check": true,
+  "interruption_audit": "All 21 processes completed before inspection; no missing steps or failure.txt; no timing reruns or stitched partial runs"
+}

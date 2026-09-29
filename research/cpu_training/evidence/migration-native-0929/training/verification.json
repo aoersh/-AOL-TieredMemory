@@ -1,0 +1,16 @@
+{
+  "timing_runs": 18,
+  "measured_training_steps": 1800,
+  "diagnostic_runs": 6,
+  "isolation_processes": 3,
+  "measured_isolation_calls": 216,
+  "native_training_calls": 900,
+  "max_abs_error": 0,
+  "regression_tests": 35,
+  "source_and_binary_hashes_verified": true,
+  "residency_verified": true,
+  "native_clock_identity_verified": true,
+  "summaries_reproduced": true,
+  "kernel_profile_executed": false,
+  "kernel_profile_blocker": "sudo -n true outside sandbox: a password is required; root script syntax and perf options checked"
+}

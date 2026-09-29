@@ -1,0 +1,13 @@
+{
+  "kernel": "6.8.12-138-soaralto",
+  "loadavg": [
+    0.189453125,
+    0.25732421875,
+    0.4697265625
+  ],
+  "sysctl": {
+    "numa_balancing": "1",
+    "perf_event_paranoid": "-1",
+    "numa_balancing_pte_scale": "16"
+  }
+}

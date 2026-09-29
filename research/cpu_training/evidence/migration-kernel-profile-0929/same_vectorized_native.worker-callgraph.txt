@@ -1,0 +1,333 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 167  of event 'cycles:k'
+# Event count (approx.): 432286890
+#
+# Overhead  Command      Pid:Command  Shared Object      Symbol                           IPC   [IPC Coverage]
+# ........  .......  ...............  .................  ...............................  ....................
+#
+    12.30%  python3  1720748:python3  [kernel.kallsyms]  [k] down_read                    -      -            
+            |
+            ---down_read
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+    12.08%  python3  1720748:python3  [kernel.kallsyms]  [k] up_read                      -      -            
+            |
+            ---up_read
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+    11.08%  python3  1720748:python3  [kernel.kallsyms]  [k] kernel_move_pages            -      -            
+            |
+            ---kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+    10.51%  python3  1720748:python3  [kernel.kallsyms]  [k] __get_user_8                 -      -            
+            |
+            ---__get_user_8
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     7.42%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page_mask             -      -            
+            |
+            ---follow_page_mask
+               follow_page
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     6.07%  python3  1720748:python3  [kernel.kallsyms]  [k] __put_user_4                 -      -            
+            |
+            ---__put_user_4
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     5.82%  python3  1720748:python3  [kernel.kallsyms]  [k] mtree_load                   -      -            
+            |
+            ---mtree_load
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     5.70%  python3  1720748:python3  [kernel.kallsyms]  [k] _raw_spin_lock               -      -            
+            |
+            ---_raw_spin_lock
+               |          
+               |--0.02%--follow_page_pte
+               |          follow_page_mask
+               |          follow_page
+               |          kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.00%--perf_event_task_tick
+                          scheduler_tick
+                          update_process_times
+                          tick_sched_handle
+                          tick_nohz_highres_handler
+                          __hrtimer_run_queues
+                          hrtimer_interrupt
+                          __sysvec_apic_timer_interrupt
+                          sysvec_apic_timer_interrupt
+                          asm_sysvec_apic_timer_interrupt
+                          [地址已省略]
+                          [地址已省略]
+
+     4.62%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page_pte              -      -            
+            |
+            ---follow_page_pte
+               |          
+               |--0.02%--follow_page_mask
+               |          follow_page
+               |          kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.00%--follow_page
+                          kernel_move_pages
+                          __x64_sys_move_pages
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          [地址已省略]
+
+     4.02%  python3  1720748:python3  [kernel.kallsyms]  [k] __get_user_4                 -      -            
+            |
+            ---__get_user_4
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     3.91%  python3  1720748:python3  [kernel.kallsyms]  [k] try_grab_folio               -      -            
+            |
+            ---try_grab_folio
+               follow_page_mask
+               follow_page
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     2.55%  python3  1720748:python3  [kernel.kallsyms]  [k] __pte_offset_map_lock        -      -            
+            |
+            ---__pte_offset_map_lock
+               |          
+               |--0.01%--follow_page_pte
+               |          follow_page_mask
+               |          follow_page
+               |          kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.00%--follow_page_mask
+                          follow_page
+                          kernel_move_pages
+                          __x64_sys_move_pages
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          [地址已省略]
+
+     2.50%  python3  1720748:python3  [kernel.kallsyms]  [k] move_pages_and_store_status  -      -            
+            |
+            ---move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     2.34%  python3  1720748:python3  [kernel.kallsyms]  [k] follow_page                  -      -            
+            |
+            ---follow_page
+               |          
+               |--0.01%--kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.00%--__x64_sys_move_pages
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          [地址已省略]
+
+     1.90%  python3  1720748:python3  [kernel.kallsyms]  [k] __pte_offset_map             -      -            
+            |
+            ---__pte_offset_map
+               |          
+               |--0.01%--__pte_offset_map_lock
+               |          follow_page_pte
+               |          follow_page_mask
+               |          follow_page
+               |          kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.00%--follow_page_pte
+                          follow_page_mask
+                          follow_page
+                          kernel_move_pages
+                          __x64_sys_move_pages
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          [地址已省略]
+
+     1.16%  python3  1720748:python3  [kernel.kallsyms]  [k] p4d_offset                   -      -            
+            |
+            ---p4d_offset
+               follow_page
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.10%  python3  1720748:python3  [kernel.kallsyms]  [k] __rcu_read_lock              -      -            
+            |
+            ---__rcu_read_lock
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.10%  python3  1720748:python3  [kernel.kallsyms]  [k] psi_group_change             -      -            
+            |
+            ---psi_group_change
+               psi_task_switch
+               __schedule
+               schedule
+               schedule_preempt_disabled
+               rwsem_down_read_slowpath
+               down_read
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.82%  python3  1720748:python3  [kernel.kallsyms]  [k] vm_normal_page               -      -            
+            |
+            ---vm_normal_page
+               follow_page_pte
+               follow_page_mask
+               follow_page
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.70%  python3  1720748:python3  [kernel.kallsyms]  [k] vma_migratable               -      -            
+            |
+            ---vma_migratable
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.69%  python3  1720748:python3  [kernel.kallsyms]  [k] __cond_resched               -      -            
+            |
+            ---__cond_resched
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.59%  python3  1720748:python3  [kernel.kallsyms]  [k] rwsem_down_read_slowpath     -      -            
+            |
+            ---rwsem_down_read_slowpath
+               down_read
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.52%  python3  1720748:python3  [kernel.kallsyms]  [k] __mpol_equal                 -      -            
+            |
+            ---__mpol_equal
+               mbind_range
+               do_mbind
+               kernel_mbind
+               __x64_sys_mbind
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+               [地址已省略]
+
+     0.50%  python3  1720748:python3  [kernel.kallsyms]  [k] down_write                   -      -            
+            |
+            ---down_write
+               do_mbind
+               kernel_mbind
+               __x64_sys_mbind
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+               [地址已省略]
+
+
+
+#
+# (Tip: To see callchains in a more compact form: perf report -g folded)
+#

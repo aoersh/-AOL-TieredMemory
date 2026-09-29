@@ -1,0 +1,1 @@
+{"conditions": ["direct", "real", "real_native", "real_vectorized", "real_vectorized_native", "same_vectorized_native"], "runs": 18, "steps": 100, "repeats": 3, "diagnostic": false}

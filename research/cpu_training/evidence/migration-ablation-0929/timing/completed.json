@@ -1,0 +1,1 @@
+{"conditions": ["direct", "ranked", "noop", "prepare", "real"], "runs": 15, "steps": 100, "repeats": 3, "diagnostic": false}

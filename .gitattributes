@@ -1,0 +1,5 @@
+# 实验证据按原字节保存，保证 index.json 中的 SHA256 可在克隆后复核。
+# CSV 的 CRLF 与 perf/反汇编文本的行尾空格来自工具，不修改已归档证据。
+research/cpu_training/evidence/**/process_means.csv -text whitespace=cr-at-eol
+research/cpu_training/evidence/migration-kernel-profile-0929/*.worker-*.txt -text whitespace=-blank-at-eol
+research/cpu_training/evidence/migration-native-0929/training/libnuma-disassembly.txt -text whitespace=-blank-at-eol

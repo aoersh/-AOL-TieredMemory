@@ -1,0 +1,12 @@
+{
+  "timing_runs": 18,
+  "measured_steps": 1800,
+  "diagnostic_runs": 6,
+  "max_abs_error": 0,
+  "regression_tests": 33,
+  "source_hashes_verified": true,
+  "residency_verified": true,
+  "timelines_verified": true,
+  "summary_reproduced": true,
+  "git_diff_check": true
+}

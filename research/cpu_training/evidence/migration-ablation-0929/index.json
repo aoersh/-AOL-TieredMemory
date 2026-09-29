@@ -1,0 +1,1443 @@
+[
+  {
+    "source": "results/migration-ablation-diagnostic-0929/commands.json",
+    "bytes": 2361,
+    "sha256": "1059027d1054bccd6d229ec3ed239b2ac007e4dae4cd3e8893e1e40d9c88aedf",
+    "archived": true,
+    "archive": "diagnostic/commands.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/completed.json",
+    "bytes": 121,
+    "sha256": "2f66f57faf04c1adcd69c2cd0e955ccb5c622142d62566670ca021389b671e4a",
+    "archived": true,
+    "archive": "diagnostic/completed.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/events.json",
+    "bytes": 16342,
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/events.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/manifest.json",
+    "bytes": 1549,
+    "sha256": "4e1dd33b862b4b8d3591eb85768157414b43a180042899f1cbe8e9ce5fdd08fb",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/steps.json",
+    "bytes": 2580,
+    "sha256": "6b9ff5d88ac21d016fda8dc1a0816338de6ac89f4a45853772dd080ec19096c6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/direct-r0.log",
+    "bytes": 141,
+    "sha256": "d3b29d7854f1266f95eb0f480ca6ddde654131698f7a6654dc2da05b47ceffb6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/environment.json",
+    "bytes": 226,
+    "sha256": "c6128953ca800f6ab07d8517a59f31d2d8f0e9650c7ceef971b0d049c11b2848",
+    "archived": true,
+    "archive": "diagnostic/environment.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/events.json",
+    "bytes": 17125,
+    "sha256": "e1c1279108b69f5cb41ad8ea272343dac4a82b141af7449f7159f91d08555db4",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/events.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/manifest.json",
+    "bytes": 1596,
+    "sha256": "14c8711cf78468ba3724c2d97ccb017c6d99327779cc46ed045ba5f8712e58b6",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/noop-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/steps.json",
+    "bytes": 2591,
+    "sha256": "92e8474a481b54a2c7ec4c7319b78c7cb365b02199b80d3a0fbfab0adf29a65b",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/noop-r0.log",
+    "bytes": 139,
+    "sha256": "2deeba21768f18ec0108889bc962ca090896a6941ddd5426323eba1080cb40a0",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/events.json",
+    "bytes": 17152,
+    "sha256": "005454ca5b7edd676e1eb10f105b8c8c9f91df1c7a7f5733ca7b6d43553a1535",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/events.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/manifest.json",
+    "bytes": 1602,
+    "sha256": "e10e9404e0297e703f34b54bbdcb85c647e8ffc03f38a5897d89a29d21b75bf7",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/prepare-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/steps.json",
+    "bytes": 2611,
+    "sha256": "e10badce7aac308fa65b0ee42fa169370af69c83049d8141c39866a71bf6d4f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/prepare-r0.log",
+    "bytes": 142,
+    "sha256": "34f4688119fb6e271a7c555c6824667328a01242ed4393c7cf0b3b60eb057754",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/events.json",
+    "bytes": 16918,
+    "sha256": "2ffd49ebe26519e8ea38271bdb89705a0942512a8aef075dfdd21e56e9f04915",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/events.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/manifest.json",
+    "bytes": 1596,
+    "sha256": "31f68c33d7a4fb1e7834de40c126a4da66cf30f53a6840ab1ca73a3385679375",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/ranked-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/steps.json",
+    "bytes": 2657,
+    "sha256": "1de5c95c81f7172c5c71d5bf1da7297a7a71640c0c0de6c9d91ae8b997f4207f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/ranked-r0.log",
+    "bytes": 141,
+    "sha256": "48455acd7e5c117ad48445a3b40af3f84252d352909b86ce5fa2fe5098f9c688",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/correctness.json",
+    "bytes": 73,
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "archived": true,
+    "archive": "diagnostic/real-r0/correctness.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/events.json",
+    "bytes": 17220,
+    "sha256": "423efc14906c9ec886c00e02299b4fb41d41ce6b2a2a03b15996abb0217dfd51",
+    "archived": true,
+    "archive": "diagnostic/real-r0/events.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/manifest.json",
+    "bytes": 1596,
+    "sha256": "585a33f9104118a37df9f5308bd328cfa714be9c992906df94f17f056e82035f",
+    "archived": true,
+    "archive": "diagnostic/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "diagnostic/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/steps.json",
+    "bytes": 2725,
+    "sha256": "f5f60af42a9cdfed0d7388519f5691fb9d87fc43694836ff06775b5fefdaab11",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/real-r0.log",
+    "bytes": 139,
+    "sha256": "986909c69157fc3517d2b371d9698c6520b0e6844134cdac2611fdc0021e8df3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/runner.py",
+    "bytes": 2138,
+    "sha256": "5ce57e0ceb957b36fd8ca94259ca735787cb3d8a58ad31b3a68e90fbe64c4a7a",
+    "archived": true,
+    "archive": "diagnostic/runner.py"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/analysis.log",
+    "bytes": 3289,
+    "sha256": "ccadb8c91b74a43db474633037e815837c747fe8ca5c4aa6673139c0dcdb357b",
+    "archived": true,
+    "archive": "timing/analysis.log"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/commands.json",
+    "bytes": 6717,
+    "sha256": "56626110d0b677ac38c77e29cf71e7c487087fd2ee55229b76cbbd713c971515",
+    "archived": true,
+    "archive": "timing/commands.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/completed.json",
+    "bytes": 125,
+    "sha256": "1df3191d154a5274e23b908a1129b10d723d55cd5dd4bbb60bb71aedde442aee",
+    "archived": true,
+    "archive": "timing/completed.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/manifest.json",
+    "bytes": 1548,
+    "sha256": "977301eb31754c824c034371be51987f51b117b7900895aeacd9fa36801a5656",
+    "archived": true,
+    "archive": "timing/direct-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/steps.json",
+    "bytes": 90159,
+    "sha256": "db7c2b955f0190b72e189d15496daaec4c06aca37be25d8a4f4de6b0373d9f48",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r0.log",
+    "bytes": 138,
+    "sha256": "c0e75a7eda33db1e7e00006b0c2d41029b6c31bbb8e97d43009c8901064efcb6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/manifest.json",
+    "bytes": 1548,
+    "sha256": "ed2a8c6516fe7d85faa92512d92a0caad1846ac0bffc627493a3d7cc4f56b03d",
+    "archived": true,
+    "archive": "timing/direct-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/steps.json",
+    "bytes": 90153,
+    "sha256": "75ee1c7d6f03df532f27f7f95d9a16e2764fa5c75f14f18a7592df8cc71bbf0e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r1.log",
+    "bytes": 132,
+    "sha256": "61501b883d27a8f00605d4faeac1146ac5b6683ed80ab472cf3feb6c7d56dd0e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/manifest.json",
+    "bytes": 1548,
+    "sha256": "f475d9a9516decfe16986eb8bf2ba0dd8c5aea8cd7d7632422eb414b49b6b05b",
+    "archived": true,
+    "archive": "timing/direct-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/direct-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/steps.json",
+    "bytes": 90118,
+    "sha256": "f2794acb7cf7bc0f152bfb0f42dabce4876ce2a63b0f004d0004c2976a8014bd",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/direct-r2.log",
+    "bytes": 137,
+    "sha256": "4ffebb0ae7c4f7618228c7790b0231853c06f660a6c01b7e9e4a197990aa9392",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/environment.json",
+    "bytes": 227,
+    "sha256": "895c80d67c08e9d6f8b2f1b62b9711b9aa0d3421c684bdb2c42275223d8f66d1",
+    "archived": true,
+    "archive": "timing/environment.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/manifest.json",
+    "bytes": 1595,
+    "sha256": "a88a99fda900abd04f09afd79050b83549861d79cc0d68bb5792cdb2ad4db591",
+    "archived": true,
+    "archive": "timing/noop-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/steps.json",
+    "bytes": 90549,
+    "sha256": "d15e634e0db91ae3516d78c9f16d7f9c03f1f8f6c7c25c1ce73e345bc80d9c85",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r0.log",
+    "bytes": 130,
+    "sha256": "73b3ba0c39625fdfdedd7ab42b4ca04f522f3529af10549deb602aeb7f5c8fd0",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/manifest.json",
+    "bytes": 1595,
+    "sha256": "c69a7244a4b4080d94ed2016ff1e93aed1b1214e04b55a50a71e82a29c161361",
+    "archived": true,
+    "archive": "timing/noop-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/steps.json",
+    "bytes": 90578,
+    "sha256": "d5e8d1c948ca2f91f858f54e1dcf25ac49dce174c91c2a06e400f48cd70dcaed",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r1.log",
+    "bytes": 136,
+    "sha256": "8cab8be75ff3c30c0713dda9bdf57cf20f5ac47ddb1daa35d635802c72162435",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/manifest.json",
+    "bytes": 1595,
+    "sha256": "9774421d4a5575ead1047313ef7c9611abb17c50f06c5c7d54d630fc8240a602",
+    "archived": true,
+    "archive": "timing/noop-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/noop-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/steps.json",
+    "bytes": 90572,
+    "sha256": "90757ec45fa55898424008a319116e68bb04d1055916d6b3ff41fe03ae198c4f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/noop-r2.log",
+    "bytes": 136,
+    "sha256": "14d6d43136de26f60609f984d2f859baa0e8f89a23274552b2cac3f8f60f166b",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/manifest.json",
+    "bytes": 1601,
+    "sha256": "2e3ade58a8d63df4f3e3846ea624024278fc774a4eb18393a2c31b24b04ad309",
+    "archived": true,
+    "archive": "timing/prepare-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/steps.json",
+    "bytes": 91214,
+    "sha256": "e346440c4e46aa8a1edb858826da3cd50ecd37dfd0f80aaa2c90b87ccd3c70ab",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r0.log",
+    "bytes": 139,
+    "sha256": "5179feb9316edc5fe7e41b18f73105bfa1709ab5360541243283042fe7eee08e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/manifest.json",
+    "bytes": 1601,
+    "sha256": "35b7b4f4c7c5852f8e3173a283c69b47c44907da5d6312e05c12e9134e4ff323",
+    "archived": true,
+    "archive": "timing/prepare-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/steps.json",
+    "bytes": 91227,
+    "sha256": "e3648d3898f31d817599038801ef6c095b56d5f97801c9e15624dfe31d592a9f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r1.log",
+    "bytes": 133,
+    "sha256": "4c9650687a9432056311eda8ba1d3e550044bb423081bcb2253a7e566193984a",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/manifest.json",
+    "bytes": 1601,
+    "sha256": "9796318519cebb005aae6455c52e2b1e4eb2f766e1b4da8ebe52d093761a1c0d",
+    "archived": true,
+    "archive": "timing/prepare-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/prepare-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/steps.json",
+    "bytes": 91225,
+    "sha256": "10ef5b423f76911c0702f9a9d09c63f0c0e001eac6bc7574865acea14b8d810f",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/prepare-r2.log",
+    "bytes": 139,
+    "sha256": "ffec7b6ce80fd29b5eaa52c07dd70b5ebcc7dccea8d7cea51b20f503cf90be9e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/manifest.json",
+    "bytes": 1595,
+    "sha256": "da086545b11a073b376c6abd7149ca1534b11e334d0397898568b3115d64d21f",
+    "archived": true,
+    "archive": "timing/ranked-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/steps.json",
+    "bytes": 92901,
+    "sha256": "b434e3877b1f854b2a6fb9ca505a6d54e757bcb788eb3e359243d68222ee0a33",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r0.log",
+    "bytes": 132,
+    "sha256": "f51f2bf45bd239ef1219188a0b55dbde8216010d3bd950eaf9e779cb3b7b7180",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/manifest.json",
+    "bytes": 1595,
+    "sha256": "ba45175612e1219e98ea61fdd610193880678593ad2a3c8c159034dcf0db0662",
+    "archived": true,
+    "archive": "timing/ranked-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/steps.json",
+    "bytes": 92899,
+    "sha256": "d3e0b4b585c96f224517ee8c1b9107cd807bd468495c0bff78bad9df1c2b774d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r1.log",
+    "bytes": 138,
+    "sha256": "2bc8d96443a83b6441c24820d7af55653d1231a9128a95e9ce9b799b4f3f75f3",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/manifest.json",
+    "bytes": 1595,
+    "sha256": "a73e711a9c724f54138d4cf79ad9d6c02a7cebf3d7fb762f9ec43955c6ad26de",
+    "archived": true,
+    "archive": "timing/ranked-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/ranked-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/steps.json",
+    "bytes": 92899,
+    "sha256": "fc92ca93b586ef62fae371dc04027932caa4663dd7ca5aff917b578eb5b5ce3e",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/ranked-r2.log",
+    "bytes": 132,
+    "sha256": "e55772bb043e5ce5412b9b98d9ba9f18bae19a6713061d11dc367a1ee906acb8",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/manifest.json",
+    "bytes": 1595,
+    "sha256": "e57eb875d1e5259f7144f21a23ebf4222f21f223ff234796a9085885c30eedcd",
+    "archived": true,
+    "archive": "timing/real-r0/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r0/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/steps.json",
+    "bytes": 95283,
+    "sha256": "47098967c3b02caa7dc64b1202a2721f3a4dbcdb827b484de24ef8b5f985c449",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r0.log",
+    "bytes": 136,
+    "sha256": "94418a2fc674905889c6f5060234d9a8442b7338f529111bd14c4d7a48efe058",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/manifest.json",
+    "bytes": 1595,
+    "sha256": "0dba612e47c8105d33e0d7d93b6f707d225689ebb682e650739292038878853f",
+    "archived": true,
+    "archive": "timing/real-r1/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r1/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/steps.json",
+    "bytes": 95335,
+    "sha256": "36757fb38c2311f7a8ffc6f1215fc1d4e396d74033fae19dfba71939caae8820",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r1.log",
+    "bytes": 136,
+    "sha256": "3d64dded5cbc3c7d1114b5ad241c11d47e79752b026eee5fc3c1837fb7d3a9cc",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/manifest.json",
+    "bytes": 1595,
+    "sha256": "873d68ca8d301e3bf91f2a825e592ad64c42a0611f6afcb47867e62653f7bd89",
+    "archived": true,
+    "archive": "timing/real-r2/manifest.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/observe_saved_tensors.py",
+    "bytes": 12215,
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/requirements-resolved.txt",
+    "bytes": 166,
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "archived": true,
+    "archive": "timing/real-r2/requirements-resolved.txt"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/steps.json",
+    "bytes": 95274,
+    "sha256": "4659e4122710c3b3943e9a4d386c7353a8e42b76d3e5e3d62aea875436812fa1",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/tensor-lifetimes.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2/workloads.py",
+    "bytes": 1665,
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/real-r2.log",
+    "bytes": 130,
+    "sha256": "779545511541d1a51874b57ce890ee01e7cdd746148aece4c580c41c2763556b",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/runner.py",
+    "bytes": 2138,
+    "sha256": "5ce57e0ceb957b36fd8ca94259ca735787cb3d8a58ad31b3a68e90fbe64c4a7a",
+    "archived": true,
+    "archive": "timing/runner.py"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/summary.json",
+    "bytes": 15473,
+    "sha256": "57f8a4441eb92d29cc129b322c5499fe6a95ec0c347bed728be5a8db5034eadd",
+    "archived": true,
+    "archive": "timing/summary.json"
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/validation.log",
+    "bytes": 4868,
+    "sha256": "4cf929609543a2226b6fef32bc129a645ab0149341f8986a36b88af297d57d73",
+    "archived": true,
+    "archive": "timing/validation.log"
+  },
+  {
+    "source": "research/cpu_training/analyze_migration_ablation.py",
+    "archive": "source/analyze_migration_ablation.py",
+    "bytes": 3073,
+    "sha256": "404c700ec37e29c0b95f769556c268ab74bd6f31238a2c623526af0a5850db2c",
+    "archived": true
+  },
+  {
+    "source": "research/cpu_training/run_migration_ablation.py",
+    "archive": "source/run_migration_ablation.py",
+    "bytes": 2138,
+    "sha256": "5ce57e0ceb957b36fd8ca94259ca735787cb3d8a58ad31b3a68e90fbe64c4a7a",
+    "archived": true
+  },
+  {
+    "source": "research/cpu_training/test_migration_ablation.py",
+    "archive": "source/test_migration_ablation.py",
+    "bytes": 2009,
+    "sha256": "3d421703d3a3f86fa8d3e30b8c5c113c3e2e4cc5651cc77c4bc3d50979a16697",
+    "archived": true
+  },
+  {
+    "source": "research/cpu_training/access_paths.py",
+    "archive": "source/access_paths.py",
+    "bytes": 12075,
+    "sha256": "b230115f318c67b534acc7b967cbdab3743bbd4e1bb70bfb4de01652ce3a476d",
+    "archived": true
+  },
+  {
+    "source": "research/cpu_training/numa_buffer.py",
+    "archive": "source/numa_buffer.py",
+    "bytes": 3768,
+    "sha256": "792f04eb39c8ff437165fb9831f5cd4228fa83f26578f7a6eccb7ceaa9aa59ad",
+    "archived": true
+  },
+  {
+    "source": "research/cpu_training/run_access_paths.py",
+    "archive": "source/run_access_paths.py",
+    "bytes": 11445,
+    "sha256": "2fb36eb11ba0ff8b7e91a960dd2d93f2229df7ff7b9935a729673fba4b458b95",
+    "archived": true
+  },
+  {
+    "source": "results/migration-ablation-diagnostic-0929/analyzer_snapshot.py",
+    "bytes": 3073,
+    "sha256": "404c700ec37e29c0b95f769556c268ab74bd6f31238a2c623526af0a5850db2c",
+    "archived": false
+  },
+  {
+    "source": "results/migration-ablation-timing-0929/analyzer_snapshot.py",
+    "bytes": 3073,
+    "sha256": "404c700ec37e29c0b95f769556c268ab74bd6f31238a2c623526af0a5850db2c",
+    "archived": false
+  }
+]

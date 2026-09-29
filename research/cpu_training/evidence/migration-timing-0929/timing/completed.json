@@ -1,0 +1,1 @@
+{"conditions": ["direct", "real", "real_vectorized", "real_vectorized_delay", "prepare_vectorized", "prepare_vectorized_delay"], "runs": 18, "steps": 100, "repeats": 3, "diagnostic": false}

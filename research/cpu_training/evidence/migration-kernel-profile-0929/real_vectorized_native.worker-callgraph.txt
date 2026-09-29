@@ -1,0 +1,262 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 1K of event 'cycles:k'
+# Event count (approx.): 17214659118
+#
+# Overhead  Command      Pid:Command  Shared Object      Symbol                                       IPC   [IPC Coverage]
+# ........  .......  ...............  .................  ...........................................  ....................
+#
+    40.70%  python3  1720881:python3  [kernel.kallsyms]  [k] native_queued_spin_lock_slowpath         -      -            
+            |
+            ---native_queued_spin_lock_slowpath
+               _raw_spin_lock_irqsave
+               folio_lruvec_lock_irqsave
+               folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+    18.78%  python3  1720881:python3  [kernel.kallsyms]  [k] copy_page                                -      -            
+            |
+            ---copy_page
+               migrate_folio_extra
+               move_to_new_folio
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+    13.19%  python3  1720881:python3  [kernel.kallsyms]  [k] migrate_pages_batch                      -      -            
+            |
+            ---migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     2.97%  python3  1720881:python3  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave                   -      -            
+            |
+            ---_raw_spin_lock_irqsave
+               folio_lruvec_lock_irqsave
+               folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     2.30%  python3  1720881:python3  [kernel.kallsyms]  [k] lru_gen_add_folio                        -      -            
+            |
+            ---lru_gen_add_folio
+               lru_add_fn
+               folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     2.29%  python3  1720881:python3  [kernel.kallsyms]  [k] folio_batch_move_lru                     -      -            
+            |
+            ---folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.81%  python3  1720881:python3  [kernel.kallsyms]  [k] lru_add_fn                               -      -            
+            |
+            ---lru_add_fn
+               folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.77%  python3  1720881:python3  [kernel.kallsyms]  [k] page_vma_mapped_walk                     -      -            
+            |
+            ---page_vma_mapped_walk
+               |          
+               |--0.07%--remove_migration_pte
+               |          rmap_walk_anon
+               |          rmap_walk
+               |          migrate_pages_batch
+               |          migrate_pages
+               |          move_pages_and_store_status
+               |          kernel_move_pages
+               |          __x64_sys_move_pages
+               |          x64_sys_call
+               |          do_syscall_64
+               |          entry_SYSCALL_64_after_hwframe
+               |          [地址已省略]
+               |          
+                --0.06%--try_to_migrate_one
+                          rmap_walk_anon
+                          try_to_migrate
+                          migrate_pages_batch
+                          migrate_pages
+                          move_pages_and_store_status
+                          kernel_move_pages
+                          __x64_sys_move_pages
+                          x64_sys_call
+                          do_syscall_64
+                          entry_SYSCALL_64_after_hwframe
+                          [地址已省略]
+
+     1.55%  python3  1720881:python3  [kernel.kallsyms]  [k] set_tlb_ubc_flush_pending.isra.0         -      -            
+            |
+            ---set_tlb_ubc_flush_pending.isra.0
+               try_to_migrate_one
+               rmap_walk_anon
+               try_to_migrate
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.51%  python3  1720881:python3  [kernel.kallsyms]  [k] release_pages                            -      -            
+            |
+            ---release_pages
+               folio_batch_move_lru
+               folio_add_lru
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.14%  python3  1720881:python3  [kernel.kallsyms]  [k] __rmqueue_pcplist                        -      -            
+            |
+            ---__rmqueue_pcplist
+               get_page_from_freelist
+               __alloc_pages
+               __folio_alloc
+               alloc_migration_target
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     1.14%  python3  1720881:python3  [kernel.kallsyms]  [k] folio_migrate_flags                      -      -            
+            |
+            ---folio_migrate_flags
+               migrate_folio_extra
+               move_to_new_folio
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.83%  python3  1720881:python3  [kernel.kallsyms]  [k] try_to_migrate_one                       -      -            
+            |
+            ---try_to_migrate_one
+               rmap_walk_anon
+               try_to_migrate
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.56%  python3  1720881:python3  [kernel.kallsyms]  [k] __mod_memcg_lruvec_state                 -      -            
+            |
+            ---__mod_memcg_lruvec_state
+               __mod_lruvec_state
+
+     0.51%  python3  1720881:python3  [kernel.kallsyms]  [k] folio_add_anon_rmap_ptes                 -      -            
+            |
+            ---folio_add_anon_rmap_ptes
+               remove_migration_pte
+               rmap_walk_anon
+               rmap_walk
+               migrate_pages_batch
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+     0.50%  python3  1720881:python3  [kernel.kallsyms]  [k] folio_unlock                             -      -            
+            |
+            ---folio_unlock
+               migrate_pages
+               move_pages_and_store_status
+               kernel_move_pages
+               __x64_sys_move_pages
+               x64_sys_call
+               do_syscall_64
+               entry_SYSCALL_64_after_hwframe
+               [地址已省略]
+
+
+
+#
+# (Tip: For hierarchical output, try: perf report --hierarchy)
+#
