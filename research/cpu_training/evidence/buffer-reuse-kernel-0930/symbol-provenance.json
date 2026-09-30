@@ -1,0 +1,10 @@
+{
+  "boot_id": "bdc65f0f-1346-48ab-8182-6e075f5825e1",
+  "kernel": "6.8.12-138-soaralto",
+  "kernel_build_id": "6094298925f6356274bc9ca6a20deabb6b33b1e4",
+  "current_boot_epoch_s": 1789723574.5135903,
+  "prior_record_boot_epoch_estimate_s": 1789723574.863503,
+  "boot_epoch_difference_s": 0.3499126434326172,
+  "old_profile": "results/migration-native-kernel-profile-0929",
+  "kallsyms_sha256": "bf9ff9b20a53dd70cf08c0e26cc655d1e9eebaa78c8da44abfb9f4100d65eaf5"
+}

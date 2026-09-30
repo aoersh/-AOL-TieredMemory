@@ -1,0 +1,8 @@
+{
+  "wrong_migration_bytes": "correctly_rejected",
+  "wrong_cxl_residency": "correctly_rejected",
+  "new_pool_allocation_after_init": "correctly_rejected",
+  "unclosed_pool": "correctly_rejected",
+  "loss_mismatch": "correctly_rejected",
+  "missing_step_time": "correctly_rejected"
+}

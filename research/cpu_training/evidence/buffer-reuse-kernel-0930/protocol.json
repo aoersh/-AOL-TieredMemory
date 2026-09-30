@@ -1,0 +1,9 @@
+{
+  "seed": 202609301,
+  "frequency": 199,
+  "event": "cycles:k",
+  "clock": "CLOCK_MONOTONIC",
+  "scope": "全部生命周期记录；分析按每个正式step的半开区间裁切，再按native调用区间分组",
+  "purpose": "新分配干预机制采样，不替代无采样性能矩阵",
+  "symbols": "同内核build-ID、同启动时间的只读快照；旧perf符号结果交叉核验，模块/范围外地址不解析"
+}

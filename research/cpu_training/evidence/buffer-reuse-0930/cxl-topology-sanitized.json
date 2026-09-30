@@ -1,0 +1,38 @@
+{
+  "cxl/mem0": {
+    "realpath": "/sys/devices/pci0000:32/0000:32:02.0/0000:33:00.0/mem0",
+    "numa_node": "0",
+    "ram/size": "0x1000000000",
+    "pmem/size": "0x0"
+  },
+  "cxl/mem1": {
+    "realpath": "/sys/devices/pci0000:b3/0000:b3:02.0/0000:b4:00.0/mem1",
+    "numa_node": "1",
+    "ram/size": "0x1000000000",
+    "pmem/size": "0x0"
+  },
+  "cxl/region0": {
+    "realpath": "/sys/devices/platform/ACPI0017:00/root0/decoder0.0/region0",
+    "devtype": "cxl_region",
+    "size": "0x1000000000",
+    "mode": "ram"
+  },
+  "cxl/region9": {
+    "realpath": "/sys/devices/platform/ACPI0017:00/root0/decoder0.9/region9",
+    "devtype": "cxl_region",
+    "size": "0x1000000000",
+    "mode": "ram"
+  },
+  "dax/dax0.0": {
+    "realpath": "/sys/devices/platform/ACPI0017:00/root0/decoder0.0/region0/dax_region0/dax0.0",
+    "target_node": "2",
+    "numa_node": "-1",
+    "size": "68719476736"
+  },
+  "dax/dax9.0": {
+    "realpath": "/sys/devices/platform/ACPI0017:00/root0/decoder0.9/region9/dax_region9/dax9.0",
+    "target_node": "3",
+    "numa_node": "-1",
+    "size": "68719476736"
+  }
+}

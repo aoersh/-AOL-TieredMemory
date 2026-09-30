@@ -1,0 +1,11 @@
+{
+  "raw_hashes_verified": 216,
+  "timing_processes": 12,
+  "measured_steps": 1200,
+  "warmup_steps": 60,
+  "diagnostic_processes": 4,
+  "regression_tests": 32,
+  "corruption_cases_rejected": 6,
+  "current_training_sources_match": true,
+  "evidence_bytes": 462082
+}

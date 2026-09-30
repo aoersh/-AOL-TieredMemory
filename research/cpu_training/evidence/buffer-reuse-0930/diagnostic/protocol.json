@@ -1,0 +1,13 @@
+{
+  "seed": 20260930,
+  "conditions": [
+    "fresh_direct",
+    "fresh_prefetch",
+    "reuse_dram_direct",
+    "reuse_dram_prefetch"
+  ],
+  "intervention": "仅复用非目标 node0 saved tensor；每步复制保留；ID10 node2 新建、预取32MiB到node0",
+  "accounting": "begin/reset/lease检查计入step；首次pool建池/触页计入首步；total_run包括预热、初始化和关闭",
+  "contrasts": "Direct-Prefetch分别在fresh/reuse内配对；差中差观察分配干扰，不能等同LRU自旋的独立贡献",
+  "limits": "无全进程DRAM容量限制；池增加保留内存并改变地址/cache状态；未修改内核或NUMA balancing"
+}

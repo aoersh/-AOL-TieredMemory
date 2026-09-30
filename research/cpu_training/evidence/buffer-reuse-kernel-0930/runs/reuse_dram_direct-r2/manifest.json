@@ -1,0 +1,57 @@
+{
+  "configuration": {
+    "output": "results/buffer-reuse-kernel-profile-0930-v1/reuse_dram_direct-r2",
+    "mode": "direct",
+    "target_ids": [
+      10
+    ],
+    "budget_mib": null,
+    "perf_control_fd": null,
+    "perf_ack_fd": null,
+    "trace_lifetimes": false,
+    "migration_action": null,
+    "migration_delay_ms": 0.0,
+    "buffer_policy": "reuse_dram",
+    "diagnostic": false,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 100,
+    "warmup": 5,
+    "budget_bytes": null,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "80fb5a1e97cf9a528327d6130a16d38825714d3f96fd03773c02a0cb7bb217ac",
+    "access_paths.py": "2ef5ae7ed5b4416d874bcb9a24a638cb13de5a5539a58721b784843cc63a40a3",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "meter-build.json": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "original access path; async=eager FIFO at pack",
+  "timing": "step includes begin/reset, hooks, copies, migration/wait, optimizer, drain, lease release check; logging/rusage outside; total_run includes setup, warmup, logging and teardown",
+  "buffer_policy_note": "reuse_dram retains only non-target node0 mappings; CXL target fresh every step; no reverse migration; first materialization included in first step and total_run",
+  "limitation": "Ample capacity; MPOL_BIND; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "-1"
+}

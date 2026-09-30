@@ -1,0 +1,5 @@
+[
+  "/usr/bin/python3",
+  "-c",
+  "import sys,unittest; sys.path.insert(0,'research/cpu_training'); from observe_saved_tensors import torch; torch.set_num_threads(1); unittest.main(module=None,argv=['unittest','test_boundaries','test_async','test_demand','test_ranked','test_migration_ablation','test_migration_timing','test_native_meter','test_lifetime_trace','test_buffer_reuse'],verbosity=2)"
+]

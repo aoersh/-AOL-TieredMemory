@@ -1,0 +1,442 @@
+{
+  "diagnostic": true,
+  "process_means": {
+    "fresh_direct": {
+      "step_ms": [
+        141.17009066666668
+      ],
+      "forward_ms": [
+        70.86029233333333
+      ],
+      "backward_ms": [
+        68.84850833333333
+      ],
+      "optimizer_and_drain_ms": [
+        1.46129
+      ],
+      "wait_ms": [
+        0.0
+      ],
+      "migration_ms": [
+        0.0
+      ],
+      "minor_faults": [
+        148173
+      ],
+      "major_faults": [
+        0
+      ],
+      "moved_MiB": [
+        0.0
+      ],
+      "late_per_step": [
+        0
+      ],
+      "new_mapping_MiB": [
+        134.15625
+      ],
+      "reused_MiB": [
+        0.0
+      ],
+      "total_run_ms": [
+        1068.816845
+      ],
+      "setup_ms": [
+        489.155597
+      ],
+      "teardown_ms": [
+        0.10547
+      ],
+      "warmup_step_ms": [
+        0.0
+      ],
+      "pool_initial_materialize_ms": [
+        0.0
+      ],
+      "amortized_full_run_per_step_ms": [
+        356.2722816666667
+      ],
+      "max_rss_MiB": [
+        593.14453125
+      ]
+    },
+    "fresh_prefetch": {
+      "step_ms": [
+        171.22460533333333
+      ],
+      "forward_ms": [
+        88.98652666666666
+      ],
+      "backward_ms": [
+        80.53264466666667
+      ],
+      "optimizer_and_drain_ms": [
+        1.7054340000000001
+      ],
+      "wait_ms": [
+        7.618296333333333
+      ],
+      "migration_ms": [
+        44.96136166666667
+      ],
+      "minor_faults": [
+        146875.33333333334
+      ],
+      "major_faults": [
+        0
+      ],
+      "moved_MiB": [
+        32.0
+      ],
+      "late_per_step": [
+        0
+      ],
+      "new_mapping_MiB": [
+        134.15625
+      ],
+      "reused_MiB": [
+        0.0
+      ],
+      "native_wall_ms": [
+        40.02489833333333
+      ],
+      "native_cpu_ms": [
+        38.478932
+      ],
+      "native_pre_ms": [
+        0.03557466666666667
+      ],
+      "native_post_ms": [
+        0.405887
+      ],
+      "native_gap_ms": [
+        0.44146166666666664
+      ],
+      "native_noncpu_ms": [
+        1.5459663333333333
+      ],
+      "native_voluntary": [
+        12
+      ],
+      "native_involuntary": [
+        1
+      ],
+      "total_run_ms": [
+        1168.119064
+      ],
+      "setup_ms": [
+        495.263904
+      ],
+      "teardown_ms": [
+        0.165517
+      ],
+      "warmup_step_ms": [
+        0.0
+      ],
+      "pool_initial_materialize_ms": [
+        0.0
+      ],
+      "amortized_full_run_per_step_ms": [
+        389.3730213333333
+      ],
+      "max_rss_MiB": [
+        595.55859375
+      ]
+    },
+    "reuse_dram_direct": {
+      "step_ms": [
+        133.60226566666665
+      ],
+      "forward_ms": [
+        68.11188466666667
+      ],
+      "backward_ms": [
+        64.07472366666667
+      ],
+      "optimizer_and_drain_ms": [
+        1.4156573333333333
+      ],
+      "wait_ms": [
+        0.0
+      ],
+      "migration_ms": [
+        0.0
+      ],
+      "minor_faults": [
+        132310
+      ],
+      "major_faults": [
+        0
+      ],
+      "moved_MiB": [
+        0.0
+      ],
+      "late_per_step": [
+        0
+      ],
+      "new_mapping_MiB": [
+        66.05208333333333
+      ],
+      "reused_MiB": [
+        68.10416666666667
+      ],
+      "total_run_ms": [
+        1053.286291
+      ],
+      "setup_ms": [
+        495.15719
+      ],
+      "teardown_ms": [
+        4.237362
+      ],
+      "warmup_step_ms": [
+        0.0
+      ],
+      "pool_initial_materialize_ms": [
+        13.162698
+      ],
+      "amortized_full_run_per_step_ms": [
+        351.0954303333333
+      ],
+      "max_rss_MiB": [
+        626.62109375
+      ]
+    },
+    "reuse_dram_prefetch": {
+      "step_ms": [
+        157.66188766666667
+      ],
+      "forward_ms": [
+        79.66307233333333
+      ],
+      "backward_ms": [
+        76.282526
+      ],
+      "optimizer_and_drain_ms": [
+        1.7162893333333333
+      ],
+      "wait_ms": [
+        7.7680266666666675
+      ],
+      "migration_ms": [
+        39.430664
+      ],
+      "minor_faults": [
+        131298
+      ],
+      "major_faults": [
+        0
+      ],
+      "moved_MiB": [
+        32.0
+      ],
+      "late_per_step": [
+        0
+      ],
+      "new_mapping_MiB": [
+        66.05208333333333
+      ],
+      "reused_MiB": [
+        68.10416666666667
+      ],
+      "native_wall_ms": [
+        34.88712866666667
+      ],
+      "native_cpu_ms": [
+        33.41977933333333
+      ],
+      "native_pre_ms": [
+        0.035229666666666666
+      ],
+      "native_post_ms": [
+        0.06971766666666666
+      ],
+      "native_gap_ms": [
+        0.10494733333333334
+      ],
+      "native_noncpu_ms": [
+        1.4673493333333334
+      ],
+      "native_voluntary": [
+        1.3333333333333333
+      ],
+      "native_involuntary": [
+        1.3333333333333333
+      ],
+      "total_run_ms": [
+        1125.345819
+      ],
+      "setup_ms": [
+        489.972871
+      ],
+      "teardown_ms": [
+        4.642686
+      ],
+      "warmup_step_ms": [
+        0.0
+      ],
+      "pool_initial_materialize_ms": [
+        12.837062
+      ],
+      "amortized_full_run_per_step_ms": [
+        375.115273
+      ],
+      "max_rss_MiB": [
+        616.66015625
+      ]
+    }
+  },
+  "checks": [
+    {
+      "run": "fresh_direct-r0",
+      "max_abs_error": 0.0,
+      "residency": true,
+      "leases_released": true,
+      "mappings_closed": true
+    },
+    {
+      "run": "fresh_prefetch-r0",
+      "max_abs_error": 0.0,
+      "residency": true,
+      "leases_released": true,
+      "mappings_closed": true
+    },
+    {
+      "run": "reuse_dram_direct-r0",
+      "max_abs_error": 0.0,
+      "residency": true,
+      "leases_released": true,
+      "mappings_closed": true
+    },
+    {
+      "run": "reuse_dram_prefetch-r0",
+      "max_abs_error": 0.0,
+      "residency": true,
+      "leases_released": true,
+      "mappings_closed": true
+    }
+  ],
+  "means": {
+    "fresh_direct": {
+      "step_ms": 141.17009066666668,
+      "forward_ms": 70.86029233333333,
+      "backward_ms": 68.84850833333333,
+      "optimizer_and_drain_ms": 1.46129,
+      "wait_ms": 0.0,
+      "migration_ms": 0.0,
+      "minor_faults": 148173,
+      "major_faults": 0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0,
+      "new_mapping_MiB": 134.15625,
+      "reused_MiB": 0.0,
+      "total_run_ms": 1068.816845,
+      "setup_ms": 489.155597,
+      "teardown_ms": 0.10547,
+      "warmup_step_ms": 0.0,
+      "pool_initial_materialize_ms": 0.0,
+      "amortized_full_run_per_step_ms": 356.2722816666667,
+      "max_rss_MiB": 593.14453125
+    },
+    "fresh_prefetch": {
+      "step_ms": 171.22460533333333,
+      "forward_ms": 88.98652666666666,
+      "backward_ms": 80.53264466666667,
+      "optimizer_and_drain_ms": 1.7054340000000001,
+      "wait_ms": 7.618296333333333,
+      "migration_ms": 44.96136166666667,
+      "minor_faults": 146875.33333333334,
+      "major_faults": 0,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "new_mapping_MiB": 134.15625,
+      "reused_MiB": 0.0,
+      "native_wall_ms": 40.02489833333333,
+      "native_cpu_ms": 38.478932,
+      "native_pre_ms": 0.03557466666666667,
+      "native_post_ms": 0.405887,
+      "native_gap_ms": 0.44146166666666664,
+      "native_noncpu_ms": 1.5459663333333333,
+      "native_voluntary": 12,
+      "native_involuntary": 1,
+      "total_run_ms": 1168.119064,
+      "setup_ms": 495.263904,
+      "teardown_ms": 0.165517,
+      "warmup_step_ms": 0.0,
+      "pool_initial_materialize_ms": 0.0,
+      "amortized_full_run_per_step_ms": 389.3730213333333,
+      "max_rss_MiB": 595.55859375
+    },
+    "reuse_dram_direct": {
+      "step_ms": 133.60226566666665,
+      "forward_ms": 68.11188466666667,
+      "backward_ms": 64.07472366666667,
+      "optimizer_and_drain_ms": 1.4156573333333333,
+      "wait_ms": 0.0,
+      "migration_ms": 0.0,
+      "minor_faults": 132310,
+      "major_faults": 0,
+      "moved_MiB": 0.0,
+      "late_per_step": 0,
+      "new_mapping_MiB": 66.05208333333333,
+      "reused_MiB": 68.10416666666667,
+      "total_run_ms": 1053.286291,
+      "setup_ms": 495.15719,
+      "teardown_ms": 4.237362,
+      "warmup_step_ms": 0.0,
+      "pool_initial_materialize_ms": 13.162698,
+      "amortized_full_run_per_step_ms": 351.0954303333333,
+      "max_rss_MiB": 626.62109375
+    },
+    "reuse_dram_prefetch": {
+      "step_ms": 157.66188766666667,
+      "forward_ms": 79.66307233333333,
+      "backward_ms": 76.282526,
+      "optimizer_and_drain_ms": 1.7162893333333333,
+      "wait_ms": 7.7680266666666675,
+      "migration_ms": 39.430664,
+      "minor_faults": 131298,
+      "major_faults": 0,
+      "moved_MiB": 32.0,
+      "late_per_step": 0,
+      "new_mapping_MiB": 66.05208333333333,
+      "reused_MiB": 68.10416666666667,
+      "native_wall_ms": 34.88712866666667,
+      "native_cpu_ms": 33.41977933333333,
+      "native_pre_ms": 0.035229666666666666,
+      "native_post_ms": 0.06971766666666666,
+      "native_gap_ms": 0.10494733333333334,
+      "native_noncpu_ms": 1.4673493333333334,
+      "native_voluntary": 1.3333333333333333,
+      "native_involuntary": 1.3333333333333333,
+      "total_run_ms": 1125.345819,
+      "setup_ms": 489.972871,
+      "teardown_ms": 4.642686,
+      "warmup_step_ms": 0.0,
+      "pool_initial_materialize_ms": 12.837062,
+      "amortized_full_run_per_step_ms": 375.115273,
+      "max_rss_MiB": 616.66015625
+    }
+  },
+  "source_hashes": {
+    "run_access_paths.py": "80fb5a1e97cf9a528327d6130a16d38825714d3f96fd03773c02a0cb7bb217ac",
+    "access_paths.py": "2ef5ae7ed5b4416d874bcb9a24a638cb13de5a5539a58721b784843cc63a40a3",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "meter-build.json": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d"
+  },
+  "loss": [
+    1.3336524963378906,
+    1.3334217071533203,
+    1.3331913948059082
+  ],
+  "selection": [
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5",
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5",
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5"
+  ],
+  "limitations": "n=3 independent process means; paired randomized blocks; unadjusted t(df=2) intervals; no kernel samples this batch; pool changes allocation, address/cache and retained memory together; not isolated causal LRU spin measurement"
+}

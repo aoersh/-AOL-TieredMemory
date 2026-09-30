@@ -1,0 +1,13 @@
+{
+  "profiles": 12,
+  "recorded_samples": 219017,
+  "selected_samples": 202249,
+  "lost_samples": 0,
+  "symbol_frames_checked": 196050,
+  "test_count": 9,
+  "old_and_new_hashes_verified": true,
+  "analysis_v1_v2_common_fields_identical": true,
+  "training_sources_unchanged": true,
+  "full_archive_roundtrip": true,
+  "no_raw_kernel_addresses_in_light_evidence": true
+}

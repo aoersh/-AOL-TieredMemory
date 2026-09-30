@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    "fresh_direct",
+    "fresh_prefetch",
+    "reuse_dram_direct",
+    "reuse_dram_prefetch"
+  ],
+  "runs": 12,
+  "diagnostic": false,
+  "repeats": 3,
+  "steps": 100
+}

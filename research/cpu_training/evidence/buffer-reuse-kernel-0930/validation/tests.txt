@@ -1,0 +1,14 @@
+test_empty_group (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_half_open_intervals (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_malformed_and_lost_fail (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_ns_and_thread_conservation (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_pte_and_allocator_not_lru (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_unknown_and_alias_boundaries (test_buffer_reuse_kernel.KernelReuseTests) ... ok
+test_bad_format_fails (test_kernel_profile.SampleAccountingTest) ... ok
+test_missing_frames_fails (test_kernel_profile.SampleAccountingTest) ... ok
+test_same_symbol_different_threads (test_kernel_profile.SampleAccountingTest) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK

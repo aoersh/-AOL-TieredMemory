@@ -1,0 +1,92 @@
+{
+  "samples": 319,
+  "period": 2955241154,
+  "categories": {
+    "all": {
+      "samples": 319,
+      "period": 2955241154,
+      "million_period_per_step": 2955.241154,
+      "percent_of_group": 100.0
+    },
+    "unresolved": {
+      "samples": 25,
+      "period": 228253624,
+      "million_period_per_step": 228.253624,
+      "percent_of_group": 7.723688596142229
+    },
+    "spin": {
+      "samples": 0,
+      "period": 0,
+      "million_period_per_step": 0.0,
+      "percent_of_group": 0.0
+    },
+    "lru_spin": {
+      "samples": 0,
+      "period": 0,
+      "million_period_per_step": 0.0,
+      "percent_of_group": 0.0
+    },
+    "anon_lru_spin": {
+      "samples": 0,
+      "period": 0,
+      "million_period_per_step": 0.0,
+      "percent_of_group": 0.0
+    },
+    "copy_page": {
+      "samples": 0,
+      "period": 0,
+      "million_period_per_step": 0.0,
+      "percent_of_group": 0.0
+    }
+  },
+  "top_symbols": [
+    {
+      "symbol": "shmem_add_to_page_cache",
+      "samples": 39,
+      "period": 359780686,
+      "percent": 12.17432579107891
+    },
+    {
+      "symbol": "mem_cgroup_commit_charge",
+      "samples": 30,
+      "period": 279053077,
+      "percent": 9.442649938137672
+    },
+    {
+      "symbol": "sync_regs",
+      "samples": 28,
+      "period": 263398768,
+      "percent": 8.91293651766735
+    },
+    {
+      "symbol": "[other-or-unresolved]",
+      "samples": 25,
+      "period": 228253624,
+      "percent": 7.723688596142229
+    },
+    {
+      "symbol": "memcg_check_events",
+      "samples": 16,
+      "period": 146004807,
+      "percent": 4.940537823871954
+    },
+    {
+      "symbol": "release_pages",
+      "samples": 10,
+      "period": 96860332,
+      "percent": 3.2775779353538335
+    },
+    {
+      "symbol": "__handle_mm_fault",
+      "samples": 9,
+      "period": 83184121,
+      "percent": 2.8147997630382213
+    },
+    {
+      "symbol": "asm_exc_page_fault",
+      "samples": 7,
+      "period": 67046450,
+      "percent": 2.2687302492810373
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[
+  "/usr/bin/python3",
+  "-c",
+  "import sys,unittest;sys.path.insert(0,'research/cpu_training');unittest.main(module=None,argv=['unittest','test_buffer_reuse_kernel','test_kernel_profile'],verbosity=2)"
+]
