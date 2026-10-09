@@ -1,0 +1,2782 @@
+{
+  "results/closure-pressure-diagnostic-1008-v4/commands.json": {
+    "sha256": "a3cd32fe2d668654cf157b03a032ba79d553d6ca83c38f573a15a733e0abc111",
+    "bytes": 1521
+  },
+  "results/closure-pressure-diagnostic-1008-v4/completed.json": {
+    "sha256": "54507388e370efeafc7c8b6c95597f0d21451be3f7f1303c3735cbb58d877fea",
+    "bytes": 60
+  },
+  "results/closure-pressure-diagnostic-1008-v4/environment.json": {
+    "sha256": "48cd000c5b9b4c4236bcc7c8cd93e4fd254c10ed4114fdfdaf7fcdf6efb876fa",
+    "bytes": 5234
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/completed.json": {
+    "sha256": "0eb8d6d24878fd01e0e7c7bac88e329418534b60fd15e4b094d96d823ce770c6",
+    "bytes": 56
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/manifest.json": {
+    "sha256": "71e316ba9f0b65ef77a450e010057b5f54f3f607f9ca03ed28fa1ad8afbf6580",
+    "bytes": 1071
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/run-timing.json": {
+    "sha256": "c0f8c7205e992fbc4b014cfe06ea9448890480e349b4f4f7ada0e3227cf40662",
+    "bytes": 168
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0/steps.json": {
+    "sha256": "ad4e72263a2c756053ae657255fe0034a91c84cf617b5b0665a911ab17910172",
+    "bytes": 7942
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_migrate-r0.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/completed.json": {
+    "sha256": "0eb8d6d24878fd01e0e7c7bac88e329418534b60fd15e4b094d96d823ce770c6",
+    "bytes": 56
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/manifest.json": {
+    "sha256": "a90d7d73fce705c1f416dc821a5aaea7b19ea4099a65beb749ebd433b95f18d1",
+    "bytes": 1072
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/run-timing.json": {
+    "sha256": "0c801ea3f0e76fb11d5a203ec0c454d8cff0155a84094533d3d47b32595bd67e",
+    "bytes": 167
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0/steps.json": {
+    "sha256": "6ddc455628de7936d5152f1a6fb2587a7805169bcfab615e077953ef3194dbfa",
+    "bytes": 3636
+  },
+  "results/closure-pressure-diagnostic-1008-v4/fresh_nomigrate-r0.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-diagnostic-1008-v4/progress.json": {
+    "sha256": "5caa7bfb7795ec5e05235cddc16175af2757d4f2e1e32d67f1f1595fe6f5994a",
+    "bytes": 1123
+  },
+  "results/closure-pressure-diagnostic-1008-v4/protocol.json": {
+    "sha256": "6dbeecf639eec4216d9d331f8da172bb92165ae099e5ed278069ef435729b870",
+    "bytes": 439
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/completed.json": {
+    "sha256": "0eb8d6d24878fd01e0e7c7bac88e329418534b60fd15e4b094d96d823ce770c6",
+    "bytes": 56
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/manifest.json": {
+    "sha256": "fc3d5e44d7897b7d56433dff082a2b67e4529e51e4ff38d1ff7745b55e91c918",
+    "bytes": 1071
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/run-timing.json": {
+    "sha256": "62f8e3985b679e421fcba90b780722b4910cfdfab6cc39511837ec1b42dada91",
+    "bytes": 169
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0/steps.json": {
+    "sha256": "06da10988fb1bcf5d1c71afbaa6e970fd0ab00f8130f2d5e253b2fe3000cef46",
+    "bytes": 7921
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_migrate-r0.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/completed.json": {
+    "sha256": "0eb8d6d24878fd01e0e7c7bac88e329418534b60fd15e4b094d96d823ce770c6",
+    "bytes": 56
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/manifest.json": {
+    "sha256": "8c22fa0a138a61d310747b788f0d4eb39add1da5d796f69d5d010ab4e92cebde",
+    "bytes": 1072
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/run-timing.json": {
+    "sha256": "2b106abb76000d861eef7fd47d0ed37a63fc87ef7d74823c1ac80f5fc6c62a61",
+    "bytes": 168
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0/steps.json": {
+    "sha256": "7bbaec568a91e02a0f3d435681d1615f714a07cf72531d819633b9fe5b35fed8",
+    "bytes": 3615
+  },
+  "results/closure-pressure-diagnostic-1008-v4/reuse_nomigrate-r0.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-diagnostic-1008-v4/runner.py": {
+    "sha256": "6c2c73ee2c89fa3bc46ef01a667c8f4afd720a194882824741ea558cdf55547c",
+    "bytes": 3743
+  },
+  "results/closure-pressure-diagnostic-1008-v4/verified-analysis/analyzer.py": {
+    "sha256": "c01690e65a7e92ff12c94a2e5cf93449ccf30a960bf4ba8ac18e9c81e4309978",
+    "bytes": 9426
+  },
+  "results/closure-pressure-diagnostic-1008-v4/verified-analysis/completed.json": {
+    "sha256": "50811fb24739e2141b425d0e6e09ff77b4254f659db10576c2bc7b756fe85b1f",
+    "bytes": 34
+  },
+  "results/closure-pressure-diagnostic-1008-v4/verified-analysis/summary.json": {
+    "sha256": "876e0f5c9c3096f97e3a7fa6ec7c5032bc60b71ae7250a991dea16b73d75e2e8",
+    "bytes": 5443
+  },
+  "results/closure-pressure-timing-1008-v4/commands.json": {
+    "sha256": "c08cbf824f34fac9ec4b968f386ca6d10f27faf733717ab43279f71bc82e77b9",
+    "bytes": 4269
+  },
+  "results/closure-pressure-timing-1008-v4/completed.json": {
+    "sha256": "d9bca91279af3678e72ee88b37b0388362790dfe7b14f246b647dc1daaea6ee1",
+    "bytes": 62
+  },
+  "results/closure-pressure-timing-1008-v4/environment.json": {
+    "sha256": "69d0668f279b88a03827d3bfd94a68deb360cdf176ea4dcee3776e793c038a4a",
+    "bytes": 5237
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/run-timing.json": {
+    "sha256": "3e74063bffcc14f764a5746ff9701aa81df35a6b1af214b6fb58254b40c47335",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0/steps.json": {
+    "sha256": "3df747964ae64aaca0b071a66d21ded6a68d246756262e1533027f4c88163e22",
+    "bytes": 242265
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r0.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/run-timing.json": {
+    "sha256": "6256bf23ee7c0239aa3a25f878842f608fce9eff2eb2de47e2bc9ad1f79c230a",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1/steps.json": {
+    "sha256": "2580d57b76e83148c1dc7ab4180cb4e590b86f5a6a23fa2115ecb3acedc2f3a6",
+    "bytes": 242511
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r1.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/run-timing.json": {
+    "sha256": "db638e09d0b2920b9971fe42fbc7722113238e428b5985dd83eefa15342cdf8a",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2/steps.json": {
+    "sha256": "dfd2385ee6ccc51308e7d15e0e42a8ba14618433a9da3050bc9e4e8ccaf273da",
+    "bytes": 242469
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_migrate-r2.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/run-timing.json": {
+    "sha256": "91b5dc296b3542f115f3a666721760c7ed97f5f2fe4a6696d09fcdd2bf7da4cf",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0/steps.json": {
+    "sha256": "96e5cbc19c014eeda32c18542850d26e695642c73874faba6efcab4fae423f78",
+    "bytes": 91559
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r0.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/run-timing.json": {
+    "sha256": "fd4ff6192cfdfe236d1b8910fd094276a1ed6e6910fdf3d9dc3c216eef77cb43",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1/steps.json": {
+    "sha256": "487171381db6063ea235ed9ba50366a302af95ab99a4b890f87d881131cd9568",
+    "bytes": 91682
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r1.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/run-timing.json": {
+    "sha256": "ebdb6fc850839054b54b7beb07a3703081c67165d9f13f65eb04348255de84a4",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2/steps.json": {
+    "sha256": "1d22ce0fcd84bf60b17e59c66778aa85d073f5c3f25c94a22b8b826f10a91e45",
+    "bytes": 91686
+  },
+  "results/closure-pressure-timing-1008-v4/fresh_nomigrate-r2.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/progress.json": {
+    "sha256": "8a0a147b3d6ee608b5f9b8b9446ef700484e5b0a8f4913fe1ba708d967584b63",
+    "bytes": 3374
+  },
+  "results/closure-pressure-timing-1008-v4/protocol.json": {
+    "sha256": "e286968db6b0969ff08ac087bb5caf46c3eb69c99ded5766293764ae08876110",
+    "bytes": 481
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/run-timing.json": {
+    "sha256": "c5d1fc530d1199711cec89643c7393bc2b9379821de1533bd0e5f59d01908368",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0/steps.json": {
+    "sha256": "79cd0adbbff4c6b91f3493f2fd154e85fc5cb390a72ccd2f313df982d36f7a71",
+    "bytes": 241376
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r0.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/run-timing.json": {
+    "sha256": "18bfb9dbb0d44f233cf2799d6d07931c57d7cf99c69c2673c1a251f309483b19",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1/steps.json": {
+    "sha256": "9184cf2878dcaaa9f31f4ff4e1dbfff09148eb8227ad6665bdd8ffe0fc9f4cd3",
+    "bytes": 241668
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r1.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/run-timing.json": {
+    "sha256": "3a9c77b047eff9490488c01c0ead883b9c43cea199191e50fce1bf7d1975e130",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2/steps.json": {
+    "sha256": "74c608e9869a003093dcc4f540c00403cca019a2220933ed2583dbea7c67067e",
+    "bytes": 241726
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_migrate-r2.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/run-timing.json": {
+    "sha256": "67cd2232c0545a872498d7e3e3a85c35e7a8b49839b2220a42faaf3be094228f",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0/steps.json": {
+    "sha256": "94f3b0c51c17f2b6c1879b175c205773d1c0c3b7ef07166a56f420a91ffbe7e6",
+    "bytes": 90574
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r0.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/run-timing.json": {
+    "sha256": "d80d623be9d78935490efd5f108ec7a86b78a17fe4d06f19fddf576983feddc2",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1/steps.json": {
+    "sha256": "7ea381495f07cea974f7d43b3a7f5824c279849f9e1cb2d969497103b4e2e613",
+    "bytes": 90617
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r1.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/run-timing.json": {
+    "sha256": "cb49970ea669423fdac135d85d6843db04b50fb64f0a86d2a9150a10ebeeefc9",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2/steps.json": {
+    "sha256": "13fd4f1b737c8d4972298bab0ddb30da5705d692f5cdfdba17e9071aaa6fd3e2",
+    "bytes": 90575
+  },
+  "results/closure-pressure-timing-1008-v4/reuse_nomigrate-r2.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1008-v4/runner.py": {
+    "sha256": "6c2c73ee2c89fa3bc46ef01a667c8f4afd720a194882824741ea558cdf55547c",
+    "bytes": 3743
+  },
+  "results/closure-pressure-timing-1008-v4/verified-analysis/analyzer.py": {
+    "sha256": "c01690e65a7e92ff12c94a2e5cf93449ccf30a960bf4ba8ac18e9c81e4309978",
+    "bytes": 9426
+  },
+  "results/closure-pressure-timing-1008-v4/verified-analysis/completed.json": {
+    "sha256": "6a154a6d09f7ae54a136c87c0a9aa4575079d1e5e4aab14b40ceeea19de6e6ed",
+    "bytes": 35
+  },
+  "results/closure-pressure-timing-1008-v4/verified-analysis/summary.json": {
+    "sha256": "180fd5239d15d1356c40caf9fd332c016a2675592e2f7b323d518370dc750570",
+    "bytes": 17014
+  },
+  "results/closure-pressure-timing-1009-v5/analysis.log": {
+    "sha256": "3570a4fd11f20f983761653825436bef0157569586c943b649b0734a0daa656e",
+    "bytes": 11502
+  },
+  "results/closure-pressure-timing-1009-v5/commands.json": {
+    "sha256": "85391c64eea988df9d4ebe88f37d954185965860ac6dd247f4983169f2a731b5",
+    "bytes": 4269
+  },
+  "results/closure-pressure-timing-1009-v5/completed.json": {
+    "sha256": "d9bca91279af3678e72ee88b37b0388362790dfe7b14f246b647dc1daaea6ee1",
+    "bytes": 62
+  },
+  "results/closure-pressure-timing-1009-v5/environment.json": {
+    "sha256": "2e1aabf5e7c9f52774a766bc59f3b852248ecebab0f78950e04b8f9522f85c51",
+    "bytes": 5236
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/run-timing.json": {
+    "sha256": "4eddba832f85cfca299fd917e32ea2f35580c51e9c98fe2787cdcea71596724f",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0/steps.json": {
+    "sha256": "aef80b7b6a04d82f667e203eb8ba48b3af3fea604152fe35b52250a7d17494f4",
+    "bytes": 242245
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r0.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/run-timing.json": {
+    "sha256": "b49a1476908925fdea0ea0b8bdcfa4026b1515f48755b61827daaf2cc3c3a61b",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1/steps.json": {
+    "sha256": "73f199ce396a89e97ee569a7956300b32ea76cef89b5cb567950b1422836936d",
+    "bytes": 242472
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r1.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/manifest.json": {
+    "sha256": "f2a29ff2cd8941bca98c0fba4b45b0647e3bb1ad7a1154409c6f03a4a47f20bc",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/run-timing.json": {
+    "sha256": "2c3dca0e728c5481f5759e4157cd4585c0d8265aace7c1fa4d7677f1d0d39414",
+    "bytes": 170
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2/steps.json": {
+    "sha256": "2977160c6b51dc97967bce0536c570575615433354d9440757f5a6c974fa596b",
+    "bytes": 242514
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_migrate-r2.log": {
+    "sha256": "d8384104fe530d4ee61b3f7360d6382330a452675720c9bf7feff15f0e3894df",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/run-timing.json": {
+    "sha256": "0e48a33f7013f9d79282174562f3dbb6b7f9ec18b1b6ad6961423cabfb666550",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0/steps.json": {
+    "sha256": "b65d7e466ec8efa0aa39c430238b70a9a923f98ff7487c225d229a648cc1d10a",
+    "bytes": 91555
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r0.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/run-timing.json": {
+    "sha256": "93d7206be0d01118bf7dc88f7a21ee04d6bc2c6340cdb2016c9a4059e5f7e2bc",
+    "bytes": 169
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1/steps.json": {
+    "sha256": "cd086e9d6890b68f13b1d7b6fa1444c0e3e728646789631de4cc46d6598f9b62",
+    "bytes": 91684
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r1.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/manifest.json": {
+    "sha256": "eb95ee33ba21a03dcaec7ee1fdcd8816510100bd5bc23548225da6f0cd64102f",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/run-timing.json": {
+    "sha256": "a7a52a20bc3c6bd494f1c456c0c76e01a1126967f809afde18e4f6bb09324dd0",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2/steps.json": {
+    "sha256": "0c64734ea0d743e8184679b595ec5f5b728d8502d1849ae436e2463b2654f3d9",
+    "bytes": 91679
+  },
+  "results/closure-pressure-timing-1009-v5/fresh_nomigrate-r2.log": {
+    "sha256": "f8cc6ae2bdce7c0383c33d085e9347d70f356e99d311c87b59dd505879620c50",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/progress.json": {
+    "sha256": "e3c41666582c04ba1dfc3efcee82a44b536d8c98d8c1d5a5a5c3a4a7360ba050",
+    "bytes": 3371
+  },
+  "results/closure-pressure-timing-1009-v5/protocol.json": {
+    "sha256": "e286968db6b0969ff08ac087bb5caf46c3eb69c99ded5766293764ae08876110",
+    "bytes": 481
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/run-timing.json": {
+    "sha256": "e0ef5a465a9b7969e8eb07d2bf44c9a9c65b7b6272b94c4493bb06ba6161c0ed",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0/steps.json": {
+    "sha256": "3df9cf019f401117cf249525446edda1e0d0a492e3be61959636a8d7e09828b8",
+    "bytes": 241450
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r0.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/run-timing.json": {
+    "sha256": "d2692b7990d747f80f093b05e713d9df2813816329abca6af8fd394a6ad1860c",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1/steps.json": {
+    "sha256": "d71f7132bf3784e05889171fb6f137c42b16f5a1e1f883d3e74bba1f4000e8e5",
+    "bytes": 241648
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r1.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/manifest.json": {
+    "sha256": "d65efbc51c0f4ae4293fc3169cf8abce75263f0e73922f115aaa477ca5850dde",
+    "bytes": 1074
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/run-timing.json": {
+    "sha256": "ddffde8bb1e066f44cb44391f8193aa7031ad99c15c050c2e5622c5ffd96c7cd",
+    "bytes": 171
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2/steps.json": {
+    "sha256": "c58af638cd2b5ed7aabf77fff192eb0f1b1485279a828594e5d0a095be2e314f",
+    "bytes": 241661
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_migrate-r2.log": {
+    "sha256": "d558a32c4294003b10f013b2b2271e79f03630580841d398e5c847d6cc195d8e",
+    "bytes": 16
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/run-timing.json": {
+    "sha256": "a1717bd0ee0f7956321d47e3971f9b44b1c2f0508795593e4c05908eec0877f4",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0/steps.json": {
+    "sha256": "017b04bbb569a6260768c1b412602bd786e91af1c194ca7735b04b3a546fbdf3",
+    "bytes": 90591
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r0.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/run-timing.json": {
+    "sha256": "cfe63d7ad177c4a88fdd402971f6e9d92f56b55edcd323794994a9a6fc362c0b",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1/steps.json": {
+    "sha256": "ba72f78d36be0f2cb80b05b100e4b6f612a7b97818cb854a2d1cdb403199e35e",
+    "bytes": 90562
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r1.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/completed.json": {
+    "sha256": "e0c906d290bd9dafede9d6cccbb23190312f84ed2192fd28beb10fb6d485f61b",
+    "bytes": 59
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/manifest.json": {
+    "sha256": "cd5cf10041ce7431792ae09746472f964667b5297dd61925ab4e0dc19ee2361d",
+    "bytes": 1075
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/run-timing.json": {
+    "sha256": "702e73a3b19c264e97af515ccb876a1f6d0c1d8aefbada2726e020cde86f0b12",
+    "bytes": 168
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/run_alloc_pressure.py": {
+    "sha256": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "bytes": 7148
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2/steps.json": {
+    "sha256": "c872feee1be7b955f12e33b0aca86a7de658030d5435984d13457e0372ebb468",
+    "bytes": 90587
+  },
+  "results/closure-pressure-timing-1009-v5/reuse_nomigrate-r2.log": {
+    "sha256": "f8ca4c952f483f8d469e7f899b9b60b0e6864fc23ab3e20366d4347414dbec14",
+    "bytes": 17
+  },
+  "results/closure-pressure-timing-1009-v5/runner.py": {
+    "sha256": "6c2c73ee2c89fa3bc46ef01a667c8f4afd720a194882824741ea558cdf55547c",
+    "bytes": 3743
+  },
+  "results/closure-pressure-timing-1009-v5/verified-analysis/analyzer.py": {
+    "sha256": "b814e48396882798c726ee0ed866e7e1883897703beddf502bd744cbe0b970f8",
+    "bytes": 10101
+  },
+  "results/closure-pressure-timing-1009-v5/verified-analysis/completed.json": {
+    "sha256": "6a154a6d09f7ae54a136c87c0a9aa4575079d1e5e4aab14b40ceeea19de6e6ed",
+    "bytes": 35
+  },
+  "results/closure-pressure-timing-1009-v5/verified-analysis/summary.json": {
+    "sha256": "4df08452fe2f27d82ddf524ebacff07f42ae7aeb8fc77fc5b730999460995994",
+    "bytes": 17020
+  },
+  "results/closure-placement-diagnostic-1008-v2/commands.json": {
+    "sha256": "d82cce5c558f577f04f770775db096b99eff020c32c6dca9c59e85587101a7bb",
+    "bytes": 1665
+  },
+  "results/closure-placement-diagnostic-1008-v2/completed.json": {
+    "sha256": "dedc434939106ce9ce96502b61bf129dcf7f3f03ed258db03d7c5b5e27d33cf2",
+    "bytes": 61
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/events.json": {
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "bytes": 16342
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/manifest.json": {
+    "sha256": "87d5d520335cd7bd61029ef4fbe39b1904508b6bbd02a6cb8e01b3bf5a35a9ed",
+    "bytes": 2215
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/run-timing.json": {
+    "sha256": "ca792833290a52560fa5bcd0aeef0f70f44ceb34d75f6ded70a6c5f5205ae1ea",
+    "bytes": 256
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/steps.json": {
+    "sha256": "4f2695370bbe854e55ae82de8d1d8ef47ce4d7a831871ed7258ab3c02aa7c6ff",
+    "bytes": 3728
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-diagnostic-1008-v2/cxl-r0.log": {
+    "sha256": "eb29049e5dd1f94d110fe7a411be37da25a05039929f7d04f632d3d96128f5ba",
+    "bytes": 140
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/events.json": {
+    "sha256": "31739cb39b370a377e4fca412c76dbf3b55587d0d873ea2dc7c567121522f5d7",
+    "bytes": 16342
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/manifest.json": {
+    "sha256": "8e26d751f53f51e4959f22bab1cf4ee126a4dc8ed13cdd68ae8f20cd9001417e",
+    "bytes": 2216
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/run-timing.json": {
+    "sha256": "99886335f5da643595247fb0c2abf728c43219f6b963d7e02d28aab86049bfba",
+    "bytes": 256
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/steps.json": {
+    "sha256": "5368958aa0268379af0d895c317d676c923c998a64c2b217bc2d8eee3e49b393",
+    "bytes": 3729
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-diagnostic-1008-v2/dram-r0.log": {
+    "sha256": "be7f345c4551de2dc93043492066bb9ae8d11a98b5d1d04628fdc0d160ee972b",
+    "bytes": 141
+  },
+  "results/closure-placement-diagnostic-1008-v2/environment.json": {
+    "sha256": "03c1af34bd91647aa116e3a609dea8662fad29787e197b3f39c0913634ed5f31",
+    "bytes": 5234
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/events.json": {
+    "sha256": "379060c5ff0eae552e930bf7b44f691bc9a21107a6b7768ed3cfb5981309ed92",
+    "bytes": 18876
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/manifest.json": {
+    "sha256": "997104fe26a3e483d9de65c865c2350e87114da7c8897e0b07714b738b512554",
+    "bytes": 2287
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/run-timing.json": {
+    "sha256": "053b51120d53666bcfe9a6df565422605aec6e803dcfbaeea2247afa74e0ea95",
+    "bytes": 256
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/steps.json": {
+    "sha256": "178dddb12239137a114ac5f7c776348458a837effe3393854c8082833713c1fa",
+    "bytes": 7216
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-diagnostic-1008-v2/prefetch-r0.log": {
+    "sha256": "e3548619d6d62e097d9ffe759d11caf99d4bcc52b1687ca907b995072d593b34",
+    "bytes": 137
+  },
+  "results/closure-placement-diagnostic-1008-v2/progress.json": {
+    "sha256": "99e5ae2137b1102fb9795fdb501c8ae40ebac7e3371610869d6a39a2b2ee9012",
+    "bytes": 821
+  },
+  "results/closure-placement-diagnostic-1008-v2/protocol.json": {
+    "sha256": "03b67a51f1a60f2dbf4492f7a6876d224feed021cbed37d45309c0f493e85353",
+    "bytes": 391
+  },
+  "results/closure-placement-diagnostic-1008-v2/runner.py": {
+    "sha256": "6c2c73ee2c89fa3bc46ef01a667c8f4afd720a194882824741ea558cdf55547c",
+    "bytes": 3743
+  },
+  "results/closure-placement-diagnostic-1008-v2/verified-analysis/analyzer.py": {
+    "sha256": "c01690e65a7e92ff12c94a2e5cf93449ccf30a960bf4ba8ac18e9c81e4309978",
+    "bytes": 9426
+  },
+  "results/closure-placement-diagnostic-1008-v2/verified-analysis/completed.json": {
+    "sha256": "8412520716c74599498be39d50177667b5136f03e4d294d2e81ffaad345bab05",
+    "bytes": 34
+  },
+  "results/closure-placement-diagnostic-1008-v2/verified-analysis/summary.json": {
+    "sha256": "c19bb5b7a3f069b8ce0e8c084a5b9953129de424e7054ceca826d937189e6a42",
+    "bytes": 4271
+  },
+  "results/closure-placement-timing-1008-v2/commands.json": {
+    "sha256": "dd0b7d7ee1439d8dc1b63b2692c6404842e87301cf616c9b887e3f0d40af0a2e",
+    "bytes": 4773
+  },
+  "results/closure-placement-timing-1008-v2/completed.json": {
+    "sha256": "e5ac2bf1b9d06448e8be73d70d77007134668ef15a8f450f59ef8d5398bae095",
+    "bytes": 62
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/manifest.json": {
+    "sha256": "ecda49d00254e8e7073c9dc6a5c364c1df21d5a9d6444e1275ab6b934de0c887",
+    "bytes": 2214
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/run-timing.json": {
+    "sha256": "8e2a049f86b195196650c3f82178c4db39b1afb966329bf138d9ffb96369bf9d",
+    "bytes": 265
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/steps.json": {
+    "sha256": "58b22a904fffeb672f1bdf8910561d805224bceb49fa1febc3820a2805c1fe3f",
+    "bytes": 129849
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r0.log": {
+    "sha256": "ae3acefb1611dd317057f4139aeedab34210615ff6a9c84337e3f71bb817a80f",
+    "bytes": 136
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/manifest.json": {
+    "sha256": "a7119c3e489b0fb832c69bbda90fb4792e5200c575eea487bb11b6d851490b2c",
+    "bytes": 2214
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/run-timing.json": {
+    "sha256": "13a4d03afdcf906649095389364b96e56e5418a6394000900b80fe2505595649",
+    "bytes": 265
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/steps.json": {
+    "sha256": "d9806f0635cd314e6590a1313f6e164960992a24be9e97397267a06df5a5a00a",
+    "bytes": 129850
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r1.log": {
+    "sha256": "68a593af514b593feec7c498692c6ebfd731c835244de66c1166bf56d65057a8",
+    "bytes": 130
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/manifest.json": {
+    "sha256": "4b404c2d9dac82377f52b2edb663a156a24f4624175ca3edde462b602e6469bf",
+    "bytes": 2214
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/run-timing.json": {
+    "sha256": "23c8650988dc9b7166c077846b605c72d7e965f88fded7cdb5777c47ab9558ff",
+    "bytes": 265
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/steps.json": {
+    "sha256": "b8b837183267a1409a63412f4152fad62bac590c05e35681b13e34d6f831c70a",
+    "bytes": 129865
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/cxl-r2.log": {
+    "sha256": "9d349d0558fe1025264b5d3aad4de116b7d7d41cabc3cb2c2c95b3a1615fa883",
+    "bytes": 136
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/manifest.json": {
+    "sha256": "1c7a906940fe9984db64b1525a9965cecc149539c5e7300a321dc9d66fdc1fa7",
+    "bytes": 2215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/run-timing.json": {
+    "sha256": "5097a7c20ead22f6123309a825746f671fb492f22378c78726e248938f861de7",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/steps.json": {
+    "sha256": "90d680e69d92d7d2dfbee6190565ae02866ec468d8024514d34563eeeb350b07",
+    "bytes": 129986
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/dram-r0.log": {
+    "sha256": "caf8e357cd7af19c726c354f96f2c721e685e46c4078dda9eb8d0eba7b736490",
+    "bytes": 137
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/manifest.json": {
+    "sha256": "f1183a991ac18458e0dea06e2e61e04f3f639cdebc80b237649c9b62b4adeb22",
+    "bytes": 2215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/run-timing.json": {
+    "sha256": "567fc7cdae7c11284b1785125199d1ada2087c84cc2608fd150d173a59e1ef46",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/steps.json": {
+    "sha256": "0f921de6ee93eb52e0f314012e4e160d811174d2b08ef591cc885a24f5208a15",
+    "bytes": 129994
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/dram-r1.log": {
+    "sha256": "cd699c45e8f1cde22dbf57a25061b55f36c6865b00ba95e56487213dc9eb85ae",
+    "bytes": 137
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/manifest.json": {
+    "sha256": "8134853be7dbc8fdba646258568708387d5b4e71267a07a9593be320e3f9d716",
+    "bytes": 2215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/run-timing.json": {
+    "sha256": "0e65f3acdca6f5a76bd14a98200d27f48f06b4eb71c37ab902500061bd8aec20",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/steps.json": {
+    "sha256": "74b4c8bee1dc52ca26e0f273413f2b06cf3ffb9b9b71a2b7bfbcb87aa47bca44",
+    "bytes": 130006
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/dram-r2.log": {
+    "sha256": "bf462a28722de168a6432574bf2ed16ba052d917118c088aaedc7d12a26b0c34",
+    "bytes": 137
+  },
+  "results/closure-placement-timing-1008-v2/environment.json": {
+    "sha256": "95dd91d124f6221b2c37aa0952a7ba493a70edbac993884e8ba62b815b726278",
+    "bytes": 5233
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/manifest.json": {
+    "sha256": "f51a9db22667e76bd4b42ac01b0f05597d7576e5e293d1051fdfa7fcb1fc20de",
+    "bytes": 2286
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/run-timing.json": {
+    "sha256": "3ee0bc7c51aedef9c783da28016ab663a82dbf9383d9f0f46ac5da64c8459b5a",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/steps.json": {
+    "sha256": "6ea728e8114678555cacd0f7ca2b3d0892dce324f3ae233bd24013620ce681d3",
+    "bytes": 254586
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r0.log": {
+    "sha256": "16c3278fc05f175c53d6fac78e758be7e83473d9f5c066dd86c8f19a85a75441",
+    "bytes": 136
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/manifest.json": {
+    "sha256": "d9c345b10614308c1e346f215282ded42363ccdd52b6ee1cf01bf0d53b4a2e4c",
+    "bytes": 2286
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/run-timing.json": {
+    "sha256": "c8602d2b76839b8ea520221ec187ba91c3d2a6b9f8d53f15581484bf386cf8a0",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/steps.json": {
+    "sha256": "0a168c7842a331f8e82ae3492b9599f3afd8d6345b3ce9d726442960af47b3d4",
+    "bytes": 254730
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r1.log": {
+    "sha256": "3f5e3aba8f2384904ab5ac936ec58aa1f0f0fc608223806a1a02962e39870ed3",
+    "bytes": 142
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/access_paths.py": {
+    "sha256": "55ca5d95ee71946b300d427cfc6690704e8cc994e19e589ae928067c475e7997",
+    "bytes": 13951
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/manifest.json": {
+    "sha256": "5cdb873b17ed51385647b3f026e17a5f9fb0e98462278c4f74defac963f77b3f",
+    "bytes": 2286
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/run-timing.json": {
+    "sha256": "036f6b84c1dd2491308ded4a5649c7b46c620547e6d4ce05963870eea8d7575a",
+    "bytes": 267
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/run_access_paths.py": {
+    "sha256": "b44d62106be4430bbd0821eaaee9885129d99ce6cd1aac30b7d9904d4ff78383",
+    "bytes": 16035
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/steps.json": {
+    "sha256": "a81d23f8756306302c79b4f79d9fd6e08949c1c8b2136231e7c6e399f6dcc453",
+    "bytes": 254727
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-timing-1008-v2/prefetch-r2.log": {
+    "sha256": "6feb88e27f52d8f367481f52d16b170d2da9f4f5b603d62387b696b19be5bcdf",
+    "bytes": 136
+  },
+  "results/closure-placement-timing-1008-v2/progress.json": {
+    "sha256": "d3c89ecc8038c84155dd9928281f0b85595c9ff277c5fdabe53682a9492eba20",
+    "bytes": 2446
+  },
+  "results/closure-placement-timing-1008-v2/protocol.json": {
+    "sha256": "f407433ef888bb30b399158c9fe437024ad752c380bcd96a346c424bb944ae71",
+    "bytes": 434
+  },
+  "results/closure-placement-timing-1008-v2/runner.py": {
+    "sha256": "6c2c73ee2c89fa3bc46ef01a667c8f4afd720a194882824741ea558cdf55547c",
+    "bytes": 3743
+  },
+  "results/closure-placement-timing-1008-v2/verified-analysis/analyzer.py": {
+    "sha256": "c01690e65a7e92ff12c94a2e5cf93449ccf30a960bf4ba8ac18e9c81e4309978",
+    "bytes": 9426
+  },
+  "results/closure-placement-timing-1008-v2/verified-analysis/completed.json": {
+    "sha256": "21fb304a2f664f99225d0cb44264c8bec14d03d1889bc9d1a873ea8782557807",
+    "bytes": 34
+  },
+  "results/closure-placement-timing-1008-v2/verified-analysis/summary.json": {
+    "sha256": "133cd32f6b4e4ba5bd1a096af5b659691b5e2d7ee125a1be4515ba063e8ae978",
+    "bytes": 22227
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/analysis.log": {
+    "sha256": "c280fca997db95f87d1d17ef9a666b548e056abb2b4cdfd6b26180fec8e6565a",
+    "bytes": 1545
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/commands.json": {
+    "sha256": "5f7edb7634fb8fc8389a38bbe72d0d5398b46dae5094841a1c2e142c98cdabb0",
+    "bytes": 1773
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/completed.json": {
+    "sha256": "dedc434939106ce9ce96502b61bf129dcf7f3f03ed258db03d7c5b5e27d33cf2",
+    "bytes": 61
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/events.json": {
+    "sha256": "a3545da7fd78fe44a70ce8330f02571544e2b4790fd196976fc4ed95b6c6de19",
+    "bytes": 16342
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/manifest.json": {
+    "sha256": "89d753dc84c27295533c921a49273bebb4af5cfcbc4a40fd66e4cf24b5a5f14a",
+    "bytes": 2253
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/run-timing.json": {
+    "sha256": "25a212833704c8e09e992f4846a8b66a207c8b066723ce169410607bcf775083",
+    "bytes": 256
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/steps.json": {
+    "sha256": "ba8d81d2f732bbe01968e7e64e54cfeb3433335b9a33da13d2a145bc8c77f8d4",
+    "bytes": 4482
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/cxl-r0.log": {
+    "sha256": "1a63688c1bb740a9401177bab96c4cd02d1fd5beba1807ad42a6248cb73fe6e2",
+    "bytes": 145
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/events.json": {
+    "sha256": "31739cb39b370a377e4fca412c76dbf3b55587d0d873ea2dc7c567121522f5d7",
+    "bytes": 16342
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/manifest.json": {
+    "sha256": "72cb95bd52e7dd3e9847ef3bbbdf2e869ee2281eb11a1e8c561e70353d563b80",
+    "bytes": 2254
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/run-timing.json": {
+    "sha256": "13d2cc72d93189cfb1d71fc1caae550e8d758af0949d622f0eccec7bce91b0c2",
+    "bytes": 256
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/steps.json": {
+    "sha256": "4d1ca090b7b5fc4a299a295ccb9b4352e2f8c5d54531c5c6dd8202a933209db9",
+    "bytes": 4482
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/dram-r0.log": {
+    "sha256": "6016f80f13a6ac7fceff24a9aed735ace6f57420982cedb60a8efc218060ac0a",
+    "bytes": 146
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/environment.json": {
+    "sha256": "f71a519a36aca4ed4c8606c9282af421d960a0d095eeaab9fe0105c5c7355c33",
+    "bytes": 5230
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/correctness.json": {
+    "sha256": "ca323c142878873977767c3b28e1b9216f4b6105810d059f7969e3752e5e6347",
+    "bytes": 73
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/events.json": {
+    "sha256": "44d068ab7cb7449fe50daf7d89ead3850014f95c780b9d04a4ea199505f4955f",
+    "bytes": 18877
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/manifest.json": {
+    "sha256": "e224646c873ce3553b095b5e6cf885361418086ccc700e28a89a19c19b091059",
+    "bytes": 2325
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/run-timing.json": {
+    "sha256": "c7e7b668a25f962c01357e30c27117847cd77658cb62e0ef5816226dba9eecc7",
+    "bytes": 256
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/steps.json": {
+    "sha256": "0177d17a6728d7c7a512d00030fd943229f51a139a7f91acdfcd3f5c98587bc4",
+    "bytes": 7970
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/prefetch-r0.log": {
+    "sha256": "48cf9391b6530f2ede3807bde36c70fdce87f8a6e23b1df6335c84feaa98dcac",
+    "bytes": 150
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/progress.json": {
+    "sha256": "9c977cc188e5e18ac55dd1f54953704758d483d94a9139ec744ab3db7ce9d637",
+    "bytes": 813
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/protocol.json": {
+    "sha256": "04416f2e51cebe4fb32637d34eaad1f17b1994c85ab98957c2f8a013d2b525e8",
+    "bytes": 422
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/runner.py": {
+    "sha256": "6f6da9d550f750c3569d487265623b1d19f6c1b1c6947044e56d5e5097dee7ef",
+    "bytes": 4046
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/verified-analysis/analyzer.py": {
+    "sha256": "b814e48396882798c726ee0ed866e7e1883897703beddf502bd744cbe0b970f8",
+    "bytes": 10101
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/verified-analysis/completed.json": {
+    "sha256": "8412520716c74599498be39d50177667b5136f03e4d294d2e81ffaad345bab05",
+    "bytes": 34
+  },
+  "results/closure-placement-pack-diagnostic-1009-v1/verified-analysis/summary.json": {
+    "sha256": "27647e21768f793f781c9f475c3e3be64b1fd737deec33ac2416296783bf7a8b",
+    "bytes": 5229
+  },
+  "results/closure-placement-pack-timing-1009-v1/analysis.log": {
+    "sha256": "0cc15662aa0d21bc9efc6eaf26b7714c4a44d10e773ca3b664a0dc0e11ce24c0",
+    "bytes": 10904
+  },
+  "results/closure-placement-pack-timing-1009-v1/audit-rejection-tests.json": {
+    "sha256": "c201b51652d549e8519881d1ff7fc7d562d1af7a24a7f0741380ca4af8b3b754",
+    "bytes": 553
+  },
+  "results/closure-placement-pack-timing-1009-v1/commands.json": {
+    "sha256": "1f649c113701a0c9a9de0a1aab980cee84eae4a3bbe767ee1ab28ac06aa394d5",
+    "bytes": 5097
+  },
+  "results/closure-placement-pack-timing-1009-v1/completed.json": {
+    "sha256": "e5ac2bf1b9d06448e8be73d70d77007134668ef15a8f450f59ef8d5398bae095",
+    "bytes": 62
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/manifest.json": {
+    "sha256": "d96326cf38d4955fdc62e228373593781117f65deb7b6bfefbe8aac05f9c2945",
+    "bytes": 2252
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/run-timing.json": {
+    "sha256": "88c0b704d01dd153cc5befdb730e53138eabe5c3f88c0976e7d1bef063ed62dc",
+    "bytes": 265
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/steps.json": {
+    "sha256": "facdf8a1fb72f1deb0ff8ee32b137673c814e81d771f3366db1b4ee2a71c97cd",
+    "bytes": 156187
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r0.log": {
+    "sha256": "fdbaee2e961dfb6144bb87155df4b069126deb8e28d4a6d5427c77881a5bb7ec",
+    "bytes": 141
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/manifest.json": {
+    "sha256": "e66551a061c5d1d8ca989207cf4f5b17934cccda81d46158f8b5544124995982",
+    "bytes": 2252
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/run-timing.json": {
+    "sha256": "42fe7cb7cd850e21fab4e8b8618746fd210ded9ebbb68cde06f121da3d136556",
+    "bytes": 266
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/steps.json": {
+    "sha256": "51c62d38f06ec1282ae97995608190a37ddfb5c090f5957041e558a5404fcb45",
+    "bytes": 156221
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r1.log": {
+    "sha256": "f8290717a5a5e8748ab6cafe826552f7eca0fe10ef87103d0a425f58e4a8f23a",
+    "bytes": 141
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/manifest.json": {
+    "sha256": "c2ee06dc88de7744e84f906b0a605315db9ae2ac8a359765a593b59dcb0ea921",
+    "bytes": 2252
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/run-timing.json": {
+    "sha256": "7e0ac8b709e203ca7f8f093ae84d2f41d5757ff43878c4d5eae4da494a7df2bc",
+    "bytes": 265
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/steps.json": {
+    "sha256": "48de04588b892f3280a688c3082d8a1f11d35d1e505e406eb95f8c81192073e0",
+    "bytes": 156203
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/cxl-r2.log": {
+    "sha256": "07baaaa83324331f4006150d6aa34187874a94ea74c0c295f195590f462c05d6",
+    "bytes": 141
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/manifest.json": {
+    "sha256": "9647c0846dd909dedaed914cecbd003e046cbb7eea6f79f9c0616a7004c9ee08",
+    "bytes": 2253
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/run-timing.json": {
+    "sha256": "667fa61a6cd1079c68edfe947595f089fdfe507a75a09686689e120cd9fe35a7",
+    "bytes": 266
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/steps.json": {
+    "sha256": "eefc45c0b7d55b7e4896c0131b5069987336eadb75b64602ea65811c8b87f318",
+    "bytes": 156314
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r0.log": {
+    "sha256": "c9fa5a034526774b94b889668d6a7df216c263b171b123709060813a06e5a7a6",
+    "bytes": 142
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/manifest.json": {
+    "sha256": "ce4db61a3909f6ceceee4f83345f481102cb13acee2223f48714ab82ce39f98f",
+    "bytes": 2253
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/run-timing.json": {
+    "sha256": "6ecf655ec8c04eac7655dd4b734fd7a3a888b8685952a0ea30abc11bea41db54",
+    "bytes": 266
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/steps.json": {
+    "sha256": "5b2a1485652a15f39dc3e84fca6214f2efd443af742edd576724a0dacb5b8644",
+    "bytes": 156330
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r1.log": {
+    "sha256": "7498f13a6ba5335ae95203c6e2d267f3203bceacf91a42d381b1878886f9b5d0",
+    "bytes": 142
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/manifest.json": {
+    "sha256": "773278c9635b515133a50cc5f68e1c3715b2588c717ca95ecdbecbc8032e0937",
+    "bytes": 2253
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/run-timing.json": {
+    "sha256": "70192fab407cb7621e9501e8e56710f690f71c42efbf0878e4ea8dcbfef9f03e",
+    "bytes": 266
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/steps.json": {
+    "sha256": "651ebf098b386b7d3e58ab3716f454ad71980cc5888d623323fa358a5e8b4197",
+    "bytes": 156303
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/dram-r2.log": {
+    "sha256": "0272e9c6a0cd9390eaddd40e13b6cdf61174439f1a20f5fda987059bf77a100e",
+    "bytes": 136
+  },
+  "results/closure-placement-pack-timing-1009-v1/environment.json": {
+    "sha256": "b8ca000ed505326907b6eeb5e98b9175038e7f6f60373b901c6a45a9717e17d6",
+    "bytes": 5234
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/manifest.json": {
+    "sha256": "7db2d86118096e8556ca96cbcdbdf8e91e8d30fe36939741737317b161a769f0",
+    "bytes": 2324
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/run-timing.json": {
+    "sha256": "7e56839ee02f0240a622a5d38160d9f1fa58cb82a8186eaa52173e30c4bcaa60",
+    "bytes": 267
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/steps.json": {
+    "sha256": "d8e1f80b3d3a94365989f5af17fdfb3ec028b77d83fc7e00938d4b6ad15c8c14",
+    "bytes": 280882
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r0.log": {
+    "sha256": "de0be8ee5146d01eefbf9a62c7b15cd63ec5bbb3e2d36172fa00cc68b3db6da2",
+    "bytes": 147
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/manifest.json": {
+    "sha256": "25b1546a7cad39fa4875b00b674d606cca205d85d3067e27bdb5819b7ce19a67",
+    "bytes": 2324
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/run-timing.json": {
+    "sha256": "507a72fb76549a551d2f1a3237c9c4d9abb43f2cc668be2104a382571bc92787",
+    "bytes": 267
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/steps.json": {
+    "sha256": "faea26db0005442e86f110870d8146188da5640e426cbe31d3eab55383f5ab0e",
+    "bytes": 280946
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r1.log": {
+    "sha256": "2b25d02f07b9fc59428058b5a608637a8bfeeb5d14ecf50cb3b564bf3512d9e4",
+    "bytes": 147
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/manifest.json": {
+    "sha256": "8eae377a1c501cd46b231864cf310ec33d4c03cf420aca0fba697860e078f3ef",
+    "bytes": 2324
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/meter-build.json": {
+    "sha256": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d",
+    "bytes": 291
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/requirements-resolved.txt": {
+    "sha256": "d103d8b71161446d94325d9d2921db3c41c50e9bfbba34961b68ba28a908c4ef",
+    "bytes": 166
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/run-timing.json": {
+    "sha256": "2cc3ded55fc2179acec01ea55d8ce8138d0fe3ac42b211de20821060024011f1",
+    "bytes": 267
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/steps.json": {
+    "sha256": "9bd40f880787724bea02f444df884aa54862b310fe81d6862e28ad18c3e79c5f",
+    "bytes": 281106
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/tensor-lifetimes.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/closure-placement-pack-timing-1009-v1/prefetch-r2.log": {
+    "sha256": "4a9463e30b7e3c00fe5abb58e5f19f66bd2ab5912b0cc1edb55717385fee88da",
+    "bytes": 147
+  },
+  "results/closure-placement-pack-timing-1009-v1/progress.json": {
+    "sha256": "a3fb6ed5678373c213ce244a5e933692015ebf827bf3ca2e542b1af28da2a181",
+    "bytes": 2440
+  },
+  "results/closure-placement-pack-timing-1009-v1/protocol.json": {
+    "sha256": "df7816145917155c9882f0d358467fb8c928187abb4b3b952f87434f30d76415",
+    "bytes": 470
+  },
+  "results/closure-placement-pack-timing-1009-v1/runner.py": {
+    "sha256": "6f6da9d550f750c3569d487265623b1d19f6c1b1c6947044e56d5e5097dee7ef",
+    "bytes": 4046
+  },
+  "results/closure-placement-pack-timing-1009-v1/verified-analysis/analyzer.py": {
+    "sha256": "b814e48396882798c726ee0ed866e7e1883897703beddf502bd744cbe0b970f8",
+    "bytes": 10101
+  },
+  "results/closure-placement-pack-timing-1009-v1/verified-analysis/completed.json": {
+    "sha256": "21fb304a2f664f99225d0cb44264c8bec14d03d1889bc9d1a873ea8782557807",
+    "bytes": 34
+  },
+  "results/closure-placement-pack-timing-1009-v1/verified-analysis/summary.json": {
+    "sha256": "8e1fba6656794d24c0c3c8db4d9f7062c79cee0f98be4647aca8a67efe92d1c1",
+    "bytes": 25838
+  }
+}

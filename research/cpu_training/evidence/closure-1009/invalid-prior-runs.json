@@ -1,0 +1,11 @@
+{
+  "excluded_from_conclusions": {
+    "alloc-pressure-2x2-20261008": "条件nomigrate匹配错误；元数据不完整",
+    "alloc-pressure-2x2-20261008-v2": "nomigrate实际迁移；fresh双重copy和单边GC",
+    "alloc-pressure-2x2-20261008-v3": "fresh双重copy、单边GC、释放边界不正确、前台计时不完整",
+    "target-dram-diagnostic-20261008": "DRAM目标进入池，与CXL新建生命周期不同",
+    "target-dram-timing-20261008-v1": "DRAM目标进入池；跨日期旧基线不可配对",
+    "target-placement-paired-20261008-v1": "DRAM目标复用，CXL目标新建，生命周期不公平"
+  },
+  "retraction": "之前45ms迁移额外成本、50ms分配成本和DRAM慢2.32ms等口头结论撤回；由closure系列严格诊断/计时代替。旧文件保留。"
+}

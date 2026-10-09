@@ -1,0 +1,220 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "start_ns": 1727536742211031,
+    "end_ns": 1727536807716274,
+    "step_ns": 65505243,
+    "pressure_start_ns": 1727536745686932,
+    "pressure_end_ns": 1727536747267158,
+    "pressure_ns": 1580226,
+    "joined_ns": 1727536770983140,
+    "release_ns": 489,
+    "reset_start_ns": 1727536780452704,
+    "reset_end_ns": 1727536805660442,
+    "reset_ns": 25207738,
+    "concurrent_ns": 25375425,
+    "worker": {
+      "start_ns": 1727536745607715,
+      "end_ns": 1727536770921703,
+      "native": {
+        "bind_ns": 96997,
+        "prepare_ns": 548194,
+        "delay_ns": 1000,
+        "syscall_ns": 24021352,
+        "status_ns": 571056,
+        "prepare_start_ns": 1727536745724562,
+        "prepare_end_ns": 1727536746272756,
+        "delay_start_ns": 1727536746274889,
+        "delay_end_ns": 1727536746275889,
+        "syscall_start_ns": 1727536746299431,
+        "syscall_end_ns": 1727536770320783,
+        "native_start_ns": 1727536746333211,
+        "native_end_ns": 1727536770307909,
+        "native_wall_ns": 23974698,
+        "native_cpu_ns": 21363146,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 32,
+        "native_pre_ns": 33780,
+        "native_post_ns": 12874
+      },
+      "tid": 32,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": {
+      "bind_ns": 27938,
+      "prepare_ns": 171867,
+      "delay_ns": 199,
+      "syscall_ns": 24242051,
+      "status_ns": 544758,
+      "prepare_start_ns": 1727536780558190,
+      "prepare_end_ns": 1727536780730057,
+      "delay_start_ns": 1727536780730390,
+      "delay_end_ns": 1727536780730589,
+      "syscall_start_ns": 1727536780737640,
+      "syscall_end_ns": 1727536804979691,
+      "native_start_ns": 1727536780746824,
+      "native_end_ns": 1727536804960934,
+      "native_wall_ns": 24214110,
+      "native_cpu_ns": 24171874,
+      "native_voluntary": 3,
+      "native_involuntary": 0,
+      "native_tid": 32,
+      "native_pre_ns": 9184,
+      "native_post_ns": 18757
+    },
+    "native_overlap_ns": 933947,
+    "minor_faults": 54,
+    "major_faults": 0,
+    "forward_bytes": 33554432,
+    "reset_bytes": 33554432,
+    "write_bytes": 33554432,
+    "initial": {
+      "2": 8192
+    },
+    "at_use": {
+      "0": 8192
+    },
+    "final": {
+      "2": 8192
+    },
+    "pressure_residency": [
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "start_ns": 1727536861370977,
+    "end_ns": 1727536911338157,
+    "step_ns": 49967180,
+    "pressure_start_ns": 1727536864299105,
+    "pressure_end_ns": 1727536865681884,
+    "pressure_ns": 1382779,
+    "joined_ns": 1727536878634892,
+    "release_ns": 528,
+    "reset_start_ns": 1727536888307259,
+    "reset_end_ns": 1727536909292750,
+    "reset_ns": 20985491,
+    "concurrent_ns": 14381465,
+    "worker": {
+      "start_ns": 1727536864253427,
+      "end_ns": 1727536878561420,
+      "native": {
+        "bind_ns": 74867,
+        "prepare_ns": 186724,
+        "delay_ns": 378,
+        "syscall_ns": 13478572,
+        "status_ns": 510246,
+        "prepare_start_ns": 1727536864337135,
+        "prepare_end_ns": 1727536864523859,
+        "delay_start_ns": 1727536864524284,
+        "delay_end_ns": 1727536864524662,
+        "syscall_start_ns": 1727536864539183,
+        "syscall_end_ns": 1727536878017755,
+        "native_start_ns": 1727536864552086,
+        "native_end_ns": 1727536878009201,
+        "native_wall_ns": 13457115,
+        "native_cpu_ns": 13404289,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 32,
+        "native_pre_ns": 12903,
+        "native_post_ns": 8554
+      },
+      "tid": 32,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": {
+      "bind_ns": 25020,
+      "prepare_ns": 139275,
+      "delay_ns": 274,
+      "syscall_ns": 20116343,
+      "status_ns": 523876,
+      "prepare_start_ns": 1727536888406759,
+      "prepare_end_ns": 1727536888546034,
+      "delay_start_ns": 1727536888546516,
+      "delay_end_ns": 1727536888546790,
+      "syscall_start_ns": 1727536888554939,
+      "syscall_end_ns": 1727536908671282,
+      "native_start_ns": 1727536888565827,
+      "native_end_ns": 1727536908656143,
+      "native_wall_ns": 20090316,
+      "native_cpu_ns": 20036672,
+      "native_voluntary": 0,
+      "native_involuntary": 2,
+      "native_tid": 32,
+      "native_pre_ns": 10888,
+      "native_post_ns": 15139
+    },
+    "native_overlap_ns": 1129798,
+    "minor_faults": 1,
+    "major_faults": 0,
+    "forward_bytes": 33554432,
+    "reset_bytes": 33554432,
+    "write_bytes": 33554432,
+    "initial": {
+      "2": 8192
+    },
+    "at_use": {
+      "0": 8192
+    },
+    "final": {
+      "2": 8192
+    },
+    "pressure_residency": [
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      }
+    ]
+  }
+]

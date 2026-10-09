@@ -1,0 +1,27 @@
+{
+  "pressure": "results/closure-pressure-timing-1009-v5",
+  "placement": "results/closure-placement-pack-timing-1009-v1",
+  "checks": [
+    {
+      "case": "nomigrate_actual_migration",
+      "rejected": true
+    },
+    {
+      "case": "missing_reset_bytes",
+      "rejected": true
+    },
+    {
+      "case": "bad_clock_arithmetic",
+      "rejected": true
+    },
+    {
+      "case": "dram_target_pooled",
+      "rejected": true
+    },
+    {
+      "case": "target_pack_outside_forward",
+      "rejected": true
+    }
+  ],
+  "raw_files_modified": false
+}

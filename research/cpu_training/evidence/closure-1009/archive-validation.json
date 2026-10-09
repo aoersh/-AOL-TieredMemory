@@ -1,0 +1,10 @@
+{
+  "raw_files_hash_verified": 695,
+  "current_source_checks": [
+    "closure-pressure-timing-1009-v5/reuse_migrate-r0",
+    "closure-placement-pack-timing-1009-v1/cxl-r0"
+  ],
+  "regression_after_both_matrices": true,
+  "evidence_files": 313,
+  "evidence_bytes": 888771
+}

@@ -1,0 +1,59 @@
+{
+  "configuration": {
+    "output": "results/closure-placement-pack-timing-1009-v1/prefetch-r2",
+    "mode": "ranked",
+    "target_ids": [
+      10
+    ],
+    "budget_mib": null,
+    "perf_control_fd": null,
+    "perf_ack_fd": null,
+    "trace_lifetimes": false,
+    "migration_action": "real_vectorized_native",
+    "migration_delay_ms": 0.0,
+    "buffer_policy": "reuse_dram",
+    "initial_target_node": 2,
+    "measure_target_pack": true,
+    "diagnostic": false,
+    "batch": 8,
+    "sequence": 512,
+    "steps": 100,
+    "warmup": 5,
+    "budget_bytes": null,
+    "workload": "transformer",
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_access_paths.py": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "access_paths.py": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "meter-build.json": "10343fb26cfc2a2adddf1cb52288e31d44724984affea90fc07e27085e912d1d"
+  },
+  "cpu_compute": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cpu_migration": 8,
+  "seed": 20260921,
+  "policy": "pack-time ready queue prioritized by previous-iteration demand; prefix mismatch sync fallback",
+  "timing": "step includes begin/reset, hooks, copies, migration/wait, optimizer, drain, lease release check; logging/rusage outside; total_run includes setup, warmup, logging and teardown",
+  "buffer_policy_note": "reuse_dram retains only non-target node0 mappings; explicit targets fresh every step at initial_target_node; first materialization included in first step and total_run",
+  "limitation": "Ample capacity; MPOL_BIND; no tuned deadline scheduler; not TierTrain; no performance conclusion from diagnostics",
+  "numa_balancing": "1",
+  "numa_balancing_pte_scale": "16",
+  "perf_event_paranoid": "-1"
+}

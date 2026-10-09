@@ -1,0 +1,8 @@
+{
+  "total_run_ns": 4472276439,
+  "setup_ns": 47248890,
+  "teardown_ns": 928338,
+  "summed_step_ns": 4413988919,
+  "mappings_closed": true,
+  "final_correctness": true
+}

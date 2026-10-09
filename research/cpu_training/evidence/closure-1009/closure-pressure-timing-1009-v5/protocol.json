@@ -1,0 +1,17 @@
+{
+  "kind": "pressure",
+  "conditions": [
+    "fresh_nomigrate",
+    "fresh_migrate",
+    "reuse_nomigrate",
+    "reuse_migrate"
+  ],
+  "seed": 20261008,
+  "diagnostic": false,
+  "steps": 100,
+  "warmup": 5,
+  "repeats": 3,
+  "placement": "ID10每步新建；只有非目标node0复用，三条件同池容量",
+  "pressure": "一次32MiB写入，同worker；还原迁移在整轮内，实际重叠单列",
+  "diagnostic_reference": "results/closure-pressure-diagnostic-1008-v4"
+}

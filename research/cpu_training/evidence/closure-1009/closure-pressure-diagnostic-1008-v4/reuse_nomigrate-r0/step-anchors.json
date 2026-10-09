@@ -1,0 +1,136 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "start_ns": 1727540777945705,
+    "end_ns": 1727540794574727,
+    "step_ns": 16629022,
+    "pressure_start_ns": 1727540781304957,
+    "pressure_end_ns": 1727540782500132,
+    "pressure_ns": 1195175,
+    "joined_ns": 1727540782505806,
+    "release_ns": 464,
+    "reset_start_ns": 1727540792535374,
+    "reset_end_ns": 1727540792536146,
+    "reset_ns": 772,
+    "concurrent_ns": 1276627,
+    "worker": {
+      "start_ns": 1727540781229179,
+      "end_ns": 1727540781230332,
+      "native": null,
+      "tid": 104,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": null,
+    "native_overlap_ns": 0,
+    "minor_faults": 17,
+    "major_faults": 0,
+    "forward_bytes": 0,
+    "reset_bytes": 0,
+    "write_bytes": 33554432,
+    "initial": {
+      "2": 8192
+    },
+    "at_use": {
+      "2": 8192
+    },
+    "final": {
+      "2": 8192
+    },
+    "pressure_residency": [
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "start_ns": 1727540809845499,
+    "end_ns": 1727540824672745,
+    "step_ns": 14827246,
+    "pressure_start_ns": 1727540812269593,
+    "pressure_end_ns": 1727540812873804,
+    "pressure_ns": 604211,
+    "joined_ns": 1727540812881825,
+    "release_ns": 690,
+    "reset_start_ns": 1727540822712406,
+    "reset_end_ns": 1727540822712943,
+    "reset_ns": 537,
+    "concurrent_ns": 661339,
+    "worker": {
+      "start_ns": 1727540812220486,
+      "end_ns": 1727540812221445,
+      "native": null,
+      "tid": 104,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": null,
+    "native_overlap_ns": 0,
+    "minor_faults": 0,
+    "major_faults": 0,
+    "forward_bytes": 0,
+    "reset_bytes": 0,
+    "write_bytes": 33554432,
+    "initial": {
+      "2": 8192
+    },
+    "at_use": {
+      "2": 8192
+    },
+    "final": {
+      "2": 8192
+    },
+    "pressure_residency": [
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      },
+      {
+        "0": 1024
+      }
+    ]
+  }
+]

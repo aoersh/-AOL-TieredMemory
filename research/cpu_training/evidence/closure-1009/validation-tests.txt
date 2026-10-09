@@ -1,0 +1,40 @@
+test_address_reuse_is_not_storage_identity (test_boundaries.Boundaries) ... ok
+test_live_source_inplace_rejected (test_boundaries.Boundaries) ... ok
+test_migration_failure_propagates (test_boundaries.Boundaries) ... ok
+test_multiple_unpack_migrates_once_and_releases (test_boundaries.Boundaries) ... ok
+test_repeated_autograd_unpack_gradient (test_boundaries.Boundaries) ... ok
+test_views_and_repeated_storage (test_boundaries.Boundaries) ... ok
+test_inflight_task_owns_buffer_until_done (test_async.AsyncTests) ... ok
+test_repeated_unpack_and_release (test_async.AsyncTests) ... ok
+test_worker_failure_reaches_demand (test_async.AsyncTests) ... ok
+test_failure_propagates_with_learned_schedule (test_demand.DemandTests) ... ok
+test_learns_previous_order_and_changes_fallback (test_demand.DemandTests) ... ok
+test_learn_at_pack_and_prefix_mismatch (test_ranked.RankedTests) ... ok
+test_ranked_error_propagates_and_worker_survives (test_ranked.RankedTests) ... ok
+test_ready_queue_reorders_and_cpu_affinity (test_ranked.RankedTests) ... ok
+test_controls_do_not_call_bind_or_move (test_migration_ablation.AblationTests) ... ok
+test_learned_queue_keeps_control_on_cxl (test_migration_ablation.AblationTests) ... ok
+test_partial_vectorized_migration_rejected (test_migration_ablation.AblationTests) ... ok
+test_real_failure_propagates (test_migration_ablation.AblationTests) ... ok
+test_vectorized_addresses_and_ownership (test_migration_ablation.AblationTests) ... ok
+test_delayed_control_keeps_cxl (test_migration_timing.TimingControlTests) ... ok
+test_delayed_real_timestamps (test_migration_timing.TimingControlTests) ... ok
+test_invalid_delays_rejected_before_binding (test_migration_timing.TimingControlTests) ... ok
+test_errno_preserved (test_native_meter.NativeMeterTests) ... ok
+test_native_moves_and_same_node (test_native_meter.NativeMeterTests) ... ok
+test_all_iterations_and_optional_trace (test_lifetime_trace.LifetimeTests) ... ok
+test_storage_alias_keeps_mapping_alive (test_lifetime_trace.LifetimeTests) ... ok
+test_alias_and_storage_hold_lease (test_buffer_reuse.BufferReuseTests) ... ok
+test_cxl_target_not_retained_or_reused (test_buffer_reuse.BufferReuseTests) ... ok
+test_live_source_update_rejected (test_buffer_reuse.BufferReuseTests) ... ok
+test_noncontiguous_and_repeated_selection_preserved (test_buffer_reuse.BufferReuseTests) ... ok
+test_repeated_unpack_autograd_release (test_buffer_reuse.BufferReuseTests) ... ok
+test_shape_and_node_guard (test_buffer_reuse.BufferReuseTests) ... ok
+test_condition_names (test_closure.ClosureTests) ... ok
+test_pressure_exactly_one_copy (test_closure.ClosureTests) ... ok
+test_target_fresh_on_both_nodes (test_closure.ClosureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 1.402s
+
+OK

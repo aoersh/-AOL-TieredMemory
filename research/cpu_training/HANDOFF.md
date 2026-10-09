@@ -1,4 +1,21 @@
-# 新会话接力说明（2026-09-30）
+# 新会话接力说明（2026-10-09）
+
+
+## 最新断点：两项收敛实验及分段确认已完成
+
+先读 [CLOSURE_REPORT_1009.md](CLOSURE_REPORT_1009.md)，不要重复下面历史段落的待办。
+最新结果已归档在 evidence/closure-1009/；尚未提交/推送，git 状态中的新增代码和证据均需保留。
+
+- 早期 10-08 alloc-pressure v1–v3 和 target-placement 旧结果不公平，已明确撤回，见归档 invalid-prior-runs.json；旧 verified-analysis 名称不代表仍可用。
+- 压力 2×2 的严格版已完成。10-08 v4 不能完全排除尾部测试启动重叠；10-09 v5 串行重跑 12 个进程并通过审计，是主要证据。
+- v5 fresh/reuse 的 forward native 为 18.992/14.655 ms，差 4.337 ms [4.132,4.542]；前台差中差 3.192 ms。整轮含回迁差中差 0.739 ms，完整 run 摊销差中差 0.035 ms 的区间跨零。实际重叠时长不同，不能单归因 LRU。
+- 公平目标放置：DRAM/CXL 都让 ID10 每步 fresh，只有非目标 node0 的 102.15625 MiB 副本复用。10-08 三方 9 进程已完成；10-09 新分段诊断及 9 进程也完成。
+- 10-09 Direct/Prefetch 为 88.047/107.036 ms，Prefetch 慢 18.989 ms [12.322,25.655]。DRAM 为 92.535 ms；DRAM−CXL 差 4.488 ms 的整步区间跨零，不声称稳定 CXL 硬件优势。
+- ID10 创建 DRAM/CXL 为 2.649/2.914 ms，缺页均 8192；DRAM 目标创建更快，不能解释其整步较慢。其余 forward 包含其他副本与分配，不是纯计算。
+- 35 项回归、五项审计故障注入通过；均在计时结束后运行。无运行中矩阵，无 sudo/权限阻塞。
+- 所有原始目录保留；性能使用各自 verified-analysis。原始根目录：results/closure-pressure-timing-1009-v5、closure-placement-pack-{diagnostic,timing}-1009-v1；诊断参考详见报告。
+
+下一步不再调 ID10 迁移参数：若继续验证收益边界，先有限重放实际 backward 算子，公平测 DRAM/CXL 访问及完整创建成本，出现访问优势后才扩展另一对象/shape 并回到训练验证。仍未做 AOL 收益关联或复杂 ML，不随意改内核。
 
 ## 目标与约束
 
@@ -65,7 +82,7 @@ node0 的 102.15625 MiB 副本映射，每步仍复制；ID10 仍每步新建，
    符号快照解析。旧数据 196050 核心栈帧与 perf 符号全部匹配，九项解析测试通过。
    不解析模块/范围外地址，全部保留分母；重启后不能继续使用这份地址快照。
 
-## 从这里继续
+## 09-30 历史交接（下列独立 2×2 已于 10-09 完成）
 
 先读 BUFFER_REUSE_KERNEL_REPORT.md、BUFFER_REUSE_REPORT.md、
 KERNEL_MIGRATION_PROFILE_REPORT.md、NATIVE_MIGRATION_REPORT.md、

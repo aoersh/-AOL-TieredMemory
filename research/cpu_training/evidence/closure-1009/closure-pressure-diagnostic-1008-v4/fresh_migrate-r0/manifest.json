@@ -1,0 +1,36 @@
+{
+  "protocol_version": 4,
+  "mode": "fresh",
+  "migrate": true,
+  "diagnostic": true,
+  "steps": 3,
+  "warmup": 0,
+  "target_bytes": 33554432,
+  "pressure_bytes": 33554432,
+  "chunks": 8,
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "worker_cpu": 8,
+  "kernel": "6.8.12-138-soaralto",
+  "sysctl": {
+    "numa_balancing": "1",
+    "numa_balancing_pte_scale": "16",
+    "perf_event_paranoid": "-1"
+  },
+  "source_hashes": {
+    "run_alloc_pressure.py": "0983c2f25bbb5818a06d436abf11954bb475bf44c235539597b2721efb419921",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "migration_meter.c": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "libmigration_meter.so": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7"
+  },
+  "note": "无DNN；一次固定32MiB写入；同worker barrier；双向迁移/释放均计入step；诊断查询不进入计时运行"
+}

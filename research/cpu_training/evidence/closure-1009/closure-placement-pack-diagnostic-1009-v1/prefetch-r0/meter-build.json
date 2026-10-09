@@ -1,0 +1,5 @@
+{
+  "command": "gcc -O2 -Wall -Wextra -Werror -shared -fPIC research/cpu_training/migration_meter.c -o .deps/training-native/libmigration_meter.so",
+  "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7"
+}

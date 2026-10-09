@@ -1,0 +1,110 @@
+[
+  {
+    "step": 0,
+    "measured": false,
+    "start_ns": 1791687893899937,
+    "end_ns": 1791687895868585,
+    "step_ns": 1968648,
+    "pressure_start_ns": 1791687894835996,
+    "pressure_end_ns": 1791687895860855,
+    "pressure_ns": 1024859,
+    "joined_ns": 1791687895867349,
+    "release_ns": 111,
+    "reset_start_ns": 1791687895868260,
+    "reset_end_ns": 1791687895868465,
+    "reset_ns": 205,
+    "concurrent_ns": 1071016,
+    "worker": {
+      "start_ns": 1791687894796333,
+      "end_ns": 1791687894796832,
+      "native": null,
+      "tid": 270,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": null,
+    "native_overlap_ns": 0,
+    "minor_faults": 1,
+    "major_faults": 0,
+    "forward_bytes": 0,
+    "reset_bytes": 0,
+    "write_bytes": 33554432,
+    "initial": null,
+    "at_use": null,
+    "final": null,
+    "pressure_residency": null
+  },
+  {
+    "step": 5,
+    "measured": true,
+    "start_ns": 1791687899715250,
+    "end_ns": 1791687900438728,
+    "step_ns": 723478,
+    "pressure_start_ns": 1791687900022456,
+    "pressure_end_ns": 1791687900433203,
+    "pressure_ns": 410747,
+    "joined_ns": 1791687900437637,
+    "release_ns": 200,
+    "reset_start_ns": 1791687900438463,
+    "reset_end_ns": 1791687900438630,
+    "reset_ns": 167,
+    "concurrent_ns": 452419,
+    "worker": {
+      "start_ns": 1791687899985218,
+      "end_ns": 1791687899985513,
+      "native": null,
+      "tid": 270,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": null,
+    "native_overlap_ns": 0,
+    "minor_faults": 0,
+    "major_faults": 0,
+    "forward_bytes": 0,
+    "reset_bytes": 0,
+    "write_bytes": 33554432,
+    "initial": null,
+    "at_use": null,
+    "final": null,
+    "pressure_residency": null
+  },
+  {
+    "step": 104,
+    "measured": true,
+    "start_ns": 1791687967928151,
+    "end_ns": 1791687968612087,
+    "step_ns": 683936,
+    "pressure_start_ns": 1791687968206161,
+    "pressure_end_ns": 1791687968608257,
+    "pressure_ns": 402096,
+    "joined_ns": 1791687968611281,
+    "release_ns": 105,
+    "reset_start_ns": 1791687968611906,
+    "reset_end_ns": 1791687968612013,
+    "reset_ns": 107,
+    "concurrent_ns": 428120,
+    "worker": {
+      "start_ns": 1791687968183161,
+      "end_ns": 1791687968183650,
+      "native": null,
+      "tid": 270,
+      "affinity": [
+        8
+      ]
+    },
+    "reset": null,
+    "native_overlap_ns": 0,
+    "minor_faults": 0,
+    "major_faults": 0,
+    "forward_bytes": 0,
+    "reset_bytes": 0,
+    "write_bytes": 33554432,
+    "initial": null,
+    "at_use": null,
+    "final": null,
+    "pressure_residency": null
+  }
+]
