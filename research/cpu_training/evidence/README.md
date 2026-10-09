@@ -10,6 +10,7 @@ Use the scripts in the parent directory to run new experiments.
 | [e0-validated](e0-validated/) | Parameterized MLP and two Transformer correctness cases |
 | [e1-diagnostic](e1-diagnostic/) | Eight DRAM/Direct/sync/async correctness and residency runs |
 | [e2-timing](e2-timing/) | Forty independent timing processes, five paired repetitions per configuration |
+| [closure-1009](closure-1009/) | Corrected 2×2 allocation pressure, fair DRAM/Direct/Prefetch placement, target-pack timing, audit results, and lightweight hashes |
 
 The new archives are copied from the matching `results/cpu-training-*` directories.
 They include per-run manifests, source snapshots, raw step/event data, summaries,
@@ -50,3 +51,7 @@ measurements. Source snapshots may differ between experiment batches.
 [migration-kernel-profile-0929](migration-kernel-profile-0929/README.md)：
 三个进程的安全符号统计、源文件哈希、修正 worker 报告与去地址调用链。
 不包含 kallsyms.txt 或原始 perf.data；样本 period 权重不等于函数墙钟。
+
+## 2026-10-09 收敛实验
+
+新增 [closure-1009](closure-1009/README.md)：修正后的分配压力 2×2 和公平 DRAM/Direct/Prefetch 三方实验。证据目录只保留 manifest、分析摘要、步骤锚点、源码快照和完整原始文件哈希；完整 `results/`、日志和二进制仍留在实验机器。早期不公平结果的排除清单也随本轮提交，不能将旧 verified-analysis 当作有效结论。

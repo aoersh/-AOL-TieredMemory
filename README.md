@@ -8,6 +8,8 @@
 
 当前已完成保存张量的数值正确性、DRAM/CXL 放置、同步迁移，以及 FIFO 异步迁移的初步实验。FIFO 预取存在需求顺序倒置，尚不能作为优化后的 Always-Prefetch 基线。详见 [E1/E2 实验报告](research/cpu_training/E1_E2_REPORT.md)。
 
+2026-10-09 已完成修正后的独立分配压力 2×2、Direct CXL/初始 DRAM/Prefetch 公平三方对照，以及目标 saved tensor 创建时间与缺页分段测量。复用非目标 DRAM 副本会降低前台迁移调用成本，但完整运行的交互差异区间跨零；Prefetch 仍比 Direct CXL 慢，当前没有稳定的预取赢家。早期不公平的 10 月 8 日结果已列入排除清单，不能作为结论。详见 [收敛实验报告](research/cpu_training/CLOSURE_REPORT_1009.md)、[当天总结](research/cpu_training/DAILY_SUMMARY_2026-10-09.md) 和 [轻量证据](research/cpu_training/evidence/closure-1009/README.md)。
+
 2026-09-22 已新增按上一轮需求顺序调度的反向边界预取，并完成 50 次独立计时。
 提交顺序正确，但整步未稳定改善；研究假设尚未验证，见
 [需求顺序实验报告](research/cpu_training/DEMAND_ORDER_REPORT.md)。
