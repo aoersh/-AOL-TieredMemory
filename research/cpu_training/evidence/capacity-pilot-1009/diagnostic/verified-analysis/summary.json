@@ -1,0 +1,322 @@
+{
+  "diagnostic": true,
+  "source_hashes": {
+    "run_capacity_pilot.py": "258be5a187b45208ad45f4720bf009edf93220a618b9d92b0562f666980902ff",
+    "run_access_paths.py": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "access_paths.py": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "loss": [
+    1.3336524963378906,
+    1.3334217071533203,
+    1.3331913948059082
+  ],
+  "selection": [
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5",
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5",
+    "2d970c0f13d4559e86a5c9bf06d7788741d6726408985309688e321b44f705c5"
+  ],
+  "process_means": {
+    "direct": {
+      "step_ms": [
+        120.093074
+      ],
+      "forward_ms": [
+        63.54570866666666
+      ],
+      "backward_ms": [
+        55.28397433333333
+      ],
+      "migration_mib": [
+        0.0
+      ],
+      "peak_mib": [
+        0.0
+      ],
+      "dram_mib_ms": [
+        0.0
+      ],
+      "amortized_run_ms": [
+        330.65622666666667
+      ]
+    },
+    "pack32": {
+      "step_ms": [
+        123.32312266666666
+      ],
+      "forward_ms": [
+        66.01128700000001
+      ],
+      "backward_ms": [
+        55.93761766666667
+      ],
+      "migration_mib": [
+        0.0
+      ],
+      "peak_mib": [
+        30.15625
+      ],
+      "dram_mib_ms": [
+        2412.529059671875
+      ],
+      "amortized_run_ms": [
+        337.060364
+      ]
+    },
+    "pack64": {
+      "step_ms": [
+        129.649235
+      ],
+      "forward_ms": [
+        69.20557233333334
+      ],
+      "backward_ms": [
+        58.71832966666667
+      ],
+      "migration_mib": [
+        0.0
+      ],
+      "peak_mib": [
+        62.15625
+      ],
+      "dram_mib_ms": [
+        5518.6151691822915
+      ],
+      "amortized_run_ms": [
+        347.965025
+      ]
+    },
+    "demand32": {
+      "step_ms": [
+        246.73542133333333
+      ],
+      "forward_ms": [
+        65.132745
+      ],
+      "backward_ms": [
+        180.01037866666667
+      ],
+      "migration_mib": [
+        134.15625
+      ],
+      "peak_mib": [
+        32.0
+      ],
+      "dram_mib_ms": [
+        2306.713852432292
+      ],
+      "amortized_run_ms": [
+        459.9687476666667
+      ]
+    },
+    "demand64": {
+      "step_ms": [
+        248.09607866666667
+      ],
+      "forward_ms": [
+        65.64266766666667
+      ],
+      "backward_ms": [
+        180.815993
+      ],
+      "migration_mib": [
+        134.15625
+      ],
+      "peak_mib": [
+        32.0
+      ],
+      "dram_mib_ms": [
+        2304.8791306041667
+      ],
+      "amortized_run_ms": [
+        465.1134403333333
+      ]
+    }
+  },
+  "means": {
+    "direct": {
+      "step_ms": 120.093074,
+      "forward_ms": 63.54570866666666,
+      "backward_ms": 55.28397433333333,
+      "migration_mib": 0.0,
+      "peak_mib": 0.0,
+      "dram_mib_ms": 0.0,
+      "amortized_run_ms": 330.65622666666667
+    },
+    "pack32": {
+      "step_ms": 123.32312266666666,
+      "forward_ms": 66.01128700000001,
+      "backward_ms": 55.93761766666667,
+      "migration_mib": 0.0,
+      "peak_mib": 30.15625,
+      "dram_mib_ms": 2412.529059671875,
+      "amortized_run_ms": 337.060364
+    },
+    "pack64": {
+      "step_ms": 129.649235,
+      "forward_ms": 69.20557233333334,
+      "backward_ms": 58.71832966666667,
+      "migration_mib": 0.0,
+      "peak_mib": 62.15625,
+      "dram_mib_ms": 5518.6151691822915,
+      "amortized_run_ms": 347.965025
+    },
+    "demand32": {
+      "step_ms": 246.73542133333333,
+      "forward_ms": 65.132745,
+      "backward_ms": 180.01037866666667,
+      "migration_mib": 134.15625,
+      "peak_mib": 32.0,
+      "dram_mib_ms": 2306.713852432292,
+      "amortized_run_ms": 459.9687476666667
+    },
+    "demand64": {
+      "step_ms": 248.09607866666667,
+      "forward_ms": 65.64266766666667,
+      "backward_ms": 180.815993,
+      "migration_mib": 134.15625,
+      "peak_mib": 32.0,
+      "dram_mib_ms": 2304.8791306041667,
+      "amortized_run_ms": 465.1134403333333
+    }
+  },
+  "admitted_ids": {
+    "direct": [
+      []
+    ],
+    "pack32": [
+      [
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        13,
+        16,
+        18,
+        19,
+        20,
+        22,
+        26,
+        28,
+        29,
+        30,
+        32,
+        42,
+        43,
+        52,
+        53
+      ]
+    ],
+    "pack64": [
+      [
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        18,
+        19,
+        20,
+        22,
+        26,
+        28,
+        29,
+        30,
+        32,
+        42,
+        43,
+        52,
+        53
+      ]
+    ],
+    "demand32": [
+      [
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        37,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        50,
+        52,
+        53,
+        54,
+        56
+      ]
+    ],
+    "demand64": [
+      [
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        37,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        50,
+        52,
+        53,
+        54,
+        56
+      ]
+    ]
+  },
+  "archive_note": "admitted_ids compressed to unique sets; raw SHA256 recorded"
+}

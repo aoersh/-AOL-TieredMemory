@@ -1,0 +1,7862 @@
+[
+  {
+    "step": 0,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 56,
+        "bytes": 2097152,
+        "start_ns": 1808835329854384,
+        "done_ns": 1808835332559122,
+        "destination": 0,
+        "bind_ns": 57940,
+        "prepare_ns": 311084,
+        "delay_ns": 974,
+        "syscall_ns": 2704738,
+        "status_ns": 168175,
+        "prepare_start_ns": 1808835328619567,
+        "prepare_end_ns": 1808835328930651,
+        "delay_start_ns": 1808835328932553,
+        "delay_end_ns": 1808835328933527,
+        "syscall_start_ns": 1808835329854384,
+        "syscall_end_ns": 1808835332559122,
+        "native_start_ns": 1808835329886172,
+        "native_end_ns": 1808835332541199,
+        "native_wall_ns": 2655027,
+        "native_cpu_ns": 2586944,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 31788,
+        "native_post_ns": 17923
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 54,
+        "bytes": 2097152,
+        "start_ns": 1808835334478642,
+        "done_ns": 1808835338355318,
+        "destination": 0,
+        "bind_ns": 33013,
+        "prepare_ns": 100715,
+        "delay_ns": 608,
+        "syscall_ns": 3876676,
+        "status_ns": 67634,
+        "prepare_start_ns": 1808835334362136,
+        "prepare_end_ns": 1808835334462851,
+        "delay_start_ns": 1808835334463748,
+        "delay_end_ns": 1808835334464356,
+        "syscall_start_ns": 1808835334478642,
+        "syscall_end_ns": 1808835338355318,
+        "native_start_ns": 1808835334490145,
+        "native_end_ns": 1808835338347051,
+        "native_wall_ns": 3856906,
+        "native_cpu_ns": 1358274,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 11503,
+        "native_post_ns": 8267
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 50,
+        "bytes": 2097152,
+        "start_ns": 1808835340167366,
+        "done_ns": 1808835341806929,
+        "destination": 0,
+        "bind_ns": 21690,
+        "prepare_ns": 64742,
+        "delay_ns": 400,
+        "syscall_ns": 1639563,
+        "status_ns": 68102,
+        "prepare_start_ns": 1808835340092166,
+        "prepare_end_ns": 1808835340156908,
+        "delay_start_ns": 1808835340157336,
+        "delay_end_ns": 1808835340157736,
+        "syscall_start_ns": 1808835340167366,
+        "syscall_end_ns": 1808835341806929,
+        "native_start_ns": 1808835340175063,
+        "native_end_ns": 1808835341798489,
+        "native_wall_ns": 1623426,
+        "native_cpu_ns": 1575252,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 7697,
+        "native_post_ns": 8440
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 52,
+        "bytes": 16384,
+        "start_ns": 1808835342563180,
+        "done_ns": 1808835342639652,
+        "destination": 0,
+        "bind_ns": 19605,
+        "prepare_ns": 70230,
+        "delay_ns": 500,
+        "syscall_ns": 76472,
+        "status_ns": 4547,
+        "prepare_start_ns": 1808835342481620,
+        "prepare_end_ns": 1808835342551850,
+        "delay_start_ns": 1808835342552613,
+        "delay_end_ns": 1808835342553113,
+        "syscall_start_ns": 1808835342563180,
+        "syscall_end_ns": 1808835342639652,
+        "native_start_ns": 1808835342571103,
+        "native_end_ns": 1808835342636385,
+        "native_wall_ns": 65282,
+        "native_cpu_ns": 28413,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 7923,
+        "native_post_ns": 3267
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 53,
+        "bytes": 16384,
+        "start_ns": 1808835342785024,
+        "done_ns": 1808835342828811,
+        "destination": 0,
+        "bind_ns": 9740,
+        "prepare_ns": 15519,
+        "delay_ns": 342,
+        "syscall_ns": 43787,
+        "status_ns": 2325,
+        "prepare_start_ns": 1808835342765681,
+        "prepare_end_ns": 1808835342781200,
+        "delay_start_ns": 1808835342781546,
+        "delay_end_ns": 1808835342781888,
+        "syscall_start_ns": 1808835342785024,
+        "syscall_end_ns": 1808835342828811,
+        "native_start_ns": 1808835342788335,
+        "native_end_ns": 1808835342827240,
+        "native_wall_ns": 38905,
+        "native_cpu_ns": 22270,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3311,
+        "native_post_ns": 1571
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 47,
+        "bytes": 8388608,
+        "start_ns": 1808835343708710,
+        "done_ns": 1808835351985571,
+        "destination": 0,
+        "bind_ns": 13021,
+        "prepare_ns": 31674,
+        "delay_ns": 328,
+        "syscall_ns": 8276861,
+        "status_ns": 139089,
+        "prepare_start_ns": 1808835343674066,
+        "prepare_end_ns": 1808835343705740,
+        "delay_start_ns": 1808835343705968,
+        "delay_end_ns": 1808835343706296,
+        "syscall_start_ns": 1808835343708710,
+        "syscall_end_ns": 1808835351985571,
+        "native_start_ns": 1808835343712028,
+        "native_end_ns": 1808835351978477,
+        "native_wall_ns": 8266449,
+        "native_cpu_ns": 4985402,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 3318,
+        "native_post_ns": 7094
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 46,
+        "bytes": 8388608,
+        "start_ns": 1808835355829602,
+        "done_ns": 1808835361085833,
+        "destination": 0,
+        "bind_ns": 14525,
+        "prepare_ns": 53374,
+        "delay_ns": 189,
+        "syscall_ns": 5256231,
+        "status_ns": 140369,
+        "prepare_start_ns": 1808835355768771,
+        "prepare_end_ns": 1808835355822145,
+        "delay_start_ns": 1808835355822403,
+        "delay_end_ns": 1808835355822592,
+        "syscall_start_ns": 1808835355829602,
+        "syscall_end_ns": 1808835361085833,
+        "native_start_ns": 1808835355834094,
+        "native_end_ns": 1808835361079655,
+        "native_wall_ns": 5245561,
+        "native_cpu_ns": 5208913,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 4492,
+        "native_post_ns": 6178
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 44,
+        "bytes": 2097152,
+        "start_ns": 1808835364297926,
+        "done_ns": 1808835365723218,
+        "destination": 0,
+        "bind_ns": 13665,
+        "prepare_ns": 41155,
+        "delay_ns": 123,
+        "syscall_ns": 1425292,
+        "status_ns": 36258,
+        "prepare_start_ns": 1808835364250221,
+        "prepare_end_ns": 1808835364291376,
+        "delay_start_ns": 1808835364291663,
+        "delay_end_ns": 1808835364291786,
+        "syscall_start_ns": 1808835364297926,
+        "syscall_end_ns": 1808835365723218,
+        "native_start_ns": 1808835364302139,
+        "native_end_ns": 1808835365715906,
+        "native_wall_ns": 1413767,
+        "native_cpu_ns": 1384655,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4213,
+        "native_post_ns": 7312
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 40,
+        "bytes": 2097152,
+        "start_ns": 1808835368154131,
+        "done_ns": 1808835370340495,
+        "destination": 0,
+        "bind_ns": 13933,
+        "prepare_ns": 41472,
+        "delay_ns": 143,
+        "syscall_ns": 2186364,
+        "status_ns": 34890,
+        "prepare_start_ns": 1808835368106289,
+        "prepare_end_ns": 1808835368147761,
+        "delay_start_ns": 1808835368147998,
+        "delay_end_ns": 1808835368148141,
+        "syscall_start_ns": 1808835368154131,
+        "syscall_end_ns": 1808835370340495,
+        "native_start_ns": 1808835368158055,
+        "native_end_ns": 1808835370333869,
+        "native_wall_ns": 2175814,
+        "native_cpu_ns": 1346781,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3924,
+        "native_post_ns": 6626
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 42,
+        "bytes": 16384,
+        "start_ns": 1808835370845337,
+        "done_ns": 1808835370903459,
+        "destination": 0,
+        "bind_ns": 17926,
+        "prepare_ns": 37426,
+        "delay_ns": 302,
+        "syscall_ns": 58122,
+        "status_ns": 2728,
+        "prepare_start_ns": 1808835370801586,
+        "prepare_end_ns": 1808835370839012,
+        "delay_start_ns": 1808835370839368,
+        "delay_end_ns": 1808835370839670,
+        "syscall_start_ns": 1808835370845337,
+        "syscall_end_ns": 1808835370903459,
+        "native_start_ns": 1808835370849008,
+        "native_end_ns": 1808835370901877,
+        "native_wall_ns": 52869,
+        "native_cpu_ns": 31430,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3671,
+        "native_post_ns": 1582
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 43,
+        "bytes": 16384,
+        "start_ns": 1808835371036633,
+        "done_ns": 1808835371117647,
+        "destination": 0,
+        "bind_ns": 7755,
+        "prepare_ns": 13424,
+        "delay_ns": 281,
+        "syscall_ns": 81014,
+        "status_ns": 2091,
+        "prepare_start_ns": 1808835371020089,
+        "prepare_end_ns": 1808835371033513,
+        "delay_start_ns": 1808835371033925,
+        "delay_end_ns": 1808835371034206,
+        "syscall_start_ns": 1808835371036633,
+        "syscall_end_ns": 1808835371117647,
+        "native_start_ns": 1808835371038682,
+        "native_end_ns": 1808835371116089,
+        "native_wall_ns": 77407,
+        "native_cpu_ns": 26996,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2049,
+        "native_post_ns": 1558
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 37,
+        "bytes": 2097152,
+        "start_ns": 1808835371772837,
+        "done_ns": 1808835373100372,
+        "destination": 0,
+        "bind_ns": 9758,
+        "prepare_ns": 13128,
+        "delay_ns": 293,
+        "syscall_ns": 1327535,
+        "status_ns": 37405,
+        "prepare_start_ns": 1808835371757018,
+        "prepare_end_ns": 1808835371770146,
+        "delay_start_ns": 1808835371770344,
+        "delay_end_ns": 1808835371770637,
+        "syscall_start_ns": 1808835371772837,
+        "syscall_end_ns": 1808835373100372,
+        "native_start_ns": 1808835371775337,
+        "native_end_ns": 1808835373093767,
+        "native_wall_ns": 1318430,
+        "native_cpu_ns": 1302796,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 2500,
+        "native_post_ns": 6605
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 35,
+        "bytes": 2097152,
+        "start_ns": 1808835374549824,
+        "done_ns": 1808835375872021,
+        "destination": 0,
+        "bind_ns": 15807,
+        "prepare_ns": 34879,
+        "delay_ns": 275,
+        "syscall_ns": 1322197,
+        "status_ns": 35224,
+        "prepare_start_ns": 1808835374509577,
+        "prepare_end_ns": 1808835374544456,
+        "delay_start_ns": 1808835374544714,
+        "delay_end_ns": 1808835374544989,
+        "syscall_start_ns": 1808835374549824,
+        "syscall_end_ns": 1808835375872021,
+        "native_start_ns": 1808835374553677,
+        "native_end_ns": 1808835375864345,
+        "native_wall_ns": 1310668,
+        "native_cpu_ns": 1291922,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 3853,
+        "native_post_ns": 7676
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 1808835382218633,
+        "done_ns": 1808835400763963,
+        "destination": 0,
+        "bind_ns": 9188,
+        "prepare_ns": 154830,
+        "delay_ns": 244,
+        "syscall_ns": 18545330,
+        "status_ns": 522129,
+        "prepare_start_ns": 1808835382058481,
+        "prepare_end_ns": 1808835382213311,
+        "delay_start_ns": 1808835382213589,
+        "delay_end_ns": 1808835382213833,
+        "syscall_start_ns": 1808835382218633,
+        "syscall_end_ns": 1808835400763963,
+        "native_start_ns": 1808835382223852,
+        "native_end_ns": 1808835400758058,
+        "native_wall_ns": 18534206,
+        "native_cpu_ns": 18505209,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5219,
+        "native_post_ns": 5905
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 32,
+        "bytes": 2097152,
+        "start_ns": 1808835412738916,
+        "done_ns": 1808835414123678,
+        "destination": 0,
+        "bind_ns": 23159,
+        "prepare_ns": 112919,
+        "delay_ns": 111,
+        "syscall_ns": 1384762,
+        "status_ns": 35640,
+        "prepare_start_ns": 1808835412617080,
+        "prepare_end_ns": 1808835412729999,
+        "delay_start_ns": 1808835412730250,
+        "delay_end_ns": 1808835412730361,
+        "syscall_start_ns": 1808835412738916,
+        "syscall_end_ns": 1808835414123678,
+        "native_start_ns": 1808835412745316,
+        "native_end_ns": 1808835414118734,
+        "native_wall_ns": 1373418,
+        "native_cpu_ns": 1328171,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 6400,
+        "native_post_ns": 4944
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 33,
+        "bytes": 2097152,
+        "start_ns": 1808835414617224,
+        "done_ns": 1808835415759147,
+        "destination": 0,
+        "bind_ns": 19521,
+        "prepare_ns": 31676,
+        "delay_ns": 266,
+        "syscall_ns": 1141923,
+        "status_ns": 37895,
+        "prepare_start_ns": 1808835414580213,
+        "prepare_end_ns": 1808835414611889,
+        "delay_start_ns": 1808835414612165,
+        "delay_end_ns": 1808835414612431,
+        "syscall_start_ns": 1808835414617224,
+        "syscall_end_ns": 1808835415759147,
+        "native_start_ns": 1808835414620488,
+        "native_end_ns": 1808835415754395,
+        "native_wall_ns": 1133907,
+        "native_cpu_ns": 1116356,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3264,
+        "native_post_ns": 4752
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 30,
+        "bytes": 2097152,
+        "start_ns": 1808835420473818,
+        "done_ns": 1808835421782358,
+        "destination": 0,
+        "bind_ns": 17913,
+        "prepare_ns": 45247,
+        "delay_ns": 104,
+        "syscall_ns": 1308540,
+        "status_ns": 36208,
+        "prepare_start_ns": 1808835420422447,
+        "prepare_end_ns": 1808835420467694,
+        "delay_start_ns": 1808835420467880,
+        "delay_end_ns": 1808835420467984,
+        "syscall_start_ns": 1808835420473818,
+        "syscall_end_ns": 1808835421782358,
+        "native_start_ns": 1808835420478330,
+        "native_end_ns": 1808835421775840,
+        "native_wall_ns": 1297510,
+        "native_cpu_ns": 1262597,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4512,
+        "native_post_ns": 6518
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 26,
+        "bytes": 2097152,
+        "start_ns": 1808835423944600,
+        "done_ns": 1808835425335940,
+        "destination": 0,
+        "bind_ns": 18477,
+        "prepare_ns": 44169,
+        "delay_ns": 132,
+        "syscall_ns": 1391340,
+        "status_ns": 36845,
+        "prepare_start_ns": 1808835423892855,
+        "prepare_end_ns": 1808835423937024,
+        "delay_start_ns": 1808835423937723,
+        "delay_end_ns": 1808835423937855,
+        "syscall_start_ns": 1808835423944600,
+        "syscall_end_ns": 1808835425335940,
+        "native_start_ns": 1808835423949300,
+        "native_end_ns": 1808835425328045,
+        "native_wall_ns": 1378745,
+        "native_cpu_ns": 1352101,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4700,
+        "native_post_ns": 7895
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 28,
+        "bytes": 16384,
+        "start_ns": 1808835425913452,
+        "done_ns": 1808835425982029,
+        "destination": 0,
+        "bind_ns": 14266,
+        "prepare_ns": 47906,
+        "delay_ns": 300,
+        "syscall_ns": 68577,
+        "status_ns": 2924,
+        "prepare_start_ns": 1808835425857795,
+        "prepare_end_ns": 1808835425905701,
+        "delay_start_ns": 1808835425906026,
+        "delay_end_ns": 1808835425906326,
+        "syscall_start_ns": 1808835425913452,
+        "syscall_end_ns": 1808835425982029,
+        "native_start_ns": 1808835425919372,
+        "native_end_ns": 1808835425980631,
+        "native_wall_ns": 61259,
+        "native_cpu_ns": 36162,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5920,
+        "native_post_ns": 1398
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 29,
+        "bytes": 16384,
+        "start_ns": 1808835426116417,
+        "done_ns": 1808835426170689,
+        "destination": 0,
+        "bind_ns": 8139,
+        "prepare_ns": 15850,
+        "delay_ns": 308,
+        "syscall_ns": 54272,
+        "status_ns": 2461,
+        "prepare_start_ns": 1808835426096511,
+        "prepare_end_ns": 1808835426112361,
+        "delay_start_ns": 1808835426112896,
+        "delay_end_ns": 1808835426113204,
+        "syscall_start_ns": 1808835426116417,
+        "syscall_end_ns": 1808835426170689,
+        "native_start_ns": 1808835426119307,
+        "native_end_ns": 1808835426169168,
+        "native_wall_ns": 49861,
+        "native_cpu_ns": 28973,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2890,
+        "native_post_ns": 1521
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 23,
+        "bytes": 8388608,
+        "start_ns": 1808835426890630,
+        "done_ns": 1808835432219933,
+        "destination": 0,
+        "bind_ns": 7305,
+        "prepare_ns": 18626,
+        "delay_ns": 290,
+        "syscall_ns": 5329303,
+        "status_ns": 130205,
+        "prepare_start_ns": 1808835426869405,
+        "prepare_end_ns": 1808835426888031,
+        "delay_start_ns": 1808835426888244,
+        "delay_end_ns": 1808835426888534,
+        "syscall_start_ns": 1808835426890630,
+        "syscall_end_ns": 1808835432219933,
+        "native_start_ns": 1808835426893890,
+        "native_end_ns": 1808835432214774,
+        "native_wall_ns": 5320884,
+        "native_cpu_ns": 5302492,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 3260,
+        "native_post_ns": 5159
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 22,
+        "bytes": 8388608,
+        "start_ns": 1808835435602154,
+        "done_ns": 1808835440872041,
+        "destination": 0,
+        "bind_ns": 10679,
+        "prepare_ns": 49649,
+        "delay_ns": 138,
+        "syscall_ns": 5269887,
+        "status_ns": 151097,
+        "prepare_start_ns": 1808835435546229,
+        "prepare_end_ns": 1808835435595878,
+        "delay_start_ns": 1808835435596097,
+        "delay_end_ns": 1808835435596235,
+        "syscall_start_ns": 1808835435602154,
+        "syscall_end_ns": 1808835440872041,
+        "native_start_ns": 1808835435607014,
+        "native_end_ns": 1808835440866768,
+        "native_wall_ns": 5259754,
+        "native_cpu_ns": 5230076,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4860,
+        "native_post_ns": 5273
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 20,
+        "bytes": 2097152,
+        "start_ns": 1808835444042705,
+        "done_ns": 1808835445469227,
+        "destination": 0,
+        "bind_ns": 13431,
+        "prepare_ns": 41534,
+        "delay_ns": 130,
+        "syscall_ns": 1426522,
+        "status_ns": 34901,
+        "prepare_start_ns": 1808835443995831,
+        "prepare_end_ns": 1808835444037365,
+        "delay_start_ns": 1808835444037624,
+        "delay_end_ns": 1808835444037754,
+        "syscall_start_ns": 1808835444042705,
+        "syscall_end_ns": 1808835445469227,
+        "native_start_ns": 1808835444046981,
+        "native_end_ns": 1808835445462240,
+        "native_wall_ns": 1415259,
+        "native_cpu_ns": 1387981,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4276,
+        "native_post_ns": 6987
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 16,
+        "bytes": 2097152,
+        "start_ns": 1808835447858327,
+        "done_ns": 1808835449251299,
+        "destination": 0,
+        "bind_ns": 11023,
+        "prepare_ns": 42624,
+        "delay_ns": 247,
+        "syscall_ns": 1392972,
+        "status_ns": 41892,
+        "prepare_start_ns": 1808835447809896,
+        "prepare_end_ns": 1808835447852520,
+        "delay_start_ns": 1808835447852738,
+        "delay_end_ns": 1808835447852985,
+        "syscall_start_ns": 1808835447858327,
+        "syscall_end_ns": 1808835449251299,
+        "native_start_ns": 1808835447863103,
+        "native_end_ns": 1808835449244323,
+        "native_wall_ns": 1381220,
+        "native_cpu_ns": 1353318,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4776,
+        "native_post_ns": 6976
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 18,
+        "bytes": 16384,
+        "start_ns": 1808835449830879,
+        "done_ns": 1808835449887219,
+        "destination": 0,
+        "bind_ns": 17793,
+        "prepare_ns": 35690,
+        "delay_ns": 319,
+        "syscall_ns": 56340,
+        "status_ns": 2441,
+        "prepare_start_ns": 1808835449789444,
+        "prepare_end_ns": 1808835449825134,
+        "delay_start_ns": 1808835449825484,
+        "delay_end_ns": 1808835449825803,
+        "syscall_start_ns": 1808835449830879,
+        "syscall_end_ns": 1808835449887219,
+        "native_start_ns": 1808835449834604,
+        "native_end_ns": 1808835449885795,
+        "native_wall_ns": 51191,
+        "native_cpu_ns": 29471,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3725,
+        "native_post_ns": 1424
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 19,
+        "bytes": 16384,
+        "start_ns": 1808835450014758,
+        "done_ns": 1808835450068597,
+        "destination": 0,
+        "bind_ns": 10941,
+        "prepare_ns": 18411,
+        "delay_ns": 250,
+        "syscall_ns": 53839,
+        "status_ns": 2484,
+        "prepare_start_ns": 1808835449993502,
+        "prepare_end_ns": 1808835450011913,
+        "delay_start_ns": 1808835450012223,
+        "delay_end_ns": 1808835450012473,
+        "syscall_start_ns": 1808835450014758,
+        "syscall_end_ns": 1808835450068597,
+        "native_start_ns": 1808835450016874,
+        "native_end_ns": 1808835450067095,
+        "native_wall_ns": 50221,
+        "native_cpu_ns": 25369,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2116,
+        "native_post_ns": 1502
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 13,
+        "bytes": 2097152,
+        "start_ns": 1808835450779629,
+        "done_ns": 1808835452193519,
+        "destination": 0,
+        "bind_ns": 8546,
+        "prepare_ns": 14202,
+        "delay_ns": 118,
+        "syscall_ns": 1413890,
+        "status_ns": 36838,
+        "prepare_start_ns": 1808835450762780,
+        "prepare_end_ns": 1808835450776982,
+        "delay_start_ns": 1808835450777298,
+        "delay_end_ns": 1808835450777416,
+        "syscall_start_ns": 1808835450779629,
+        "syscall_end_ns": 1808835452193519,
+        "native_start_ns": 1808835450782318,
+        "native_end_ns": 1808835452186729,
+        "native_wall_ns": 1404411,
+        "native_cpu_ns": 1351894,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2689,
+        "native_post_ns": 6790
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 11,
+        "bytes": 2097152,
+        "start_ns": 1808835453613146,
+        "done_ns": 1808835454951967,
+        "destination": 0,
+        "bind_ns": 9527,
+        "prepare_ns": 32910,
+        "delay_ns": 128,
+        "syscall_ns": 1338821,
+        "status_ns": 34757,
+        "prepare_start_ns": 1808835453575324,
+        "prepare_end_ns": 1808835453608234,
+        "delay_start_ns": 1808835453608465,
+        "delay_end_ns": 1808835453608593,
+        "syscall_start_ns": 1808835453613146,
+        "syscall_end_ns": 1808835454951967,
+        "native_start_ns": 1808835453616663,
+        "native_end_ns": 1808835454944911,
+        "native_wall_ns": 1328248,
+        "native_cpu_ns": 1307991,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 3517,
+        "native_post_ns": 7056
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 10,
+        "bytes": 33554432,
+        "start_ns": 1808835462212179,
+        "done_ns": 1808835481856820,
+        "destination": 0,
+        "bind_ns": 10578,
+        "prepare_ns": 64457,
+        "delay_ns": 142,
+        "syscall_ns": 19644641,
+        "status_ns": 520747,
+        "prepare_start_ns": 1808835462140989,
+        "prepare_end_ns": 1808835462205446,
+        "delay_start_ns": 1808835462205653,
+        "delay_end_ns": 1808835462205795,
+        "syscall_start_ns": 1808835462212179,
+        "syscall_end_ns": 1808835481856820,
+        "native_start_ns": 1808835462216475,
+        "native_end_ns": 1808835481849422,
+        "native_wall_ns": 19632947,
+        "native_cpu_ns": 19607220,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4296,
+        "native_post_ns": 7398
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 8,
+        "bytes": 2097152,
+        "start_ns": 1808835495240899,
+        "done_ns": 1808835497200456,
+        "destination": 0,
+        "bind_ns": 25581,
+        "prepare_ns": 104981,
+        "delay_ns": 129,
+        "syscall_ns": 1959557,
+        "status_ns": 37508,
+        "prepare_start_ns": 1808835495127816,
+        "prepare_end_ns": 1808835495232797,
+        "delay_start_ns": 1808835495233369,
+        "delay_end_ns": 1808835495233498,
+        "syscall_start_ns": 1808835495240899,
+        "syscall_end_ns": 1808835497200456,
+        "native_start_ns": 1808835495247749,
+        "native_end_ns": 1808835497194764,
+        "native_wall_ns": 1947015,
+        "native_cpu_ns": 1220387,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 6850,
+        "native_post_ns": 5692
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 9,
+        "bytes": 2097152,
+        "start_ns": 1808835497692571,
+        "done_ns": 1808835498927892,
+        "destination": 0,
+        "bind_ns": 12749,
+        "prepare_ns": 39389,
+        "delay_ns": 246,
+        "syscall_ns": 1235321,
+        "status_ns": 39315,
+        "prepare_start_ns": 1808835497646846,
+        "prepare_end_ns": 1808835497686235,
+        "delay_start_ns": 1808835497686653,
+        "delay_end_ns": 1808835497686899,
+        "syscall_start_ns": 1808835497692571,
+        "syscall_end_ns": 1808835498927892,
+        "native_start_ns": 1808835497696764,
+        "native_end_ns": 1808835498921160,
+        "native_wall_ns": 1224396,
+        "native_cpu_ns": 1214306,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4193,
+        "native_post_ns": 6732
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 6,
+        "bytes": 2097152,
+        "start_ns": 1808835503447113,
+        "done_ns": 1808835504747055,
+        "destination": 0,
+        "bind_ns": 10254,
+        "prepare_ns": 41632,
+        "delay_ns": 140,
+        "syscall_ns": 1299942,
+        "status_ns": 35395,
+        "prepare_start_ns": 1808835503399152,
+        "prepare_end_ns": 1808835503440784,
+        "delay_start_ns": 1808835503441005,
+        "delay_end_ns": 1808835503441145,
+        "syscall_start_ns": 1808835503447113,
+        "syscall_end_ns": 1808835504747055,
+        "native_start_ns": 1808835503451182,
+        "native_end_ns": 1808835504740379,
+        "native_wall_ns": 1289197,
+        "native_cpu_ns": 1256174,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4069,
+        "native_post_ns": 6676
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 2,
+        "bytes": 2097152,
+        "start_ns": 1808835506982373,
+        "done_ns": 1808835508587891,
+        "destination": 0,
+        "bind_ns": 10199,
+        "prepare_ns": 45156,
+        "delay_ns": 136,
+        "syscall_ns": 1605518,
+        "status_ns": 41882,
+        "prepare_start_ns": 1808835506931010,
+        "prepare_end_ns": 1808835506976166,
+        "delay_start_ns": 1808835506976367,
+        "delay_end_ns": 1808835506976503,
+        "syscall_start_ns": 1808835506982373,
+        "syscall_end_ns": 1808835508587891,
+        "native_start_ns": 1808835506986607,
+        "native_end_ns": 1808835508579796,
+        "native_wall_ns": 1593189,
+        "native_cpu_ns": 1543913,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4234,
+        "native_post_ns": 8095
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 4,
+        "bytes": 16384,
+        "start_ns": 1808835509149460,
+        "done_ns": 1808835509243189,
+        "destination": 0,
+        "bind_ns": 13108,
+        "prepare_ns": 35589,
+        "delay_ns": 268,
+        "syscall_ns": 93729,
+        "status_ns": 3042,
+        "prepare_start_ns": 1808835509108484,
+        "prepare_end_ns": 1808835509144073,
+        "delay_start_ns": 1808835509144375,
+        "delay_end_ns": 1808835509144643,
+        "syscall_start_ns": 1808835509149460,
+        "syscall_end_ns": 1808835509243189,
+        "native_start_ns": 1808835509152772,
+        "native_end_ns": 1808835509241544,
+        "native_wall_ns": 88772,
+        "native_cpu_ns": 47086,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3312,
+        "native_post_ns": 1645
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 5,
+        "bytes": 16384,
+        "start_ns": 1808835509368977,
+        "done_ns": 1808835509442435,
+        "destination": 0,
+        "bind_ns": 7173,
+        "prepare_ns": 13642,
+        "delay_ns": 294,
+        "syscall_ns": 73458,
+        "status_ns": 1979,
+        "prepare_start_ns": 1808835509352582,
+        "prepare_end_ns": 1808835509366224,
+        "delay_start_ns": 1808835509366536,
+        "delay_end_ns": 1808835509366830,
+        "syscall_start_ns": 1808835509368977,
+        "syscall_end_ns": 1808835509442435,
+        "native_start_ns": 1808835509371566,
+        "native_end_ns": 1808835509440923,
+        "native_wall_ns": 69357,
+        "native_cpu_ns": 31701,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 2589,
+        "native_post_ns": 1512
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 1808835328454936,
+            "event": "reserve",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835334231769,
+            "event": "release",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835334273273,
+            "event": "reserve",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835339944395,
+            "event": "release",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835340018479,
+            "event": "reserve",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835342422835,
+            "event": "reserve",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835342725795,
+            "event": "reserve",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835343562279,
+            "event": "release",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835343576287,
+            "event": "release",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835343586275,
+            "event": "release",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835343627140,
+            "event": "reserve",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835355647208,
+            "event": "release",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835355704846,
+            "event": "reserve",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835364153809,
+            "event": "release",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835364190691,
+            "event": "reserve",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835367969344,
+            "event": "release",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835368042789,
+            "event": "reserve",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835370748502,
+            "event": "reserve",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835370976034,
+            "event": "reserve",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835371527925,
+            "event": "release",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835371541241,
+            "event": "release",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835371551265,
+            "event": "release",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835371712377,
+            "event": "reserve",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835374270401,
+            "event": "release",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835374451796,
+            "event": "reserve",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835381030615,
+            "event": "release",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835381983029,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808835409251787,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835412535866,
+            "event": "reserve",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835414534764,
+            "event": "reserve",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808835419072904,
+            "event": "release",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835419202277,
+            "event": "release",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835420350587,
+            "event": "reserve",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835423742700,
+            "event": "release",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835423828806,
+            "event": "reserve",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835425808271,
+            "event": "reserve",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835426059060,
+            "event": "reserve",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835426629448,
+            "event": "release",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835426689380,
+            "event": "release",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835426698002,
+            "event": "release",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835426827000,
+            "event": "reserve",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835435433920,
+            "event": "release",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835435486879,
+            "event": "reserve",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835443909177,
+            "event": "release",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835443940859,
+            "event": "reserve",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835447652772,
+            "event": "release",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835447718713,
+            "event": "reserve",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835449733245,
+            "event": "reserve",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835449952840,
+            "event": "reserve",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835450551423,
+            "event": "release",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835450570073,
+            "event": "release",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835450578573,
+            "event": "release",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835450716236,
+            "event": "reserve",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835453369000,
+            "event": "release",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835453527497,
+            "event": "reserve",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835460377187,
+            "event": "release",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835462069042,
+            "event": "reserve",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808835491449988,
+            "event": "release",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835495042374,
+            "event": "reserve",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835497602874,
+            "event": "reserve",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808835502006991,
+            "event": "release",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835502118213,
+            "event": "release",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835503337244,
+            "event": "reserve",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835506779731,
+            "event": "release",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835506870686,
+            "event": "reserve",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835509063651,
+            "event": "reserve",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835509314860,
+            "event": "reserve",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835509797480,
+            "event": "release",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835509811813,
+            "event": "release",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835509822155,
+            "event": "release",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 2388936722792448
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 1,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 56,
+        "bytes": 2097152,
+        "start_ns": 1808835625720296,
+        "done_ns": 1808835628259381,
+        "destination": 0,
+        "bind_ns": 36625,
+        "prepare_ns": 95721,
+        "delay_ns": 467,
+        "syscall_ns": 2539085,
+        "status_ns": 176833,
+        "prepare_start_ns": 1808835625606401,
+        "prepare_end_ns": 1808835625702122,
+        "delay_start_ns": 1808835625703062,
+        "delay_end_ns": 1808835625703529,
+        "syscall_start_ns": 1808835625720296,
+        "syscall_end_ns": 1808835628259381,
+        "native_start_ns": 1808835625736442,
+        "native_end_ns": 1808835628249581,
+        "native_wall_ns": 2513139,
+        "native_cpu_ns": 2287084,
+        "native_voluntary": 2,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 16146,
+        "native_post_ns": 9800
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 54,
+        "bytes": 2097152,
+        "start_ns": 1808835629955958,
+        "done_ns": 1808835632270944,
+        "destination": 0,
+        "bind_ns": 25115,
+        "prepare_ns": 71660,
+        "delay_ns": 664,
+        "syscall_ns": 2314986,
+        "status_ns": 89265,
+        "prepare_start_ns": 1808835629870932,
+        "prepare_end_ns": 1808835629942592,
+        "delay_start_ns": 1808835629943512,
+        "delay_end_ns": 1808835629944176,
+        "syscall_start_ns": 1808835629955958,
+        "syscall_end_ns": 1808835632270944,
+        "native_start_ns": 1808835629966729,
+        "native_end_ns": 1808835632264904,
+        "native_wall_ns": 2298175,
+        "native_cpu_ns": 2264869,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 10771,
+        "native_post_ns": 6040
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 50,
+        "bytes": 2097152,
+        "start_ns": 1808835633778741,
+        "done_ns": 1808835635326045,
+        "destination": 0,
+        "bind_ns": 14415,
+        "prepare_ns": 44968,
+        "delay_ns": 306,
+        "syscall_ns": 1547304,
+        "status_ns": 56644,
+        "prepare_start_ns": 1808835633726004,
+        "prepare_end_ns": 1808835633770972,
+        "delay_start_ns": 1808835633771512,
+        "delay_end_ns": 1808835633771818,
+        "syscall_start_ns": 1808835633778741,
+        "syscall_end_ns": 1808835635326045,
+        "native_start_ns": 1808835633784783,
+        "native_end_ns": 1808835635320714,
+        "native_wall_ns": 1535931,
+        "native_cpu_ns": 1511283,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 6042,
+        "native_post_ns": 5331
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 52,
+        "bytes": 16384,
+        "start_ns": 1808835635941998,
+        "done_ns": 1808835636007187,
+        "destination": 0,
+        "bind_ns": 11809,
+        "prepare_ns": 40437,
+        "delay_ns": 276,
+        "syscall_ns": 65189,
+        "status_ns": 2740,
+        "prepare_start_ns": 1808835635894340,
+        "prepare_end_ns": 1808835635934777,
+        "delay_start_ns": 1808835635935262,
+        "delay_end_ns": 1808835635935538,
+        "syscall_start_ns": 1808835635941998,
+        "syscall_end_ns": 1808835636007187,
+        "native_start_ns": 1808835635947131,
+        "native_end_ns": 1808835636004895,
+        "native_wall_ns": 57764,
+        "native_cpu_ns": 35122,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5133,
+        "native_post_ns": 2292
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 53,
+        "bytes": 16384,
+        "start_ns": 1808835636128859,
+        "done_ns": 1808835636182167,
+        "destination": 0,
+        "bind_ns": 9142,
+        "prepare_ns": 17877,
+        "delay_ns": 284,
+        "syscall_ns": 53308,
+        "status_ns": 2855,
+        "prepare_start_ns": 1808835636106920,
+        "prepare_end_ns": 1808835636124797,
+        "delay_start_ns": 1808835636125177,
+        "delay_end_ns": 1808835636125461,
+        "syscall_start_ns": 1808835636128859,
+        "syscall_end_ns": 1808835636182167,
+        "native_start_ns": 1808835636132899,
+        "native_end_ns": 1808835636180028,
+        "native_wall_ns": 47129,
+        "native_cpu_ns": 25709,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4040,
+        "native_post_ns": 2139
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 47,
+        "bytes": 8388608,
+        "start_ns": 1808835636744602,
+        "done_ns": 1808835642161537,
+        "destination": 0,
+        "bind_ns": 10607,
+        "prepare_ns": 24051,
+        "delay_ns": 177,
+        "syscall_ns": 5416935,
+        "status_ns": 133644,
+        "prepare_start_ns": 1808835636717060,
+        "prepare_end_ns": 1808835636741111,
+        "delay_start_ns": 1808835636741398,
+        "delay_end_ns": 1808835636741575,
+        "syscall_start_ns": 1808835636744602,
+        "syscall_end_ns": 1808835642161537,
+        "native_start_ns": 1808835636748588,
+        "native_end_ns": 1808835642156023,
+        "native_wall_ns": 5407435,
+        "native_cpu_ns": 5388787,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 3986,
+        "native_post_ns": 5514
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 46,
+        "bytes": 8388608,
+        "start_ns": 1808835646759289,
+        "done_ns": 1808835652258230,
+        "destination": 0,
+        "bind_ns": 16315,
+        "prepare_ns": 46970,
+        "delay_ns": 140,
+        "syscall_ns": 5498941,
+        "status_ns": 139288,
+        "prepare_start_ns": 1808835646705763,
+        "prepare_end_ns": 1808835646752733,
+        "delay_start_ns": 1808835646752997,
+        "delay_end_ns": 1808835646753137,
+        "syscall_start_ns": 1808835646759289,
+        "syscall_end_ns": 1808835652258230,
+        "native_start_ns": 1808835646763771,
+        "native_end_ns": 1808835652252920,
+        "native_wall_ns": 5489149,
+        "native_cpu_ns": 5459897,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4482,
+        "native_post_ns": 5310
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 44,
+        "bytes": 2097152,
+        "start_ns": 1808835655950357,
+        "done_ns": 1808835657473927,
+        "destination": 0,
+        "bind_ns": 14426,
+        "prepare_ns": 42660,
+        "delay_ns": 130,
+        "syscall_ns": 1523570,
+        "status_ns": 39302,
+        "prepare_start_ns": 1808835655901104,
+        "prepare_end_ns": 1808835655943764,
+        "delay_start_ns": 1808835655944134,
+        "delay_end_ns": 1808835655944264,
+        "syscall_start_ns": 1808835655950357,
+        "syscall_end_ns": 1808835657473927,
+        "native_start_ns": 1808835655954550,
+        "native_end_ns": 1808835657466763,
+        "native_wall_ns": 1512213,
+        "native_cpu_ns": 1482386,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4193,
+        "native_post_ns": 7164
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 40,
+        "bytes": 2097152,
+        "start_ns": 1808835659852432,
+        "done_ns": 1808835661245014,
+        "destination": 0,
+        "bind_ns": 9732,
+        "prepare_ns": 40274,
+        "delay_ns": 173,
+        "syscall_ns": 1392582,
+        "status_ns": 36116,
+        "prepare_start_ns": 1808835659805902,
+        "prepare_end_ns": 1808835659846176,
+        "delay_start_ns": 1808835659846489,
+        "delay_end_ns": 1808835659846662,
+        "syscall_start_ns": 1808835659852432,
+        "syscall_end_ns": 1808835661245014,
+        "native_start_ns": 1808835659857996,
+        "native_end_ns": 1808835661238384,
+        "native_wall_ns": 1380388,
+        "native_cpu_ns": 1352190,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5564,
+        "native_post_ns": 6630
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 42,
+        "bytes": 16384,
+        "start_ns": 1808835661821345,
+        "done_ns": 1808835661875702,
+        "destination": 0,
+        "bind_ns": 16935,
+        "prepare_ns": 36846,
+        "delay_ns": 263,
+        "syscall_ns": 54357,
+        "status_ns": 2314,
+        "prepare_start_ns": 1808835661778826,
+        "prepare_end_ns": 1808835661815672,
+        "delay_start_ns": 1808835661815995,
+        "delay_end_ns": 1808835661816258,
+        "syscall_start_ns": 1808835661821345,
+        "syscall_end_ns": 1808835661875702,
+        "native_start_ns": 1808835661825144,
+        "native_end_ns": 1808835661874023,
+        "native_wall_ns": 48879,
+        "native_cpu_ns": 24674,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3799,
+        "native_post_ns": 1679
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 43,
+        "bytes": 16384,
+        "start_ns": 1808835661989742,
+        "done_ns": 1808835662036090,
+        "destination": 0,
+        "bind_ns": 7103,
+        "prepare_ns": 12146,
+        "delay_ns": 306,
+        "syscall_ns": 46348,
+        "status_ns": 1926,
+        "prepare_start_ns": 1808835661974942,
+        "prepare_end_ns": 1808835661987088,
+        "delay_start_ns": 1808835661987435,
+        "delay_end_ns": 1808835661987741,
+        "syscall_start_ns": 1808835661989742,
+        "syscall_end_ns": 1808835662036090,
+        "native_start_ns": 1808835661991715,
+        "native_end_ns": 1808835662034685,
+        "native_wall_ns": 42970,
+        "native_cpu_ns": 24011,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 1973,
+        "native_post_ns": 1405
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 37,
+        "bytes": 2097152,
+        "start_ns": 1808835662668995,
+        "done_ns": 1808835664019858,
+        "destination": 0,
+        "bind_ns": 7616,
+        "prepare_ns": 13189,
+        "delay_ns": 139,
+        "syscall_ns": 1350863,
+        "status_ns": 37237,
+        "prepare_start_ns": 1808835662652955,
+        "prepare_end_ns": 1808835662666144,
+        "delay_start_ns": 1808835662666318,
+        "delay_end_ns": 1808835662666457,
+        "syscall_start_ns": 1808835662668995,
+        "syscall_end_ns": 1808835664019858,
+        "native_start_ns": 1808835662671492,
+        "native_end_ns": 1808835664013848,
+        "native_wall_ns": 1342356,
+        "native_cpu_ns": 1323037,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2497,
+        "native_post_ns": 6010
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 35,
+        "bytes": 2097152,
+        "start_ns": 1808835665508912,
+        "done_ns": 1808835666844138,
+        "destination": 0,
+        "bind_ns": 11880,
+        "prepare_ns": 32986,
+        "delay_ns": 114,
+        "syscall_ns": 1335226,
+        "status_ns": 35474,
+        "prepare_start_ns": 1808835665471482,
+        "prepare_end_ns": 1808835665504468,
+        "delay_start_ns": 1808835665504678,
+        "delay_end_ns": 1808835665504792,
+        "syscall_start_ns": 1808835665508912,
+        "syscall_end_ns": 1808835666844138,
+        "native_start_ns": 1808835665512104,
+        "native_end_ns": 1808835666837666,
+        "native_wall_ns": 1325562,
+        "native_cpu_ns": 1305909,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3192,
+        "native_post_ns": 6472
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 1808835674302750,
+        "done_ns": 1808835693357565,
+        "destination": 0,
+        "bind_ns": 12573,
+        "prepare_ns": 121743,
+        "delay_ns": 144,
+        "syscall_ns": 19054815,
+        "status_ns": 528396,
+        "prepare_start_ns": 1808835674174194,
+        "prepare_end_ns": 1808835674295937,
+        "delay_start_ns": 1808835674296189,
+        "delay_end_ns": 1808835674296333,
+        "syscall_start_ns": 1808835674302750,
+        "syscall_end_ns": 1808835693357565,
+        "native_start_ns": 1808835674308009,
+        "native_end_ns": 1808835693352039,
+        "native_wall_ns": 19044030,
+        "native_cpu_ns": 19016313,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5259,
+        "native_post_ns": 5526
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 32,
+        "bytes": 2097152,
+        "start_ns": 1808835706479605,
+        "done_ns": 1808835707911305,
+        "destination": 0,
+        "bind_ns": 26614,
+        "prepare_ns": 113567,
+        "delay_ns": 127,
+        "syscall_ns": 1431700,
+        "status_ns": 38230,
+        "prepare_start_ns": 1808835706357361,
+        "prepare_end_ns": 1808835706470928,
+        "delay_start_ns": 1808835706471196,
+        "delay_end_ns": 1808835706471323,
+        "syscall_start_ns": 1808835706479605,
+        "syscall_end_ns": 1808835707911305,
+        "native_start_ns": 1808835706486960,
+        "native_end_ns": 1808835707906738,
+        "native_wall_ns": 1419778,
+        "native_cpu_ns": 1350513,
+        "native_voluntary": 2,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 7355,
+        "native_post_ns": 4567
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 33,
+        "bytes": 2097152,
+        "start_ns": 1808835708453350,
+        "done_ns": 1808835709631685,
+        "destination": 0,
+        "bind_ns": 11415,
+        "prepare_ns": 33640,
+        "delay_ns": 210,
+        "syscall_ns": 1178335,
+        "status_ns": 36645,
+        "prepare_start_ns": 1808835708414389,
+        "prepare_end_ns": 1808835708448029,
+        "delay_start_ns": 1808835708448407,
+        "delay_end_ns": 1808835708448617,
+        "syscall_start_ns": 1808835708453350,
+        "syscall_end_ns": 1808835709631685,
+        "native_start_ns": 1808835708456594,
+        "native_end_ns": 1808835709626980,
+        "native_wall_ns": 1170386,
+        "native_cpu_ns": 1134698,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3244,
+        "native_post_ns": 4705
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 30,
+        "bytes": 2097152,
+        "start_ns": 1808835713559790,
+        "done_ns": 1808835714804361,
+        "destination": 0,
+        "bind_ns": 13738,
+        "prepare_ns": 36861,
+        "delay_ns": 107,
+        "syscall_ns": 1244571,
+        "status_ns": 34299,
+        "prepare_start_ns": 1808835713518146,
+        "prepare_end_ns": 1808835713555007,
+        "delay_start_ns": 1808835713555212,
+        "delay_end_ns": 1808835713555319,
+        "syscall_start_ns": 1808835713559790,
+        "syscall_end_ns": 1808835714804361,
+        "native_start_ns": 1808835713563218,
+        "native_end_ns": 1808835714798797,
+        "native_wall_ns": 1235579,
+        "native_cpu_ns": 1208795,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 3428,
+        "native_post_ns": 5564
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 26,
+        "bytes": 2097152,
+        "start_ns": 1808835717027296,
+        "done_ns": 1808835718383324,
+        "destination": 0,
+        "bind_ns": 12293,
+        "prepare_ns": 41682,
+        "delay_ns": 142,
+        "syscall_ns": 1356028,
+        "status_ns": 35625,
+        "prepare_start_ns": 1808835716980070,
+        "prepare_end_ns": 1808835717021752,
+        "delay_start_ns": 1808835717021963,
+        "delay_end_ns": 1808835717022105,
+        "syscall_start_ns": 1808835717027296,
+        "syscall_end_ns": 1808835718383324,
+        "native_start_ns": 1808835717030585,
+        "native_end_ns": 1808835718376687,
+        "native_wall_ns": 1346102,
+        "native_cpu_ns": 1321849,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3289,
+        "native_post_ns": 6637
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 28,
+        "bytes": 16384,
+        "start_ns": 1808835718959304,
+        "done_ns": 1808835719026150,
+        "destination": 0,
+        "bind_ns": 14593,
+        "prepare_ns": 43705,
+        "delay_ns": 285,
+        "syscall_ns": 66846,
+        "status_ns": 2458,
+        "prepare_start_ns": 1808835718909308,
+        "prepare_end_ns": 1808835718953013,
+        "delay_start_ns": 1808835718953341,
+        "delay_end_ns": 1808835718953626,
+        "syscall_start_ns": 1808835718959304,
+        "syscall_end_ns": 1808835719026150,
+        "native_start_ns": 1808835718963899,
+        "native_end_ns": 1808835719024600,
+        "native_wall_ns": 60701,
+        "native_cpu_ns": 40291,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4595,
+        "native_post_ns": 1550
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 29,
+        "bytes": 16384,
+        "start_ns": 1808835719145744,
+        "done_ns": 1808835719196264,
+        "destination": 0,
+        "bind_ns": 6597,
+        "prepare_ns": 14259,
+        "delay_ns": 261,
+        "syscall_ns": 50520,
+        "status_ns": 2035,
+        "prepare_start_ns": 1808835719128463,
+        "prepare_end_ns": 1808835719142722,
+        "delay_start_ns": 1808835719143035,
+        "delay_end_ns": 1808835719143296,
+        "syscall_start_ns": 1808835719145744,
+        "syscall_end_ns": 1808835719196264,
+        "native_start_ns": 1808835719147749,
+        "native_end_ns": 1808835719194720,
+        "native_wall_ns": 46971,
+        "native_cpu_ns": 28603,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2005,
+        "native_post_ns": 1544
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 23,
+        "bytes": 8388608,
+        "start_ns": 1808835719870236,
+        "done_ns": 1808835725298574,
+        "destination": 0,
+        "bind_ns": 5800,
+        "prepare_ns": 17799,
+        "delay_ns": 285,
+        "syscall_ns": 5428338,
+        "status_ns": 132585,
+        "prepare_start_ns": 1808835719849462,
+        "prepare_end_ns": 1808835719867261,
+        "delay_start_ns": 1808835719867727,
+        "delay_end_ns": 1808835719868012,
+        "syscall_start_ns": 1808835719870236,
+        "syscall_end_ns": 1808835725298574,
+        "native_start_ns": 1808835719872897,
+        "native_end_ns": 1808835725293274,
+        "native_wall_ns": 5420377,
+        "native_cpu_ns": 5404822,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 2661,
+        "native_post_ns": 5300
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 22,
+        "bytes": 8388608,
+        "start_ns": 1808835728845540,
+        "done_ns": 1808835734146525,
+        "destination": 0,
+        "bind_ns": 10905,
+        "prepare_ns": 42776,
+        "delay_ns": 134,
+        "syscall_ns": 5300985,
+        "status_ns": 128179,
+        "prepare_start_ns": 1808835728797456,
+        "prepare_end_ns": 1808835728840232,
+        "delay_start_ns": 1808835728840546,
+        "delay_end_ns": 1808835728840680,
+        "syscall_start_ns": 1808835728845540,
+        "syscall_end_ns": 1808835734146525,
+        "native_start_ns": 1808835728850050,
+        "native_end_ns": 1808835734141563,
+        "native_wall_ns": 5291513,
+        "native_cpu_ns": 5263684,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 4510,
+        "native_post_ns": 4962
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 20,
+        "bytes": 2097152,
+        "start_ns": 1808835737453624,
+        "done_ns": 1808835738933818,
+        "destination": 0,
+        "bind_ns": 12572,
+        "prepare_ns": 32381,
+        "delay_ns": 122,
+        "syscall_ns": 1480194,
+        "status_ns": 34844,
+        "prepare_start_ns": 1808835737416925,
+        "prepare_end_ns": 1808835737449306,
+        "delay_start_ns": 1808835737449556,
+        "delay_end_ns": 1808835737449678,
+        "syscall_start_ns": 1808835737453624,
+        "syscall_end_ns": 1808835738933818,
+        "native_start_ns": 1808835737456688,
+        "native_end_ns": 1808835738927551,
+        "native_wall_ns": 1470863,
+        "native_cpu_ns": 1448933,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3064,
+        "native_post_ns": 6267
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 16,
+        "bytes": 2097152,
+        "start_ns": 1808835741340721,
+        "done_ns": 1808835742691305,
+        "destination": 0,
+        "bind_ns": 10152,
+        "prepare_ns": 37434,
+        "delay_ns": 129,
+        "syscall_ns": 1350584,
+        "status_ns": 35679,
+        "prepare_start_ns": 1808835741298351,
+        "prepare_end_ns": 1808835741335785,
+        "delay_start_ns": 1808835741336101,
+        "delay_end_ns": 1808835741336230,
+        "syscall_start_ns": 1808835741340721,
+        "syscall_end_ns": 1808835742691305,
+        "native_start_ns": 1808835741344101,
+        "native_end_ns": 1808835742685280,
+        "native_wall_ns": 1341179,
+        "native_cpu_ns": 1318350,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3380,
+        "native_post_ns": 6025
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 18,
+        "bytes": 16384,
+        "start_ns": 1808835743268027,
+        "done_ns": 1808835743323727,
+        "destination": 0,
+        "bind_ns": 17920,
+        "prepare_ns": 31721,
+        "delay_ns": 302,
+        "syscall_ns": 55700,
+        "status_ns": 2312,
+        "prepare_start_ns": 1808835743230915,
+        "prepare_end_ns": 1808835743262636,
+        "delay_start_ns": 1808835743262958,
+        "delay_end_ns": 1808835743263260,
+        "syscall_start_ns": 1808835743268027,
+        "syscall_end_ns": 1808835743323727,
+        "native_start_ns": 1808835743271497,
+        "native_end_ns": 1808835743322200,
+        "native_wall_ns": 50703,
+        "native_cpu_ns": 29251,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3470,
+        "native_post_ns": 1527
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 19,
+        "bytes": 16384,
+        "start_ns": 1808835743455394,
+        "done_ns": 1808835743498106,
+        "destination": 0,
+        "bind_ns": 11844,
+        "prepare_ns": 13634,
+        "delay_ns": 279,
+        "syscall_ns": 42712,
+        "status_ns": 1945,
+        "prepare_start_ns": 1808835743438680,
+        "prepare_end_ns": 1808835743452314,
+        "delay_start_ns": 1808835743452627,
+        "delay_end_ns": 1808835743452906,
+        "syscall_start_ns": 1808835743455394,
+        "syscall_end_ns": 1808835743498106,
+        "native_start_ns": 1808835743457748,
+        "native_end_ns": 1808835743496617,
+        "native_wall_ns": 38869,
+        "native_cpu_ns": 23371,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2354,
+        "native_post_ns": 1489
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 13,
+        "bytes": 2097152,
+        "start_ns": 1808835744149687,
+        "done_ns": 1808835745504528,
+        "destination": 0,
+        "bind_ns": 7570,
+        "prepare_ns": 13404,
+        "delay_ns": 294,
+        "syscall_ns": 1354841,
+        "status_ns": 35881,
+        "prepare_start_ns": 1808835744133682,
+        "prepare_end_ns": 1808835744147086,
+        "delay_start_ns": 1808835744147276,
+        "delay_end_ns": 1808835744147570,
+        "syscall_start_ns": 1808835744149687,
+        "syscall_end_ns": 1808835745504528,
+        "native_start_ns": 1808835744152069,
+        "native_end_ns": 1808835745497696,
+        "native_wall_ns": 1345627,
+        "native_cpu_ns": 1328356,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2382,
+        "native_post_ns": 6832
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 11,
+        "bytes": 2097152,
+        "start_ns": 1808835746954289,
+        "done_ns": 1808835748305541,
+        "destination": 0,
+        "bind_ns": 12553,
+        "prepare_ns": 32080,
+        "delay_ns": 130,
+        "syscall_ns": 1351252,
+        "status_ns": 34861,
+        "prepare_start_ns": 1808835746917242,
+        "prepare_end_ns": 1808835746949322,
+        "delay_start_ns": 1808835746949554,
+        "delay_end_ns": 1808835746949684,
+        "syscall_start_ns": 1808835746954289,
+        "syscall_end_ns": 1808835748305541,
+        "native_start_ns": 1808835746957069,
+        "native_end_ns": 1808835748299172,
+        "native_wall_ns": 1342103,
+        "native_cpu_ns": 1322633,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2780,
+        "native_post_ns": 6369
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 10,
+        "bytes": 33554432,
+        "start_ns": 1808835755222050,
+        "done_ns": 1808835775035406,
+        "destination": 0,
+        "bind_ns": 10418,
+        "prepare_ns": 58497,
+        "delay_ns": 135,
+        "syscall_ns": 19813356,
+        "status_ns": 518630,
+        "prepare_start_ns": 1808835755158193,
+        "prepare_end_ns": 1808835755216690,
+        "delay_start_ns": 1808835755216920,
+        "delay_end_ns": 1808835755217055,
+        "syscall_start_ns": 1808835755222050,
+        "syscall_end_ns": 1808835775035406,
+        "native_start_ns": 1808835755226273,
+        "native_end_ns": 1808835775029924,
+        "native_wall_ns": 19803651,
+        "native_cpu_ns": 19775528,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4223,
+        "native_post_ns": 5482
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 8,
+        "bytes": 2097152,
+        "start_ns": 1808835788844986,
+        "done_ns": 1808835790114463,
+        "destination": 0,
+        "bind_ns": 27273,
+        "prepare_ns": 92758,
+        "delay_ns": 138,
+        "syscall_ns": 1269477,
+        "status_ns": 36727,
+        "prepare_start_ns": 1808835788744402,
+        "prepare_end_ns": 1808835788837160,
+        "delay_start_ns": 1808835788837737,
+        "delay_end_ns": 1808835788837875,
+        "syscall_start_ns": 1808835788844986,
+        "syscall_end_ns": 1808835790114463,
+        "native_start_ns": 1808835788850449,
+        "native_end_ns": 1808835790109005,
+        "native_wall_ns": 1258556,
+        "native_cpu_ns": 1211590,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 5463,
+        "native_post_ns": 5458
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 9,
+        "bytes": 2097152,
+        "start_ns": 1808835790634016,
+        "done_ns": 1808835791943058,
+        "destination": 0,
+        "bind_ns": 15963,
+        "prepare_ns": 38315,
+        "delay_ns": 267,
+        "syscall_ns": 1309042,
+        "status_ns": 34217,
+        "prepare_start_ns": 1808835790589197,
+        "prepare_end_ns": 1808835790627512,
+        "delay_start_ns": 1808835790627958,
+        "delay_end_ns": 1808835790628225,
+        "syscall_start_ns": 1808835790634016,
+        "syscall_end_ns": 1808835791943058,
+        "native_start_ns": 1808835790637934,
+        "native_end_ns": 1808835791936812,
+        "native_wall_ns": 1298878,
+        "native_cpu_ns": 1240248,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3918,
+        "native_post_ns": 6246
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 6,
+        "bytes": 2097152,
+        "start_ns": 1808835796470322,
+        "done_ns": 1808835797855637,
+        "destination": 0,
+        "bind_ns": 15318,
+        "prepare_ns": 48968,
+        "delay_ns": 287,
+        "syscall_ns": 1385315,
+        "status_ns": 35492,
+        "prepare_start_ns": 1808835796415505,
+        "prepare_end_ns": 1808835796464473,
+        "delay_start_ns": 1808835796464733,
+        "delay_end_ns": 1808835796465020,
+        "syscall_start_ns": 1808835796470322,
+        "syscall_end_ns": 1808835797855637,
+        "native_start_ns": 1808835796474550,
+        "native_end_ns": 1808835797849576,
+        "native_wall_ns": 1375026,
+        "native_cpu_ns": 1342377,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4228,
+        "native_post_ns": 6061
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 2,
+        "bytes": 2097152,
+        "start_ns": 1808835800087627,
+        "done_ns": 1808835801622920,
+        "destination": 0,
+        "bind_ns": 9976,
+        "prepare_ns": 49769,
+        "delay_ns": 273,
+        "syscall_ns": 1535293,
+        "status_ns": 37562,
+        "prepare_start_ns": 1808835800032009,
+        "prepare_end_ns": 1808835800081778,
+        "delay_start_ns": 1808835800082056,
+        "delay_end_ns": 1808835800082329,
+        "syscall_start_ns": 1808835800087627,
+        "syscall_end_ns": 1808835801622920,
+        "native_start_ns": 1808835800091069,
+        "native_end_ns": 1808835801616114,
+        "native_wall_ns": 1525045,
+        "native_cpu_ns": 1501403,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3442,
+        "native_post_ns": 6806
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 4,
+        "bytes": 16384,
+        "start_ns": 1808835802209229,
+        "done_ns": 1808835802274921,
+        "destination": 0,
+        "bind_ns": 14009,
+        "prepare_ns": 45305,
+        "delay_ns": 302,
+        "syscall_ns": 65692,
+        "status_ns": 3059,
+        "prepare_start_ns": 1808835802156966,
+        "prepare_end_ns": 1808835802202271,
+        "delay_start_ns": 1808835802202777,
+        "delay_end_ns": 1808835802203079,
+        "syscall_start_ns": 1808835802209229,
+        "syscall_end_ns": 1808835802274921,
+        "native_start_ns": 1808835802214117,
+        "native_end_ns": 1808835802273579,
+        "native_wall_ns": 59462,
+        "native_cpu_ns": 32098,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 4888,
+        "native_post_ns": 1342
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 5,
+        "bytes": 16384,
+        "start_ns": 1808835802402078,
+        "done_ns": 1808835802448089,
+        "destination": 0,
+        "bind_ns": 8939,
+        "prepare_ns": 13352,
+        "delay_ns": 283,
+        "syscall_ns": 46011,
+        "status_ns": 2257,
+        "prepare_start_ns": 1808835802385239,
+        "prepare_end_ns": 1808835802398591,
+        "delay_start_ns": 1808835802398920,
+        "delay_end_ns": 1808835802399203,
+        "syscall_start_ns": 1808835802402078,
+        "syscall_end_ns": 1808835802448089,
+        "native_start_ns": 1808835802405234,
+        "native_end_ns": 1808835802446739,
+        "native_wall_ns": 41505,
+        "native_cpu_ns": 24255,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3156,
+        "native_post_ns": 1350
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 1808835625471194,
+            "event": "reserve",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835629769447,
+            "event": "release",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835629800429,
+            "event": "reserve",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835633617759,
+            "event": "release",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835633674212,
+            "event": "reserve",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835635852669,
+            "event": "reserve",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835636073142,
+            "event": "reserve",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835636621908,
+            "event": "release",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835636634292,
+            "event": "release",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835636642345,
+            "event": "release",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835636677739,
+            "event": "reserve",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835646559275,
+            "event": "release",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835646618252,
+            "event": "reserve",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835655794919,
+            "event": "release",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835655832275,
+            "event": "reserve",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835659679240,
+            "event": "release",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835659743338,
+            "event": "reserve",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835661727051,
+            "event": "reserve",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835661940730,
+            "event": "reserve",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835662440014,
+            "event": "release",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835662453701,
+            "event": "release",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835662461716,
+            "event": "release",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835662612101,
+            "event": "reserve",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835665244936,
+            "event": "release",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835665419055,
+            "event": "reserve",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835672232143,
+            "event": "release",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835674106419,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808835702898253,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835706279336,
+            "event": "reserve",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835708376592,
+            "event": "reserve",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808835712644834,
+            "event": "release",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835712715414,
+            "event": "release",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835713450664,
+            "event": "reserve",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835716832550,
+            "event": "release",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835716919487,
+            "event": "reserve",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835718860566,
+            "event": "reserve",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835719095866,
+            "event": "reserve",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835719666239,
+            "event": "release",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835719681205,
+            "event": "release",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835719690835,
+            "event": "release",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835719810963,
+            "event": "reserve",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835728683262,
+            "event": "release",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835728738370,
+            "event": "reserve",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835737327928,
+            "event": "release",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835737361860,
+            "event": "reserve",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835741168781,
+            "event": "release",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835741239293,
+            "event": "reserve",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835743175330,
+            "event": "reserve",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835743397304,
+            "event": "reserve",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835743921874,
+            "event": "release",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835743939592,
+            "event": "release",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835743949389,
+            "event": "release",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835744092008,
+            "event": "reserve",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835746669558,
+            "event": "release",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835746866237,
+            "event": "reserve",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835753541473,
+            "event": "release",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835755102064,
+            "event": "reserve",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808835784922714,
+            "event": "release",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835788667185,
+            "event": "reserve",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835790542865,
+            "event": "reserve",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808835795418301,
+            "event": "release",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835795486001,
+            "event": "release",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835796338947,
+            "event": "reserve",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835799873955,
+            "event": "release",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835799964174,
+            "event": "reserve",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835802108668,
+            "event": "reserve",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835802348651,
+            "event": "reserve",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835802842952,
+            "event": "release",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835802856368,
+            "event": "release",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835802866483,
+            "event": "release",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 2436193618444288
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 2,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 56,
+        "bytes": 2097152,
+        "start_ns": 1808835916646209,
+        "done_ns": 1808835919258330,
+        "destination": 0,
+        "bind_ns": 35211,
+        "prepare_ns": 85920,
+        "delay_ns": 458,
+        "syscall_ns": 2612121,
+        "status_ns": 153931,
+        "prepare_start_ns": 1808835916543954,
+        "prepare_end_ns": 1808835916629874,
+        "delay_start_ns": 1808835916630811,
+        "delay_end_ns": 1808835916631269,
+        "syscall_start_ns": 1808835916646209,
+        "syscall_end_ns": 1808835919258330,
+        "native_start_ns": 1808835916661700,
+        "native_end_ns": 1808835919248924,
+        "native_wall_ns": 2587224,
+        "native_cpu_ns": 2269915,
+        "native_voluntary": 2,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 15491,
+        "native_post_ns": 9406
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 54,
+        "bytes": 2097152,
+        "start_ns": 1808835920943340,
+        "done_ns": 1808835923178085,
+        "destination": 0,
+        "bind_ns": 23517,
+        "prepare_ns": 73007,
+        "delay_ns": 542,
+        "syscall_ns": 2234745,
+        "status_ns": 134990,
+        "prepare_start_ns": 1808835920857891,
+        "prepare_end_ns": 1808835920930898,
+        "delay_start_ns": 1808835920931971,
+        "delay_end_ns": 1808835920932513,
+        "syscall_start_ns": 1808835920943340,
+        "syscall_end_ns": 1808835923178085,
+        "native_start_ns": 1808835920953838,
+        "native_end_ns": 1808835923168900,
+        "native_wall_ns": 2215062,
+        "native_cpu_ns": 2185381,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 10498,
+        "native_post_ns": 9185
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 50,
+        "bytes": 2097152,
+        "start_ns": 1808835925029882,
+        "done_ns": 1808835926580455,
+        "destination": 0,
+        "bind_ns": 16327,
+        "prepare_ns": 49848,
+        "delay_ns": 337,
+        "syscall_ns": 1550573,
+        "status_ns": 79028,
+        "prepare_start_ns": 1808835924971684,
+        "prepare_end_ns": 1808835925021532,
+        "delay_start_ns": 1808835925022002,
+        "delay_end_ns": 1808835925022339,
+        "syscall_start_ns": 1808835925029882,
+        "syscall_end_ns": 1808835926580455,
+        "native_start_ns": 1808835925035879,
+        "native_end_ns": 1808835926573661,
+        "native_wall_ns": 1537782,
+        "native_cpu_ns": 1515649,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5997,
+        "native_post_ns": 6794
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 52,
+        "bytes": 16384,
+        "start_ns": 1808835927358715,
+        "done_ns": 1808835927425901,
+        "destination": 0,
+        "bind_ns": 14513,
+        "prepare_ns": 51456,
+        "delay_ns": 361,
+        "syscall_ns": 67186,
+        "status_ns": 4853,
+        "prepare_start_ns": 1808835927297955,
+        "prepare_end_ns": 1808835927349411,
+        "delay_start_ns": 1808835927349901,
+        "delay_end_ns": 1808835927350262,
+        "syscall_start_ns": 1808835927358715,
+        "syscall_end_ns": 1808835927425901,
+        "native_start_ns": 1808835927366003,
+        "native_end_ns": 1808835927423031,
+        "native_wall_ns": 57028,
+        "native_cpu_ns": 33988,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 7288,
+        "native_post_ns": 2870
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 53,
+        "bytes": 16384,
+        "start_ns": 1808835927557917,
+        "done_ns": 1808835927600050,
+        "destination": 0,
+        "bind_ns": 8665,
+        "prepare_ns": 16726,
+        "delay_ns": 280,
+        "syscall_ns": 42133,
+        "status_ns": 2344,
+        "prepare_start_ns": 1808835927537750,
+        "prepare_end_ns": 1808835927554476,
+        "delay_start_ns": 1808835927554914,
+        "delay_end_ns": 1808835927555194,
+        "syscall_start_ns": 1808835927557917,
+        "syscall_end_ns": 1808835927600050,
+        "native_start_ns": 1808835927561406,
+        "native_end_ns": 1808835927598136,
+        "native_wall_ns": 36730,
+        "native_cpu_ns": 22522,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3489,
+        "native_post_ns": 1914
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 47,
+        "bytes": 8388608,
+        "start_ns": 1808835928172019,
+        "done_ns": 1808835933411688,
+        "destination": 0,
+        "bind_ns": 9994,
+        "prepare_ns": 22308,
+        "delay_ns": 305,
+        "syscall_ns": 5239669,
+        "status_ns": 132425,
+        "prepare_start_ns": 1808835928146231,
+        "prepare_end_ns": 1808835928168539,
+        "delay_start_ns": 1808835928168897,
+        "delay_end_ns": 1808835928169202,
+        "syscall_start_ns": 1808835928172019,
+        "syscall_end_ns": 1808835933411688,
+        "native_start_ns": 1808835928175330,
+        "native_end_ns": 1808835933405827,
+        "native_wall_ns": 5230497,
+        "native_cpu_ns": 5211745,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 3311,
+        "native_post_ns": 5861
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 46,
+        "bytes": 8388608,
+        "start_ns": 1808835936777651,
+        "done_ns": 1808835941951384,
+        "destination": 0,
+        "bind_ns": 14214,
+        "prepare_ns": 47201,
+        "delay_ns": 128,
+        "syscall_ns": 5173733,
+        "status_ns": 136912,
+        "prepare_start_ns": 1808835936723240,
+        "prepare_end_ns": 1808835936770441,
+        "delay_start_ns": 1808835936770673,
+        "delay_end_ns": 1808835936770801,
+        "syscall_start_ns": 1808835936777651,
+        "syscall_end_ns": 1808835941951384,
+        "native_start_ns": 1808835936782669,
+        "native_end_ns": 1808835941945514,
+        "native_wall_ns": 5162845,
+        "native_cpu_ns": 5129935,
+        "native_voluntary": 1,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 5018,
+        "native_post_ns": 5870
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 44,
+        "bytes": 2097152,
+        "start_ns": 1808835945021434,
+        "done_ns": 1808835946528380,
+        "destination": 0,
+        "bind_ns": 12063,
+        "prepare_ns": 40006,
+        "delay_ns": 117,
+        "syscall_ns": 1506946,
+        "status_ns": 37234,
+        "prepare_start_ns": 1808835944975407,
+        "prepare_end_ns": 1808835945015413,
+        "delay_start_ns": 1808835945015702,
+        "delay_end_ns": 1808835945015819,
+        "syscall_start_ns": 1808835945021434,
+        "syscall_end_ns": 1808835946528380,
+        "native_start_ns": 1808835945025894,
+        "native_end_ns": 1808835946521235,
+        "native_wall_ns": 1495341,
+        "native_cpu_ns": 1434159,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4460,
+        "native_post_ns": 7145
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 40,
+        "bytes": 2097152,
+        "start_ns": 1808835949896389,
+        "done_ns": 1808835951285268,
+        "destination": 0,
+        "bind_ns": 10554,
+        "prepare_ns": 40472,
+        "delay_ns": 215,
+        "syscall_ns": 1388879,
+        "status_ns": 39567,
+        "prepare_start_ns": 1808835949849578,
+        "prepare_end_ns": 1808835949890050,
+        "delay_start_ns": 1808835949890252,
+        "delay_end_ns": 1808835949890467,
+        "syscall_start_ns": 1808835949896389,
+        "syscall_end_ns": 1808835951285268,
+        "native_start_ns": 1808835949900607,
+        "native_end_ns": 1808835951278986,
+        "native_wall_ns": 1378379,
+        "native_cpu_ns": 1350131,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4218,
+        "native_post_ns": 6282
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 42,
+        "bytes": 16384,
+        "start_ns": 1808835951804020,
+        "done_ns": 1808835951863864,
+        "destination": 0,
+        "bind_ns": 18876,
+        "prepare_ns": 42378,
+        "delay_ns": 276,
+        "syscall_ns": 59844,
+        "status_ns": 2857,
+        "prepare_start_ns": 1808835951754249,
+        "prepare_end_ns": 1808835951796627,
+        "delay_start_ns": 1808835951796956,
+        "delay_end_ns": 1808835951797232,
+        "syscall_start_ns": 1808835951804020,
+        "syscall_end_ns": 1808835951863864,
+        "native_start_ns": 1808835951808580,
+        "native_end_ns": 1808835951862202,
+        "native_wall_ns": 53622,
+        "native_cpu_ns": 29244,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4560,
+        "native_post_ns": 1662
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 43,
+        "bytes": 16384,
+        "start_ns": 1808835951983138,
+        "done_ns": 1808835952036664,
+        "destination": 0,
+        "bind_ns": 9187,
+        "prepare_ns": 14100,
+        "delay_ns": 301,
+        "syscall_ns": 53526,
+        "status_ns": 2705,
+        "prepare_start_ns": 1808835951965635,
+        "prepare_end_ns": 1808835951979735,
+        "delay_start_ns": 1808835951980094,
+        "delay_end_ns": 1808835951980395,
+        "syscall_start_ns": 1808835951983138,
+        "syscall_end_ns": 1808835952036664,
+        "native_start_ns": 1808835951985908,
+        "native_end_ns": 1808835952035168,
+        "native_wall_ns": 49260,
+        "native_cpu_ns": 27083,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2770,
+        "native_post_ns": 1496
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 37,
+        "bytes": 2097152,
+        "start_ns": 1808835952753435,
+        "done_ns": 1808835954078392,
+        "destination": 0,
+        "bind_ns": 8518,
+        "prepare_ns": 13603,
+        "delay_ns": 264,
+        "syscall_ns": 1324957,
+        "status_ns": 36937,
+        "prepare_start_ns": 1808835952736817,
+        "prepare_end_ns": 1808835952750420,
+        "delay_start_ns": 1808835952750730,
+        "delay_end_ns": 1808835952750994,
+        "syscall_start_ns": 1808835952753435,
+        "syscall_end_ns": 1808835954078392,
+        "native_start_ns": 1808835952756100,
+        "native_end_ns": 1808835954071820,
+        "native_wall_ns": 1315720,
+        "native_cpu_ns": 1300469,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2665,
+        "native_post_ns": 6572
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 35,
+        "bytes": 2097152,
+        "start_ns": 1808835955671868,
+        "done_ns": 1808835957062009,
+        "destination": 0,
+        "bind_ns": 12602,
+        "prepare_ns": 37078,
+        "delay_ns": 128,
+        "syscall_ns": 1390141,
+        "status_ns": 39905,
+        "prepare_start_ns": 1808835955629163,
+        "prepare_end_ns": 1808835955666241,
+        "delay_start_ns": 1808835955666477,
+        "delay_end_ns": 1808835955666605,
+        "syscall_start_ns": 1808835955671868,
+        "syscall_end_ns": 1808835957062009,
+        "native_start_ns": 1808835955675464,
+        "native_end_ns": 1808835957055300,
+        "native_wall_ns": 1379836,
+        "native_cpu_ns": 1354855,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3596,
+        "native_post_ns": 6709
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 1808835963950478,
+        "done_ns": 1808835983196949,
+        "destination": 0,
+        "bind_ns": 11625,
+        "prepare_ns": 114581,
+        "delay_ns": 262,
+        "syscall_ns": 19246471,
+        "status_ns": 538846,
+        "prepare_start_ns": 1808835963829836,
+        "prepare_end_ns": 1808835963944417,
+        "delay_start_ns": 1808835963944611,
+        "delay_end_ns": 1808835963944873,
+        "syscall_start_ns": 1808835963950478,
+        "syscall_end_ns": 1808835983196949,
+        "native_start_ns": 1808835963955485,
+        "native_end_ns": 1808835983191265,
+        "native_wall_ns": 19235780,
+        "native_cpu_ns": 19208712,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5007,
+        "native_post_ns": 5684
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 32,
+        "bytes": 2097152,
+        "start_ns": 1808835996583934,
+        "done_ns": 1808835998042001,
+        "destination": 0,
+        "bind_ns": 25719,
+        "prepare_ns": 110963,
+        "delay_ns": 139,
+        "syscall_ns": 1458067,
+        "status_ns": 38078,
+        "prepare_start_ns": 1808835996464553,
+        "prepare_end_ns": 1808835996575516,
+        "delay_start_ns": 1808835996575786,
+        "delay_end_ns": 1808835996575925,
+        "syscall_start_ns": 1808835996583934,
+        "syscall_end_ns": 1808835998042001,
+        "native_start_ns": 1808835996591355,
+        "native_end_ns": 1808835998037497,
+        "native_wall_ns": 1446142,
+        "native_cpu_ns": 1399287,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 7421,
+        "native_post_ns": 4504
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 33,
+        "bytes": 2097152,
+        "start_ns": 1808835998601410,
+        "done_ns": 1808835999791928,
+        "destination": 0,
+        "bind_ns": 13433,
+        "prepare_ns": 33629,
+        "delay_ns": 234,
+        "syscall_ns": 1190518,
+        "status_ns": 36462,
+        "prepare_start_ns": 1808835998562080,
+        "prepare_end_ns": 1808835998595709,
+        "delay_start_ns": 1808835998596032,
+        "delay_end_ns": 1808835998596266,
+        "syscall_start_ns": 1808835998601410,
+        "syscall_end_ns": 1808835999791928,
+        "native_start_ns": 1808835998604526,
+        "native_end_ns": 1808835999786846,
+        "native_wall_ns": 1182320,
+        "native_cpu_ns": 1168390,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3116,
+        "native_post_ns": 5082
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 30,
+        "bytes": 2097152,
+        "start_ns": 1808836004778474,
+        "done_ns": 1808836006147466,
+        "destination": 0,
+        "bind_ns": 18881,
+        "prepare_ns": 57461,
+        "delay_ns": 137,
+        "syscall_ns": 1368992,
+        "status_ns": 35942,
+        "prepare_start_ns": 1808836004713299,
+        "prepare_end_ns": 1808836004770760,
+        "delay_start_ns": 1808836004771050,
+        "delay_end_ns": 1808836004771187,
+        "syscall_start_ns": 1808836004778474,
+        "syscall_end_ns": 1808836006147466,
+        "native_start_ns": 1808836004784157,
+        "native_end_ns": 1808836006141425,
+        "native_wall_ns": 1357268,
+        "native_cpu_ns": 1317842,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5683,
+        "native_post_ns": 6041
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 26,
+        "bytes": 2097152,
+        "start_ns": 1808836008556548,
+        "done_ns": 1808836010006828,
+        "destination": 0,
+        "bind_ns": 18766,
+        "prepare_ns": 50371,
+        "delay_ns": 127,
+        "syscall_ns": 1450280,
+        "status_ns": 39810,
+        "prepare_start_ns": 1808836008497968,
+        "prepare_end_ns": 1808836008548339,
+        "delay_start_ns": 1808836008548735,
+        "delay_end_ns": 1808836008548862,
+        "syscall_start_ns": 1808836008556548,
+        "syscall_end_ns": 1808836010006828,
+        "native_start_ns": 1808836008561901,
+        "native_end_ns": 1808836009993940,
+        "native_wall_ns": 1432039,
+        "native_cpu_ns": 1404648,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5353,
+        "native_post_ns": 12888
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 28,
+        "bytes": 16384,
+        "start_ns": 1808836010599644,
+        "done_ns": 1808836010663468,
+        "destination": 0,
+        "bind_ns": 13277,
+        "prepare_ns": 41175,
+        "delay_ns": 267,
+        "syscall_ns": 63824,
+        "status_ns": 2466,
+        "prepare_start_ns": 1808836010551051,
+        "prepare_end_ns": 1808836010592226,
+        "delay_start_ns": 1808836010592587,
+        "delay_end_ns": 1808836010592854,
+        "syscall_start_ns": 1808836010599644,
+        "syscall_end_ns": 1808836010663468,
+        "native_start_ns": 1808836010604366,
+        "native_end_ns": 1808836010661928,
+        "native_wall_ns": 57562,
+        "native_cpu_ns": 30755,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4722,
+        "native_post_ns": 1540
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 29,
+        "bytes": 16384,
+        "start_ns": 1808836010784897,
+        "done_ns": 1808836010833291,
+        "destination": 0,
+        "bind_ns": 8278,
+        "prepare_ns": 13795,
+        "delay_ns": 277,
+        "syscall_ns": 48394,
+        "status_ns": 2095,
+        "prepare_start_ns": 1808836010767442,
+        "prepare_end_ns": 1808836010781237,
+        "delay_start_ns": 1808836010781670,
+        "delay_end_ns": 1808836010781947,
+        "syscall_start_ns": 1808836010784897,
+        "syscall_end_ns": 1808836010833291,
+        "native_start_ns": 1808836010787315,
+        "native_end_ns": 1808836010831930,
+        "native_wall_ns": 44615,
+        "native_cpu_ns": 28497,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2418,
+        "native_post_ns": 1361
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 23,
+        "bytes": 8388608,
+        "start_ns": 1808836011513213,
+        "done_ns": 1808836016938128,
+        "destination": 0,
+        "bind_ns": 6355,
+        "prepare_ns": 18586,
+        "delay_ns": 293,
+        "syscall_ns": 5424915,
+        "status_ns": 134895,
+        "prepare_start_ns": 1808836011491472,
+        "prepare_end_ns": 1808836011510058,
+        "delay_start_ns": 1808836011510421,
+        "delay_end_ns": 1808836011510714,
+        "syscall_start_ns": 1808836011513213,
+        "syscall_end_ns": 1808836016938128,
+        "native_start_ns": 1808836011515844,
+        "native_end_ns": 1808836016932127,
+        "native_wall_ns": 5416283,
+        "native_cpu_ns": 5390384,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2631,
+        "native_post_ns": 6001
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 22,
+        "bytes": 8388608,
+        "start_ns": 1808836021097178,
+        "done_ns": 1808836026526953,
+        "destination": 0,
+        "bind_ns": 9958,
+        "prepare_ns": 42285,
+        "delay_ns": 138,
+        "syscall_ns": 5429775,
+        "status_ns": 133435,
+        "prepare_start_ns": 1808836021048885,
+        "prepare_end_ns": 1808836021091170,
+        "delay_start_ns": 1808836021091460,
+        "delay_end_ns": 1808836021091598,
+        "syscall_start_ns": 1808836021097178,
+        "syscall_end_ns": 1808836026526953,
+        "native_start_ns": 1808836021100938,
+        "native_end_ns": 1808836026521756,
+        "native_wall_ns": 5420818,
+        "native_cpu_ns": 5395599,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3760,
+        "native_post_ns": 5197
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "0": 2048
+        }
+      },
+      {
+        "event": "migration",
+        "id": 20,
+        "bytes": 2097152,
+        "start_ns": 1808836029910707,
+        "done_ns": 1808836031334136,
+        "destination": 0,
+        "bind_ns": 12298,
+        "prepare_ns": 41403,
+        "delay_ns": 127,
+        "syscall_ns": 1423429,
+        "status_ns": 40371,
+        "prepare_start_ns": 1808836029863386,
+        "prepare_end_ns": 1808836029904789,
+        "delay_start_ns": 1808836029905100,
+        "delay_end_ns": 1808836029905227,
+        "syscall_start_ns": 1808836029910707,
+        "syscall_end_ns": 1808836031334136,
+        "native_start_ns": 1808836029914822,
+        "native_end_ns": 1808836031327456,
+        "native_wall_ns": 1412634,
+        "native_cpu_ns": 1384357,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4115,
+        "native_post_ns": 6680
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 16,
+        "bytes": 2097152,
+        "start_ns": 1808836034620439,
+        "done_ns": 1808836036018891,
+        "destination": 0,
+        "bind_ns": 12906,
+        "prepare_ns": 48206,
+        "delay_ns": 139,
+        "syscall_ns": 1398452,
+        "status_ns": 37017,
+        "prepare_start_ns": 1808836034566049,
+        "prepare_end_ns": 1808836034614255,
+        "delay_start_ns": 1808836034614516,
+        "delay_end_ns": 1808836034614655,
+        "syscall_start_ns": 1808836034620439,
+        "syscall_end_ns": 1808836036018891,
+        "native_start_ns": 1808836034625792,
+        "native_end_ns": 1808836036012829,
+        "native_wall_ns": 1387037,
+        "native_cpu_ns": 1356711,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5353,
+        "native_post_ns": 6062
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 18,
+        "bytes": 16384,
+        "start_ns": 1808836036606655,
+        "done_ns": 1808836036667113,
+        "destination": 0,
+        "bind_ns": 20029,
+        "prepare_ns": 43069,
+        "delay_ns": 265,
+        "syscall_ns": 60458,
+        "status_ns": 2379,
+        "prepare_start_ns": 1808836036557059,
+        "prepare_end_ns": 1808836036600128,
+        "delay_start_ns": 1808836036600517,
+        "delay_end_ns": 1808836036600782,
+        "syscall_start_ns": 1808836036606655,
+        "syscall_end_ns": 1808836036667113,
+        "native_start_ns": 1808836036612178,
+        "native_end_ns": 1808836036665613,
+        "native_wall_ns": 53435,
+        "native_cpu_ns": 28487,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5523,
+        "native_post_ns": 1500
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 19,
+        "bytes": 16384,
+        "start_ns": 1808836036798318,
+        "done_ns": 1808836036846021,
+        "destination": 0,
+        "bind_ns": 14538,
+        "prepare_ns": 18994,
+        "delay_ns": 288,
+        "syscall_ns": 47703,
+        "status_ns": 2031,
+        "prepare_start_ns": 1808836036775949,
+        "prepare_end_ns": 1808836036794943,
+        "delay_start_ns": 1808836036795247,
+        "delay_end_ns": 1808836036795535,
+        "syscall_start_ns": 1808836036798318,
+        "syscall_end_ns": 1808836036846021,
+        "native_start_ns": 1808836036800600,
+        "native_end_ns": 1808836036844627,
+        "native_wall_ns": 44027,
+        "native_cpu_ns": 27264,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2282,
+        "native_post_ns": 1394
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 13,
+        "bytes": 2097152,
+        "start_ns": 1808836037515434,
+        "done_ns": 1808836038859785,
+        "destination": 0,
+        "bind_ns": 9420,
+        "prepare_ns": 14736,
+        "delay_ns": 329,
+        "syscall_ns": 1344351,
+        "status_ns": 36199,
+        "prepare_start_ns": 1808836037497909,
+        "prepare_end_ns": 1808836037512645,
+        "delay_start_ns": 1808836037512840,
+        "delay_end_ns": 1808836037513169,
+        "syscall_start_ns": 1808836037515434,
+        "syscall_end_ns": 1808836038859785,
+        "native_start_ns": 1808836037518225,
+        "native_end_ns": 1808836038852932,
+        "native_wall_ns": 1334707,
+        "native_cpu_ns": 1318070,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 2791,
+        "native_post_ns": 6853
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 11,
+        "bytes": 2097152,
+        "start_ns": 1808836040316421,
+        "done_ns": 1808836041869132,
+        "destination": 0,
+        "bind_ns": 12237,
+        "prepare_ns": 39101,
+        "delay_ns": 194,
+        "syscall_ns": 1552711,
+        "status_ns": 38419,
+        "prepare_start_ns": 1808836040271618,
+        "prepare_end_ns": 1808836040310719,
+        "delay_start_ns": 1808836040310978,
+        "delay_end_ns": 1808836040311172,
+        "syscall_start_ns": 1808836040316421,
+        "syscall_end_ns": 1808836041869132,
+        "native_start_ns": 1808836040320028,
+        "native_end_ns": 1808836041862922,
+        "native_wall_ns": 1542894,
+        "native_cpu_ns": 1517417,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3607,
+        "native_post_ns": 6210
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 10,
+        "bytes": 33554432,
+        "start_ns": 1808836049202284,
+        "done_ns": 1808836068957571,
+        "destination": 0,
+        "bind_ns": 11976,
+        "prepare_ns": 63448,
+        "delay_ns": 134,
+        "syscall_ns": 19755287,
+        "status_ns": 522916,
+        "prepare_start_ns": 1808836049132878,
+        "prepare_end_ns": 1808836049196326,
+        "delay_start_ns": 1808836049196531,
+        "delay_end_ns": 1808836049196665,
+        "syscall_start_ns": 1808836049202284,
+        "syscall_end_ns": 1808836068957571,
+        "native_start_ns": 1808836049207829,
+        "native_end_ns": 1808836068953474,
+        "native_wall_ns": 19745645,
+        "native_cpu_ns": 19717755,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 5545,
+        "native_post_ns": 4097
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "migration",
+        "id": 8,
+        "bytes": 2097152,
+        "start_ns": 1808836082523123,
+        "done_ns": 1808836083784599,
+        "destination": 0,
+        "bind_ns": 21960,
+        "prepare_ns": 95153,
+        "delay_ns": 133,
+        "syscall_ns": 1261476,
+        "status_ns": 39751,
+        "prepare_start_ns": 1808836082418860,
+        "prepare_end_ns": 1808836082514013,
+        "delay_start_ns": 1808836082514294,
+        "delay_end_ns": 1808836082514427,
+        "syscall_start_ns": 1808836082523123,
+        "syscall_end_ns": 1808836083784599,
+        "native_start_ns": 1808836082529350,
+        "native_end_ns": 1808836083779581,
+        "native_wall_ns": 1250231,
+        "native_cpu_ns": 1205708,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 103,
+        "native_pre_ns": 6227,
+        "native_post_ns": 5018
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 9,
+        "bytes": 2097152,
+        "start_ns": 1808836084334053,
+        "done_ns": 1808836085529836,
+        "destination": 0,
+        "bind_ns": 14244,
+        "prepare_ns": 40110,
+        "delay_ns": 223,
+        "syscall_ns": 1195783,
+        "status_ns": 36528,
+        "prepare_start_ns": 1808836084288170,
+        "prepare_end_ns": 1808836084328280,
+        "delay_start_ns": 1808836084328560,
+        "delay_end_ns": 1808836084328783,
+        "syscall_start_ns": 1808836084334053,
+        "syscall_end_ns": 1808836085529836,
+        "native_start_ns": 1808836084338930,
+        "native_end_ns": 1808836085525253,
+        "native_wall_ns": 1186323,
+        "native_cpu_ns": 1170134,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4877,
+        "native_post_ns": 4583
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 6,
+        "bytes": 2097152,
+        "start_ns": 1808836090070254,
+        "done_ns": 1808836091372477,
+        "destination": 0,
+        "bind_ns": 17632,
+        "prepare_ns": 47146,
+        "delay_ns": 123,
+        "syscall_ns": 1302223,
+        "status_ns": 34627,
+        "prepare_start_ns": 1808836090017274,
+        "prepare_end_ns": 1808836090064420,
+        "delay_start_ns": 1808836090064698,
+        "delay_end_ns": 1808836090064821,
+        "syscall_start_ns": 1808836090070254,
+        "syscall_end_ns": 1808836091372477,
+        "native_start_ns": 1808836090074339,
+        "native_end_ns": 1808836091366530,
+        "native_wall_ns": 1292191,
+        "native_cpu_ns": 1260571,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4085,
+        "native_post_ns": 5947
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 2,
+        "bytes": 2097152,
+        "start_ns": 1808836093618315,
+        "done_ns": 1808836095186164,
+        "destination": 0,
+        "bind_ns": 9262,
+        "prepare_ns": 46181,
+        "delay_ns": 226,
+        "syscall_ns": 1567849,
+        "status_ns": 35386,
+        "prepare_start_ns": 1808836093565864,
+        "prepare_end_ns": 1808836093612045,
+        "delay_start_ns": 1808836093612318,
+        "delay_end_ns": 1808836093612544,
+        "syscall_start_ns": 1808836093618315,
+        "syscall_end_ns": 1808836095186164,
+        "native_start_ns": 1808836093622437,
+        "native_end_ns": 1808836095178631,
+        "native_wall_ns": 1556194,
+        "native_cpu_ns": 1529698,
+        "native_voluntary": 0,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 4122,
+        "native_post_ns": 7533
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "0": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 4,
+        "bytes": 16384,
+        "start_ns": 1808836095759218,
+        "done_ns": 1808836095855502,
+        "destination": 0,
+        "bind_ns": 12210,
+        "prepare_ns": 39531,
+        "delay_ns": 281,
+        "syscall_ns": 96284,
+        "status_ns": 3023,
+        "prepare_start_ns": 1808836095713114,
+        "prepare_end_ns": 1808836095752645,
+        "delay_start_ns": 1808836095752990,
+        "delay_end_ns": 1808836095753271,
+        "syscall_start_ns": 1808836095759218,
+        "syscall_end_ns": 1808836095855502,
+        "native_start_ns": 1808836095763018,
+        "native_end_ns": 1808836095853861,
+        "native_wall_ns": 90843,
+        "native_cpu_ns": 36952,
+        "native_voluntary": 1,
+        "native_involuntary": 1,
+        "native_tid": 103,
+        "native_pre_ns": 3800,
+        "native_post_ns": 1641
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "migration",
+        "id": 5,
+        "bytes": 16384,
+        "start_ns": 1808836095986154,
+        "done_ns": 1808836096043978,
+        "destination": 0,
+        "bind_ns": 7987,
+        "prepare_ns": 14558,
+        "delay_ns": 299,
+        "syscall_ns": 57824,
+        "status_ns": 2402,
+        "prepare_start_ns": 1808836095967821,
+        "prepare_end_ns": 1808836095982379,
+        "delay_start_ns": 1808836095982894,
+        "delay_end_ns": 1808836095983193,
+        "syscall_start_ns": 1808836095986154,
+        "syscall_end_ns": 1808836096043978,
+        "native_start_ns": 1808836095988604,
+        "native_end_ns": 1808836096042463,
+        "native_wall_ns": 53859,
+        "native_cpu_ns": 28373,
+        "native_voluntary": 1,
+        "native_involuntary": 0,
+        "native_tid": 103,
+        "native_pre_ns": 2450,
+        "native_post_ns": 1515
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "0": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 1808835916409538,
+            "event": "reserve",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835920755959,
+            "event": "release",
+            "id": 56,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835920787733,
+            "event": "reserve",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835924845563,
+            "event": "release",
+            "id": 54,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835924902346,
+            "event": "reserve",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835927251599,
+            "event": "reserve",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835927501857,
+            "event": "reserve",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835928044653,
+            "event": "release",
+            "id": 50,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835928058239,
+            "event": "release",
+            "id": 52,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835928067192,
+            "event": "release",
+            "id": 53,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835928106071,
+            "event": "reserve",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835936597553,
+            "event": "release",
+            "id": 47,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835936653307,
+            "event": "reserve",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808835944887526,
+            "event": "release",
+            "id": 46,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835944919504,
+            "event": "reserve",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835949732270,
+            "event": "release",
+            "id": 44,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835949791922,
+            "event": "reserve",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835951701421,
+            "event": "reserve",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808835951927703,
+            "event": "reserve",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808835952528268,
+            "event": "release",
+            "id": 40,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808835952541039,
+            "event": "release",
+            "id": 42,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808835952549757,
+            "event": "release",
+            "id": 43,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835952695420,
+            "event": "reserve",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835955372402,
+            "event": "release",
+            "id": 37,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835955573219,
+            "event": "reserve",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835962261513,
+            "event": "release",
+            "id": 35,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835963746199,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808835992822040,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808835996384534,
+            "event": "reserve",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808835998520019,
+            "event": "reserve",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808836003383494,
+            "event": "release",
+            "id": 32,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836003471059,
+            "event": "release",
+            "id": 33,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836004631267,
+            "event": "reserve",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836008334837,
+            "event": "release",
+            "id": 30,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836008426900,
+            "event": "reserve",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836010505233,
+            "event": "reserve",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808836010728849,
+            "event": "reserve",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808836011294620,
+            "event": "release",
+            "id": 26,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808836011309305,
+            "event": "release",
+            "id": 28,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808836011318580,
+            "event": "release",
+            "id": 29,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836011447785,
+            "event": "reserve",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808836020917845,
+            "event": "release",
+            "id": 23,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836020973689,
+            "event": "reserve",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 8388608
+          },
+          {
+            "time_ns": 1808836029769630,
+            "event": "release",
+            "id": 22,
+            "bytes": 8388608,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836029805863,
+            "event": "reserve",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836034430925,
+            "event": "release",
+            "id": 20,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836034504648,
+            "event": "reserve",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836036505658,
+            "event": "reserve",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808836036735405,
+            "event": "reserve",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808836037287494,
+            "event": "release",
+            "id": 16,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808836037303828,
+            "event": "release",
+            "id": 18,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808836037313354,
+            "event": "release",
+            "id": 19,
+            "bytes": 16384,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836037455738,
+            "event": "reserve",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836040030933,
+            "event": "release",
+            "id": 13,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836040218990,
+            "event": "reserve",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836047250548,
+            "event": "release",
+            "id": 11,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836049046296,
+            "event": "reserve",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 1808836078601018,
+            "event": "release",
+            "id": 10,
+            "bytes": 33554432,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836082347067,
+            "event": "reserve",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836084243916,
+            "event": "reserve",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 4194304
+          },
+          {
+            "time_ns": 1808836088603347,
+            "event": "release",
+            "id": 8,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836088705774,
+            "event": "release",
+            "id": 9,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836089948881,
+            "event": "reserve",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836093417495,
+            "event": "release",
+            "id": 6,
+            "bytes": 2097152,
+            "live_bytes": 0
+          },
+          {
+            "time_ns": 1808836093506988,
+            "event": "reserve",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 2097152
+          },
+          {
+            "time_ns": 1808836095666998,
+            "event": "reserve",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 2113536
+          },
+          {
+            "time_ns": 1808836095930956,
+            "event": "reserve",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 2129920
+          },
+          {
+            "time_ns": 1808836096482057,
+            "event": "release",
+            "id": 2,
+            "bytes": 2097152,
+            "live_bytes": 32768
+          },
+          {
+            "time_ns": 1808836096499180,
+            "event": "release",
+            "id": 4,
+            "bytes": 16384,
+            "live_bytes": 16384
+          },
+          {
+            "time_ns": 1808836096510216,
+            "event": "release",
+            "id": 5,
+            "bytes": 16384,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 2431164012347392
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  }
+]

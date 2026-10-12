@@ -1,10 +1,29 @@
-# 新会话接力说明（2026-10-09）
+# 新会话接力说明（2026-10-12）
+
+## 当前断点：容量与对象选择阶段完成
+
+先读 [CAPACITY_PILOT_REPORT.md](CAPACITY_PILOT_REPORT.md)。10-09 容量矩阵的
+15 个进程早已完成，本次未重复，追加分析使用 verified-analysis-1012-v2/。
+10-12 新增固定 32 MiB 下 Direct/pack10/pack34/demand10/demand34 五组诊断和
+15 个计时进程，全部结束；原始数据 capacity-selection-{diagnostic,timing}-1012-v1。
+两个矩阵分别统计，每进程 5 预热+100 正式，未修改内核或 sysctl。
+
+新矩阵 Direct/pack10/pack34 为 88.090/89.624/87.864 ms，初始放置差区间均跨零；
+demand10/34 为 118.501/117.736 ms，分别慢 30.412/29.646 ms，区间均高于零。
+初始放置 ID10 的租约积分为 ID34 的 2.739 倍；这不证明 ID34 应优先，访问收益
+仍不确定。额度覆盖全部合格 saved 副本而非参数/输入/梯度；不是整进程 DRAM 限额。
+新阶段代码、报告、README 和轻量证据随“完成有限DRAM容量与对象选择阶段实验”
+提交归档；提交号和远程同步状态以 git log / git status 为准。完整原始 results 保留本机。
+
+下一步测实际 backward 使用的访问收益和占用，不重复当前同步迁移参数实验。
+尚无“应迁移”的正收益边界，不推进复杂 ML；继续明确不迁移、静态放置、同步需求
+迁移与真正异步预取之间的差异。没有运行中矩阵或权限阻塞。
 
 
 ## 最新断点：两项收敛实验及分段确认已完成
 
 先读 [CLOSURE_REPORT_1009.md](CLOSURE_REPORT_1009.md)，不要重复下面历史段落的待办。
-最新结果已归档在 evidence/closure-1009/；尚未提交/推送，git 状态中的新增代码和证据均需保留。
+该轮结果已归档在 evidence/closure-1009/，已通过 aa65ee8、0c687fe 提交并推送 research/main。后续未提交文件请按 git 状态保留。
 
 - 早期 10-08 alloc-pressure v1–v3 和 target-placement 旧结果不公平，已明确撤回，见归档 invalid-prior-runs.json；旧 verified-analysis 名称不代表仍可用。
 - 压力 2×2 的严格版已完成。10-08 v4 不能完全排除尾部测试启动重叠；10-09 v5 串行重跑 12 个进程并通过审计，是主要证据。

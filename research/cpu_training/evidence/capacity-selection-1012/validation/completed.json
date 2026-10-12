@@ -1,0 +1,30 @@
+{
+  "tests": 38,
+  "passed": true,
+  "corruption_checks": [
+    {
+      "case": "over_budget",
+      "rejected": true
+    },
+    {
+      "case": "early_missing_release",
+      "rejected": true
+    },
+    {
+      "case": "wrong_selection",
+      "rejected": true
+    },
+    {
+      "case": "wrong_migration_bytes",
+      "rejected": true
+    },
+    {
+      "case": "overlapping_processes",
+      "rejected": true
+    }
+  ],
+  "start_ns": 2069379948849513,
+  "end_ns": 2069382132337265,
+  "raw_files_modified": false,
+  "current_execution_sources_match": true
+}

@@ -11,6 +11,8 @@ Use the scripts in the parent directory to run new experiments.
 | [e1-diagnostic](e1-diagnostic/) | Eight DRAM/Direct/sync/async correctness and residency runs |
 | [e2-timing](e2-timing/) | Forty independent timing processes, five paired repetitions per configuration |
 | [closure-1009](closure-1009/) | Corrected 2×2 allocation pressure, fair DRAM/Direct/Prefetch placement, target-pack timing, audit results, and lightweight hashes |
+| [capacity-pilot-1009](capacity-pilot-1009/) | 五条件受管副本池 32/64 MiB 容量、静态放置与同步需求迁移 |
+| [capacity-selection-1012](capacity-selection-1012/) | 相同 32 MiB 额度下 ID10/ID34 对象选择及不迁移对照 |
 
 The new archives are copied from the matching `results/cpu-training-*` directories.
 They include per-run manifests, source snapshots, raw step/event data, summaries,

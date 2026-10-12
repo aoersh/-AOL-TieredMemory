@@ -1,0 +1,3578 @@
+[
+  {
+    "step": 0,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 2069066488332269,
+        "done_ns": 2069066513447883,
+        "destination": 0,
+        "bind_ns": 52651,
+        "prepare_ns": 627584,
+        "delay_ns": 1156,
+        "syscall_ns": 25115614,
+        "status_ns": 515491,
+        "prepare_start_ns": 2069066486843218,
+        "prepare_end_ns": 2069066487470802,
+        "delay_start_ns": 2069066487473301,
+        "delay_end_ns": 2069066487474457,
+        "syscall_start_ns": 2069066488332269,
+        "syscall_end_ns": 2069066513447883,
+        "native_start_ns": 2069066488365404,
+        "native_end_ns": 2069066513426443,
+        "native_wall_ns": 25061039,
+        "native_cpu_ns": 24467566,
+        "native_voluntary": 2,
+        "native_involuntary": 2,
+        "native_tid": 55,
+        "native_pre_ns": 33135,
+        "native_post_ns": 21440
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 2069066486641377,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 2069066522153109,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 1191575996596224
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 1,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 2069066682547270,
+        "done_ns": 2069066708337939,
+        "destination": 0,
+        "bind_ns": 44485,
+        "prepare_ns": 420473,
+        "delay_ns": 1154,
+        "syscall_ns": 25790669,
+        "status_ns": 507973,
+        "prepare_start_ns": 2069066682101233,
+        "prepare_end_ns": 2069066682521706,
+        "delay_start_ns": 2069066682523920,
+        "delay_end_ns": 2069066682525074,
+        "syscall_start_ns": 2069066682547270,
+        "syscall_end_ns": 2069066708337939,
+        "native_start_ns": 2069066682574907,
+        "native_end_ns": 2069066708315204,
+        "native_wall_ns": 25740297,
+        "native_cpu_ns": 25679543,
+        "native_voluntary": 2,
+        "native_involuntary": 0,
+        "native_tid": 55,
+        "native_pre_ns": 27637,
+        "native_post_ns": 22735
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 2069066681932630,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 2069066717976939,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 1209446315327488
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 2,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "migration",
+        "id": 34,
+        "bytes": 33554432,
+        "start_ns": 2069066880956054,
+        "done_ns": 2069066905618003,
+        "destination": 0,
+        "bind_ns": 50285,
+        "prepare_ns": 416501,
+        "delay_ns": 1464,
+        "syscall_ns": 24661949,
+        "status_ns": 524471,
+        "prepare_start_ns": 2069066880514978,
+        "prepare_end_ns": 2069066880931479,
+        "delay_start_ns": 2069066880933490,
+        "delay_end_ns": 2069066880934954,
+        "syscall_start_ns": 2069066880956054,
+        "syscall_end_ns": 2069066905618003,
+        "native_start_ns": 2069066880981802,
+        "native_end_ns": 2069066905598421,
+        "native_wall_ns": 24616619,
+        "native_cpu_ns": 24498373,
+        "native_voluntary": 0,
+        "native_involuntary": 2,
+        "native_tid": 55,
+        "native_pre_ns": 25748,
+        "native_post_ns": 19582
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "0": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 2048
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 8192
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 512
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 4
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 33554432,
+        "capacity_bytes": 33554432,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 33554432,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 8388608,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 16384,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 2097152,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 2097152,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [
+          {
+            "time_ns": 2069066880329651,
+            "event": "reserve",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 33554432
+          },
+          {
+            "time_ns": 2069066915247967,
+            "event": "release",
+            "id": 34,
+            "bytes": 33554432,
+            "live_bytes": 0
+          }
+        ],
+        "dram_byte_ns_until_drain": 1171664259776512
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          512,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          512,
+          512
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          512,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          4096,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          512,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          4096,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          512,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  }
+]

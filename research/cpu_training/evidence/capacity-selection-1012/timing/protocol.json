@@ -1,0 +1,6 @@
+{
+  "diagnostic": false,
+  "seed": 20261009,
+  "selection_matrix": true,
+  "diagnostic_reference": "results/capacity-selection-diagnostic-1012-v1"
+}

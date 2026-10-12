@@ -2,6 +2,12 @@
 
 2026-10-09 最新：独立分配压力 2×2、公平 DRAM/CXL/Prefetch 三方对照及目标创建分段已完成。仍无预取赢家；早期 10-08 不公平结果已撤回。见 [收敛实验报告](CLOSURE_REPORT_1009.md) 与 [当前交接](HANDOFF.md)。
 
+2026-10-12 最新：容量矩阵断点核验完成，并新增 32 MiB 固定额度下 ID10/ID34
+的初始放置、同步需求迁移对照。新矩阵 15 个计时进程完成；任一对象需求迁移
+慢约 30 ms/步，初始放置结果区间跨零，尚无可靠对象优先级。
+见 [容量与对象选择报告](CAPACITY_PILOT_REPORT.md)、
+[阶段总结](DAILY_SUMMARY_2026-10-12.md) 与 [交接](HANDOFF.md)。
+
 2026-09-21：已完成 MLP 和两档小型 Transformer 的 saved-tensor 正确性、
 DRAM/CXL 放置和同步迁移验证。
 这是 [v3 实验方案](../../docs/CPU_TRAIN_CXL_PLAN.md) 的基础步骤，尚未实现 SOAR 评分适配、

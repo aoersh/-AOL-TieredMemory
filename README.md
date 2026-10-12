@@ -25,6 +25,21 @@
 - [训练实验入口与结果说明](research/cpu_training/README.md)
 - [归档实验数据](research/cpu_training/evidence/README.md)
 
+## 2026-10-12：有限 DRAM 与对象选择阶段实验
+
+完成受管 saved-tensor 副本池的 32/64 MiB 容量矩阵，并新增固定 32 MiB、仅选择
+两层 attention 的 ID10/ID34 对照。每矩阵五条件、各三次独立进程，先验证数值、
+驻留和实际释放账本，再随机串行计时。按保存顺序初始填充 DRAM 未显示稳定收益；
+新对象矩阵中需求迁移任一 32 MiB 对象都慢约 30 ms/步，初始放置差异区间跨零。
+这支持把“不迁移”作为有效选择，尚未验证出值得迁移的正收益边界。
+
+额度限制的是全部合格 saved-tensor 副本，参数、输入、梯度等仍在范围外；
+不能称为整进程 DRAM 容量限制。下一步测量真实 backward 访问收益与对象占用
+时间，再决定有限快内存的分配，不提前引入复杂 ML。
+详见 [容量与对象选择报告](research/cpu_training/CAPACITY_PILOT_REPORT.md)、
+[阶段总结](research/cpu_training/DAILY_SUMMARY_2026-10-12.md) 和
+[对象选择证据](research/cpu_training/evidence/capacity-selection-1012/README.md)。
+
 ## 目录
 
 - `src/alto/`：ALTO 内核补丁和运行组件，支持 TPP、NBT、Nomad、Colloid。
