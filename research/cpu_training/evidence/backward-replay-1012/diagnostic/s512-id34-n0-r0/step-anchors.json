@@ -1,0 +1,46 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "start_ns": 2076262644806724,
+    "end_ns": 2076262677792956,
+    "step_ns": 32986232,
+    "create_ns": 9654907,
+    "use_start_ns": 2076262656542144,
+    "use_end_ns": 2076262660106539,
+    "use_ns": 3564395,
+    "checks_ns": 14905149,
+    "release_ns": 2781268,
+    "minor_faults": 32891,
+    "major_faults": 0,
+    "initial": {
+      "0": 8192
+    },
+    "final": {
+      "0": 8192
+    },
+    "mapping_closed": true
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "start_ns": 2076262705938363,
+    "end_ns": 2076262733606402,
+    "step_ns": 27668039,
+    "create_ns": 5416350,
+    "use_start_ns": 2076262713440644,
+    "use_end_ns": 2076262716956815,
+    "use_ns": 3516171,
+    "checks_ns": 13906187,
+    "release_ns": 2743400,
+    "minor_faults": 32772,
+    "major_faults": 0,
+    "initial": {
+      "0": 8192
+    },
+    "final": {
+      "0": 8192
+    },
+    "mapping_closed": true
+  }
+]

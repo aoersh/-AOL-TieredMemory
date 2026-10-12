@@ -1,0 +1,22 @@
+{
+  "tests": 38,
+  "passed": true,
+  "network_corruption_checks": [
+    {
+      "case": "target_exceeds_budget",
+      "rejected": true
+    },
+    {
+      "case": "wrong_sequence",
+      "rejected": true
+    },
+    {
+      "case": "missing_release",
+      "rejected": true
+    }
+  ],
+  "start_ns": 2076946158291676,
+  "end_ns": 2076947858281600,
+  "regressions_after_both_matrices": true,
+  "current_executed_sources_match": true
+}

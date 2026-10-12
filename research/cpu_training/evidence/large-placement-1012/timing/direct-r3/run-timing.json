@@ -1,0 +1,11 @@
+{
+  "total_run_ns": 30219505127,
+  "setup_ns": 487551373,
+  "teardown_ns": 86441,
+  "summed_step_ns": 29701972408,
+  "warmup_step_ns": 1435035720,
+  "pool_initial_materialize_ns": 0,
+  "pool_bytes": 0,
+  "pool_closed": null,
+  "max_rss_kib": 1278540
+}

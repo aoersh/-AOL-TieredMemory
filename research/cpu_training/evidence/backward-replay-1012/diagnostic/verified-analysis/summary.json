@@ -1,0 +1,249 @@
+{
+  "diagnostic": true,
+  "source_hashes": {
+    "run_backward_replay.py": "82e6f4b27b580a6c3466fd1416b43968470c428fc09286b2ffe9105199c989c9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "captured_inputs": {
+    "s512-id10": {
+      "capture_hashes": {
+        "output": "fae441f373ded0fd792694a6903b56b438afd0972de22753e43cdc3674627952",
+        "gradient": "eaf1c944a2d6088a952809b3010099a8484d598b59c8a4ec8b7a385e9720374b",
+        "expected": "2fe8510442a1bb452b88203dac9cfdf147c10796c2b75042de6d8ae09aad0c13"
+      },
+      "captured_loss": 1.3336524963378906,
+      "saved_count": 56,
+      "gradient_stride": [
+        1048576,
+        262144,
+        512,
+        1
+      ]
+    },
+    "s512-id34": {
+      "capture_hashes": {
+        "output": "8c55d19669df67fb9da7448faa062281a9027f580e1fb7da5555169fdbb8cf15",
+        "gradient": "4d88c4138a4e9f7d3a5d97dd1065d1eb4c8cf3b0926d9bc6f8478eb1f3968145",
+        "expected": "b1392b665badb58b017c74238ee4f0f4199703c7f280a81a6f404470b1679923"
+      },
+      "captured_loss": 1.3336524963378906,
+      "saved_count": 56,
+      "gradient_stride": [
+        1048576,
+        262144,
+        512,
+        1
+      ]
+    },
+    "s1024-id34": {
+      "capture_hashes": {
+        "output": "719382d8e39c5ca4e708520767404276bc2fd18c3d33c4eb99887d3bb2e4fea5",
+        "gradient": "172bbb50e4386d0f40491909ee76dcc3de34794ab916a006db7c174b53054606",
+        "expected": "78e6871824204e215a82bf22e1eff23c4551c94b0e1b4ec882f47f603a17e18a"
+      },
+      "captured_loss": 1.3336482048034668,
+      "saved_count": 56,
+      "gradient_stride": [
+        4194304,
+        1048576,
+        1024,
+        1
+      ]
+    }
+  },
+  "process_means": {
+    "s512-id10": {
+      "dram": {
+        "step_ms": [
+          26.513778000000002
+        ],
+        "create_ms": [
+          6.463145333333333
+        ],
+        "use_ms": [
+          2.2766623333333333
+        ],
+        "checks_ms": [
+          14.009608
+        ],
+        "release_ms": [
+          1.7286753333333333
+        ],
+        "amortized_run_ms": [
+          140.07229933333335
+        ]
+      },
+      "cxl": {
+        "step_ms": [
+          23.988859666666666
+        ],
+        "create_ms": [
+          6.262693333333334
+        ],
+        "use_ms": [
+          2.1174793333333333
+        ],
+        "checks_ms": [
+          12.403634
+        ],
+        "release_ms": [
+          1.2749833333333331
+        ],
+        "amortized_run_ms": [
+          136.05428466666666
+        ]
+      }
+    },
+    "s512-id34": {
+      "dram": {
+        "step_ms": [
+          29.564579333333334
+        ],
+        "create_ms": [
+          6.931059
+        ],
+        "use_ms": [
+          3.547287
+        ],
+        "checks_ms": [
+          14.258427
+        ],
+        "release_ms": [
+          2.749649
+        ],
+        "amortized_run_ms": [
+          141.53020966666665
+        ]
+      },
+      "cxl": {
+        "step_ms": [
+          25.518447333333334
+        ],
+        "create_ms": [
+          6.442751666666667
+        ],
+        "use_ms": [
+          2.5338616666666667
+        ],
+        "checks_ms": [
+          12.525935333333333
+        ],
+        "release_ms": [
+          2.109255
+        ],
+        "amortized_run_ms": [
+          142.33590633333336
+        ]
+      }
+    },
+    "s1024-id34": {
+      "dram": {
+        "step_ms": [
+          97.91659233333333
+        ],
+        "create_ms": [
+          20.991586666666667
+        ],
+        "use_ms": [
+          11.531183
+        ],
+        "checks_ms": [
+          48.762495666666666
+        ],
+        "release_ms": [
+          7.832917
+        ],
+        "amortized_run_ms": [
+          421.35667133333334
+        ]
+      },
+      "cxl": {
+        "step_ms": [
+          94.359882
+        ],
+        "create_ms": [
+          21.90971766666667
+        ],
+        "use_ms": [
+          9.604103666666667
+        ],
+        "checks_ms": [
+          47.21819966666666
+        ],
+        "release_ms": [
+          7.765621666666667
+        ],
+        "amortized_run_ms": [
+          408.959606
+        ]
+      }
+    }
+  },
+  "runs_checked": [
+    "s512-id10-n0-r0",
+    "s512-id10-n2-r0",
+    "s512-id34-n0-r0",
+    "s512-id34-n2-r0",
+    "s1024-id34-n0-r0",
+    "s1024-id34-n2-r0"
+  ],
+  "means": {
+    "s512-id10": {
+      "dram": {
+        "step_ms": 26.513778000000002,
+        "create_ms": 6.463145333333333,
+        "use_ms": 2.2766623333333333,
+        "checks_ms": 14.009608,
+        "release_ms": 1.7286753333333333,
+        "amortized_run_ms": 140.07229933333335
+      },
+      "cxl": {
+        "step_ms": 23.988859666666666,
+        "create_ms": 6.262693333333334,
+        "use_ms": 2.1174793333333333,
+        "checks_ms": 12.403634,
+        "release_ms": 1.2749833333333331,
+        "amortized_run_ms": 136.05428466666666
+      }
+    },
+    "s512-id34": {
+      "dram": {
+        "step_ms": 29.564579333333334,
+        "create_ms": 6.931059,
+        "use_ms": 3.547287,
+        "checks_ms": 14.258427,
+        "release_ms": 2.749649,
+        "amortized_run_ms": 141.53020966666665
+      },
+      "cxl": {
+        "step_ms": 25.518447333333334,
+        "create_ms": 6.442751666666667,
+        "use_ms": 2.5338616666666667,
+        "checks_ms": 12.525935333333333,
+        "release_ms": 2.109255,
+        "amortized_run_ms": 142.33590633333336
+      }
+    },
+    "s1024-id34": {
+      "dram": {
+        "step_ms": 97.91659233333333,
+        "create_ms": 20.991586666666667,
+        "use_ms": 11.531183,
+        "checks_ms": 48.762495666666666,
+        "release_ms": 7.832917,
+        "amortized_run_ms": 421.35667133333334
+      },
+      "cxl": {
+        "step_ms": 94.359882,
+        "create_ms": 21.90971766666667,
+        "use_ms": 9.604103666666667,
+        "checks_ms": 47.21819966666666,
+        "release_ms": 7.765621666666667,
+        "amortized_run_ms": 408.959606
+      }
+    }
+  },
+  "limitations": "single real softmax backward use after fresh copy; cache state naturally follows copy; no artificial flushing; five independent paired runs, t(df=4), no multiple-comparison correction; not full training or migration benefit"
+}

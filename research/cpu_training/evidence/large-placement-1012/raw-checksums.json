@@ -1,0 +1,762 @@
+{
+  "results/large-placement-diagnostic-1012-v1/commands.json": {
+    "sha256": "c909a6bf2c35d92075c1d8d084618e0f8aba56192cfc7ffa5317b733ebd54a0d",
+    "bytes": 777
+  },
+  "results/large-placement-diagnostic-1012-v1/completed.json": {
+    "sha256": "a829d62e805f946313eb75d6b6bf1c76475b9823601a206eb3b8e92130286f7f",
+    "bytes": 16
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/capacity.json": {
+    "sha256": "d1c789f59f8d1b6c015eaaad741888173404b2f6cee04341c5155ca270e02a09",
+    "bytes": 9504
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/completed.json": {
+    "sha256": "62010a0158d6fbb50aaab5992b608a2f59828165c50ad8d46bf3b4c6c9738cc4",
+    "bytes": 65
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/correctness.json": {
+    "sha256": "b02d0120a9b3a09fb8c741659223192438cb75633e76294296de74cae60c2a75",
+    "bytes": 42
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/events.json": {
+    "sha256": "4070aaed247cd2144ff22efb6bf3ccaa13c66dd507d27993f939250a08b334f0",
+    "bytes": 52644
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/manifest.json": {
+    "sha256": "cb5f8e214c0ee39899ccfc33805a7ea58937969f5434f7e4e4570bc4b7a9ac1f",
+    "bytes": 1265
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/run-timing.json": {
+    "sha256": "a4eea9643d2da926e7fc6c06b6624372a70d875c3af46d2384ba427028784336",
+    "bytes": 242
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/steps.json": {
+    "sha256": "8a52003e4f2c536cbfe4e93488207dc0dc49a337ff97e53fab342202e228c70c",
+    "bytes": 3795
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-diagnostic-1012-v1/direct-r0.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-diagnostic-1012-v1/environment.json": {
+    "sha256": "be921baf862fc9098eaa54a50509b126420362fd4d7cb08dad0f4536f2c7bb81",
+    "bytes": 5161
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/capacity.json": {
+    "sha256": "78989db1e125aec13a405845920ec8fbcd3783f95b7cd56a4eefee556b016e72",
+    "bytes": 10524
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/completed.json": {
+    "sha256": "62010a0158d6fbb50aaab5992b608a2f59828165c50ad8d46bf3b4c6c9738cc4",
+    "bytes": 65
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/correctness.json": {
+    "sha256": "b02d0120a9b3a09fb8c741659223192438cb75633e76294296de74cae60c2a75",
+    "bytes": 42
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/events.json": {
+    "sha256": "14e7f01033c92f097288d4a111e1ebe0a65cec93c3f551c403f3475b3fcbd916",
+    "bytes": 53844
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/manifest.json": {
+    "sha256": "c7d49e5dc34ea465203c7dd4c8ef9c9b0bb47d2f99d708850232bb12b9a252b1",
+    "bytes": 1271
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/run-timing.json": {
+    "sha256": "ec1a18cbe7efde44f5fafa2c9c516eec41755558e2082d694c6038fed80cf160",
+    "bytes": 242
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/steps.json": {
+    "sha256": "c4f7d6cbd632fa0115ef1d4c81b07b036f5918f9e844bd83f95c01529966d8c2",
+    "bytes": 3795
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-diagnostic-1012-v1/pack34-r0.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-diagnostic-1012-v1/progress.json": {
+    "sha256": "819040da89b1f1bb5c745451779acc0cf07ab953d3215b2fcadca59547ca93a0",
+    "bytes": 553
+  },
+  "results/large-placement-diagnostic-1012-v1/protocol.json": {
+    "sha256": "4e82211ad83e4f5dcbe9dc208a670b18709f696adf67fbf9178cd56d01963468",
+    "bytes": 135
+  },
+  "results/large-placement-diagnostic-1012-v1/runner.py": {
+    "sha256": "70eb6a2b0db002a45400cdb70fcb79886c2f65f2d744a251a7b241f24825aad4",
+    "bytes": 3454
+  },
+  "results/large-placement-diagnostic-1012-v1/verified-analysis/analyzer.py": {
+    "sha256": "271cd5184d2d3cf45dfb39f828f7fa0f5b6e0980d305c7ac74bd505c45f981b2",
+    "bytes": 7597
+  },
+  "results/large-placement-diagnostic-1012-v1/verified-analysis/completed.json": {
+    "sha256": "900eefa8dfa15fefbef39e9795b30de3e90558398bef9c18166341c934ae83ad",
+    "bytes": 34
+  },
+  "results/large-placement-diagnostic-1012-v1/verified-analysis/summary.json": {
+    "sha256": "2549f96d950ac0ce816674f25a8ac47c1c1e9279034c38d31ab141ac78db69af",
+    "bytes": 2696
+  },
+  "results/large-placement-timing-1012-v1/commands.json": {
+    "sha256": "455f2f88eea6871761f883c5f7ca8ad060be6bc25371eb4a0b1a396f6a6bd54e",
+    "bytes": 3613
+  },
+  "results/large-placement-timing-1012-v1/completed.json": {
+    "sha256": "c1149334db82d5e32f01b370acd5f2d91710d69ee124505b59b49027692472e0",
+    "bytes": 17
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/capacity.json": {
+    "sha256": "1722540362571397444c50b1c94f68248d7040f759ce66cf04b5172fd991bffe",
+    "bytes": 332538
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/manifest.json": {
+    "sha256": "45aacab47250722a1344f22d334167cdc7592fbb63a227b26ecf6f2b3cda514b",
+    "bytes": 1266
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/run-timing.json": {
+    "sha256": "43d4345b5d72dc86d16e4cb3f2b0cb21346a8de8e1a27dab3b84c1a403db4c9b",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/steps.json": {
+    "sha256": "6b10dae27ee4e436533f3c644955039973ad217ff3a7e3ee14389c10c6fec01c",
+    "bytes": 132704
+  },
+  "results/large-placement-timing-1012-v1/direct-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/direct-r0.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/capacity.json": {
+    "sha256": "1722540362571397444c50b1c94f68248d7040f759ce66cf04b5172fd991bffe",
+    "bytes": 332538
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/manifest.json": {
+    "sha256": "45aacab47250722a1344f22d334167cdc7592fbb63a227b26ecf6f2b3cda514b",
+    "bytes": 1266
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/run-timing.json": {
+    "sha256": "da1cfe5b4bf8f9f886d9b36a8dd6c08ec49c486814bfee3988c7907f8d49dc8e",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/steps.json": {
+    "sha256": "5bac1cc7a794a82a500692865bcb3b287a2f1f6092f0ffaca784e00c4792a7f9",
+    "bytes": 132703
+  },
+  "results/large-placement-timing-1012-v1/direct-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/direct-r1.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/capacity.json": {
+    "sha256": "1722540362571397444c50b1c94f68248d7040f759ce66cf04b5172fd991bffe",
+    "bytes": 332538
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/manifest.json": {
+    "sha256": "45aacab47250722a1344f22d334167cdc7592fbb63a227b26ecf6f2b3cda514b",
+    "bytes": 1266
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/run-timing.json": {
+    "sha256": "482765479410e4252fe19838077996c6b80ec815508bb22f3d35c3b0fbaae268",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/steps.json": {
+    "sha256": "7a9407e433758ffd318c1d94dfba0553814cd2268cff1e8eb94cd35347f91df4",
+    "bytes": 132704
+  },
+  "results/large-placement-timing-1012-v1/direct-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/direct-r2.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/capacity.json": {
+    "sha256": "1722540362571397444c50b1c94f68248d7040f759ce66cf04b5172fd991bffe",
+    "bytes": 332538
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/manifest.json": {
+    "sha256": "45aacab47250722a1344f22d334167cdc7592fbb63a227b26ecf6f2b3cda514b",
+    "bytes": 1266
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/run-timing.json": {
+    "sha256": "28e5cd1e5a680dc59752a4c5e369a09d79170f06d62e8757b562de862bc17232",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/steps.json": {
+    "sha256": "c2260526b31508f74798c55b2cbf8081d43b3768bb93c413ce75af4efbd99fe2",
+    "bytes": 132705
+  },
+  "results/large-placement-timing-1012-v1/direct-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/direct-r3.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/capacity.json": {
+    "sha256": "1722540362571397444c50b1c94f68248d7040f759ce66cf04b5172fd991bffe",
+    "bytes": 332538
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/manifest.json": {
+    "sha256": "45aacab47250722a1344f22d334167cdc7592fbb63a227b26ecf6f2b3cda514b",
+    "bytes": 1266
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/run-timing.json": {
+    "sha256": "2b75114b0ea8e91569ca5c3a7dd96a483e69b2b4848cc6f584f503c94cbb990c",
+    "bytes": 253
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/steps.json": {
+    "sha256": "23dd39922915cfbf93c0fdb40ced4c7719fcb4c019828222fcb001c322aef824",
+    "bytes": 132702
+  },
+  "results/large-placement-timing-1012-v1/direct-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/direct-r4.log": {
+    "sha256": "1480be93e0bbb9e77986e1662789bf03d61205cfbde306cca7cf92d5b8226112",
+    "bytes": 16
+  },
+  "results/large-placement-timing-1012-v1/environment.json": {
+    "sha256": "c7f55cd626ebddfe489228f8284b4e88b02cc81bdf4c67d10f7d082dcc219ac7",
+    "bytes": 5161
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/capacity.json": {
+    "sha256": "8cad67299f3d03b1eb74f853c74f420da9c756252dc84108de0b72b742acde55",
+    "bytes": 368134
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/manifest.json": {
+    "sha256": "8dc4d037a3d42780111dfd218ee06a501e1c631dbcfa39bb4027e21a9eab4795",
+    "bytes": 1272
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/run-timing.json": {
+    "sha256": "efd47a4b1279588f4057f4436b75913a9f1e21fc1b0a8d4724ce009ba2fa7aff",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/steps.json": {
+    "sha256": "64fad2d44d6cc77e39021f0679241d7dfcf6eb7675f3df41ff2f8cda8c07fbb0",
+    "bytes": 132705
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/pack34-r0.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/capacity.json": {
+    "sha256": "c9a0facc746b69714ac826515a2846da52674cab31204ca0d770da5b3db028cc",
+    "bytes": 368133
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/manifest.json": {
+    "sha256": "8dc4d037a3d42780111dfd218ee06a501e1c631dbcfa39bb4027e21a9eab4795",
+    "bytes": 1272
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/run-timing.json": {
+    "sha256": "830e7aabc3699717a513cc9aa162bcc761469d138da3391c9bbd23f5f4896cd7",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/steps.json": {
+    "sha256": "d793939e1a0978bdf8f1f32f4294c97aba0593800945279127a5a50069a4850c",
+    "bytes": 132704
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/pack34-r1.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/capacity.json": {
+    "sha256": "4b6524fc56c717e2f4cb9f0f1a1ba25ae0cd45c12e91a444b616be8f0528e336",
+    "bytes": 368134
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/manifest.json": {
+    "sha256": "8dc4d037a3d42780111dfd218ee06a501e1c631dbcfa39bb4027e21a9eab4795",
+    "bytes": 1272
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/run-timing.json": {
+    "sha256": "e2259b01ebcd97a8ce4beccc9b4ba9423eb6e92ca8bd37205d781f02723b8a41",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/steps.json": {
+    "sha256": "09542c8308a24bd5c208014e43f4606a7beb9a3a73671900f1ada9010e858278",
+    "bytes": 132701
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/pack34-r2.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/capacity.json": {
+    "sha256": "c00baee255367c57f40e962acf60362da943e7afb3f1a4b973cb00b8704af10d",
+    "bytes": 368134
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/manifest.json": {
+    "sha256": "8dc4d037a3d42780111dfd218ee06a501e1c631dbcfa39bb4027e21a9eab4795",
+    "bytes": 1272
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/run-timing.json": {
+    "sha256": "06d17d1fba677a034eabf0460c563acbfccbe725f6662070a2a8095cd0abf2ec",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/steps.json": {
+    "sha256": "829403fe9022d9b80a92f4d8e44b5dfcbc62f950433f18457c864815a109836a",
+    "bytes": 132709
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/pack34-r3.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/capacity.json": {
+    "sha256": "0ccfb50ecfcef68eff3f7892a12be1afbf52beee1e32f5e8b31385d64be073b7",
+    "bytes": 368133
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/completed.json": {
+    "sha256": "0a6fe97b68eb7785c775b72874a385974aad2514695ed5b3083958ae82300e41",
+    "bytes": 67
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/libmigration_meter.so": {
+    "sha256": "d16b284377520289c0e9b50622eace64f0b1723ecfdcfa1d648c8e62691958f7",
+    "bytes": 15752
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/manifest.json": {
+    "sha256": "8dc4d037a3d42780111dfd218ee06a501e1c631dbcfa39bb4027e21a9eab4795",
+    "bytes": 1272
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/migration_meter.c": {
+    "sha256": "85df2df632e50cdea9241ac40d498ac97fffd5e9d3cbe84120ad5b2c7dc6ad4c",
+    "bytes": 1352
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/run-timing.json": {
+    "sha256": "b75660204425885506ff2ce6b16764a7f3acf0ae4a93ceea2bb77121df8c9c18",
+    "bytes": 252
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/run_capacity_pilot.py": {
+    "sha256": "614297201959eefe7198985a90c4d406bd0a1e3240922289542384610465ce62",
+    "bytes": 6943
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/steps.json": {
+    "sha256": "0f2f33b0531b8fce0aadcfb314661ce98e84731ea5efdd487e9ae473984ff794",
+    "bytes": 132705
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/large-placement-timing-1012-v1/pack34-r4.log": {
+    "sha256": "9bcaa6d8815591f5c507b9c8f75f217bbd733353de25b5980ca7d566ca519b49",
+    "bytes": 14
+  },
+  "results/large-placement-timing-1012-v1/progress.json": {
+    "sha256": "886b6978e5cad5478c3115aee1dea446f3d1f5b785a7c56a33167e81d2ede38d",
+    "bytes": 2711
+  },
+  "results/large-placement-timing-1012-v1/protocol.json": {
+    "sha256": "63061fe0cb46ec2eef17a87d6b9c74015ad19ab1f4bb4be9cbe57a0dd6af6151",
+    "bytes": 174
+  },
+  "results/large-placement-timing-1012-v1/runner.py": {
+    "sha256": "70eb6a2b0db002a45400cdb70fcb79886c2f65f2d744a251a7b241f24825aad4",
+    "bytes": 3454
+  },
+  "results/large-placement-timing-1012-v1/verified-analysis/analyzer.py": {
+    "sha256": "271cd5184d2d3cf45dfb39f828f7fa0f5b6e0980d305c7ac74bd505c45f981b2",
+    "bytes": 7597
+  },
+  "results/large-placement-timing-1012-v1/verified-analysis/completed.json": {
+    "sha256": "3f1ddb43e2f7bb5c28044f8d1a32ad9fb8e6eaec16d07eab4392a3f102f83731",
+    "bytes": 35
+  },
+  "results/large-placement-timing-1012-v1/verified-analysis/summary.json": {
+    "sha256": "b42bd1c7b844dcbe93eb67c46306361da1041b24a875820b74e49ae78ac322f5",
+    "bytes": 35550
+  }
+}

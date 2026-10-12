@@ -80,12 +80,13 @@ def main():
     p.add_argument('output',type=Path);p.add_argument('--policy',choices=['direct','pack','demand'],required=True)
     p.add_argument('--capacity-mib',type=int,required=True);p.add_argument('--diagnostic',action='store_true')
     p.add_argument('--selected-ids',default='',help='Only these saved IDs are eligible for DRAM; empty selects all')
+    p.add_argument('--sequence',type=int,choices=[512,1024],default=512)
     a=p.parse_args();assert a.capacity_mib>=0
     a.output.mkdir(parents=True,exist_ok=False)
     def save(n,x):(a.output/n).write_text(json.dumps(x,indent=2)+'\n')
     os.sched_setaffinity(0,set(range(8)));torch.set_num_threads(8);torch.set_num_interop_threads(1)
     torch.use_deterministic_algorithms(True);torch.manual_seed(20260921)
-    a.workload='transformer';a.batch=8;a.sequence=512;a.width=128;a.heads=4;a.layers=2
+    a.workload='transformer';a.batch=8;a.width=128;a.heads=4;a.layers=2
     CapacityPaths.policy=a.policy;CapacityPaths.capacity=a.capacity_mib*1048576;CapacityPaths.audit_rows=[]
     CapacityPaths.selected_ids={int(x) for x in a.selected_ids.split(',') if x} or None
     hashes={}
@@ -95,6 +96,7 @@ def main():
         data=source.read_bytes();(a.output/source.name).write_bytes(data);hashes[source.name]=hashlib.sha256(data).hexdigest()
     save('manifest.json',dict(policy=a.policy,capacity_bytes=CapacityPaths.capacity,diagnostic=a.diagnostic,
         selected_ids=sorted(CapacityPaths.selected_ids) if CapacityPaths.selected_ids else None,
+        sequence=a.sequence,
         source_hashes=hashes,kernel=os.uname().release,compute_cpus=list(range(8)),migration_cpu=8,
         sysctl={k:Path('/proc/sys/kernel',k).read_text().strip() for k in ['numa_balancing','perf_event_paranoid']},
         scope='all eligible saved copies; fresh in all arms; parameters/gradients/source tensors excluded; no eviction; demand synchronous, not prefetch'))

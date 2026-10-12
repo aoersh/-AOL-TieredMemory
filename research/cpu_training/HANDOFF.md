@@ -1,6 +1,35 @@
 # 新会话接力说明（2026-10-12）
 
-## 当前断点：容量与对象选择阶段完成
+## 最新断点：真实backward与大配置训练确认完成
+
+先读 [BACKWARD_REPLAY_REPORT.md](BACKWARD_REPLAY_REPORT.md)。本阶段新增三案例
+两放置真实SoftmaxBackward重放30个计时进程，另六组三步诊断；节点实际保存值、
+梯度与原生结果hash一致，误差0。sequence512使用收益区间跨零，sequence1024
+DRAM使用无实用优势。128 MiB副本DRAM创建快3.045 ms，局部完整操作快3.154 ms。
+
+仅据此追加sequence1024、128 MiB额度的Direct/pack34完整训练确认：各五进程，
+5预热+100正式，另两组三步诊断。每步受管副本396.3125 MiB，其余副本在CXL。
+Direct/初始DRAM为284.384/284.565 ms，差+0.180 ms [−2.110,2.470]，
+区间在±3%门槛内；forward快3.586 ms，backward慢3.748 ms，未得到整步加速。
+停止当前两层attention迁移和放置调参，不把局部创建收益当作迁移收益。
+
+38项回归及六项重放/三项网络故障注入通过。无运行中矩阵，未改内核或sysctl。
+原始结果：results/backward-replay-{diagnostic,timing}-1012-v1 和
+results/large-placement-{diagnostic,timing}-1012-v1，各使用verified-analysis。
+轻量证据evidence/backward-replay-1012、large-placement-1012。代码、文档与证据
+随本收敛阶段提交归档；提交号及远端同步状态用git log/git ls-remote核验，
+不要把旧容量阶段74bb6d7当作最新收敛阶段。
+
+若继续只有限筛查一个不同算子族，或明确研究真正容量压力下折中；当前结论范围
+是FP32 eager Transformer保存副本，不是全进程DRAM限制或对所有预取的否定。
+
+最新讨论明确：Direct是不搬页面、CPU直接读取CXL；Prefetch为node2→node0。
+原生训练通常不需要本实验hook额外副本，初始DRAM参考也不是全进程DRAM-only。
+修正异步对照全部正式步无迟到、等待约0.040 ms，不能把主要损失解释成需求等待。
+下一次投入决策优先筛查有实际依据的容量不足场景：同预算静态放置先过完整训练
+收益门槛，再测动态迁移，最后检验AOL增量；补原生DRAM框架开销参考。尚未实施。
+
+## 历史断点：容量与对象选择阶段完成
 
 先读 [CAPACITY_PILOT_REPORT.md](CAPACITY_PILOT_REPORT.md)。10-09 容量矩阵的
 15 个进程早已完成，本次未重复，追加分析使用 verified-analysis-1012-v2/。
@@ -12,15 +41,14 @@
 demand10/34 为 118.501/117.736 ms，分别慢 30.412/29.646 ms，区间均高于零。
 初始放置 ID10 的租约积分为 ID34 的 2.739 倍；这不证明 ID34 应优先，访问收益
 仍不确定。额度覆盖全部合格 saved 副本而非参数/输入/梯度；不是整进程 DRAM 限额。
-新阶段代码、报告、README 和轻量证据随“完成有限DRAM容量与对象选择阶段实验”
-提交归档；提交号和远程同步状态以 git log / git status 为准。完整原始 results 保留本机。
+该容量阶段通过74bb6d7提交并推送research/main。完整原始results保留本机。
 
-下一步测实际 backward 使用的访问收益和占用，不重复当前同步迁移参数实验。
+当时计划的实际 backward 使用验证已由上面的最新阶段完成，不重复该矩阵。
 尚无“应迁移”的正收益边界，不推进复杂 ML；继续明确不迁移、静态放置、同步需求
 迁移与真正异步预取之间的差异。没有运行中矩阵或权限阻塞。
 
 
-## 最新断点：两项收敛实验及分段确认已完成
+## 历史断点：两项收敛实验及分段确认已完成
 
 先读 [CLOSURE_REPORT_1009.md](CLOSURE_REPORT_1009.md)，不要重复下面历史段落的待办。
 该轮结果已归档在 evidence/closure-1009/，已通过 aa65ee8、0c687fe 提交并推送 research/main。后续未提交文件请按 git 状态保留。

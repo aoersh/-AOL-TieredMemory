@@ -1,0 +1,7 @@
+{
+  "diagnostic": false,
+  "seed": 20261009,
+  "selection_matrix": false,
+  "large_reference": true,
+  "diagnostic_reference": "results/large-placement-diagnostic-1012-v1"
+}

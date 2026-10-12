@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "case": "wrong_node",
+      "rejected": true
+    },
+    {
+      "case": "different_real_gradient",
+      "rejected": true
+    },
+    {
+      "case": "wrong_clock",
+      "rejected": true
+    },
+    {
+      "case": "retained_mapping",
+      "rejected": true
+    },
+    {
+      "case": "bad_numerics",
+      "rejected": true
+    },
+    {
+      "case": "overlap",
+      "rejected": true
+    }
+  ],
+  "raw_files_modified": false
+}

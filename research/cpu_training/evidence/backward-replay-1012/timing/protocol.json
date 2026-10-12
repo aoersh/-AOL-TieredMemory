@@ -1,0 +1,22 @@
+{
+  "diagnostic": false,
+  "cases": [
+    [
+      512,
+      10
+    ],
+    [
+      512,
+      34
+    ],
+    [
+      1024,
+      34
+    ]
+  ],
+  "seed": 20261012,
+  "repeats": 5,
+  "steps": 100,
+  "warmup": 5,
+  "diagnostic_reference": "results/backward-replay-diagnostic-1012-v1"
+}

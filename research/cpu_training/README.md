@@ -1,5 +1,21 @@
 # CPU 训练：收益感知 CXL 访问与选择性预取实验
 
+本阶段继续收敛：真实SoftmaxBackward重放已完成三案例、30个独立计时进程。
+两个32 MiB对象的DRAM使用优势区间跨零，128 MiB对象也无实用使用优势；
+较大的局部收益来自副本创建。sequence1024完整训练10个独立进程已确认：
+Direct284.384/初始DRAM放置284.565 ms，整步差+0.180 ms [−2.110,2.470]，
+不支持至少3%的实用加速。停止当前attention对象的迁移/放置调参，暂不拟合收益模型。
+详见 [真实backward重放与停止条件](BACKWARD_REPLAY_REPORT.md)。
+
+本轮比较的是经过hook复制的保存副本路径，不是原生全DRAM与整进程CXL比较。
+额度仅限制受管副本；尚未测试真正全进程DRAM不足。当前停止决定只针对已测
+attention对象与实现，后续容量场景应先验证静态放置收益，再测动态迁移和AOL增量。
+
+新增入口：`run_backward_replay.py` 捕获及重放真实算子，
+`run_backward_replay_matrix.py` 随机串行矩阵，`analyze_backward_replay.py` 审计及区间，
+`validate_backward_replay.py` 故障注入，`archive_backward_replay.py` 轻量归档。
+完整训练确认沿用 `run_capacity_matrix.py --large-reference`；复现命令见报告。
+
 2026-10-09 最新：独立分配压力 2×2、公平 DRAM/CXL/Prefetch 三方对照及目标创建分段已完成。仍无预取赢家；早期 10-08 不公平结果已撤回。见 [收敛实验报告](CLOSURE_REPORT_1009.md) 与 [当前交接](HANDOFF.md)。
 
 2026-10-12 最新：容量矩阵断点核验完成，并新增 32 MiB 固定额度下 ID10/ID34

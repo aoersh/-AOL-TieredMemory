@@ -1,0 +1,22 @@
+{
+  "diagnostic": true,
+  "cases": [
+    [
+      512,
+      10
+    ],
+    [
+      512,
+      34
+    ],
+    [
+      1024,
+      34
+    ]
+  ],
+  "seed": 20261012,
+  "repeats": 1,
+  "steps": 3,
+  "warmup": 0,
+  "diagnostic_reference": "None"
+}

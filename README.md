@@ -4,6 +4,18 @@
 
 ## 当前研究方向
 
+最新收敛验证（2026-10-12）：完成真实SoftmaxBackward重放30个独立计时进程，
+以及sequence1024完整训练10个独立进程。128 MiB副本初始DRAM创建更快约3.04 ms，
+但完整训练为Direct284.38/DRAM放置284.56 ms；差值区间[−2.11,2.47] ms落在±3%
+门槛内，没有实用加速。本阶段停止当前两层attention对象的迁移与放置搜索，
+暂不引入AOL收益模型或复杂ML。详见
+[真实backward与完整训练确认](research/cpu_training/BACKWARD_REPLAY_REPORT.md)。
+
+这里的 Direct/初始DRAM 都经过受管保存副本复制；不是整进程CXL与无额外复制的
+原生DRAM训练比较，也没有全进程DRAM容量限制。已测迁移负收益不能推广到所有
+CPU训练或AOL。后续优先验证有实际依据的容量不足场景，先静态放置、再动态迁移、
+最后检验AOL增量价值；各阶段需通过完整训练收益门槛。
+
 当前 v3 方案先验证不同训练张量在 **Direct CXL Access** 与 **Prefetch → DRAM** 之间是否存在稳定的最优选择，再比较访问频率、AOL 和 SOAR Performance Criticality 的解释能力，最后实现简单的收益感知选择性预取。ALTO 在线控制属于后续可选扩展。
 
 当前已完成保存张量的数值正确性、DRAM/CXL 放置、同步迁移，以及 FIFO 异步迁移的初步实验。FIFO 预取存在需求顺序倒置，尚不能作为优化后的 Always-Prefetch 基线。详见 [E1/E2 实验报告](research/cpu_training/E1_E2_REPORT.md)。
@@ -34,11 +46,25 @@
 这支持把“不迁移”作为有效选择，尚未验证出值得迁移的正收益边界。
 
 额度限制的是全部合格 saved-tensor 副本，参数、输入、梯度等仍在范围外；
-不能称为整进程 DRAM 容量限制。下一步测量真实 backward 访问收益与对象占用
-时间，再决定有限快内存的分配，不提前引入复杂 ML。
+不能称为整进程 DRAM 容量限制。随后真实 backward 与完整训练确认已完成，
+当前对象搜索停止，详见下节；不提前引入复杂 ML。
 详见 [容量与对象选择报告](research/cpu_training/CAPACITY_PILOT_REPORT.md)、
 [阶段总结](research/cpu_training/DAILY_SUMMARY_2026-10-12.md) 和
 [对象选择证据](research/cpu_training/evidence/capacity-selection-1012/README.md)。
+
+## 2026-10-12：真实 backward 与完整训练收敛验证
+
+新增捕获真实保存值及梯度的 SoftmaxBackward 单次重放，三个案例、两节点、各五个
+独立计时进程，另六组诊断；随后只追加一组sequence1024完整训练，两个条件各五个
+进程，另两组诊断。局部128 MiB副本的DRAM创建更快约3.045 ms，但整步没有实用
+加速，停止当前两层attention的迁移和放置调参。38项回归及九项审计故障注入通过。
+
+入口位于 `research/cpu_training/`，轻量证据按 `diagnostic/timing/source/validation`
+归档；完整原始步骤、日志和二进制保留在本机 `results/`。
+详见 [实验报告](research/cpu_training/BACKWARD_REPLAY_REPORT.md)、
+[今天的总结](research/cpu_training/DAILY_SUMMARY_2026-10-12.md)、
+[重放证据](research/cpu_training/evidence/backward-replay-1012/README.md) 与
+[完整训练证据](research/cpu_training/evidence/large-placement-1012/README.md)。
 
 ## 目录
 

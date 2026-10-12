@@ -1,0 +1,45 @@
+{
+  "sequence": 1024,
+  "identity": 34,
+  "node": 0,
+  "diagnostic": true,
+  "source_hashes": {
+    "run_backward_replay.py": "82e6f4b27b580a6c3466fd1416b43968470c428fc09286b2ffe9105199c989c9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6"
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "compute_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sysctl": {
+    "numa_balancing": "1",
+    "perf_event_paranoid": "-1"
+  },
+  "captured_loss": 1.3336482048034668,
+  "saved_count": 56,
+  "capture_hashes": {
+    "output": "719382d8e39c5ca4e708520767404276bc2fd18c3d33c4eb99887d3bb2e4fea5",
+    "gradient": "172bbb50e4386d0f40491909ee76dcc3de34794ab916a006db7c174b53054606",
+    "expected": "78e6871824204e215a82bf22e1eff23c4551c94b0e1b4ec882f47f603a17e18a"
+  },
+  "target_bytes": 134217728,
+  "operator": "aten::_softmax_backward_data",
+  "seed": 20260921,
+  "gradient_stride": [
+    4194304,
+    1048576,
+    1024,
+    1
+  ],
+  "scope": "single real backward operator; one use after fresh copy; not full training or prefetch"
+}

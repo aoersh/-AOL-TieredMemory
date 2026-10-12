@@ -1,0 +1,3449 @@
+[
+  {
+    "step": 0,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 0,
+        "capacity_bytes": 134217728,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 4194304,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [],
+        "dram_byte_ns_until_drain": 0
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 1,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 0,
+        "capacity_bytes": 134217728,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 4194304,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [],
+        "dram_byte_ns_until_drain": 0
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  },
+  {
+    "step": 2,
+    "events": [
+      {
+        "event": "initial",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "initial",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "initial",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "initial",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "initial",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 56,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 54,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 50,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 52,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 53,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 47,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 46,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 44,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 40,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 42,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 43,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 37,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 35,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 34,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 32,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 33,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 30,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 26,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 28,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 29,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 23,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 22,
+        "nodes": {
+          "2": 4096
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 20,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 16,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 18,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 19,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 13,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 11,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 10,
+        "nodes": {
+          "2": 32768
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 8,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 9,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 6,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 2,
+        "nodes": {
+          "2": 1024
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 4,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "unpack",
+        "id": 5,
+        "nodes": {
+          "2": 8
+        }
+      },
+      {
+        "event": "capacity",
+        "peak_bytes": 0,
+        "capacity_bytes": 134217728,
+        "decisions": [
+          {
+            "id": 2,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 4,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 5,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 6,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 8,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 9,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 10,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 11,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 13,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 16,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 18,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 19,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 20,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 22,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 23,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 26,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 28,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 29,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 30,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 32,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 33,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 34,
+            "bytes": 134217728,
+            "initial_node": 2
+          },
+          {
+            "id": 35,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 37,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 40,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 42,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 43,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 44,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 46,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 47,
+            "bytes": 16777216,
+            "initial_node": 2
+          },
+          {
+            "id": 50,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 52,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 53,
+            "bytes": 32768,
+            "initial_node": 2
+          },
+          {
+            "id": 54,
+            "bytes": 4194304,
+            "initial_node": 2
+          },
+          {
+            "id": 56,
+            "bytes": 4194304,
+            "initial_node": 2
+          }
+        ],
+        "ledger": [],
+        "dram_byte_ns_until_drain": 0
+      }
+    ],
+    "selection": [
+      [
+        1,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        2,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        3,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        4,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        5,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        6,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        7,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        8,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        9,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        10,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        11,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        12,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        13,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        14,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        15,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        16,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        17,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        18,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        19,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        20,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        21,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        22,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        23,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        24,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        25,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        26,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        27,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        28,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        29,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        30,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        31,
+        [
+          128,
+          384
+        ],
+        "parameter"
+      ],
+      [
+        32,
+        [
+          32,
+          32,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        33,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        34,
+        [
+          8,
+          4,
+          1024,
+          1024
+        ],
+        "candidate"
+      ],
+      [
+        35,
+        [
+          32,
+          1024,
+          32
+        ],
+        "candidate"
+      ],
+      [
+        36,
+        [
+          32,
+          1024,
+          1024
+        ],
+        "repeated_storage"
+      ],
+      [
+        37,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        38,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        39,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        40,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        41,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        42,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        43,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        44,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        45,
+        [
+          128,
+          512
+        ],
+        "parameter"
+      ],
+      [
+        46,
+        [
+          8,
+          1024,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        47,
+        [
+          8192,
+          512
+        ],
+        "candidate"
+      ],
+      [
+        48,
+        [
+          512,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        49,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        50,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        51,
+        [
+          128
+        ],
+        "parameter"
+      ],
+      [
+        52,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        53,
+        [
+          8,
+          1024,
+          1
+        ],
+        "candidate"
+      ],
+      [
+        54,
+        [
+          8192,
+          128
+        ],
+        "candidate"
+      ],
+      [
+        55,
+        [
+          128,
+          128
+        ],
+        "parameter"
+      ],
+      [
+        56,
+        [
+          8,
+          1024,
+          128
+        ],
+        "candidate"
+      ]
+    ]
+  }
+]

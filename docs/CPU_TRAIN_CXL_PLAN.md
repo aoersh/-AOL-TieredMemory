@@ -1,5 +1,20 @@
 # 面向 CPU 深度学习训练的收益感知 CXL 访问与选择性预取
 
+2026-10-12收敛更新：真实softmax backward三案例、30进程重放未获得实用DRAM
+使用优势。128 MiB局部副本创建收益触发唯一大配置完整训练确认，10进程结果
+Direct284.384/DRAM放置284.565 ms，差值区间在±3%门槛内。停止当前attention
+对象的放置/迁移调参，暂不进入收益模型或复杂ML。后续仅有限筛查不同算子族
+或有现实依据的容量压力，参见 [确认报告](../research/cpu_training/BACKWARD_REPLAY_REPORT.md)。
+
+当前路径均使用hook创建受管保存副本，初始DRAM不是无额外复制的原生DRAM参考，
+受管额度也不是整进程容量上限。已测负收益不能推广为所有迁移无效。
+后续优先选择有实际依据的快内存不足场景，补充原生DRAM参考以量化框架开销；
+策略之间在相同实际容量约束下比较。先静态放置通过完整训练收益门槛（既定3%与
+噪声门槛取较大者），再验证含搬运、回收与重置成本的动态迁移，最后检验AOL
+相对简单静态/热度策略的增量。每道门未通过则停止该案例，不继续无边界调参。
+本轮没有实施这些容量实验；以下v3排期和日期记录按历史理解，最新断点以
+[HANDOFF](../research/cpu_training/HANDOFF.md)为准。
+
 版本：v3，2026-09-21。英文暂名：Benefit-Aware CXL Memory Access and
 Selective Prefetching for CPU-based DNN Training。
 

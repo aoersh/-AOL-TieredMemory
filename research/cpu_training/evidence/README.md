@@ -13,6 +13,13 @@ Use the scripts in the parent directory to run new experiments.
 | [closure-1009](closure-1009/) | Corrected 2×2 allocation pressure, fair DRAM/Direct/Prefetch placement, target-pack timing, audit results, and lightweight hashes |
 | [capacity-pilot-1009](capacity-pilot-1009/) | 五条件受管副本池 32/64 MiB 容量、静态放置与同步需求迁移 |
 | [capacity-selection-1012](capacity-selection-1012/) | 相同 32 MiB 额度下 ID10/ID34 对象选择及不迁移对照 |
+| [backward-replay-1012](backward-replay-1012/) | 真实 softmax backward 输入重放，三个案例两放置，各五进程 |
+| [large-placement-1012](large-placement-1012/) | sequence1024完整训练，128 MiB额度下初始ID34放置确认 |
+
+2026-10-12新增两套证据各按 `diagnostic/timing/source/validation` 组织，包含独立
+进程均值、区间、配置、步骤锚点和完整原始文件哈希。完整步骤、日志、二进制留在
+本机 `results/`，不能仅凭锚点重算统计。解释结论前请读
+[收敛报告的比较对象与限制](../BACKWARD_REPLAY_REPORT.md)。
 
 The new archives are copied from the matching `results/cpu-training-*` directories.
 They include per-run manifests, source snapshots, raw step/event data, summaries,
