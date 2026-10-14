@@ -1,0 +1,41 @@
+{
+  "condition": "direct",
+  "mode": "direct",
+  "diagnostic": false,
+  "steps": 100,
+  "warmup": 5,
+  "sequence": 512,
+  "batch": 8,
+  "width": 128,
+  "heads": 4,
+  "layers": 2,
+  "seed": 20260921,
+  "compute_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "reserved_worker_cpu": 8,
+  "source_hashes": {
+    "run_framework_baseline.py": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "analyze_framework_baseline.py": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "run_access_paths.py": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "access_paths.py": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9"
+  },
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "sysctl": {
+    "numa_balancing": "1",
+    "perf_event_paranoid": "-1"
+  },
+  "scope": "framework calibration; native has no saved hooks/copies; dram/direct copy all eligible saved tensors; no capacity limit or migration",
+  "timing": "step and total_run from unchanged run_access_paths.run; workload_run adds model/input build; Python import/process startup and JSON serialization excluded"
+}

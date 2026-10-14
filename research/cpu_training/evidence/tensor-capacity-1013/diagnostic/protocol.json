@@ -1,0 +1,40 @@
+{
+  "diagnostic": true,
+  "repeats": 1,
+  "conditions": {
+    "native": [
+      0,
+      0
+    ],
+    "dram": [
+      1,
+      0
+    ],
+    "cxl": [
+      2,
+      0
+    ],
+    "first64": [
+      3,
+      64
+    ],
+    "first128": [
+      3,
+      128
+    ],
+    "small64": [
+      4,
+      64
+    ],
+    "small128": [
+      4,
+      128
+    ]
+  },
+  "seed": 20261013,
+  "steps": 3,
+  "warmup": 0,
+  "diagnostic_reference": "None",
+  "practical_threshold": 0.03,
+  "stop": "finite 64/128MiB tensor-storage budget screen; no migration or AOL; not whole-process capacity"
+}

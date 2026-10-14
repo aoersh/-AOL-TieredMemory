@@ -1,0 +1,19 @@
+{
+  "total_run_ns": 535727967,
+  "summed_step_ns": 399956950,
+  "final_allocator": {
+    "limit": 134217728,
+    "policy": 3,
+    "fast_live": 0,
+    "slow_live": 0,
+    "fast_peak": 134066176,
+    "slow_peak": 67371008,
+    "total_peak": 187068416,
+    "allocations": 1851,
+    "frees": 1851,
+    "failures": 0,
+    "allocated_bytes": 1864814592,
+    "live_records": 0
+  },
+  "max_rss_kib": 552300
+}

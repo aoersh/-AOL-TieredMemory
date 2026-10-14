@@ -1,0 +1,23 @@
+{
+  "torch": "2.6.0+cpu",
+  "abi": 0,
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-shared",
+    "-fPIC",
+    "-pthread",
+    "-D_GLIBCXX_USE_CXX11_ABI=0",
+    "-I/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/include",
+    "/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/research/cpu_training/tensor_capacity_allocator.cpp",
+    "-L/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/lib",
+    "-Wl,-rpath,/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/lib",
+    "-lc10",
+    "-lnuma",
+    "-o",
+    "results/tensor-capacity-build-1013-v1/libtensor_capacity.so"
+  ],
+  "source_sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+  "library_sha256": "522446ddded324964bcbe2f95819ad5431b2dfcf78500964512562b56a83185d"
+}

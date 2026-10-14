@@ -1,0 +1,13 @@
+{
+  "diagnostic": false,
+  "repeats": 5,
+  "seed": 20261013,
+  "conditions": {
+    "native": "native",
+    "dram": "dram",
+    "direct": "direct"
+  },
+  "diagnostic_reference": "results/framework-baseline-diagnostic-1013-v2",
+  "practical_threshold": 0.03,
+  "stop": "calibration is not a capacity or migration benefit test; no shape search"
+}

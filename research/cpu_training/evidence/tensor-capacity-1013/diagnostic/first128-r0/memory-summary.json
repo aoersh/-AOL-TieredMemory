@@ -1,0 +1,273 @@
+[
+  {
+    "step": -1,
+    "stage": "before_training",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 285872128
+    },
+    "anonymous_mapping_bytes": {
+      "0": 273063936
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 5910528,
+        "slow_live": 0,
+        "fast_peak": 5910528,
+        "slow_peak": 0,
+        "total_peak": 5910528,
+        "allocations": 30,
+        "frees": 0,
+        "failures": 0,
+        "allocated_bytes": 5910528,
+        "live_records": 30
+      },
+      "reserved": {
+        "0": 5910528,
+        "2": 0
+      },
+      "resident": {
+        "0": 5910528,
+        "2": 0
+      },
+      "record_count": 30,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 0,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 409894912,
+      "2": 16777216
+    },
+    "anonymous_mapping_bytes": {
+      "0": 397086720,
+      "2": 16777216
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 129818624,
+        "slow_live": 16777216,
+        "fast_peak": 131923968,
+        "slow_peak": 33554432,
+        "total_peak": 152821760,
+        "allocations": 86,
+        "frees": 18,
+        "failures": 0,
+        "allocated_bytes": 308097024,
+        "live_records": 68
+      },
+      "reserved": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "resident": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "record_count": 68,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 0,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 287924224,
+      "2": 262144
+    },
+    "anonymous_mapping_bytes": {
+      "0": 275116032,
+      "2": 262144
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 7364608,
+        "slow_live": 262144,
+        "fast_peak": 134066176,
+        "slow_peak": 67371008,
+        "total_peak": 187068416,
+        "allocations": 637,
+        "frees": 579,
+        "failures": 0,
+        "allocated_bytes": 625545216,
+        "live_records": 58
+      },
+      "reserved": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "resident": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "record_count": 58,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 1,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 410382336,
+      "2": 16777216
+    },
+    "anonymous_mapping_bytes": {
+      "0": 397574144,
+      "2": 16777216
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 129818624,
+        "slow_live": 16777216,
+        "fast_peak": 134066176,
+        "slow_peak": 67371008,
+        "total_peak": 187068416,
+        "allocations": 693,
+        "frees": 625,
+        "failures": 0,
+        "allocated_bytes": 927731712,
+        "live_records": 68
+      },
+      "reserved": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "resident": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "record_count": 68,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 1,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 288063488,
+      "2": 262144
+    },
+    "anonymous_mapping_bytes": {
+      "0": 275255296,
+      "2": 262144
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 7364608,
+        "slow_live": 262144,
+        "fast_peak": 134066176,
+        "slow_peak": 67371008,
+        "total_peak": 187068416,
+        "allocations": 1244,
+        "frees": 1186,
+        "failures": 0,
+        "allocated_bytes": 1245179904,
+        "live_records": 58
+      },
+      "reserved": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "resident": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "record_count": 58,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 2,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 410517504,
+      "2": 16777216
+    },
+    "anonymous_mapping_bytes": {
+      "0": 397709312,
+      "2": 16777216
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 129818624,
+        "slow_live": 16777216,
+        "fast_peak": 134066176,
+        "slow_peak": 67371008,
+        "total_peak": 187068416,
+        "allocations": 1300,
+        "frees": 1232,
+        "failures": 0,
+        "allocated_bytes": 1547366400,
+        "live_records": 68
+      },
+      "reserved": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "resident": {
+        "0": 129818624,
+        "2": 16777216
+      },
+      "record_count": 68,
+      "diagnostic_materialized_pages": 0
+    }
+  },
+  {
+    "step": 2,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93835264,
+      "0": 288215040,
+      "2": 262144
+    },
+    "anonymous_mapping_bytes": {
+      "0": 275406848,
+      "2": 262144
+    },
+    "allocator": {
+      "stats": {
+        "limit": 134217728,
+        "policy": 3,
+        "fast_live": 7364608,
+        "slow_live": 262144,
+        "fast_peak": 134066176,
+        "slow_peak": 67371008,
+        "total_peak": 187068416,
+        "allocations": 1851,
+        "frees": 1793,
+        "failures": 0,
+        "allocated_bytes": 1864814592,
+        "live_records": 58
+      },
+      "reserved": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "resident": {
+        "0": 7364608,
+        "2": 262144
+      },
+      "record_count": 58,
+      "diagnostic_materialized_pages": 0
+    }
+  }
+]

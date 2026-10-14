@@ -1,0 +1,44 @@
+[
+  {
+    "step": 0,
+    "measured": false,
+    "start_ns": 2159689975506489,
+    "end_ns": 2159690081265308,
+    "step_ns": 105758819,
+    "forward_ns": 49291633,
+    "backward_ns": 55437730,
+    "optimizer_ns": 1029456,
+    "loss": 1.3336524963378906,
+    "minor_faults": 132899,
+    "major_faults": 0,
+    "allocator": null
+  },
+  {
+    "step": 5,
+    "measured": true,
+    "start_ns": 2159690390556181,
+    "end_ns": 2159690465590819,
+    "step_ns": 75034638,
+    "forward_ns": 28299003,
+    "backward_ns": 45788067,
+    "optimizer_ns": 947568,
+    "loss": 1.3325023651123047,
+    "minor_faults": 85995,
+    "major_faults": 0,
+    "allocator": null
+  },
+  {
+    "step": 104,
+    "measured": true,
+    "start_ns": 2159697248496570,
+    "end_ns": 2159697314721753,
+    "step_ns": 66225183,
+    "forward_ns": 21714595,
+    "backward_ns": 43536066,
+    "optimizer_ns": 974522,
+    "loss": 1.3113441467285156,
+    "minor_faults": 67560,
+    "major_faults": 0,
+    "allocator": null
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "case": "alias_and_refund",
+      "passed": true
+    },
+    {
+      "case": "zero_budget_residency",
+      "passed": true
+    },
+    {
+      "case": "size_rule",
+      "passed": true
+    },
+    {
+      "case": "concurrent_quota",
+      "passed": true
+    },
+    {
+      "case": "resize_and_autograd",
+      "passed": true
+    }
+  ],
+  "start_ns": 2159532953827579,
+  "end_ns": 2159538568997359
+}

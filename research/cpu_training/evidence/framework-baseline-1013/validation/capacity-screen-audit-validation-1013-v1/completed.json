@@ -1,0 +1,47 @@
+{
+  "start_ns": 2159954854552638,
+  "end_ns": 2159954952976391,
+  "checks": [
+    {
+      "case": "native_has_copy",
+      "rejected": true
+    },
+    {
+      "case": "wrong_step_clock",
+      "rejected": true
+    },
+    {
+      "case": "unexpected_anonymous_node",
+      "rejected": true
+    },
+    {
+      "case": "framework_wrong_numerics",
+      "rejected": true
+    },
+    {
+      "case": "quota_overflow",
+      "rejected": true
+    },
+    {
+      "case": "retained_storage",
+      "rejected": true
+    },
+    {
+      "case": "wrong_tensor_numerics",
+      "rejected": true
+    },
+    {
+      "case": "wrong_storage_placement",
+      "rejected": true
+    },
+    {
+      "case": "wrong_page_residency",
+      "rejected": true
+    },
+    {
+      "case": "overlapping_processes",
+      "rejected": true
+    }
+  ],
+  "raw_files_modified": false
+}

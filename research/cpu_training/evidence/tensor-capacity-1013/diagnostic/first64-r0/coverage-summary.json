@@ -1,0 +1,45 @@
+{
+  "groups": {
+    "-1:persistent:node0": {
+      "entries": 30,
+      "logical_storage_bytes": 5847552
+    },
+    "0:saved:node0": {
+      "entries": 44,
+      "logical_storage_bytes": 96179200
+    },
+    "0:saved:node2": {
+      "entries": 12,
+      "logical_storage_bytes": 113246208
+    },
+    "0:gradient:node0": {
+      "entries": 28,
+      "logical_storage_bytes": 1653248
+    },
+    "1:saved:node0": {
+      "entries": 44,
+      "logical_storage_bytes": 96179200
+    },
+    "1:saved:node2": {
+      "entries": 12,
+      "logical_storage_bytes": 113246208
+    },
+    "1:gradient:node0": {
+      "entries": 28,
+      "logical_storage_bytes": 1653248
+    },
+    "2:saved:node0": {
+      "entries": 44,
+      "logical_storage_bytes": 96179200
+    },
+    "2:saved:node2": {
+      "entries": 12,
+      "logical_storage_bytes": 113246208
+    },
+    "2:gradient:node0": {
+      "entries": 28,
+      "logical_storage_bytes": 1653248
+    }
+  },
+  "byte_note": "storage byte sum over observations, not unique or simultaneous storage"
+}

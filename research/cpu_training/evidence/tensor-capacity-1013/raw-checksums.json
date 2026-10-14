@@ -1,0 +1,1766 @@
+{
+  "results/tensor-capacity-diagnostic-1013-v1/commands.json": {
+    "sha256": "113c1e98d6b2265ffc9c4dbc005667c93b38ff11aca496c599e367b3f7dae9ba",
+    "bytes": 3030
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/completed.json": {
+    "sha256": "36c63244f3b9f059f1f787c891d8e1b7048c8c3f6fe80b9fed5bf250a364db0d",
+    "bytes": 16
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/coverage.json": {
+    "sha256": "7c7f14b4fa1b1aad3823bdb869fea3da5e2b8225f56011f3f008caf1074b4683",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/manifest.json": {
+    "sha256": "9703d3eee798db3b7585b1941a92fff73fe4c757825abb4afe8ed298dceffc37",
+    "bytes": 3063
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/memory-diagnostic.json": {
+    "sha256": "d0ee407e16b9e5ce1445f9dfb427b336794b1807ac4d6757b8970e7e7014b9b1",
+    "bytes": 503545
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/run-timing.json": {
+    "sha256": "641c772ed040e8d9a7236e014d882ab21d7c18f2c12127b599bc431a5c3bde3b",
+    "bytes": 386
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/steps.json": {
+    "sha256": "93b2a0190544cc0e2795944f6eda8564d6fea8a0747f0b2f4eaad9f06e44377a",
+    "bytes": 1894
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/cxl-r0.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/coverage.json": {
+    "sha256": "2777e31e28c4ee779526a936878c8f66bb89b7f531a17a6ccf74cb422044a90e",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/manifest.json": {
+    "sha256": "d52a7d1e3ad8c1da19d7c90e07502a332973fe27746817c7c88e6a58cb97e6ae",
+    "bytes": 3064
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/memory-diagnostic.json": {
+    "sha256": "d33590ab28a3940c911815a5f0ed45a4aed43dcd562792914a8231316e1ab375",
+    "bytes": 502502
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/run-timing.json": {
+    "sha256": "ab30593434ed2101f83d3d3c16e12367ed4bb0337d80b0c9c0f908346ab967b4",
+    "bytes": 386
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/steps.json": {
+    "sha256": "540540b142a4409e72d85c1ad4b35cf0ebe085d8005b2c9a06dff2a591c9af14",
+    "bytes": 1897
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/environment.json": {
+    "sha256": "bc4e5ec39a73f216751bca61832bd5d3fd0a9d93e5e3195c8692a9beb5ddc49b",
+    "bytes": 4971
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/coverage.json": {
+    "sha256": "75183999267190a4c50d9c3935bd480edd4e0c3c3c31822bccbcfec4cfe147e8",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/manifest.json": {
+    "sha256": "5fedb457fecc81305b8540f57b7e3956f50f6458d35bd4d6a634065fdf17e122",
+    "bytes": 3076
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/memory-diagnostic.json": {
+    "sha256": "f47385304bf1355ef922638bf3f97bac55103bd4a8f8681a50b8dfaf2e5fbf4b",
+    "bytes": 506062
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/run-timing.json": {
+    "sha256": "fad24ac8f9ed32cfa909c281a0eb3b36be07d14965b292ec82e7215246f43070",
+    "bytes": 401
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/steps.json": {
+    "sha256": "78f20f71e3a8021d4c495602b56445f03082a03f58925b462467f5ce7cdd675a",
+    "bytes": 1957
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first128-r0.log": {
+    "sha256": "bf0d493e1db5905ec5f2a65b20a255a467272b3a2cb51977eacdc95e3bd3691a",
+    "bytes": 14
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/coverage.json": {
+    "sha256": "c2fb862259a3718cae2a34730e16ac3f6b27c3f58fa3f64709024e249b0a7bfb",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/manifest.json": {
+    "sha256": "3ee21875350c8b771a3b7bdad3dfe168c37861ddcec60be84589c5f41b31f448",
+    "bytes": 3074
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/memory-diagnostic.json": {
+    "sha256": "fc6977383ab9c38826adb268c8a42074aef8e36a59259a68024f8addba8c9864",
+    "bytes": 504046
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/run-timing.json": {
+    "sha256": "5819a39b939979568103f1e665a03463c11cc1793f1ace884d7cb8f93800836f",
+    "bytes": 400
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/steps.json": {
+    "sha256": "4892339a80a8c3aa446d9c0aaadd8e34b9755e7df66521acf1de8e5d2f083241",
+    "bytes": 1936
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/first64-r0.log": {
+    "sha256": "9accc1d55525eb395e7bc4cbf462d9cd240ce0922936fa9358899f43e8ec5942",
+    "bytes": 13
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/coverage.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/manifest.json": {
+    "sha256": "523dc087c363884e0be4165301a60f655b55ddb46b542e60b264256cbfb0523e",
+    "bytes": 3066
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/memory-diagnostic.json": {
+    "sha256": "9353059f0bc43c2780222ccc057e96742834cbaea4db5efe49cba2f24496c253",
+    "bytes": 386959
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/run-timing.json": {
+    "sha256": "c5a3f2313e8e0b03edb563eeb6f84884ce233ad42769371bb62f88e3b8d4271d",
+    "bytes": 115
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/steps.json": {
+    "sha256": "84654182b79ab38a434768fe86caf44f6a37c9d3cd2b5849762942e3d6e976a8",
+    "bytes": 981
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/native-r0.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/progress.json": {
+    "sha256": "02f47751a15f0970161a774c75444fb3b29e33db51cbd2ba460259e7dc367e83",
+    "bytes": 1311
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/protocol.json": {
+    "sha256": "59f67e1084bd31ae26a138400f5f553144afa6f83b1b525832bfd234e73261f6",
+    "bytes": 572
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/runner.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/coverage.json": {
+    "sha256": "c04bbde461ffb4e31ee454e1784f49c473d7c19d0e33810f58094bb0096d2472",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/manifest.json": {
+    "sha256": "a88a73f9fb60e3feedc83f1b97a172ac07268f350207a90d22f732a230bd4907",
+    "bytes": 3076
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/memory-diagnostic.json": {
+    "sha256": "3367834fcb4570862683c0aba50ed2953b2666dcf27194432619bb8772627440",
+    "bytes": 504262
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/run-timing.json": {
+    "sha256": "866b28a9e057f90d68e3a545872d29b7333147311ce283fc208780145251263a",
+    "bytes": 400
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/steps.json": {
+    "sha256": "fa854281a806423a31a9ebc85dc5558b29d89f52cfca54185f9a5623eb3279f8",
+    "bytes": 1954
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small128-r0.log": {
+    "sha256": "5fc1e1f9d9ac3a549e89fbae6089a022f22947cdd8f88a149c9ef90a20742bfe",
+    "bytes": 14
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/correctness.json": {
+    "sha256": "6a2c7fe743aa231b9396fc9232ed1fcb0fd4ad6085e5dd7f97ed91a6dda8e2d7",
+    "bytes": 260
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/coverage.json": {
+    "sha256": "c04bbde461ffb4e31ee454e1784f49c473d7c19d0e33810f58094bb0096d2472",
+    "bytes": 22737
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/manifest.json": {
+    "sha256": "6c6bc30d0007a4ba2717f79ce66a4ecff33b0f6a4364549a64bd9e34018efdb5",
+    "bytes": 3074
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/memory-diagnostic.json": {
+    "sha256": "2293c64d1f3b8e86c41d4c85f95dd6682c6da31086857e6444be1b78e76c216f",
+    "bytes": 503100
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/run-timing.json": {
+    "sha256": "6e78fa22e7763a90bf82189dccf6229b497b98d3418e3e21d8da53a2273e212f",
+    "bytes": 399
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/steps.json": {
+    "sha256": "fa0ed37b30135444cdbc454e8ca21fb7fe77836a6ae4d2c32fdbf4cf630c55c4",
+    "bytes": 1951
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/small64-r0.log": {
+    "sha256": "d1aba8920d92d60d478dd9b710565cb9299ea6b2a63aa61a242fa6e389c01d69",
+    "bytes": 13
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/verified-analysis/analyzer.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/verified-analysis/completed.json": {
+    "sha256": "6efa8016db40733daf3c026bfed4dcf586cca6151e2d56e2fb84d98ad7460573",
+    "bytes": 23
+  },
+  "results/tensor-capacity-diagnostic-1013-v1/verified-analysis/summary.json": {
+    "sha256": "352e4f1193c9bdca7b99dfaef4c88a559e99aea92768f8c0d155770b5bdbe74d",
+    "bytes": 45041
+  },
+  "results/tensor-capacity-timing-1013-v1/commands.json": {
+    "sha256": "cb20cb11a4123735ae9b1853a49bf89d788696670b388ed4e096358364bd4f9f",
+    "bytes": 8538
+  },
+  "results/tensor-capacity-timing-1013-v1/completed.json": {
+    "sha256": "cce83010b8fbeaa76a0d49b984661741537564b92e172d6f0c8cff989d737268",
+    "bytes": 17
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/manifest.json": {
+    "sha256": "74ea58f2cb3aa4719a4acfa2337d634dd56d780b22725e12a01e22b73c684805",
+    "bytes": 3066
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/run-timing.json": {
+    "sha256": "d1f9a8a32cd655f7c4dc390b68b1fc00f418e600c34ac854954eec17f0dae775",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/steps.json": {
+    "sha256": "00ebf8e3caa80be2345e72d0e4e605ef0ed6670862ff72666165b020dfc7f99a",
+    "bytes": 66582
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r0.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/manifest.json": {
+    "sha256": "74ea58f2cb3aa4719a4acfa2337d634dd56d780b22725e12a01e22b73c684805",
+    "bytes": 3066
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/run-timing.json": {
+    "sha256": "b7416a805ee901674ed55a39161c29261cee985efcec58b2a54cf3649b26e792",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/steps.json": {
+    "sha256": "8dde19b39c0a4409595b8962a9b30b4298eda2f19e95efd747f858170dade7e3",
+    "bytes": 66582
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r1.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/manifest.json": {
+    "sha256": "74ea58f2cb3aa4719a4acfa2337d634dd56d780b22725e12a01e22b73c684805",
+    "bytes": 3066
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/run-timing.json": {
+    "sha256": "c180c502251fd338174ff6beaf98c39fa65a4ea170ce6af0d2c4139b151ed811",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/steps.json": {
+    "sha256": "84464d2dec7b247640f5418540a321044fc07e3259cc18a4b65d54d1272403e0",
+    "bytes": 66582
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/cxl-r2.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/manifest.json": {
+    "sha256": "b7bb83c6bed6a439fb215093eee80dce19b77ed0b8292e76511bacaac492b371",
+    "bytes": 3067
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/run-timing.json": {
+    "sha256": "37ebdf3492704dd2caf7d3c7ae91723e30056607efafbcdde739c95539f408be",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/steps.json": {
+    "sha256": "6b2492a87a10dd5c6679b53e3b1ffe8f0394649259132ac7ceface34e3f4dbc1",
+    "bytes": 66687
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/manifest.json": {
+    "sha256": "b7bb83c6bed6a439fb215093eee80dce19b77ed0b8292e76511bacaac492b371",
+    "bytes": 3067
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/run-timing.json": {
+    "sha256": "1ce6209345d570d2e4b501a91d9ddb3bf1817dca8aafb9d912263d3d972f09b9",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/steps.json": {
+    "sha256": "6962c2a0c27ecc30430497786cf9b9f77ef0995a08cc74d993a56294a5fe87a2",
+    "bytes": 66687
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r1.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/manifest.json": {
+    "sha256": "b7bb83c6bed6a439fb215093eee80dce19b77ed0b8292e76511bacaac492b371",
+    "bytes": 3067
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/run-timing.json": {
+    "sha256": "5ebec7ba0396eb68419b56ade2eb252516cf20399607b2e73ac0d29732cca5c2",
+    "bytes": 393
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/steps.json": {
+    "sha256": "b1740b2859ca7d85ffa2784be98839a60155a92d6414a4e3979922ba5eee8e6e",
+    "bytes": 66687
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/dram-r2.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/tensor-capacity-timing-1013-v1/environment.json": {
+    "sha256": "8dc310024e95f2f959981f250292a6b3c13e19b58a7aa49b7ed6bf5a11545361",
+    "bytes": 4971
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/manifest.json": {
+    "sha256": "0b4d46a6f599c95c5ac35fbe5d6a8f0fc0c74dba25826eb257f476c7236930de",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/run-timing.json": {
+    "sha256": "ecf67ef6f7b628bcc66193038c1e46b91dbed46fa533baeb99585abf7c58b3dc",
+    "bytes": 408
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/steps.json": {
+    "sha256": "b5815047389b8f9c5bcbbe3643521c688e613e48aa7973bf320425c66ba1103f",
+    "bytes": 68784
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r0.log": {
+    "sha256": "bf0d493e1db5905ec5f2a65b20a255a467272b3a2cb51977eacdc95e3bd3691a",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/manifest.json": {
+    "sha256": "0b4d46a6f599c95c5ac35fbe5d6a8f0fc0c74dba25826eb257f476c7236930de",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/run-timing.json": {
+    "sha256": "8429c8f040d50c5f318fa83e1a9b078299869933dbc9bf8faea2432cdc248167",
+    "bytes": 408
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/steps.json": {
+    "sha256": "3bcb17ca91a176f9ca79af9a40313132a6fa2f562e50e18cc42a31b000b95262",
+    "bytes": 68787
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r1.log": {
+    "sha256": "bf0d493e1db5905ec5f2a65b20a255a467272b3a2cb51977eacdc95e3bd3691a",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/manifest.json": {
+    "sha256": "0b4d46a6f599c95c5ac35fbe5d6a8f0fc0c74dba25826eb257f476c7236930de",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/run-timing.json": {
+    "sha256": "3404b4a3d58e3dfbcd4b9b613311e5c2f6cb54b29c554afce4290a52cb31feed",
+    "bytes": 408
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/steps.json": {
+    "sha256": "5c217ba091edcd7f0bea06daf9d93bf7ce91dee06cb5bf2119bde6b51d46d051",
+    "bytes": 68786
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first128-r2.log": {
+    "sha256": "bf0d493e1db5905ec5f2a65b20a255a467272b3a2cb51977eacdc95e3bd3691a",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/manifest.json": {
+    "sha256": "a79a2a3c3db79204163b8e61c5637c8cc5d1e03c581e24c2ff7da9242fa82266",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/run-timing.json": {
+    "sha256": "ef6737e2203a90c01c4ff3c8b039e2205c24c445a9173868bef469d8abb8edab",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/steps.json": {
+    "sha256": "0f9811abbe5fe0faffde7887252f85042a0f252c23f83705017f972972f91b51",
+    "bytes": 67948
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r0.log": {
+    "sha256": "9accc1d55525eb395e7bc4cbf462d9cd240ce0922936fa9358899f43e8ec5942",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/manifest.json": {
+    "sha256": "a79a2a3c3db79204163b8e61c5637c8cc5d1e03c581e24c2ff7da9242fa82266",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/run-timing.json": {
+    "sha256": "053ddaa542a42f5d28bbfdbdd252f7443e7d99173b322b9f69fb70b988287e5e",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/steps.json": {
+    "sha256": "69b1b42806f1c25c6455331823e371368eccc774266f3d38c6538ea64f36db47",
+    "bytes": 68045
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r1.log": {
+    "sha256": "9accc1d55525eb395e7bc4cbf462d9cd240ce0922936fa9358899f43e8ec5942",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/manifest.json": {
+    "sha256": "a79a2a3c3db79204163b8e61c5637c8cc5d1e03c581e24c2ff7da9242fa82266",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/run-timing.json": {
+    "sha256": "188c5a9f50e1f749f0c42a137ba0a2d2e1e0339d27d89f0a11ef531fb9df8049",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/steps.json": {
+    "sha256": "5d91e508dcc1fe7384d6ae22bc61c5d041446395b70de16a7cdbb21d76813ac5",
+    "bytes": 67948
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/first64-r2.log": {
+    "sha256": "9accc1d55525eb395e7bc4cbf462d9cd240ce0922936fa9358899f43e8ec5942",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/manifest.json": {
+    "sha256": "3c8704bf352143cd81493ed03322ce92bace117a3ddc1015f79e5d4dc6795082",
+    "bytes": 3069
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/run-timing.json": {
+    "sha256": "272be833756d199282b7b18ee2636a7dacade03deacdaa0c3b4f9d6542214e24",
+    "bytes": 117
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/steps.json": {
+    "sha256": "97717e2ccf308f00a003a8984a9dafa26c6c6c9fd24fa35743353b7e5474c63f",
+    "bytes": 34325
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r0.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/manifest.json": {
+    "sha256": "3c8704bf352143cd81493ed03322ce92bace117a3ddc1015f79e5d4dc6795082",
+    "bytes": 3069
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/run-timing.json": {
+    "sha256": "d7db818ad53b7a1e9e95597c5f23f028c87b580ed26fd72c6cfd4b259b3482e6",
+    "bytes": 117
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/steps.json": {
+    "sha256": "3187ed1733b173f717add4dff0a0df5bd5e9c538d182a8564dff05afd9a56f62",
+    "bytes": 34312
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r1.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/manifest.json": {
+    "sha256": "3c8704bf352143cd81493ed03322ce92bace117a3ddc1015f79e5d4dc6795082",
+    "bytes": 3069
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/run-timing.json": {
+    "sha256": "d79fbfb2335fc8c821e9a448b9bdb251b6746b2998896775666593c6b39282f7",
+    "bytes": 117
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/steps.json": {
+    "sha256": "c2682ee6b42e167403e20a361079d5c080e21281576793349c622dd5c570408f",
+    "bytes": 34316
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/native-r2.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/tensor-capacity-timing-1013-v1/progress.json": {
+    "sha256": "a4fb0c33eb58f5f9ed15fa16e6faca184078c12778eb32633030eb3b97ad4056",
+    "bytes": 3893
+  },
+  "results/tensor-capacity-timing-1013-v1/protocol.json": {
+    "sha256": "96c82dbbd42f3d61dd547029c01e214a012a5a5ee0bee0e1c8f4ecd6a8486b13",
+    "bytes": 613
+  },
+  "results/tensor-capacity-timing-1013-v1/runner.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/manifest.json": {
+    "sha256": "cf0e8d759c7ff2112aaf2669982fab80d5d942ade06251c73a49b7990f2e5620",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/run-timing.json": {
+    "sha256": "df3ce92b74095519a08991a6dfef483715e97856ae34f6d4e73e33a697700df5",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/steps.json": {
+    "sha256": "f4076362e3f8bcb9508139d20e4eccd2daa4f71cb576aa24b379343e7b93b469",
+    "bytes": 68682
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r0.log": {
+    "sha256": "5fc1e1f9d9ac3a549e89fbae6089a022f22947cdd8f88a149c9ef90a20742bfe",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/manifest.json": {
+    "sha256": "cf0e8d759c7ff2112aaf2669982fab80d5d942ade06251c73a49b7990f2e5620",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/run-timing.json": {
+    "sha256": "12dc2babd469b049a07f4e627f8ca2a41af12d472f95d46df50c408fe39fb04f",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/steps.json": {
+    "sha256": "10d242f23b8ce80f15bbef8f933dc1611086b5dbb938e03fe40a5a453ec5a890",
+    "bytes": 68682
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r1.log": {
+    "sha256": "5fc1e1f9d9ac3a549e89fbae6089a022f22947cdd8f88a149c9ef90a20742bfe",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/manifest.json": {
+    "sha256": "cf0e8d759c7ff2112aaf2669982fab80d5d942ade06251c73a49b7990f2e5620",
+    "bytes": 3079
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/run-timing.json": {
+    "sha256": "2f5a3175b25764017b5b92a58e6446e93833e933c746c778135c622e0ac4259a",
+    "bytes": 407
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/steps.json": {
+    "sha256": "a6a42a398b7c94489bc7f15b31ac339fc3b97e8ae1928f8bedee4c27c9f34dc4",
+    "bytes": 68682
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small128-r2.log": {
+    "sha256": "5fc1e1f9d9ac3a549e89fbae6089a022f22947cdd8f88a149c9ef90a20742bfe",
+    "bytes": 14
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/manifest.json": {
+    "sha256": "6714bfdf8794eff9b717cb966b245e9d06bfd65e9ff4e43ba51a87bbc59c45d4",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/run-timing.json": {
+    "sha256": "571e277ab11f113a6df805fd6006c8aedae3f7d2c8b7ab1c29d081e444f3bf3d",
+    "bytes": 406
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/steps.json": {
+    "sha256": "9108d2dcb8b50b3738d1f30643f7c11c9ff6f54824dad61c01de19d3d7e9918e",
+    "bytes": 68577
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r0.log": {
+    "sha256": "d1aba8920d92d60d478dd9b710565cb9299ea6b2a63aa61a242fa6e389c01d69",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/manifest.json": {
+    "sha256": "6714bfdf8794eff9b717cb966b245e9d06bfd65e9ff4e43ba51a87bbc59c45d4",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/run-timing.json": {
+    "sha256": "f8b719a08b41cf56eededbdc98b89a23817e3db39ea5311b5c39edf8e7d59288",
+    "bytes": 406
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/steps.json": {
+    "sha256": "081a0ffa1a4f5910196b87a5719ae33a612b5c6d06a6c50d89efc7f9e320562c",
+    "bytes": 68577
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r1.log": {
+    "sha256": "d1aba8920d92d60d478dd9b710565cb9299ea6b2a63aa61a242fa6e389c01d69",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/analyze_tensor_capacity.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/build_tensor_capacity.py": {
+    "sha256": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "bytes": 1496
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/manifest.json": {
+    "sha256": "6714bfdf8794eff9b717cb966b245e9d06bfd65e9ff4e43ba51a87bbc59c45d4",
+    "bytes": 3077
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/run-timing.json": {
+    "sha256": "99303c317a5c45072c12ea594fef46e799684acd2eecfd3bd9ca8348d680ba4b",
+    "bytes": 406
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/run_tensor_capacity.py": {
+    "sha256": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "bytes": 11226
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/steps.json": {
+    "sha256": "f38f15a33ac97b38b0cccf197c7896ba45844de83e66ca71cdfc8cabf1f3f951",
+    "bytes": 68577
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/tensor_capacity.py": {
+    "sha256": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "bytes": 3575
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/tensor-capacity-timing-1013-v1/small64-r2.log": {
+    "sha256": "d1aba8920d92d60d478dd9b710565cb9299ea6b2a63aa61a242fa6e389c01d69",
+    "bytes": 13
+  },
+  "results/tensor-capacity-timing-1013-v1/verified-analysis/analyzer.py": {
+    "sha256": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "bytes": 10837
+  },
+  "results/tensor-capacity-timing-1013-v1/verified-analysis/completed.json": {
+    "sha256": "6efa8016db40733daf3c026bfed4dcf586cca6151e2d56e2fb84d98ad7460573",
+    "bytes": 23
+  },
+  "results/tensor-capacity-timing-1013-v1/verified-analysis/summary.json": {
+    "sha256": "e2676fe579d74763954e4105c2c3e16286b99e0bcbea9875c2384c5a6c2347af",
+    "bytes": 38181
+  },
+  "results/tensor-capacity-validation-1013-v2/alias_and_refund.txt": {
+    "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "bytes": 5
+  },
+  "results/tensor-capacity-validation-1013-v2/completed.json": {
+    "sha256": "ecb55fe294ea5048b3c6ec8bf7c3f6fd0e19d3cf4c8d86cc44cf352cd9b8eea1",
+    "bytes": 424
+  },
+  "results/tensor-capacity-validation-1013-v2/concurrent_quota.txt": {
+    "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "bytes": 5
+  },
+  "results/tensor-capacity-validation-1013-v2/resize_and_autograd.txt": {
+    "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "bytes": 5
+  },
+  "results/tensor-capacity-validation-1013-v2/size_rule.txt": {
+    "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "bytes": 5
+  },
+  "results/tensor-capacity-validation-1013-v2/zero_budget_residency.txt": {
+    "sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+    "bytes": 5
+  },
+  "results/capacity-screen-audit-validation-1013-v1/completed.json": {
+    "sha256": "9ad00ab44227eeeb7cb5a85dafbe99900712566a4354130a2c1ecba979cf57ea",
+    "bytes": 849
+  },
+  "results/tensor-capacity-build-1013-v1/build.json": {
+    "sha256": "1af737a00107e5c85465118004376ebcd477317437b17cca24c7fb448e8310c9",
+    "bytes": 906
+  },
+  "results/tensor-capacity-build-1013-v1/libtensor_capacity.so": {
+    "sha256": "522446ddded324964bcbe2f95819ad5431b2dfcf78500964512562b56a83185d",
+    "bytes": 29464
+  },
+  "results/tensor-capacity-build-1013-v1/tensor_capacity_allocator.cpp": {
+    "sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "bytes": 4416
+  }
+}

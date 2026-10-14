@@ -1,0 +1,70 @@
+{
+  "condition": "first64",
+  "policy": 3,
+  "capacity_bytes": 67108864,
+  "diagnostic": true,
+  "steps": 3,
+  "warmup": 0,
+  "config": {
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "seed": 20260921,
+  "kernel": "6.8.12-138-soaralto",
+  "torch": "2.6.0+cpu",
+  "source_hashes": {
+    "run_tensor_capacity.py": "f5ee656abeaa6bd2dbcf44126133c7a447ea2f35f1d9c2538d24342d3fabdff0",
+    "analyze_tensor_capacity.py": "d1595c40f3717b4b9bf0048d2b134244d834760230176146ff3461fa006c3ec4",
+    "tensor_capacity.py": "86d3509db56f0b35fa07e2996fc57f0a890a7457fe37b9ff4f1a8f8f45773c79",
+    "tensor_capacity_allocator.cpp": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "build_tensor_capacity.py": "aaea7095cc66f637af3f6e4fa49ffcb2119f753a449e08518489274f9dce6e53",
+    "observe_saved_tensors.py": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "run_framework_baseline.py": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c"
+  },
+  "allocator_build": {
+    "torch": "2.6.0+cpu",
+    "abi": 0,
+    "command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-shared",
+      "-fPIC",
+      "-pthread",
+      "-D_GLIBCXX_USE_CXX11_ABI=0",
+      "-I/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/include",
+      "/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/research/cpu_training/tensor_capacity_allocator.cpp",
+      "-L/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/lib",
+      "-Wl,-rpath,/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/.deps/training-python/torch/lib",
+      "-lc10",
+      "-lnuma",
+      "-o",
+      "results/tensor-capacity-build-1013-v1/libtensor_capacity.so"
+    ],
+    "source_sha256": "a1a6ae44d0a61804a9fa6f617d816573f727af9a29652313bce980bd83f74011",
+    "library_sha256": "522446ddded324964bcbe2f95819ad5431b2dfcf78500964512562b56a83185d"
+  },
+  "compute_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sysctl": {
+    "numa_balancing": "1",
+    "perf_event_paranoid": "-1"
+  },
+  "scope": "all C10 CPU tensor storage allocated after install, including parameters/input/gradient/temporary; page-rounded live quota; interpreter, external libraries and pre-install allocations excluded; no saved copies or migrations",
+  "policy_note": "first: allocate DRAM while live bytes fit; small: prefer DRAM only for allocations <=1MiB, then same quota; dram/cxl use identical mmap allocator without quota competition",
+  "timing": "step includes zero_grad/forward/backward/optimizer/release and scalar loss; stats sampled immediately after step; total_run includes install/build/steps/stats/cleanup, excludes import/library load and serialization; diagnostics never used for performance"
+}

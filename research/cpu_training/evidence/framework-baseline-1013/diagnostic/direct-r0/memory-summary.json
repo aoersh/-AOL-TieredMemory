@@ -1,0 +1,85 @@
+[
+  {
+    "step": -1,
+    "stage": "before_training",
+    "node_resident_bytes": {
+      "1": 76886016,
+      "0": 147120128
+    },
+    "anonymous_mapping_bytes": {
+      "0": 135442432
+    }
+  },
+  {
+    "step": 0,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 91238400,
+      "0": 331702272,
+      "2": 140673024
+    },
+    "anonymous_mapping_bytes": {
+      "0": 318943232,
+      "2": 140673024
+    }
+  },
+  {
+    "step": 0,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93204480,
+      "0": 293736448
+    },
+    "anonymous_mapping_bytes": {
+      "0": 280977408
+    }
+  },
+  {
+    "step": 1,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 93728768,
+      "0": 360919040,
+      "2": 140673024
+    },
+    "anonymous_mapping_bytes": {
+      "0": 348160000,
+      "2": 140673024
+    }
+  },
+  {
+    "step": 1,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93728768,
+      "0": 306413568
+    },
+    "anonymous_mapping_bytes": {
+      "0": 293654528
+    }
+  },
+  {
+    "step": 2,
+    "stage": "before_backward",
+    "node_resident_bytes": {
+      "1": 93728768,
+      "0": 373551104,
+      "2": 140673024
+    },
+    "anonymous_mapping_bytes": {
+      "0": 360792064,
+      "2": 140673024
+    }
+  },
+  {
+    "step": 2,
+    "stage": "after_optimizer",
+    "node_resident_bytes": {
+      "1": 93728768,
+      "0": 321130496
+    },
+    "anonymous_mapping_bytes": {
+      "0": 308371456
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "diagnostic": true,
+  "repeats": 1,
+  "seed": 20261013,
+  "conditions": {
+    "native": "native",
+    "dram": "dram",
+    "direct": "direct"
+  },
+  "diagnostic_reference": "None",
+  "practical_threshold": 0.03,
+  "stop": "calibration is not a capacity or migration benefit test; no shape search"
+}

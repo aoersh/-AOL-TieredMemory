@@ -1,0 +1,1050 @@
+{
+  "results/framework-baseline-diagnostic-1013-v2/commands.json": {
+    "sha256": "1c5958c83434b083d8e977316a1cfed7cde879e4af3a026e906ea35700b49d49",
+    "bytes": 1107
+  },
+  "results/framework-baseline-diagnostic-1013-v2/completed.json": {
+    "sha256": "d137244ea9c915db477259531b7209fbcb333ce3e28e4f004dbaef493d97d059",
+    "bytes": 16
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/correctness.json": {
+    "sha256": "3a3105bce8bf3d9f248eae21fa1b884db27f6435b8796da3095073c4d65a1c06",
+    "bytes": 313
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/events.json": {
+    "sha256": "14c29a8c55c42453c468dde6b64ed00dc25920aa1675da91e5158add6421dccb",
+    "bytes": 40638
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/manifest.json": {
+    "sha256": "ff66b288be55324f647b610e33072d7378c3f17861c90fbc475313d952188b19",
+    "bytes": 1454
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/memory-diagnostic.json": {
+    "sha256": "953e2d44caba4667a30fe81fd46a4c07b29b02c4f8e1723489efd2afca2fb649",
+    "bytes": 386318
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/run-timing.json": {
+    "sha256": "06a601ef653d34ce4516c3cea91519c67f29bbb626f25820264c8e83bc8194e4",
+    "bytes": 240
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/steps.json": {
+    "sha256": "23d39a8d64f0dd73ee48321cf90b537f46e0641ad3b9de6cdbf1bc48106d2da2",
+    "bytes": 3799
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/workload-timing.json": {
+    "sha256": "e152e9f4bc3bbddd35d1c57f9c3e7bf113548cf4dbbf3eb280990c8cc1c25b00",
+    "bytes": 98
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-diagnostic-1013-v2/direct-r0.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/correctness.json": {
+    "sha256": "3a3105bce8bf3d9f248eae21fa1b884db27f6435b8796da3095073c4d65a1c06",
+    "bytes": 313
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/events.json": {
+    "sha256": "cb66e9ede127cb495cd3219fc8ec0ee63fb5b1f2388e2cccdebce8b49d00bb6d",
+    "bytes": 40638
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/manifest.json": {
+    "sha256": "a910e16d1cd2f49b5cf0547e0f80ba55d920a4b803716e9def1d4ea3c7d0bd23",
+    "bytes": 1450
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/memory-diagnostic.json": {
+    "sha256": "562a37a90f6059d0b87785628bc093662f27529b7ce9f460579af00575696a40",
+    "bytes": 385544
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/run-timing.json": {
+    "sha256": "9c967bfeb1a89f4207af47fcf333f22a45b3dbd49a41ce3198d347a7c73246b8",
+    "bytes": 240
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/steps.json": {
+    "sha256": "e77576288e9692170a8412f8a8505bc198ca588fcb61554659bd64f5851586b6",
+    "bytes": 3804
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/workload-timing.json": {
+    "sha256": "51d28676e86121cd36c10468184169871d11ce1fd7bd839796403634000a1a9d",
+    "bytes": 98
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-diagnostic-1013-v2/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-diagnostic-1013-v2/environment.json": {
+    "sha256": "4e4bb9a68a8474ade93a8d3c50d60c3492a6f8d75e91aeda2aa8922f137b9714",
+    "bytes": 5309
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/correctness.json": {
+    "sha256": "3a3105bce8bf3d9f248eae21fa1b884db27f6435b8796da3095073c4d65a1c06",
+    "bytes": 313
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/events.json": {
+    "sha256": "a032a494fe12ea294d1b28d81abbe0b6d739393aaaa196d338c64975bfeffdab",
+    "bytes": 189
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/manifest.json": {
+    "sha256": "1b0f3d9476ff15e78c625a7b2c329517f2ee2df0efb989c18b75a7a9809af1c0",
+    "bytes": 1454
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/memory-diagnostic.json": {
+    "sha256": "c51cf21e9713af27bc91bc0d8a1ffe273e3b67807b2d45236e9289778bfa282f",
+    "bytes": 383385
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/run-timing.json": {
+    "sha256": "a2418e6895341d6f0c76830e0babaca1b71328482a52e35d82a330530fee83cc",
+    "bytes": 239
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/steps.json": {
+    "sha256": "e78204282d231119f5e8d92594b225390386ad2bc2e8cff8124056ffe430cc56",
+    "bytes": 3777
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/workload-timing.json": {
+    "sha256": "8558ebf37f7c291a536b911a5cf0219fbfa2e89cc4d57bb8924e1f90c394c7da",
+    "bytes": 98
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-diagnostic-1013-v2/native-r0.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-diagnostic-1013-v2/progress.json": {
+    "sha256": "d17fbe91091f98b6651602d2b077213c864b5618b23797c674b801b55a71720d",
+    "bytes": 544
+  },
+  "results/framework-baseline-diagnostic-1013-v2/protocol.json": {
+    "sha256": "998f21345cfcd41819a0a560d26c287d6324696a45048ea6e5ab03488f73cde0",
+    "bytes": 302
+  },
+  "results/framework-baseline-diagnostic-1013-v2/runner.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-diagnostic-1013-v2/verified-analysis/analyzer.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-diagnostic-1013-v2/verified-analysis/completed.json": {
+    "sha256": "9410fbed57c1abba9e27756dbb9a8a2a5cd056e0a42b53e807bbf13d828cf4a8",
+    "bytes": 27
+  },
+  "results/framework-baseline-diagnostic-1013-v2/verified-analysis/summary.json": {
+    "sha256": "391f62691afc56235d15ff2ed04f69a5e7026368dc2f07f39c5c056cbc94bacf",
+    "bytes": 8989
+  },
+  "results/framework-baseline-timing-1013-v1/commands.json": {
+    "sha256": "7fbd208c23dbbdfabd55ab3726d96bcd3652f7855bfd8b3263e42e48446c3ba1",
+    "bytes": 5133
+  },
+  "results/framework-baseline-timing-1013-v1/completed.json": {
+    "sha256": "1a7c18ee09ba64cef1d834197b948e281fe53e05d1073241eaf7a27cacf92e9e",
+    "bytes": 17
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/manifest.json": {
+    "sha256": "2e5462e6584497f4557a7212367289dc8d32303cdae890754033e66dc1a4850a",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/run-timing.json": {
+    "sha256": "be98fe0169f613c2a626669a475c66eb9fb490b76b5e9d38c192d28d01bbea04",
+    "bytes": 248
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/steps.json": {
+    "sha256": "d88d5ee2a6bfb414605ff12e9e0c937b04d385302de08d8b0c01280fd6c93773",
+    "bytes": 132385
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/workload-timing.json": {
+    "sha256": "0636a427cac3262b05d75c335f2608a5841b9f309f0f9c8265f740b38356f7a2",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r0.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/manifest.json": {
+    "sha256": "2e5462e6584497f4557a7212367289dc8d32303cdae890754033e66dc1a4850a",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/run-timing.json": {
+    "sha256": "75a2bc83c3320566232b09c9db0453492acb97104763d13a550301d52643acc3",
+    "bytes": 248
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/steps.json": {
+    "sha256": "80a9574cc6411a53ae355b385d9f4fd7719dc783d6ea47674bcbd50de0f3351c",
+    "bytes": 132380
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/workload-timing.json": {
+    "sha256": "f6b40924b4770f921ca01025768184266d3919ac28b1041ba05d9b7f328be58b",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r1.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/manifest.json": {
+    "sha256": "2e5462e6584497f4557a7212367289dc8d32303cdae890754033e66dc1a4850a",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/run-timing.json": {
+    "sha256": "487b0b023bab57f0ca5b6415f3116960d6a71ca395c46c622b70e5d42e953c03",
+    "bytes": 249
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/steps.json": {
+    "sha256": "cc5eff44dd012b860e88ffeb55938e977a840b33c455b3058fa791273d4be084",
+    "bytes": 132381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/workload-timing.json": {
+    "sha256": "ec01663b7faf3080ec1f7fa6113dc682876860cacfa286427b80f869737d2475",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r2.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/manifest.json": {
+    "sha256": "2e5462e6584497f4557a7212367289dc8d32303cdae890754033e66dc1a4850a",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/run-timing.json": {
+    "sha256": "8a8894d3beb50f4702e44b92dd5ff484d01c334e4529a65bf7f23ccbf04a61b5",
+    "bytes": 248
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/steps.json": {
+    "sha256": "123dc58b7446c456270459fdbb53a2af4c3949656986903f14fc3f007f4c8d0c",
+    "bytes": 132383
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/workload-timing.json": {
+    "sha256": "f83876b5b645600deb287cb9b7d0998c035d50309bcc04f838e5b11558f009cb",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r3.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/manifest.json": {
+    "sha256": "2e5462e6584497f4557a7212367289dc8d32303cdae890754033e66dc1a4850a",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/run-timing.json": {
+    "sha256": "0d1f9bf49ba80a2b02c88fc76d934b6216f3fa324341a6557596b80afc27ab9c",
+    "bytes": 248
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/steps.json": {
+    "sha256": "fafd06fec22b2fb2af44f928567da03e78444bc611698d37e0d687e9fbfc1411",
+    "bytes": 132386
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/workload-timing.json": {
+    "sha256": "d8aceb48b3548bfdb99f71cc113e9c32d04979de5a935a982885f0d5bb0e4200",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/direct-r4.log": {
+    "sha256": "36f0099451decfa7779356ee189538d3e0f879af470288916dd64e5062fb5617",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/manifest.json": {
+    "sha256": "9b5c4f2e3fe40ecca8e96ef4171cba193774a78819440130478c5899acd449c6",
+    "bytes": 1453
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/run-timing.json": {
+    "sha256": "026f90102c20de8a93dc5da3fff65415cbcd3a5889928029e0e76f0c2a95832b",
+    "bytes": 251
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/steps.json": {
+    "sha256": "fa646f9c687b110ebff6e512f7f4b8f2ef64011e4d96df25a15e548093f95c73",
+    "bytes": 132690
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/workload-timing.json": {
+    "sha256": "f41f984811f667e783985029a1abc4a0e3c9933b59ca7b183f80dfe2fc50fe16",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/manifest.json": {
+    "sha256": "9b5c4f2e3fe40ecca8e96ef4171cba193774a78819440130478c5899acd449c6",
+    "bytes": 1453
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/run-timing.json": {
+    "sha256": "be08dff2acbf5a348be535581bbcb1b8151e49de5497ad1deac6f4f659f3d841",
+    "bytes": 251
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/steps.json": {
+    "sha256": "f3c35a04e68ef5dd7144829cf560523107a0c45001204981eea32f90a6628c7a",
+    "bytes": 132693
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/workload-timing.json": {
+    "sha256": "9953bc889f1318d4c925473ec143312bf8f5fa6cd508d6e6ac5b1701342f9ec5",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r1.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/manifest.json": {
+    "sha256": "9b5c4f2e3fe40ecca8e96ef4171cba193774a78819440130478c5899acd449c6",
+    "bytes": 1453
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/run-timing.json": {
+    "sha256": "53f4040d278c9de547b4c4e0b6fb38ff11dfcdf28ee4059e11609ce9d46f953a",
+    "bytes": 251
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/steps.json": {
+    "sha256": "dea0f3d71d5a1954e972d5784f50b229b52bc71852bfccd48c80618a2a787c01",
+    "bytes": 132668
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/workload-timing.json": {
+    "sha256": "90aff2690e8107e210796ef7ca97fd8a5a1ece1c4b4c15e91f8dffa08b68e576",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r2.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/manifest.json": {
+    "sha256": "9b5c4f2e3fe40ecca8e96ef4171cba193774a78819440130478c5899acd449c6",
+    "bytes": 1453
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/run-timing.json": {
+    "sha256": "8808eb0699792ba0ecc886021bed266589298911f6098f55efe978bfffa5b8b8",
+    "bytes": 251
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/steps.json": {
+    "sha256": "d618b8c2eeb9de3e441da2d1ce7cd9541da240d8eec2a435ffd0813c1416a911",
+    "bytes": 132666
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/workload-timing.json": {
+    "sha256": "54b0845b0efff83467110616cb4a36b3d9ac2e4871fc8272fe52d865ed858d6a",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r3.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/manifest.json": {
+    "sha256": "9b5c4f2e3fe40ecca8e96ef4171cba193774a78819440130478c5899acd449c6",
+    "bytes": 1453
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/run-timing.json": {
+    "sha256": "bee4b1a4f004c18d59bd1741e7ef114f78b493975c2e500c7333aa76883c7836",
+    "bytes": 251
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/steps.json": {
+    "sha256": "d2b8b26b51ef1928aaa712fbebde1d40167df4d4e64a486cd226b5fe1425781b",
+    "bytes": 132670
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/workload-timing.json": {
+    "sha256": "8721364d140c911f0d4f456466f78e84220a1bf96a6c86b0bd9286b8221c8ab1",
+    "bytes": 99
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/dram-r4.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/framework-baseline-timing-1013-v1/environment.json": {
+    "sha256": "f080dc847083df1d221eabccbac5f4b53ccae99570d2ef31b25bf4c7b23f4459",
+    "bytes": 5309
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/manifest.json": {
+    "sha256": "a3b24dca2e410fbb3387acf14f70083dc4ebec6a0212dd68ff3fcdbecdd9335b",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/run-timing.json": {
+    "sha256": "61dd22c5dd19e09b8c6ce4a5c3353f4ad8884a5f1a99ee3d843f6cf17c04fd99",
+    "bytes": 249
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/steps.json": {
+    "sha256": "d21992e50db5794789df01fba30058352823262b01cf52a8bfa8cda1252c638f",
+    "bytes": 131617
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/workload-timing.json": {
+    "sha256": "86beb42491cc87874091cb7a316e4e9d9baf0bc77a1730b37440550fd51d7066",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/native-r0.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/manifest.json": {
+    "sha256": "a3b24dca2e410fbb3387acf14f70083dc4ebec6a0212dd68ff3fcdbecdd9335b",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/run-timing.json": {
+    "sha256": "727421781021990f353e36709f29fba5af145b4a601134af7cc0d8993f1d6293",
+    "bytes": 248
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/steps.json": {
+    "sha256": "4c42b787323a2aded6f4e2529e3fda62f7833224fd12cde3f1ea2903ce392c67",
+    "bytes": 131530
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/workload-timing.json": {
+    "sha256": "f3381fa7c639f942052bcd810d451a94fbb339eb6b7fc2e9bd3344020e3a5e50",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/native-r1.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/manifest.json": {
+    "sha256": "a3b24dca2e410fbb3387acf14f70083dc4ebec6a0212dd68ff3fcdbecdd9335b",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/run-timing.json": {
+    "sha256": "384c7c14254c1f9ae0e4a709b7333c35102d96fffc92fca4da1029a3a1ed38d6",
+    "bytes": 249
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/steps.json": {
+    "sha256": "73b36be765c12f1dfea446202f05a8f0a4705bc117bd36796c6640b6a14e6222",
+    "bytes": 131543
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/workload-timing.json": {
+    "sha256": "54f79be5b0e073d69f3a30fc721d849e6e0d9d2316a528a06172b6ecdb0af66f",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/native-r2.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/manifest.json": {
+    "sha256": "a3b24dca2e410fbb3387acf14f70083dc4ebec6a0212dd68ff3fcdbecdd9335b",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/run-timing.json": {
+    "sha256": "36ffb66dde1fe95893bfeb92969ed17efdaecdeae5ded02732c18060ac116b23",
+    "bytes": 249
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/steps.json": {
+    "sha256": "2445d6cd5015ee0e40433927c24250b4c2640e38640df805a90e4a87c680ffc2",
+    "bytes": 131517
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/workload-timing.json": {
+    "sha256": "e40b31ff661768bd60dffe39588ae058142daf174631910f990f41c890deab53",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/native-r3.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/access_paths.py": {
+    "sha256": "e0d5cc28cf612d2018598f2db36488d59ac7c7bb5bd9da855fe04bedf0775734",
+    "bytes": 14695
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/analyze_framework_baseline.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/manifest.json": {
+    "sha256": "a3b24dca2e410fbb3387acf14f70083dc4ebec6a0212dd68ff3fcdbecdd9335b",
+    "bytes": 1457
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/observe_saved_tensors.py": {
+    "sha256": "e1662c299e7ee2647ad225679fb1cbd75eaab149e1437c78a847d8a9de8a4ce6",
+    "bytes": 12215
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/run-timing.json": {
+    "sha256": "6554188cf95547c36d00c8c1c2b4d629d7a131a604afada46137d700b1f6909c",
+    "bytes": 249
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/run_access_paths.py": {
+    "sha256": "eb2bd284734d7194a1b6a001bd32435cf1ab44587181314ec561e59e5e7aad62",
+    "bytes": 16381
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/steps.json": {
+    "sha256": "15a4c6c770c942ea17795e3de7b586d3170ca96239fb729e669b533904acc423",
+    "bytes": 131523
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/workload-timing.json": {
+    "sha256": "f27feddea44585cdba5b5a28523c6f004b744179e7ffe7f51c4fb7e5a022c404",
+    "bytes": 98
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/framework-baseline-timing-1013-v1/native-r4.log": {
+    "sha256": "0bca211dbe9e844ef2755465251fe5573f1ce9777a2552ef0b512740e36f92da",
+    "bytes": 12
+  },
+  "results/framework-baseline-timing-1013-v1/progress.json": {
+    "sha256": "41d78fe68f154a12c4d01309e48e1b1d99c1f3907a7ea56466c87076b717803b",
+    "bytes": 2772
+  },
+  "results/framework-baseline-timing-1013-v1/protocol.json": {
+    "sha256": "42032bc890502988b436527688d3ad68d64b0ae8ed8a68ce138c68dc88fa3f47",
+    "bytes": 344
+  },
+  "results/framework-baseline-timing-1013-v1/runner.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/framework-baseline-timing-1013-v1/verified-analysis/analyzer.py": {
+    "sha256": "077aac38c44fd23d48b4341e2b71d0439c9ef97eb9158033794b4c2008db1f6e",
+    "bytes": 8966
+  },
+  "results/framework-baseline-timing-1013-v1/verified-analysis/completed.json": {
+    "sha256": "9410fbed57c1abba9e27756dbb9a8a2a5cd056e0a42b53e807bbf13d828cf4a8",
+    "bytes": 27
+  },
+  "results/framework-baseline-timing-1013-v1/verified-analysis/summary.json": {
+    "sha256": "53b574924bbf664d15014b986d5f389f021edb69df78f545cab4982c25a7dd6c",
+    "bytes": 22888
+  },
+  "results/capacity-screen-audit-validation-1013-v1/completed.json": {
+    "sha256": "9ad00ab44227eeeb7cb5a85dafbe99900712566a4354130a2c1ecba979cf57ea",
+    "bytes": 849
+  }
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "step": 0,
+    "measured": false,
+    "start_ns": 2159777821788142,
+    "end_ns": 2159777934106648,
+    "step_ns": 112318506,
+    "forward_ns": 49254258,
+    "backward_ns": 62272635,
+    "optimizer_ns": 791613,
+    "loss": 1.3336524963378906,
+    "minor_faults": 152993,
+    "major_faults": 0,
+    "allocator": {
+      "limit": 134217728,
+      "policy": 4,
+      "fast_live": 3432448,
+      "slow_live": 4194304,
+      "fast_peak": 3485696,
+      "slow_peak": 184549376,
+      "total_peak": 187068416,
+      "allocations": 292,
+      "frees": 234,
+      "failures": 0,
+      "allocated_bytes": 618692608,
+      "live_records": 58
+    }
+  },
+  {
+    "step": 5,
+    "measured": true,
+    "start_ns": 2159778351348157,
+    "end_ns": 2159778456642598,
+    "step_ns": 105294441,
+    "forward_ns": 40910256,
+    "backward_ns": 63546960,
+    "optimizer_ns": 837225,
+    "loss": 1.3325023651123047,
+    "minor_faults": 149481,
+    "major_faults": 0,
+    "allocator": {
+      "limit": 134217728,
+      "policy": 4,
+      "fast_live": 3432448,
+      "slow_live": 4194304,
+      "fast_peak": 3485696,
+      "slow_peak": 184549376,
+      "total_peak": 187068416,
+      "allocations": 982,
+      "frees": 924,
+      "failures": 0,
+      "allocated_bytes": 3680063488,
+      "live_records": 58
+    }
+  },
+  {
+    "step": 104,
+    "measured": true,
+    "start_ns": 2159788548149970,
+    "end_ns": 2159788649355181,
+    "step_ns": 101205211,
+    "forward_ns": 39614814,
+    "backward_ns": 60810411,
+    "optimizer_ns": 779986,
+    "loss": 1.3113441467285156,
+    "minor_faults": 149481,
+    "major_faults": 0,
+    "allocator": {
+      "limit": 134217728,
+      "policy": 4,
+      "fast_live": 3432448,
+      "slow_live": 4194304,
+      "fast_peak": 3485696,
+      "slow_peak": 184549376,
+      "total_peak": 187068416,
+      "allocations": 14644,
+      "frees": 14586,
+      "failures": 0,
+      "allocated_bytes": 64295206912,
+      "live_records": 58
+    }
+  }
+]

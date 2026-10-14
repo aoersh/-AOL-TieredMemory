@@ -1,0 +1,56 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "start_ns": 2159588502985591,
+    "end_ns": 2159588630823258,
+    "step_ns": 127837667,
+    "forward_ns": 41403913,
+    "backward_ns": 85532531,
+    "optimizer_ns": 901223,
+    "loss": 1.3336524963378906,
+    "minor_faults": 149596,
+    "major_faults": 0,
+    "allocator": {
+      "limit": 67108864,
+      "policy": 3,
+      "fast_live": 7626752,
+      "slow_live": 0,
+      "fast_peak": 66998272,
+      "slow_peak": 121634816,
+      "total_peak": 187068416,
+      "allocations": 168,
+      "frees": 110,
+      "failures": 0,
+      "allocated_bytes": 618184704,
+      "live_records": 58
+    }
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "start_ns": 2159588802471973,
+    "end_ns": 2159588931976651,
+    "step_ns": 129504678,
+    "forward_ns": 42473255,
+    "backward_ns": 86160150,
+    "optimizer_ns": 871273,
+    "loss": 1.3331913948059082,
+    "minor_faults": 149507,
+    "major_faults": 0,
+    "allocator": {
+      "limit": 67108864,
+      "policy": 3,
+      "fast_live": 7626752,
+      "slow_live": 0,
+      "fast_peak": 66998272,
+      "slow_peak": 121634816,
+      "total_peak": 187068416,
+      "allocations": 1382,
+      "frees": 1324,
+      "failures": 0,
+      "allocated_bytes": 1857454080,
+      "live_records": 58
+    }
+  }
+]
