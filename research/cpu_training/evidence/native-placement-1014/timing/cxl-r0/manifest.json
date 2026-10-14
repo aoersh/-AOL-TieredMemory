@@ -1,0 +1,54 @@
+{
+  "condition": "cxl",
+  "node": 2,
+  "diagnostic": false,
+  "steps": 100,
+  "warmup": 5,
+  "seed": 20260921,
+  "config": {
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "source_hashes": {
+    "run_native_placement.py": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "analyze_native_placement.py": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "run_framework_baseline.py": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c"
+  },
+  "environment": {
+    "kernel": "6.8.12-138-soaralto",
+    "boot_id": "bdc65f0f-1346-48ab-8182-6e075f5825e1",
+    "torch": "2.6.0+cpu",
+    "sysctl": {
+      "numa_balancing": "1",
+      "perf_event_paranoid": "-1"
+    },
+    "thp": "always [madvise] never",
+    "cpus_allowed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "memory_policy": {
+      "mode": 2,
+      "node_mask": 4
+    }
+  },
+  "allocator": "default C10 CPU allocator; no allocator registration",
+  "saved_hooks": "none",
+  "saved_copies": 0,
+  "migrations": 0,
+  "migration_workers": 0,
+  "scope": "process MPOL_BIND before import; tensors and other anonymous allocations; shared file pages and file-backed private COW separate; no DRAM quota",
+  "timing": "step includes zero_grad/forward/backward/SGD/loss.item/graph release; workload run includes build/warmup/final checks/cleanup; outer child wall also includes imports/startup/serialization; diagnostics excluded"
+}

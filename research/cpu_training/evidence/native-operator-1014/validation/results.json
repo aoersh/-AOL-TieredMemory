@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "name": "stage_clock",
+      "rejected": true
+    },
+    {
+      "name": "stage_faults",
+      "rejected": true
+    },
+    {
+      "name": "profiler_in_timing",
+      "rejected": true
+    },
+    {
+      "name": "process_overlap",
+      "rejected": true
+    },
+    {
+      "name": "final_state",
+      "rejected": true
+    },
+    {
+      "name": "wrong_memory_node",
+      "rejected": true
+    },
+    {
+      "name": "operator_shape",
+      "rejected": true
+    },
+    {
+      "name": "event_parent",
+      "rejected": true
+    },
+    {
+      "name": "event_duration",
+      "rejected": true
+    },
+    {
+      "name": "source_hash",
+      "rejected": true
+    }
+  ],
+  "raw_results_modified": false,
+  "start_ns": 2244146015844669,
+  "end_ns": 2244147204882866,
+  "last_timing_process_end_ns": 2243288681110294,
+  "tests_after_timing": true
+}

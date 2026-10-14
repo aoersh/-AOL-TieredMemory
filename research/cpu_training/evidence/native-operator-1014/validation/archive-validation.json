@@ -1,0 +1,10 @@
+{
+  "raw_hashes_checked": 239,
+  "raw_results_preserved": true,
+  "raw_names_excluded_from_archive": [
+    "operator-events.json",
+    "trace.json"
+  ],
+  "complete_steps_archived": false,
+  "complete_memory_maps_archived": false
+}

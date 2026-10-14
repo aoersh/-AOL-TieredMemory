@@ -1,0 +1,44 @@
+[
+  {
+    "step": 0,
+    "measured": false,
+    "start_ns": 2241621561113382,
+    "end_ns": 2241621670889581,
+    "step_ns": 109776199,
+    "forward_ns": 49732293,
+    "backward_ns": 58916294,
+    "optimizer_ns": 1127612,
+    "loss": 1.3336524963378906,
+    "minor_faults": 138716,
+    "major_faults": 0,
+    "process_cpu_ns": 865458000
+  },
+  {
+    "step": 5,
+    "measured": true,
+    "start_ns": 2241622048394179,
+    "end_ns": 2241622138369861,
+    "step_ns": 89975682,
+    "forward_ns": 33965770,
+    "backward_ns": 54931007,
+    "optimizer_ns": 1078905,
+    "loss": 1.3325023651123047,
+    "minor_faults": 81930,
+    "major_faults": 0,
+    "process_cpu_ns": 719886000
+  },
+  {
+    "step": 104,
+    "measured": true,
+    "start_ns": 2241630629459106,
+    "end_ns": 2241630718443626,
+    "step_ns": 88984520,
+    "forward_ns": 33921848,
+    "backward_ns": 53969874,
+    "optimizer_ns": 1092798,
+    "loss": 1.3113441467285156,
+    "minor_faults": 73737,
+    "major_faults": 0,
+    "process_cpu_ns": 711845000
+  }
+]

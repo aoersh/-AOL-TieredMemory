@@ -1,0 +1,23 @@
+{
+  "phase": "profile",
+  "repeats": 3,
+  "config": {
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "conditions": {
+    "dram": 0,
+    "cxl": 2
+  },
+  "steps": 100,
+  "warmup": 5,
+  "profile_start": 95,
+  "random_seed": 2026101401,
+  "profile_reference": "None",
+  "practical_threshold": 0.03,
+  "stop": "fixed configuration; three diagnostic pairs, five unprofiled timing pairs; no migration or allocator/shape search"
+}

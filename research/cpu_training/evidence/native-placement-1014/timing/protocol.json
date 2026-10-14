@@ -1,0 +1,22 @@
+{
+  "diagnostic": false,
+  "repeats": 5,
+  "conditions": {
+    "dram": 0,
+    "cxl": 2
+  },
+  "config": {
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "seed": 20261014,
+  "steps": 100,
+  "warmup": 5,
+  "diagnostic_reference": "results/native-placement-diagnostic-1014-v1",
+  "practical_threshold": 0.03,
+  "stop": "one native Transformer configuration; five independent paired processes; no shape/model/migration/allocator search"
+}

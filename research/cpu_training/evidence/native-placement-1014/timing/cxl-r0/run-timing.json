@@ -1,0 +1,10 @@
+{
+  "start_ns": 2241569873963842,
+  "end_ns": 2241580425546513,
+  "total_run_ns": 10551582671,
+  "setup_ns": 603133383,
+  "summed_step_ns": 9864491648,
+  "final_check_ns": 2577768,
+  "cleanup_ns": 75360333,
+  "max_rss_kib": 577376
+}

@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "name": "wrong_memory_policy",
+      "rejected": true
+    },
+    {
+      "name": "wrong_step_clock",
+      "rejected": true
+    },
+    {
+      "name": "overlapping_processes",
+      "rejected": true
+    },
+    {
+      "name": "wrong_final_state",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resident_node",
+      "rejected": true
+    },
+    {
+      "name": "wrong_source_hash",
+      "rejected": true
+    },
+    {
+      "name": "wrong_cpu_binding",
+      "rejected": true
+    },
+    {
+      "name": "wrong_training_loss",
+      "rejected": true
+    },
+    {
+      "name": "wrong_diagnostic_state",
+      "rejected": true
+    }
+  ],
+  "raw_results_modified": false
+}

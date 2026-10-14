@@ -1,0 +1,345 @@
+{
+  "diagnostic": true,
+  "source_hashes": {
+    "run_native_placement.py": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "analyze_native_placement.py": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "workloads.py": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "numa_buffer.py": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "run_framework_baseline.py": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c"
+  },
+  "environment": {
+    "kernel": "6.8.12-138-soaralto",
+    "boot_id": "bdc65f0f-1346-48ab-8182-6e075f5825e1",
+    "torch": "2.6.0+cpu",
+    "sysctl": {
+      "numa_balancing": "1",
+      "perf_event_paranoid": "-1"
+    },
+    "thp": "always [madvise] never",
+    "cpus_allowed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "losses": [
+    1.3336524963378906,
+    1.3334217071533203,
+    1.3331913948059082
+  ],
+  "initial_sha256": "ada435f42f70e0a1da2193f3ff6d98d84a3537d3885bbde27e2771c265ef0001",
+  "final_state_sha256": "fc7df3736799367b60612712475ae6bc40795e4e00e96d068cf3f95e8b5afd5b",
+  "diagnostic_state_hashes": [
+    "443753573150e2142405110e9a7ecc6693242bbe947c3a590646d69e371c16e4",
+    "effd0639eafdc260251e7836ef48f715b40f506d0a45dcd778df19a1f943a16e",
+    "fc7df3736799367b60612712475ae6bc40795e4e00e96d068cf3f95e8b5afd5b"
+  ],
+  "process_means": {
+    "dram": {
+      "step_ms": [
+        138.65548833333332
+      ],
+      "forward_ms": [
+        57.127953
+      ],
+      "backward_ms": [
+        80.564321
+      ],
+      "optimizer_ms": [
+        0.9632143333333334
+      ],
+      "minor_faults": [
+        117611.66666666667
+      ],
+      "process_cpu_ms": [
+        1020.2323333333333
+      ],
+      "workload_run_ms": [
+        400.07360133333333
+      ],
+      "child_wall_ms": [
+        822.782344
+      ],
+      "max_rss_mib": [
+        530.05078125
+      ],
+      "early_step_ms": [
+        138.65548833333332
+      ],
+      "late_step_ms": [
+        138.65548833333332
+      ]
+    },
+    "cxl": {
+      "step_ms": [
+        135.488661
+      ],
+      "forward_ms": [
+        57.50773
+      ],
+      "backward_ms": [
+        76.91351833333334
+      ],
+      "optimizer_ms": [
+        1.0674126666666666
+      ],
+      "minor_faults": [
+        114382.0
+      ],
+      "process_cpu_ms": [
+        1044.8473333333334
+      ],
+      "workload_run_ms": [
+        448.4607273333333
+      ],
+      "child_wall_ms": [
+        889.4181663333334
+      ],
+      "max_rss_mib": [
+        541.7109375
+      ],
+      "early_step_ms": [
+        135.488661
+      ],
+      "late_step_ms": [
+        135.488661
+      ]
+    }
+  },
+  "means": {
+    "dram": {
+      "step_ms": 138.65548833333332,
+      "forward_ms": 57.127953,
+      "backward_ms": 80.564321,
+      "optimizer_ms": 0.9632143333333334,
+      "minor_faults": 117611.66666666667,
+      "process_cpu_ms": 1020.2323333333333,
+      "workload_run_ms": 400.07360133333333,
+      "child_wall_ms": 822.782344,
+      "max_rss_mib": 530.05078125,
+      "early_step_ms": 138.65548833333332,
+      "late_step_ms": 138.65548833333332
+    },
+    "cxl": {
+      "step_ms": 135.488661,
+      "forward_ms": 57.50773,
+      "backward_ms": 76.91351833333334,
+      "optimizer_ms": 1.0674126666666666,
+      "minor_faults": 114382.0,
+      "process_cpu_ms": 1044.8473333333334,
+      "workload_run_ms": 448.4607273333333,
+      "child_wall_ms": 889.4181663333334,
+      "max_rss_mib": 541.7109375,
+      "early_step_ms": 135.488661,
+      "late_step_ms": 135.488661
+    }
+  },
+  "residency": {
+    "dram": [
+      {
+        "step": -1,
+        "stage": "before_training",
+        "node_resident_bytes": {
+          "1": 82661376,
+          "0": 196603904,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 183525376
+        }
+      },
+      {
+        "step": 0,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 89477120,
+          "0": 357515264,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 344436736
+        }
+      },
+      {
+        "step": 0,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91836416,
+          "0": 298508288,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 285429760
+        }
+      },
+      {
+        "step": 1,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 91836416,
+          "0": 369872896,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 356794368
+        }
+      },
+      {
+        "step": 1,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91836416,
+          "0": 338477056,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 325398528
+        }
+      },
+      {
+        "step": 2,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 91836416,
+          "0": 389005312,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 375926784
+        }
+      },
+      {
+        "step": 2,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91836416,
+          "0": 340717568,
+          "2": 1290240
+        },
+        "anonymous_mapping_bytes": {
+          "0": 327639040
+        }
+      }
+    ],
+    "cxl": [
+      {
+        "step": -1,
+        "stage": "before_training",
+        "node_resident_bytes": {
+          "1": 82706432,
+          "0": 7835648,
+          "2": 190025728
+        },
+        "anonymous_mapping_bytes": {
+          "2": 183508992
+        }
+      },
+      {
+        "step": 0,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 89522176,
+          "0": 7835648,
+          "2": 342544384
+        },
+        "anonymous_mapping_bytes": {
+          "2": 336027648
+        }
+      },
+      {
+        "step": 0,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91881472,
+          "0": 7835648,
+          "2": 275140608
+        },
+        "anonymous_mapping_bytes": {
+          "2": 268623872
+        }
+      },
+      {
+        "step": 1,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 91881472,
+          "0": 7835648,
+          "2": 373837824
+        },
+        "anonymous_mapping_bytes": {
+          "2": 367321088
+        }
+      },
+      {
+        "step": 1,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91881472,
+          "0": 7835648,
+          "2": 340332544
+        },
+        "anonymous_mapping_bytes": {
+          "2": 333815808
+        }
+      },
+      {
+        "step": 2,
+        "stage": "before_backward",
+        "node_resident_bytes": {
+          "1": 91881472,
+          "0": 7835648,
+          "2": 384581632
+        },
+        "anonymous_mapping_bytes": {
+          "2": 378064896
+        }
+      },
+      {
+        "step": 2,
+        "stage": "after_optimizer",
+        "node_resident_bytes": {
+          "1": 91881472,
+          "0": 7835648,
+          "2": 338378752
+        },
+        "anonymous_mapping_bytes": {
+          "2": 331862016
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "dram": {
+      "records": 438,
+      "nodes": [
+        0
+      ],
+      "kinds": [
+        "gradient",
+        "initial",
+        "saved_pack",
+        "saved_unpack"
+      ],
+      "note": "page query sums overlap for aliases and heap boundaries; not unique tensor or resident-byte totals"
+    },
+    "cxl": {
+      "records": 438,
+      "nodes": [
+        2
+      ],
+      "kinds": [
+        "gradient",
+        "initial",
+        "saved_pack",
+        "saved_unpack"
+      ],
+      "note": "page query sums overlap for aliases and heap boundaries; not unique tensor or resident-byte totals"
+    }
+  },
+  "limitations": "one FP32 eager synthetic Transformer; process placement includes non-tensor anonymous memory; shared file pages/private file COW separate; default allocator and THP retained; diagnostic hooks/queries absent from timing; no capacity limit, migration, AOL, perf or pure-latency attribution; five paired process means t(df=4), no multiplicity adjustment; warmup and startup reported separately, no comparison to absolute times from previous batches"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "step": -1,
+    "stage": "before_training",
+    "node_resident_bytes": {
+      "1": 82874368,
+      "0": 7852032,
+      "2": 191905792
+    },
+    "anonymous_mapping_bytes": {
+      "2": 185409536
+    }
+  },
+  {
+    "step": 104,
+    "stage": "after_training",
+    "node_resident_bytes": {
+      "1": 92049408,
+      "0": 7852032,
+      "2": 323084288
+    },
+    "anonymous_mapping_bytes": {
+      "2": 316588032
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  [
+    "cxl-r0",
+    [
+      "numactl",
+      "--physcpubind=0-7",
+      "--membind=2",
+      "/usr/bin/python3",
+      "/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/research/cpu_training/run_native_placement.py",
+      "results/native-placement-diagnostic-1014-v1/cxl-r0",
+      "--worker",
+      "cxl",
+      "--diagnostic"
+    ]
+  ],
+  [
+    "dram-r0",
+    [
+      "numactl",
+      "--physcpubind=0-7",
+      "--membind=0",
+      "/usr/bin/python3",
+      "/home/hjy/projects/TieredMemoryManagementBeyondHotness/SoarAlto/research/cpu_training/run_native_placement.py",
+      "results/native-placement-diagnostic-1014-v1/dram-r0",
+      "--worker",
+      "dram",
+      "--diagnostic"
+    ]
+  ]
+]

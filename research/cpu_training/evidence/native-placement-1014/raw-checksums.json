@@ -1,0 +1,622 @@
+{
+  "results/native-placement-diagnostic-1014-v1/commands.json": {
+    "sha256": "b127e5860c791202374ae309e972780a998cb189279cd34c8fc6b64a8a605673",
+    "bytes": 720
+  },
+  "results/native-placement-diagnostic-1014-v1/completed.json": {
+    "sha256": "a829d62e805f946313eb75d6b6bf1c76475b9823601a206eb3b8e92130286f7f",
+    "bytes": 16
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/correctness.json": {
+    "sha256": "c1ab90e6aa3d96916e9b17bb46c9b479dedececfd4c5a0212bb9a5d12bcd6fc8",
+    "bytes": 473
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/coverage.json": {
+    "sha256": "2196192001f7510cef16b0b70a0a26121cf4379a30d2ed43f12017a51daca3b3",
+    "bytes": 66385
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/manifest.json": {
+    "sha256": "7ac5d0b1429082dcbf365231a47fd8d5fa7f26dbe3ae026075dd5ca7a2fc2ac7",
+    "bytes": 1769
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/memory-diagnostic.json": {
+    "sha256": "a229c852338641a30d64e25d821da99f4ff8d8b82d73ae3a861fbd5d008a7b6b",
+    "bytes": 385557
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/run-timing.json": {
+    "sha256": "6012382f580c68eef06ff7c40fbd88d93f13e6e6a35cfae5510a957f54f3a0da",
+    "bytes": 231
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/steps.json": {
+    "sha256": "99fba72080eaa432c42cd826caf1f245621738bcdfb6d03ae8a6fe350af9de8d",
+    "bytes": 1022
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-diagnostic-1014-v1/cxl-r0.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/completed.json": {
+    "sha256": "a1cf1c7ef1fe0363797379868d12614767e0968888a7cabeabbe452f01d3b55c",
+    "bytes": 34
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/correctness.json": {
+    "sha256": "c1ab90e6aa3d96916e9b17bb46c9b479dedececfd4c5a0212bb9a5d12bcd6fc8",
+    "bytes": 473
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/coverage.json": {
+    "sha256": "c683ee37e8e2244569bb11451fab40ac675e3d423297d06938a60fbf215f03f3",
+    "bytes": 66787
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/manifest.json": {
+    "sha256": "0997c581affc67fca652e34a4071de59a41d8fea7495e32d06a6a927c06254b8",
+    "bytes": 1770
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/memory-diagnostic.json": {
+    "sha256": "a20745bd3937de1045e9a5b4b1562cca4d3f282c96bb09f299e5bcca7f8fb10c",
+    "bytes": 386187
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/run-timing.json": {
+    "sha256": "eaf0c807e4dde8453274e1e51484ee4826347d38df1a017bad22b87a3df5aeee",
+    "bytes": 231
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/steps.json": {
+    "sha256": "21d43dfb5df22920dc90583539b3b7cff65d1c1a75a8de8feafb9eccafb25e0c",
+    "bytes": 1019
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-diagnostic-1014-v1/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-diagnostic-1014-v1/environment.json": {
+    "sha256": "1cfc0a8318bf52a6e3bcdaf4c48c229c4d06f4d42b6a325a75bd140c218ae0c5",
+    "bytes": 4971
+  },
+  "results/native-placement-diagnostic-1014-v1/progress.json": {
+    "sha256": "009e755ade472072b84187f2f0e703c9247a352ebec5345b1e1fb8922966f5c8",
+    "bytes": 540
+  },
+  "results/native-placement-diagnostic-1014-v1/protocol.json": {
+    "sha256": "ad46ce8f7f500b2632cdb303e35c322fa6d7366179d2bed26577df135dfaf879",
+    "bytes": 471
+  },
+  "results/native-placement-diagnostic-1014-v1/verified-analysis/analyzer.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-diagnostic-1014-v1/verified-analysis/completed.json": {
+    "sha256": "9410fbed57c1abba9e27756dbb9a8a2a5cd056e0a42b53e807bbf13d828cf4a8",
+    "bytes": 27
+  },
+  "results/native-placement-diagnostic-1014-v1/verified-analysis/summary.json": {
+    "sha256": "233b3343e1cfafedb8cac37a65e05ee3826576e9d163f6b248b5eedbf5e908f0",
+    "bytes": 8423
+  },
+  "results/native-placement-timing-1014-v1/commands.json": {
+    "sha256": "3dc1e97f961f877a6a2dfa6756a9e749ba1aa78445d82fd1eeaff6e5d9d0aecf",
+    "bytes": 3328
+  },
+  "results/native-placement-timing-1014-v1/completed.json": {
+    "sha256": "c1149334db82d5e32f01b370acd5f2d91710d69ee124505b59b49027692472e0",
+    "bytes": 17
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/manifest.json": {
+    "sha256": "175b14ddd563fcdc4c92f7ac340d2980798f29e4719265f288daf0ed33d7a549",
+    "bytes": 1732
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/run-timing.json": {
+    "sha256": "935a1d7a77849f3d43a7442b1d2e63e5235619cc77b54207f4ff22e4a31c91e7",
+    "bytes": 233
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/steps.json": {
+    "sha256": "ab0e29f26c752f2a44cadc41536f16137fb2ca53cf2fc72001e63166dcc72f3b",
+    "bytes": 35540
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/cxl-r0.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/manifest.json": {
+    "sha256": "175b14ddd563fcdc4c92f7ac340d2980798f29e4719265f288daf0ed33d7a549",
+    "bytes": 1732
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/run-timing.json": {
+    "sha256": "c674678bf146c4046f8c2331e0825c1ebcb18500b187d05934a1132d5346a386",
+    "bytes": 233
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/steps.json": {
+    "sha256": "488daeb95b9475eb5f40cff9cb82ea4bd219bbff814134ebe90820802eeac40a",
+    "bytes": 35479
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/cxl-r1.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/manifest.json": {
+    "sha256": "175b14ddd563fcdc4c92f7ac340d2980798f29e4719265f288daf0ed33d7a549",
+    "bytes": 1732
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/run-timing.json": {
+    "sha256": "4cd5d1fdab4a1aac7956da4f5cf5910749f3c4602dfd5712b1ea361147562f8f",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/steps.json": {
+    "sha256": "4289cad17126ad69fadaeddd5bc987a3363ca35f876a58bee9e1de05abbd238f",
+    "bytes": 35475
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/cxl-r2.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/manifest.json": {
+    "sha256": "175b14ddd563fcdc4c92f7ac340d2980798f29e4719265f288daf0ed33d7a549",
+    "bytes": 1732
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/run-timing.json": {
+    "sha256": "be2a496096e34000d1907ecc109c2cd6d0b5c03630b5c5eba28aef16856b80fb",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/steps.json": {
+    "sha256": "af540d9ae53239ca2995dff776fca4ea4a8557f1c8875dfc41f10a0bf92005ca",
+    "bytes": 35464
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/cxl-r3.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/manifest.json": {
+    "sha256": "175b14ddd563fcdc4c92f7ac340d2980798f29e4719265f288daf0ed33d7a549",
+    "bytes": 1732
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/run-timing.json": {
+    "sha256": "2c0accdc14c35b7786342ceac76d2eeb9b95eeaf2ec43262b9eb5833a7ff3020",
+    "bytes": 233
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/steps.json": {
+    "sha256": "43286393e7b48043293a82fc0804ecb9d61e19ab87620bd77f5b62c6ae787fd0",
+    "bytes": 35530
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/cxl-r4.log": {
+    "sha256": "c94972a835b7d794af6f188954672be4a6560e44a3dd88a119c8abdd16ba55c5",
+    "bytes": 9
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/manifest.json": {
+    "sha256": "33c1510af84c56d1b9d6fc1f7ff6aa9e8711114e92983e40dad073d48f69e9c3",
+    "bytes": 1733
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/run-timing.json": {
+    "sha256": "54f8a239ebde6887be6d9e5d1314c38c943552f7e6a0dba2a112de7750db2bf2",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/steps.json": {
+    "sha256": "37d952dc7e3e3f48c5f376554438d8a64ec274de53b723042f1363626afa6048",
+    "bytes": 35370
+  },
+  "results/native-placement-timing-1014-v1/dram-r0/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/dram-r0.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/manifest.json": {
+    "sha256": "33c1510af84c56d1b9d6fc1f7ff6aa9e8711114e92983e40dad073d48f69e9c3",
+    "bytes": 1733
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/run-timing.json": {
+    "sha256": "e1131dd2c1603ee2254042ad6cbdfcfed7936ec9e038cce6085899b48bf765b8",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/steps.json": {
+    "sha256": "f57747a0f79e3eeffcb3c8a6ce88586eee394f790af24b8386dba7135ea3d948",
+    "bytes": 35365
+  },
+  "results/native-placement-timing-1014-v1/dram-r1/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/dram-r1.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/manifest.json": {
+    "sha256": "33c1510af84c56d1b9d6fc1f7ff6aa9e8711114e92983e40dad073d48f69e9c3",
+    "bytes": 1733
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/run-timing.json": {
+    "sha256": "5716069065ea20fef4d4fd7ff16b20ad23181727cf31dd16f30e35eafc4f42e8",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/steps.json": {
+    "sha256": "7ef6e96f057233480d03ae81a3b494baffc8c315baef982af1fcedb434ba5863",
+    "bytes": 35369
+  },
+  "results/native-placement-timing-1014-v1/dram-r2/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/dram-r2.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/manifest.json": {
+    "sha256": "33c1510af84c56d1b9d6fc1f7ff6aa9e8711114e92983e40dad073d48f69e9c3",
+    "bytes": 1733
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/run-timing.json": {
+    "sha256": "d30a229c2f253316e8b80abf6e9be03c0a66a38ba7711e0184505eabf05c9359",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/steps.json": {
+    "sha256": "f341103726862529bc82c81a2fbaf8f135970993fa600f8e335c702208bae2c0",
+    "bytes": 35376
+  },
+  "results/native-placement-timing-1014-v1/dram-r3/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/dram-r3.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/analyze_native_placement.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/completed.json": {
+    "sha256": "5efd846661710f94bfa7d814747be2227029afba281e6b45ba3d0b7a4323d591",
+    "bytes": 36
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/correctness.json": {
+    "sha256": "1db9a628160f529452b0887bf12ab59fbc123dd5c86970c6e8182a565964668e",
+    "bytes": 255
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/manifest.json": {
+    "sha256": "33c1510af84c56d1b9d6fc1f7ff6aa9e8711114e92983e40dad073d48f69e9c3",
+    "bytes": 1733
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/numa_buffer.py": {
+    "sha256": "2a182d22d49d9146d7367eaf14798fb5548a778ecf8d53c9368d6c1e11cd44a1",
+    "bytes": 9947
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/run-timing.json": {
+    "sha256": "de1c45585dbaa0ce4d00258bb47d2e8e692449e285b99e272235efa04dffc4f7",
+    "bytes": 232
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/run_framework_baseline.py": {
+    "sha256": "6a6fda3753c3cf4b7857839b2bc0f2d6e9d5e3d3bdb559c2b1488c93d98ca77c",
+    "bytes": 9258
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/run_native_placement.py": {
+    "sha256": "935a786944c93fa6ffade35275e80f1548992dbfb3f273e600a1266d04f09a19",
+    "bytes": 11965
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/steps.json": {
+    "sha256": "d6a52c89ef7be2ba0c123e37b81c5bb0e653e70226c733cf95385988750e50fd",
+    "bytes": 35452
+  },
+  "results/native-placement-timing-1014-v1/dram-r4/workloads.py": {
+    "sha256": "cd73fb72430a3be74d8abd128730406e0a07a3080ff4f0a0548eac0c937708f9",
+    "bytes": 1665
+  },
+  "results/native-placement-timing-1014-v1/dram-r4.log": {
+    "sha256": "8c28f47dcdd0155b8ae88fa464f2bc819b138e7c04a9987422cd41704d43833a",
+    "bytes": 10
+  },
+  "results/native-placement-timing-1014-v1/environment.json": {
+    "sha256": "3ac961c9001c5fc556b41788d13da27fc52626460f1dd5aeaf46349d73a600ef",
+    "bytes": 4971
+  },
+  "results/native-placement-timing-1014-v1/progress.json": {
+    "sha256": "23f40382df8e4ed4dba938cf59a85bbd2bcd5486b7c7bd6f6f763efbf252dd5d",
+    "bytes": 2727
+  },
+  "results/native-placement-timing-1014-v1/protocol.json": {
+    "sha256": "455b53c85be9b2920112cf2c0ac83b0a3f1b53f4dd7994f1fac7f8e87871ee9e",
+    "bytes": 513
+  },
+  "results/native-placement-timing-1014-v1/verified-analysis/analyzer.py": {
+    "sha256": "c2de6b4becc934c16a3cd34f796c09815b44222d3191de2280b930876c07a550",
+    "bytes": 10741
+  },
+  "results/native-placement-timing-1014-v1/verified-analysis/completed.json": {
+    "sha256": "9410fbed57c1abba9e27756dbb9a8a2a5cd056e0a42b53e807bbf13d828cf4a8",
+    "bytes": 27
+  },
+  "results/native-placement-timing-1014-v1/verified-analysis/summary.json": {
+    "sha256": "a68fd86d383120078e37edc131d75c0a7b750f10d563214a3a5e4db29de23c70",
+    "bytes": 11677
+  },
+  "results/native-placement-validation-1014-v1/completed.json": {
+    "sha256": "8e2e3d2ffe367c594fa771388cae8dfed73840214818d22e059cdf82918df2ee",
+    "bytes": 34
+  },
+  "results/native-placement-validation-1014-v1/results.json": {
+    "sha256": "92f164db3dfeec370b21a712aadc822bd4341ac243c2bb5361b82bd7cb5c20bc",
+    "bytes": 706
+  },
+  "results/native-placement-validation-1014-v1/validate_native_placement.py": {
+    "sha256": "33d2bc24efad006cacb11566d6bbd1a62f4484c414a08f566e0ce2814e609508",
+    "bytes": 2932
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "groups": {
+    "-1:initial:node2": {
+      "storage_observations": 30,
+      "bytes_sum": 5847552,
+      "queried_pages_sum": 1458
+    },
+    "0:saved_pack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "0:saved_unpack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "0:gradient:node2": {
+      "storage_observations": 28,
+      "bytes_sum": 1653248,
+      "queried_pages_sum": 432
+    },
+    "1:saved_pack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "1:saved_unpack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "1:gradient:node2": {
+      "storage_observations": 28,
+      "bytes_sum": 1653248,
+      "queried_pages_sum": 430
+    },
+    "2:saved_pack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "2:saved_unpack:node2": {
+      "storage_observations": 54,
+      "bytes_sum": 142316544,
+      "queried_pages_sum": 34798
+    },
+    "2:gradient:node2": {
+      "storage_observations": 28,
+      "bytes_sum": 1653248,
+      "queried_pages_sum": 432
+    }
+  },
+  "note": "storage/page sums overlap for aliases and heap boundaries; not unique or peak bytes"
+}

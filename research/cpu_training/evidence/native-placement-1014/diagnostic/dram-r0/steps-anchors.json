@@ -1,0 +1,30 @@
+[
+  {
+    "step": 0,
+    "measured": true,
+    "start_ns": 2241516203389650,
+    "end_ns": 2241516353646864,
+    "step_ns": 150257214,
+    "forward_ns": 64734384,
+    "backward_ns": 84430636,
+    "optimizer_ns": 1092194,
+    "loss": 1.3336524963378906,
+    "minor_faults": 137769,
+    "major_faults": 0,
+    "process_cpu_ns": 1117696000
+  },
+  {
+    "step": 2,
+    "measured": true,
+    "start_ns": 2241516608066888,
+    "end_ns": 2241516739701233,
+    "step_ns": 131634345,
+    "forward_ns": 52624632,
+    "backward_ns": 78092929,
+    "optimizer_ns": 916784,
+    "loss": 1.3331913948059082,
+    "minor_faults": 102927,
+    "major_faults": 0,
+    "process_cpu_ns": 963063000
+  }
+]

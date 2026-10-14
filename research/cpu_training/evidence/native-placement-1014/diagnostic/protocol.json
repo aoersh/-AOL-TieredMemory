@@ -1,0 +1,22 @@
+{
+  "diagnostic": true,
+  "repeats": 1,
+  "conditions": {
+    "dram": 0,
+    "cxl": 2
+  },
+  "config": {
+    "workload": "transformer",
+    "batch": 8,
+    "sequence": 512,
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "seed": 20261014,
+  "steps": 3,
+  "warmup": 0,
+  "diagnostic_reference": "None",
+  "practical_threshold": 0.03,
+  "stop": "one native Transformer configuration; five independent paired processes; no shape/model/migration/allocator search"
+}
