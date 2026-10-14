@@ -1,6 +1,123 @@
-# 新会话接力说明（2026-10-12）
+# 新会话接力说明（2026-10-14）
 
-## 最新断点：真实backward与大配置训练确认完成
+## 最新断点：科研审计完成，后续实验尚未实施
+
+先读[RESEARCH_AUDIT_2026-10-14.md](RESEARCH_AUDIT_2026-10-14.md)。已梳理
+git时间线、研究假设树、模块取舍和论文风险，并从五个原始计时矩阵独立重算
+60个进程均值，与已有摘要一致。审计未运行新实验或修改训练代码/内核；
+文献核查仍缺TierTrain全文/实现对照，当前证据不足以形成完整论文贡献。
+
+当前问题为同一DRAM预算下训练storage的快内存价值，以及何时保留Direct CXL。
+停止当前ID10/ID34 attention迁移调参、高开销C10 mmap分配器性能搜索和强制
+SOAR/ALTO/AOL集成；暂停此前拟议的softmax backward输入梯度/输出位置小控制。
+保留原生参考、公平负例、数值/驻留/生命周期审计及分配/迁移干扰线索。
+
+后续建议给文献差异、低开销容量执行、同预算静态分配7–10个工作日验证窗口。
+先过容量和执行成本门，再在预选的一个机制不同案例中有限探索/独立确认；
+失败则停止策略系统投入，不扩大参数寻找正例。动态迁移、AOL及复杂ML尚不进入。
+详细门槛与备选问题见审计报告，不应将建议误写为已完成结果。
+
+没有运行中实验。10-13/10-14实验实现与报告、四套轻量证据及审计分别按研究
+阶段提交；README和计划同步当前路线。原始results、历史证据源码快照保留。
+以下“未提交”和“下一轮”表述是各阶段结束时的历史状态，以本节为准。
+
+## 历史断点：原生阶段缺页与算子诊断完成
+
+先读 [NATIVE_OPERATOR_REPORT.md](NATIVE_OPERATOR_REPORT.md)。本阶段6个profiler
+诊断进程、10个无采样进程全部完成，无运行中矩阵。两矩阵各自随机串行，
+5预热+100正式；采样只记录最后10步，旧native runner和原始结果不修改。
+
+入口run_native_operator.py/analyze_native_operator.py，默认分配器，无saved副本/
+hooks/迁移，CPU0–7、进程匿名DRAM0/CXL2。细分zero_grad、forward、backward、
+update及每段缺页。无采样DRAM/CXL为76.803/90.470 ms，差+13.667 ms
+[4.869,22.465]；配对相对差18.33% [5.44%,31.21%]。五轮均慢但幅度变化，
+完整workload与子进程区间同方向，不与前一批合并统计。
+
+反向差+6.657 ms [4.218,9.095]，五轮均慢，四轮CXL反向缺页次数更少。
+缺页数量不是完整解释，单次成本、首次写入和实际读写仍未分解。
+三对CPU profiler候选：反向bmm +2.359、softmax backward +1.520、mm +1.354 ms/步；
+是主调用线程self区间，不能相加还原无采样损失或称LRU墙钟比例。
+record_shapes/内存记录可能扰动生命周期与管理；采样前分配的释放不全追踪，
+不能用它估完整峰值。ATen调用计数/形状一致，未证明全部内部后端路径一致。
+
+所有16进程105步loss、初始与最终状态hash一致，前后匿名驻留与引用释放通过。
+十项JSON错误输入被拒绝，测试时钟在计时结束后；239原始hash复核。
+原始results/native-operator-{profile,timing,validation}-1014-v1，各自verified-analysis；
+evidence/native-operator-1014只保留摘要/锚点/源码，完整trace/events留本机。
+未改内核/sysctl/THP或做perf/sudo采样，本轮及前两阶段工作均未提交。
+
+当时拟议的下轮为真实softmax backward输入梯度/输出位置与首次写入小控制，
+该待办已在科研审计后暂停。预触页不是训练收益，不人为提高复用频率，
+不继续saved对象迁移参数、AOL或复杂ML。
+
+## 历史断点：默认分配器原生DRAM/CXL配对完成
+
+先读 [NATIVE_PLACEMENT_REPORT.md](NATIVE_PLACEMENT_REPORT.md) 和
+[DAILY_SUMMARY_2026-10-14.md](DAILY_SUMMARY_2026-10-14.md)。两个三步诊断、
+两条件各五独立进程已全部完成，随机串行、5预热+100正式，无运行中矩阵。
+当前只补一个Transformer配置，未重跑历史副本/迁移/C10矩阵。
+
+入口run_native_placement.py/analyze_native_placement.py，默认PyTorch CPU allocator，
+进程导入前numactl绑定DRAM0/CXL2，计算CPU0–7。无保存副本、无新allocator注册、
+无迁移或CPU8空闲worker。完整匿名放置包含非张量分配，共享文件/COW另列，
+没有DRAM容量限额；不与旧批绝对时间拼接。
+
+DRAM/CXL为74.245/89.284 ms/步，差+15.039 ms [6.046,24.032]；逐轮相对差
+20.95% [7.12%,34.79%]，超过3%门槛。forward/backward差约+7.575/+7.327 ms。
+workload run和完整子进程区间也保持方向。五轮差均正但从24.736降到6.521 ms，
+部分前后段漂移，不能声称通用固定20%惩罚或长期稳态。
+
+两诊断各438条存储观察，参数/输入/保存/解包/梯度页面在预期节点，无file匿名
+映射七时点也只在绑定节点。初始和三步状态hash一致；10个计时进程105步loss
+和最终梯度/参数hash一致。timing无逐页查询，政策前后核验；Python引用释放
+不等于默认堆缓存归还OS。九项JSON审计错误输入正确拒绝，原始数据不改写。
+
+原始results/native-placement-{diagnostic,timing,validation}-1014-v1，前两者使用
+各自verified-analysis。轻量evidence/native-placement-1014，155原始hash复核。
+未改内核/sysctl/THP，未做perf或sudo采样。本轮和10-13工作均未提交，保留工作区。
+
+下一步优先默认路径的算子/阶段与分配行为归因，必要时有限独立确认波动。
+新C10 mmap allocator暂留容量/正确性原型，暂停其性能搜索；池化不是研究前提。
+本轮只证明整体初始放置敏感，仍无动态迁移正收益边界，不自动扩模型/shape/AOL。
+
+## 历史断点：原生框架校准与C10张量容量筛查完成
+
+先读 [TENSOR_CAPACITY_REPORT.md](TENSOR_CAPACITY_REPORT.md) 和
+[DAILY_SUMMARY_2026-10-13.md](DAILY_SUMMARY_2026-10-13.md)。本轮36个正式独立
+进程、10诊断全部完成，没有运行中实验，没有权限阻塞，未改内核/sysctl或做perf。
+
+原生框架校准三条件各五进程：native/受管DRAM/受管Direct为
+72.033/111.863/88.291 ms；两条受管路径相对native额外成本区间大于0。
+原始results/framework-baseline-diagnostic-1013-v2、framework-baseline-timing-1013-v1。
+diagnostic-v1误将共享文件页所在节点作匿名驻留边界，已排除，保留原数据。
+
+新进程内分配器通过c10::SetCPUAllocator直接放置张量首次分配，无saved副本，
+参数/输入/保存storage/梯度/临时张量经C10的分配纳入页对齐预约。解释器、库直接
+分配及安装前内存不在账本内，不能称全进程DRAM限额。代码在research/cpu_training，
+没有修改src/soar拦截器。原始results/tensor-capacity-{diagnostic,timing}-1013-v1；
+构建results/tensor-capacity-build-1013-v1，实际运行库不要中途重建。
+
+七条件各三进程：native67.289、同allocator全DRAM119.379、全CXL102.937、
+first64/128为98.687/105.397、small64/128为104.527/104.977 ms。
+张量总预约峰值178.402 MiB，first两档峰值63.895/127.855 MiB且末端全部释放。
+small只用3.324 MiB，两档上限没有改变准入。first64−cxl为−4.251 ms
+[−11.450,2.949]；同预算small−first两档区间均跨零，无稳定实用赢家。
+新allocator全DRAM−native为+52.089 ms [40.408,63.771]；缺页约149481 vs
+68404次/步。是分配路径成本证据，不是纯内存延迟或LRU墙钟因果分解。
+
+五项allocator行为检查及十项审计故障注入通过，原始数据不改写。
+validation-v1因零页查询EFAULT边界未处理而失败；validation-v2五项通过。
+诊断审计对EFAULT先mincore确认映射，再原值写回并重查节点，正式计时不触页。
+轻量证据evidence/framework-baseline-1013、tensor-capacity-1013，完整步骤/映射/
+日志/二进制留本机。所有矩阵使用各自verified-analysis，不能跨批拼接绝对时间。
+
+阶段决定：不扩大当前shape/配额/大小阈值，不进入迁移/AOL。若继续，先解决
+分配器自身成本与可核验容量边界，例如固定节点有界池复用和账本外内存分解。
+这些尚未实施；普通cgroup memory.max不是node0上限，现有SOAR预算也不覆盖
+全部PyTorch分配，不能直接套用并宣称全进程DRAM受限。
+本轮代码/报告/README/证据尚未提交，保留工作区。上一阶段6fdc227已推送research/main。
+
+## 历史断点：真实backward与大配置训练确认完成
 
 先读 [BACKWARD_REPLAY_REPORT.md](BACKWARD_REPLAY_REPORT.md)。本阶段新增三案例
 两放置真实SoftmaxBackward重放30个计时进程，另六组三步诊断；节点实际保存值、

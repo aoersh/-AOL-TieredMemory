@@ -1,5 +1,44 @@
 # CPU 训练：收益感知 CXL 访问与选择性预取实验
 
+## 最新状态：科研审计完成
+
+2026-10-14完成[科研审计](RESEARCH_AUDIT_2026-10-14.md)，重建历史与假设树，
+给出A/B/C/D模块分类、保留/停止路线和有期限的实验门槛。收窄问题为同一DRAM
+预算下训练storage的快内存价值及Direct CXL适用条件，尚未实施新实验。
+
+停止当前attention对象迁移调参、高开销mmap分配器性能搜索；暂停此前拟议的
+softmax backward输入梯度/输出位置小控制，不进入AOL或复杂ML。保留原生参考、
+公平负例、数值/驻留/生命周期验证和已有干扰证据。下一阶段建议先验证文献
+差异和低开销同预算静态分配，过门后再考虑动态迁移，详见[当前交接](HANDOFF.md)。
+
+## 已完成阶段与历史记录
+
+以下下一步表述记录当时设想；当前路线以审计和交接为准。
+
+2026-10-14第二阶段：原生阶段缺页与CPU profiler候选完成，6采样+10无采样进程。
+无采样DRAM/CXL为76.803/90.470 ms，差+13.667 ms [4.869,22.465]；反向五轮
+均慢但四轮CXL缺页更少。bmm、softmax backward、mm是诊断候选，时间包含
+输出分配/首次写入，不能当saved读取收益或内核墙钟分解。详见
+[算子报告](NATIVE_OPERATOR_REPORT.md) 和[证据](evidence/native-operator-1014/README.md)。
+入口run_native_operator.py/analyze_native_operator.py；当时拟议的softmax backward
+输入梯度、输出位置与首次写入小控制已在科研审计后暂停。
+
+2026-10-14：默认分配器原生DRAM/CXL对照完成，两诊断、两条件各五独立进程。
+无保存副本、无迁移或额外worker，DRAM/CXL为74.245/89.284 ms/步，差值
++15.039 ms [6.046,24.032]。整体匿名放置有实用性能差，但不是迁移正收益。
+代码入口run_native_placement.py/analyze_native_placement.py，详见
+[实验报告](NATIVE_PLACEMENT_REPORT.md)、[今天总结](DAILY_SUMMARY_2026-10-14.md)
+和[轻量证据](evidence/native-placement-1014/README.md)。原始结果保留在results。
+当前新C10分配器暂停性能搜索；默认路径归因不以重写分配器为前提。
+
+2026-10-13：原生框架校准15个计时进程、新C10张量存储容量筛查21个计时进程
+完成，另10组诊断。新入口 `run_framework_baseline.py`、`run_tensor_capacity.py`，
+分别用 `analyze_framework_baseline.py`、`analyze_tensor_capacity.py` 审计。
+构建/行为检查为 `build_tensor_capacity.py` 和 `test_tensor_capacity.py`；轻量归档
+为 `archive_capacity_screen.py`。复现命令及结论见 [本轮报告](TENSOR_CAPACITY_REPORT.md)，
+[日总结](DAILY_SUMMARY_2026-10-13.md) 和 [最新交接](HANDOFF.md)。
+全张量预约有界不等于整进程DRAM受限；分配器自身成本仍显著，不进入迁移/AOL。
+
 本阶段继续收敛：真实SoftmaxBackward重放已完成三案例、30个独立计时进程。
 两个32 MiB对象的DRAM使用优势区间跨零，128 MiB对象也无实用使用优势；
 较大的局部收益来自副本创建。sequence1024完整训练10个独立进程已确认：

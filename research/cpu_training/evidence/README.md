@@ -4,8 +4,14 @@ These files preserve measurements and the source snapshots actually executed.
 Snapshots are historical artifacts, not the entry points for new experiments.
 Use the scripts in the parent directory to run new experiments.
 
+2026-10-14完成[科研审计](../RESEARCH_AUDIT_2026-10-14.md)。当前证据保留为原生
+参考、公平负例及机制线索；停止旧attention迁移调参与高开销分配器策略搜索。
+审计未新增测量；后续建议与停止条件见报告，当前状态见[HANDOFF](../HANDOFF.md)。
+
 | Directory | Scope |
 | --- | --- |
+| [native-operator-1014](native-operator-1014/) | 默认分配器原生阶段缺页、三对CPU profiler诊断及五对无采样确认 |
+| [native-placement-1014](native-placement-1014/) | 默认分配器原生DRAM/CXL、无副本或迁移，两条件各五独立计时进程 |
 | [numa-v3](numa-v3/) | Original three-step MLP placement/correctness pilot |
 | [e0-validated](e0-validated/) | Parameterized MLP and two Transformer correctness cases |
 | [e1-diagnostic](e1-diagnostic/) | Eight DRAM/Direct/sync/async correctness and residency runs |
@@ -15,6 +21,21 @@ Use the scripts in the parent directory to run new experiments.
 | [capacity-selection-1012](capacity-selection-1012/) | 相同 32 MiB 额度下 ID10/ID34 对象选择及不迁移对照 |
 | [backward-replay-1012](backward-replay-1012/) | 真实 softmax backward 输入重放，三个案例两放置，各五进程 |
 | [large-placement-1012](large-placement-1012/) | sequence1024完整训练，128 MiB额度下初始ID34放置确认 |
+| [framework-baseline-1013](framework-baseline-1013/) | 无保存副本native与受管全DRAM/Direct校准，各五独立进程 |
+| [tensor-capacity-1013](tensor-capacity-1013/) | 无保存副本C10全张量64/128 MiB配额，七条件各三进程，不是整进程DRAM限额 |
+
+2026-10-14第二阶段算子归档：无采样DRAM/CXL为76.803/90.470 ms，差+13.667 ms
+[4.869,22.465]，反向慢但多数配对CXL缺页更少。profiler只作候选，完整trace/events
+留本机；239原始hash、十项错误输入检查通过，见[报告](../NATIVE_OPERATOR_REPORT.md)。
+
+2026-10-14新增原生放置证据：DRAM/CXL为74.245/89.284 ms，配对差+15.039 ms
+[6.046,24.032]；九项JSON错误输入审计通过，155个原始hash复核。整体匿名放置
+不等于纯张量访问或有限DRAM迁移策略，解释边界见
+[原生报告](../NATIVE_PLACEMENT_REPORT.md)。
+
+2026-10-13两套新增归档同样按diagnostic/timing/source/validation组织。保留内存
+摘要与步骤锚点，完整内存映射和分配记录留本机；诊断零页触页不会进入性能计时。
+各自均保留完整原始文件哈希，解释边界见 [本轮报告](../TENSOR_CAPACITY_REPORT.md)。
 
 2026-10-12新增两套证据各按 `diagnostic/timing/source/validation` 组织，包含独立
 进程均值、区间、配置、步骤锚点和完整原始文件哈希。完整步骤、日志、二进制留在

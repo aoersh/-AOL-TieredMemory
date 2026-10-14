@@ -4,6 +4,48 @@
 
 ## 当前研究方向
 
+2026-10-14完成[全面科研审计](research/cpu_training/RESEARCH_AUDIT_2026-10-14.md)，
+梳理研究时间线、假设树、模块取舍、证据边界和停止条件。当前证据尚不足形成
+完整论文贡献；收窄问题为：**同一DRAM预算下，哪些训练storage值得占用快内存，
+什么时候应保留Direct CXL？**
+
+停止当前ID10/ID34 attention迁移调参及高开销C10 mmap分配器上的性能搜索，
+暂停此前拟议的softmax backward输入梯度/输出位置小控制；AOL、复杂ML及
+SOAR/ALTO强制集成暂不推进。保留原生基线、公平负例、正确性/驻留审计和
+迁移与前台分配干扰线索，历史代码与原始数据继续保存。
+
+下一阶段建议用7–10个工作日依次验证文献差异、低开销容量执行和同预算静态
+对象分配；只有确认可重复端到端收益，才进入动态迁移或AOL。该计划尚未实施，
+本次审计未新增实验。当前断点见[交接说明](research/cpu_training/HANDOFF.md)。
+
+## 已完成阶段与历史方向
+
+以下记录保留各阶段结果及当时设想；下一步以审计和最新交接为准。
+
+2026-10-14继续完成原生阶段缺页/算子分析：6个CPU profiler诊断进程与10个
+无采样独立计时进程。无采样DRAM/CXL为76.803/90.470 ms，差+13.667 ms
+[4.869,22.465]，再次确认整体放置损失。反向五轮均慢，四轮CXL缺页反而更少；
+反向bmm、softmax backward及mm是采样候选，尚非因果分解。当时拟议的输入
+梯度/临时输出位置与首次写入小控制已在科研审计后暂停。
+见 [阶段报告](research/cpu_training/NATIVE_OPERATOR_REPORT.md) 和
+[轻量证据](research/cpu_training/evidence/native-operator-1014/README.md)。
+
+2026-10-14补齐默认分配器原生DRAM/CXL对照：两个诊断、10个独立计时进程，
+无保存副本或迁移。DRAM/CXL为74.245/89.284 ms/步，差+15.039 ms
+[6.046,24.032]，五轮方向一致但幅度有波动。确认当前训练对整体匿名放置敏感，
+尚未证明动态迁移收益或有限DRAM策略。新C10分配器暂留容量/正确性原型，
+后续优先默认路径的算子/阶段归因，池化不是研究前提。见
+[原生放置报告](research/cpu_training/NATIVE_PLACEMENT_REPORT.md)、
+[阶段总结](research/cpu_training/DAILY_SUMMARY_2026-10-14.md) 和
+[轻量证据](research/cpu_training/evidence/native-placement-1014/README.md)。
+
+2026-10-13完成原生框架校准与无保存副本的C10张量容量筛查：36个独立计时进程、
+10个诊断进程。旧副本框架相对原生有显著成本；新分配器虽覆盖参数/梯度/临时
+张量并守住64/128 MiB预约配额，但自身开销显著，尚无稳定放置赢家。不是整进程
+DRAM容量上限，暂不推进迁移/AOL，先解决分配器成本及账本外内存。
+见 [本轮报告](research/cpu_training/TENSOR_CAPACITY_REPORT.md) 与
+[今天总结](research/cpu_training/DAILY_SUMMARY_2026-10-13.md)。
+
 最新收敛验证（2026-10-12）：完成真实SoftmaxBackward重放30个独立计时进程，
 以及sequence1024完整训练10个独立进程。128 MiB副本初始DRAM创建更快约3.04 ms，
 但完整训练为Direct284.38/DRAM放置284.56 ms；差值区间[−2.11,2.47] ms落在±3%
@@ -16,7 +58,7 @@
 CPU训练或AOL。后续优先验证有实际依据的容量不足场景，先静态放置、再动态迁移、
 最后检验AOL增量价值；各阶段需通过完整训练收益门槛。
 
-当前 v3 方案先验证不同训练张量在 **Direct CXL Access** 与 **Prefetch → DRAM** 之间是否存在稳定的最优选择，再比较访问频率、AOL 和 SOAR Performance Criticality 的解释能力，最后实现简单的收益感知选择性预取。ALTO 在线控制属于后续可选扩展。
+9月21日的 v3 历史方案先验证不同训练张量在 **Direct CXL Access** 与 **Prefetch → DRAM** 之间是否存在稳定的最优选择，再比较访问频率、AOL 和 SOAR Performance Criticality 的解释能力，最后实现简单的收益感知选择性预取。该排期已由上述科研审计路线取代。
 
 当前已完成保存张量的数值正确性、DRAM/CXL 放置、同步迁移，以及 FIFO 异步迁移的初步实验。FIFO 预取存在需求顺序倒置，尚不能作为优化后的 Always-Prefetch 基线。详见 [E1/E2 实验报告](research/cpu_training/E1_E2_REPORT.md)。
 
